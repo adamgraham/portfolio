@@ -1,0 +1,8 @@
+[submodule "css-styles"]
+  path = css-styles
+  url = https://github.com/zigurous/css-styles
+  branch = main
+[submodule "react-components"]
+  path = react-components
+  url = https://github.com/zigurous/react-components
+  branch = main

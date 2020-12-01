@@ -1,27 +1,87 @@
 {
   "name": "adamgraham.io",
   "version": "0.1.0",
+  "homepage": "https://www.zigurous.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "@zigurous/react-components": "link:./react-components",
+    "@zigurous/styles": "link:./css-styles",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-ga": "^3.3.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "typescript": "^4.1.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.1.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "core-js": "^3.8.0",
+    "customize-cra": "^1.0.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-config-standard-react": "^11.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "gh-pages": "^3.1.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.2",
+    "prettier": "^2.2.1",
+    "react-app-rewired": "^2.1.6",
+    "react-router-sitemap": "^1.2.0",
+    "webpack-bundle-analyzer": "^4.2.0"
+  },
+  "resolutions": {
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "analyze": "node scripts/analyze.js",
+    "sitemap": "node scripts/sitemap-generator.js",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build -b dist -m \"Publish build to GitHub pages\"",
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
+    "lint:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx}"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:react-hooks/recommended",
+      "plugin:jsx-a11y/recommended",
+      "prettier",
+      "prettier/react"
+    ],
+    "plugins": [
+      "react",
+      "jsx-a11y"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": "prettier --write --ignore-unknown"
   },
   "browserslist": {
     "production": [
