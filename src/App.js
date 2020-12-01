@@ -1,10 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import routes from './routes';
 
 const App = () => {
   return (
     <div className="app">
-      <Switch />
+      <Switch>
+        <Route component={routes.cover.component} />
+      </Switch>
     </div>
   );
 };
