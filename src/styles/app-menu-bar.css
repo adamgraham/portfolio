@@ -1,0 +1,21 @@
+.app-menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 80px;
+  padding: 24px;
+}
+
+.app-menu-bar .nav-bar {
+  margin-left: 16px;
+}
+
+.app-menu-bar__content {
+  display: flex;
+  align-items: center;
+}

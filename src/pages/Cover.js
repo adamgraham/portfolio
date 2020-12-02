@@ -2,7 +2,7 @@ import { Button, SocialNavLinks } from '@zigurous/react-components';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import socials from '../socials';
-import './Cover.css';
+import '../styles/cover.css';
 
 const Cover = () => {
   const history = useHistory();
