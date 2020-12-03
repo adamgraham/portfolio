@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 80px);
   overflow: hidden;
 }
 
@@ -29,7 +29,6 @@
   align-content: center;
   width: 80%;
   height: 100%;
-  margin-bottom: 8em;
 }
 
 .slide {
