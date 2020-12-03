@@ -23,6 +23,7 @@ const Games = () => (
           "The Wandering Dark is a unique indie adventure game that takes you through a girl's dreams and nightmares as she deals with her struggles and fears in life. Battle through these nightmares, explore her different dream worlds, and fight for survival as she matures and grows.",
         link: '/games/the-wandering-dark',
         image: paintingTheWanderingDark,
+        imageBorder: 'black',
       },
       {
         id: 'squishem',
@@ -63,6 +64,7 @@ const Games = () => (
           'Escape the Basement is a point-and-click puzzle "escape" game. You, of all people, were chosen to die. A cruel man named Kane has locked you in his basement with no thought of letting you free. Can you outwit his evil plan and escape?',
         link: '/games/escape-the-basement',
         image: paintingEscapeTheBasement,
+        imageBorder: 'black',
       },
       {
         id: 'escape-the-estate',
@@ -71,6 +73,7 @@ const Games = () => (
           'Escape the Estate is a point-and-click puzzle "escape" game. Your life is on the line! Kane is at it again, and this time he is angry! Do you have what it takes to prevent his cruel intentions? Put your puzzle-solving skills to the test in the sequel to Escape the Basement!',
         link: '/games/escape-the-estate',
         image: paintingEscapeTheEstate,
+        imageBorder: 'black',
       },
       {
         id: 'internet-of-elephants',
@@ -95,6 +98,7 @@ const Games = () => (
           'Alphas is a top-down twin stick action shooter developed for a course at DePaul University. The game consists of five interlinked deadly arenas, several unique weapons, and a multitude of engaging enemies lead by the alpha boss. Can you survive the swarm?',
         link: '/games/alphas',
         image: paintingAlphas,
+        imageBorder: 'black',
       },
       {
         id: 'ferro',
@@ -103,6 +107,7 @@ const Games = () => (
           'Ferro is a unique virtual reality experience inspired by ferrofluids. As a scientist who has discovered a potential gateway into another universe, your job is to channel it to the right frequency. Players use a midi keyboard as the primary input device to initiate the machines and tune the portal.',
         link: '/games/ferro',
         image: paintingFerro,
+        imageBorder: 'black',
       },
       {
         id: 'elegy',

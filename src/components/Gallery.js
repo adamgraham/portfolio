@@ -40,7 +40,17 @@ const Gallery = ({ className, slides = [] }) => {
               key={slide.id}
             >
               <div className="slide__image-wrapper">
-                <img alt="" className="slide__image" src={slide.image}></img>
+                <img
+                  alt=""
+                  className={classNames(
+                    'slide__image',
+                    {
+                      [`slide__image--border-${slide.imageBorder}`]: slide.imageBorder,
+                    },
+                    'box-shadow-4'
+                  )}
+                  src={slide.image}
+                ></img>
               </div>
               <div className="slide__text-container">
                 <div className="h4">{slide.title}</div>
