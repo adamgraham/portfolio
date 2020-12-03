@@ -28,7 +28,7 @@ const Cover = () => {
               View Gallery
             </Button>
             <SocialNavLinks
-              className="margin-left-md"
+              className="margin-left-lg"
               iconSize={24}
               iconInnerPadding={12}
               links={Object.values(socials)}
