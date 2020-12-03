@@ -19,14 +19,18 @@ const Gallery = ({ className, slides = [] }) => {
           {slideIndex > 0 && (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="15.17"
-              height="23.17"
-              viewBox="0 0 15.17 23.17"
+              width="19.3"
+              height="31.54"
+              viewBox="0 0 19.3 31.54"
             >
-              <path
-                d="M24.71,31.29a1,1,0,0,0,0,1.42L35.29,43.29a1,1,0,0,0,1.42,0l2.58-2.58a1,1,0,0,0,0-1.42l-6.58-6.58a1,1,0,0,1,0-1.42l6.58-6.58a1,1,0,0,0,0-1.42l-2.58-2.58a1,1,0,0,0-1.42,0Z"
-                transform="translate(-24.42 -20.42)"
-                style={{ fill: '#101010' }}
+              <polyline
+                points="17.54 1.77 3.54 15.77 17.54 29.77"
+                style={{
+                  fill: 'none',
+                  stroke: '#242424',
+                  strokeMiterlimit: 10,
+                  strokeWidth: '5px',
+                }}
               />
             </svg>
           )}
@@ -72,14 +76,18 @@ const Gallery = ({ className, slides = [] }) => {
           {slideIndex < slides.length - 1 && (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="15.17"
-              height="23.17"
-              viewBox="0 0 15.17 23.17"
+              width="19.3"
+              height="31.54"
+              viewBox="0 0 19.3 31.54"
             >
-              <path
-                d="M39.29,32.71a1,1,0,0,0,0-1.42L28.71,20.71a1,1,0,0,0-1.42,0l-2.58,2.58a1,1,0,0,0,0,1.42l6.58,6.58a1,1,0,0,1,0,1.42l-6.58,6.58a1,1,0,0,0,0,1.42l2.58,2.58a1,1,0,0,0,1.42,0Z"
-                transform="translate(-24.42 -20.42)"
-                style={{ fill: '#101010' }}
+              <polyline
+                points="1.77 29.77 15.77 15.77 1.77 1.77"
+                style={{
+                  fill: 'none',
+                  stroke: '#242424',
+                  strokeMiterlimit: 10,
+                  strokeWidth: '5px',
+                }}
               />
             </svg>
           )}
