@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import AppMenuBar from './AppMenuBar';
+import GallerySlide, { SlideProps } from './GallerySlide';
 import '../styles/gallery.css';
 
 const Gallery = ({ className, slides = [] }) => {
@@ -37,33 +38,11 @@ const Gallery = ({ className, slides = [] }) => {
         </button>
         <div className="gallery__slides">
           {slides.map((slide, index) => (
-            <div
-              className={classNames('slide', {
-                inactive: slideIndex !== index,
-              })}
+            <GallerySlide
               key={slide.id}
-            >
-              <div className="slide__image-wrapper">
-                <img
-                  alt=""
-                  className={classNames(
-                    'slide__image',
-                    {
-                      [`slide__image--border-${slide.imageBorder}`]: slide.imageBorder,
-                    },
-                    'box-shadow-4'
-                  )}
-                  src={slide.image}
-                ></img>
-              </div>
-              <div className="slide__text-container">
-                <div className="h4">{slide.title}</div>
-                <p>{slide.description}</p>
-                <a className="font-weight-semibold" href={slide.link}>
-                  {slide.linkText || 'More Details'}
-                </a>
-              </div>
-            </div>
+              inactive={slideIndex !== index}
+              slide={slide}
+            />
           ))}
         </div>
         <button
@@ -103,16 +82,7 @@ Gallery.propTypes = {
   image: PropTypes.string,
   linkPath: PropTypes.string,
   linkText: PropTypes.string,
-  slides: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
-      link: PropTypes.string.isRequired,
-      linkText: PropTypes.string,
-    })
-  ),
+  slides: PropTypes.arrayOf(SlideProps),
 };
 
 export default Gallery;
