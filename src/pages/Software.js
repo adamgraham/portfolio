@@ -1,6 +1,11 @@
-import React from 'react';
-import { Gallery } from '../components';
+import { useEffect } from 'react';
 
-const Software = () => <Gallery />;
+const Software = () => {
+  useEffect(() => {
+    window.open('https://github.com/adamgraham', '_blank');
+    window.history.back();
+  }, []);
+  return null;
+};
 
 export default Software;
