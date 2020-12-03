@@ -12,7 +12,7 @@ import '../styles/app-menu-bar.css';
 const AppMenuBar = () => {
   const history = useHistory();
   return (
-    <div className="app-menu-bar" theme="dark">
+    <div className="app-menu-bar" theme="dark-1">
       <div className="app-menu-bar__content">
         <ClickableDiv
           className="h5 font-weight-semibold margin-none"
