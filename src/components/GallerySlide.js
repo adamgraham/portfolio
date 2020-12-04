@@ -4,15 +4,15 @@ import classNames from 'classnames';
 
 const GallerySlide = ({ inactive = false, slide }) => {
   const imageRef = useRef();
-  const [imageLoaded, setImageLoaded] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const loadComplete = () => {
-    setImageLoaded(true);
+    setLoading(false);
   };
 
   useEffect(() => {
     const image = imageRef.current;
-    if (image && !imageLoaded) {
+    if (image && loading) {
       if (image.complete) {
         loadComplete();
       } else {
@@ -24,11 +24,12 @@ const GallerySlide = ({ inactive = false, slide }) => {
         image.removeEventListener('load', loadComplete);
       }
     };
-  }, [imageLoaded, imageRef]);
+  }, [imageRef, loading]);
 
   return (
     <div
       className={classNames('slide', {
+        loading,
         inactive,
       })}
       key={slide.id}
@@ -39,7 +40,6 @@ const GallerySlide = ({ inactive = false, slide }) => {
           className={classNames(
             'slide__image',
             {
-              'slide__image--loading': !imageLoaded,
               [`slide__image--border-${slide.imageBorder}`]: slide.imageBorder,
             },
             'box-shadow-4'
