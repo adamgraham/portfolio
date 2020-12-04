@@ -43,7 +43,7 @@ const Games = () => (
       },
       {
         id: 'ancient-odyssey',
-        title: 'The Rise',
+        title: 'Ancient Odyssey',
         description:
           'Ancient Odyssey is a puzzle "doors escape" game. There are a total of 30 unique levels. Each is an individual puzzle designed to make your brain think hard! Can you survive the journey to the underworld by plundering all 30 levels?',
         link: '/games/ancient-odyssey',

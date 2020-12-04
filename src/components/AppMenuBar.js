@@ -25,7 +25,7 @@ const AppMenuBar = () => {
         <NavBar
           NavLink={NavLink}
           routes={Object.values(routes).filter(
-            (route) => !route.excludeFromNavBar
+            (route) => route.includeInNavBar
           )}
         />
       </div>
