@@ -1,0 +1,9 @@
+.app-page {
+  position: relative;
+  width: 100vw;
+}
+
+.app-page__content {
+  position: relative;
+  width: 100%;
+}

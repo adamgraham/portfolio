@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import '../styles/slide.css';
 
-const GallerySlide = ({ inactive = false, slide }) => {
+const Slide = ({ inactive = false, slide }) => {
   const imageRef = useRef();
   const [loading, setLoading] = useState(true);
 
@@ -69,9 +70,9 @@ export const SlideProps = PropTypes.shape({
   linkText: PropTypes.string,
 });
 
-GallerySlide.propTypes = {
+Slide.propTypes = {
   inactive: PropTypes.bool,
   slide: SlideProps,
 };
 
-export default GallerySlide;
+export default Slide;

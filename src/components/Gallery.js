@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import AppMenuBar from './AppMenuBar';
-import GallerySlide, { SlideProps } from './GallerySlide';
+import Page from './Page';
+import Slide, { SlideProps } from './Slide';
 import '../styles/gallery.css';
 
 const Gallery = ({ className, slides = [] }) => {
   const [slideIndex, setSlideIndex] = useState(0);
   return (
-    <React.Fragment>
-      <div className={classNames('gallery', className)}>
+    <Page>
+      <article className={classNames('gallery', className)}>
         <button
           className="gallery__button left"
           disabled={slideIndex <= 0}
@@ -38,7 +38,7 @@ const Gallery = ({ className, slides = [] }) => {
         </button>
         <div className="gallery__slides">
           {slides.map((slide, index) => (
-            <GallerySlide
+            <Slide
               key={slide.id}
               inactive={slideIndex !== index}
               slide={slide}
@@ -71,9 +71,8 @@ const Gallery = ({ className, slides = [] }) => {
             </svg>
           )}
         </button>
-      </div>
-      <AppMenuBar />
-    </React.Fragment>
+      </article>
+    </Page>
   );
 };
 

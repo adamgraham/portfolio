@@ -5,14 +5,16 @@ import {
 } from '@zigurous/react-components';
 import React from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import routes from '../routes';
 import socials from '../socials';
-import '../styles/app-menu-bar.css';
+import '../styles/menu-bar.css';
 
-const AppMenuBar = () => {
+const MenuBar = ({ className }) => {
   const history = useHistory();
   return (
-    <div className="app-menu-bar" theme="dark-1">
+    <div className={classNames('app-menu-bar', className)} theme="dark-1">
       <div className="app-menu-bar__content">
         <ClickableDiv
           className="h5 font-weight-semibold margin-none"
@@ -41,4 +43,8 @@ const AppMenuBar = () => {
   );
 };
 
-export default AppMenuBar;
+MenuBar.propTypes = {
+  className: PropTypes.string,
+};
+
+export default MenuBar;
