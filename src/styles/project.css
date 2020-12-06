@@ -1,6 +1,28 @@
 .project {
   position: relative;
   width: 960px;
-  padding: 128px 64px;
-  margin: auto;
+  padding: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 256px;
+}
+
+.project section {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.project em {
+  font-style: normal;
+  letter-spacing: -0.5px;
+  color: #808080;
+}
+
+.project img {
+  max-width: 100%;
+}
+
+.project .image-link,
+.project .image-link img {
+  display: block;
 }
