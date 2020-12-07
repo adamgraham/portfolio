@@ -7,6 +7,7 @@ import lunarEscapeScreenshot02 from '../../images/screenshots/lunar-escape-scree
 import lunarEscapeScreenshot03 from '../../images/screenshots/lunar-escape-screenshot-03.png';
 import lunarEscapeScreenshot04 from '../../images/screenshots/lunar-escape-screenshot-04.png';
 import lunarEscapeScreenshot05 from '../../images/screenshots/lunar-escape-screenshot-05.png';
+import lunarEscapeScreenshot06 from '../../images/screenshots/lunar-escape-screenshot-06.png';
 
 const LunarEscape = () => (
   <Project>
@@ -60,6 +61,7 @@ const LunarEscape = () => (
           lunarEscapeScreenshot03,
           lunarEscapeScreenshot04,
           lunarEscapeScreenshot05,
+          lunarEscapeScreenshot06,
         ]}
       />
     </section>

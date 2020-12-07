@@ -1,4 +1,8 @@
-import { Button, ImageGallery } from '@zigurous/react-components';
+import {
+  Button,
+  EmbeddedYouTube,
+  ImageGallery,
+} from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
 import blackholeScreenshot01 from '../../images/screenshots/blackhole-screenshot-01.png';
@@ -47,6 +51,12 @@ const Blackhole = () => (
           blackholeScreenshot02,
           blackholeScreenshot03,
         ]}
+      />
+      <EmbeddedYouTube
+        origin="http://adamgraham.io"
+        videoId="-rvjwFqjres"
+        width="100%"
+        height="468"
       />
     </section>
   </Project>

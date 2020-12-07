@@ -1,4 +1,4 @@
-import { ImageGallery } from '@zigurous/react-components';
+import { EmbeddedYouTube, ImageGallery } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
 import internetOfElephantsScreenshot01 from '../../images/screenshots/internet-of-elephants-screenshot-01.png';
@@ -46,6 +46,12 @@ const InternetOfElephants = () => (
           internetOfElephantsScreenshot01,
           internetOfElephantsScreenshot02,
         ]}
+      />
+      <EmbeddedYouTube
+        origin="http://adamgraham.io"
+        videoId="VXWw1CmOkEw"
+        width="100%"
+        height="468"
       />
     </section>
   </Project>

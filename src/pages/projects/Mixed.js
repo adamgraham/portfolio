@@ -1,4 +1,8 @@
-import { Button, ImageGallery } from '@zigurous/react-components';
+import {
+  Button,
+  EmbeddedYouTube,
+  ImageGallery,
+} from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
 import mixedScreenshot01 from '../../images/screenshots/mixed-screenshot-01.png';
@@ -46,6 +50,13 @@ const Mixed = () => (
           { className: 'box-shadow-2', src: mixedScreenshot01 },
           { className: 'box-shadow-2', src: mixedScreenshot02 },
         ]}
+      />
+      <EmbeddedYouTube
+        className="box-shadow-2"
+        origin="http://adamgraham.io"
+        videoId="aMqgmqNu9Qw"
+        width="100%"
+        height="468"
       />
     </section>
   </Project>

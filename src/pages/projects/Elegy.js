@@ -1,4 +1,8 @@
-import { Button, ImageGallery } from '@zigurous/react-components';
+import {
+  Button,
+  EmbeddedYouTube,
+  ImageGallery,
+} from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
 import elegyScreenshot01 from '../../images/screenshots/elegy-screenshot-01.png';
@@ -46,6 +50,12 @@ const Elegy = () => (
       <ImageGallery
         columns={1}
         images={[elegyScreenshot01, elegyScreenshot02]}
+      />
+      <EmbeddedYouTube
+        origin="http://adamgraham.io"
+        videoId="KQxgLDEK05g"
+        width="100%"
+        height="468"
       />
     </section>
   </Project>

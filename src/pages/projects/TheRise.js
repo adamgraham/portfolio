@@ -7,6 +7,7 @@ import theRiseScreenshot02 from '../../images/screenshots/the-rise-screenshot-02
 import theRiseScreenshot03 from '../../images/screenshots/the-rise-screenshot-03.png';
 import theRiseScreenshot04 from '../../images/screenshots/the-rise-screenshot-04.png';
 import theRiseScreenshot05 from '../../images/screenshots/the-rise-screenshot-05.png';
+import theRiseScreenshot06 from '../../images/screenshots/the-rise-screenshot-06.png';
 
 const TheRise = () => (
   <Project>
@@ -52,6 +53,7 @@ const TheRise = () => (
           theRiseScreenshot03,
           theRiseScreenshot04,
           theRiseScreenshot05,
+          theRiseScreenshot06,
         ]}
       />
     </section>

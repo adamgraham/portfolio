@@ -1,4 +1,4 @@
-import { ImageGallery, Link } from '@zigurous/react-components';
+import { EmbeddedYouTube, ImageGallery } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
 import ferroScreenshot01 from '../../images/screenshots/ferro-screenshot-01.png';
@@ -12,14 +12,11 @@ const Ferro = () => (
     <section>
       <p>
         Inspired by ferrofluids, Ferro is a unique virtual reality experience
-        created by{' '}
-        <Link external href="http://pixeldinosaur.com/">
-          Michael Louden
-        </Link>{' '}
-        and myself. As a scientist who has discovered a potential gateway into
-        another universe, your job is to channel it to the right frequency.
-        Alongside virtual reality technologies, players use a midi keyboard as
-        the primary input device to initiate the machines and tune the portal.
+        created by Michael Louden and myself. As a scientist who has discovered
+        a potential gateway into another universe, your job is to channel it to
+        the right frequency. Alongside virtual reality technologies, players use
+        a midi keyboard as the primary input device to initiate the machines and
+        tune the portal.
       </p>
     </section>
     <section>
@@ -38,6 +35,12 @@ const Ferro = () => (
       <ImageGallery
         columns={1}
         images={[ferroScreenshot01, ferroScreenshot02]}
+      />
+      <EmbeddedYouTube
+        origin="http://adamgraham.io"
+        videoId="nybrBOkmNkM"
+        width="100%"
+        height="468"
       />
     </section>
   </Project>

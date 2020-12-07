@@ -7,6 +7,7 @@ import ancientOdysseyScreenshot02 from '../../images/screenshots/ancient-odyssey
 import ancientOdysseyScreenshot03 from '../../images/screenshots/ancient-odyssey-screenshot-03.png';
 import ancientOdysseyScreenshot04 from '../../images/screenshots/ancient-odyssey-screenshot-04.png';
 import ancientOdysseyScreenshot05 from '../../images/screenshots/ancient-odyssey-screenshot-05.png';
+import ancientOdysseyScreenshot06 from '../../images/screenshots/ancient-odyssey-screenshot-06.png';
 
 const AncientOdyssey = () => (
   <Project>
@@ -60,6 +61,7 @@ const AncientOdyssey = () => (
           ancientOdysseyScreenshot03,
           ancientOdysseyScreenshot04,
           ancientOdysseyScreenshot05,
+          ancientOdysseyScreenshot06,
         ]}
       />
     </section>
