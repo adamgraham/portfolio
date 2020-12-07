@@ -1,12 +1,12 @@
 import { Button, ImageGallery } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
+import theRiseBanner from '../../images/banners/the-rise-banner.png';
 import theRiseScreenshot01 from '../../images/screenshots/the-rise-screenshot-01.png';
 import theRiseScreenshot02 from '../../images/screenshots/the-rise-screenshot-02.png';
 import theRiseScreenshot03 from '../../images/screenshots/the-rise-screenshot-03.png';
 import theRiseScreenshot04 from '../../images/screenshots/the-rise-screenshot-04.png';
 import theRiseScreenshot05 from '../../images/screenshots/the-rise-screenshot-05.png';
-import theRiseThumbnail from '../../images/thumbnails/the-rise-thumbnail.png';
 
 const TheRise = () => (
   <Project>
@@ -44,7 +44,7 @@ const TheRise = () => (
       <p className="body-xl">
         <b>Media</b>
       </p>
-      <img alt="" width="100%" src={theRiseThumbnail} />
+      <img alt="" width="100%" src={theRiseBanner} />
       <ImageGallery
         images={[
           theRiseScreenshot01,

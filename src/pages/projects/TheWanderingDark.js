@@ -1,17 +1,17 @@
 import { ImageGallery, Link } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import projectDreamAlphaImage from '../../images/screenshots/project-dream-alpha.png';
 import projectDreamScreenshot01 from '../../images/screenshots/project-dream-screenshot-01.png';
 import projectDreamScreenshot02 from '../../images/screenshots/project-dream-screenshot-02.png';
 import projectDreamScreenshot03 from '../../images/screenshots/project-dream-screenshot-03.png';
-import theWanderingDarkBetaImage from '../../images/screenshots/the-wandering-dark-beta.png';
+import projectDreamThumbnail from '../../images/thumbnails/project-dream-thumbnail.png';
 import theWanderingDarkScreenshot01 from '../../images/screenshots/the-wandering-dark-screenshot-01.png';
 import theWanderingDarkScreenshot02 from '../../images/screenshots/the-wandering-dark-screenshot-02.png';
 import theWanderingDarkScreenshot03 from '../../images/screenshots/the-wandering-dark-screenshot-03.png';
 import theWanderingDarkScreenshot04 from '../../images/screenshots/the-wandering-dark-screenshot-04.png';
 import theWanderingDarkScreenshot05 from '../../images/screenshots/the-wandering-dark-screenshot-05.png';
 import theWanderingDarkScreenshot06 from '../../images/screenshots/the-wandering-dark-screenshot-06.png';
+import theWanderingDarkThumbnail from '../../images/thumbnails/the-wandering-dark-thumbnail.png';
 
 const TheWanderingDark = () => (
   <Project>
@@ -50,7 +50,7 @@ const TheWanderingDark = () => (
         href="https://drive.google.com/open?id=0BzUWUmwjB6l2ZW00Z3poTXE3UVU"
         undecorated
       >
-        <img alt="Beta Download" src={theWanderingDarkBetaImage} />
+        <img alt="Beta Download" src={theWanderingDarkThumbnail} />
       </Link>
       <ImageGallery
         images={[
@@ -73,7 +73,7 @@ const TheWanderingDark = () => (
         href="https://drive.google.com/open?id=0BzUWUmwjB6l2QUd2RTNOYnI3TWs"
         undecorated
       >
-        <img alt="Alpha Download" src={projectDreamAlphaImage}></img>
+        <img alt="Alpha Download" src={projectDreamThumbnail}></img>
       </Link>
       <ImageGallery
         images={[
