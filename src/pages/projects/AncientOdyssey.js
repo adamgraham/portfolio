@@ -49,7 +49,7 @@ const AncientOdyssey = () => (
     </section>
     <section className="height-1em" />
     <section>
-      <p className="body-xl">
+      <p className="body-lg">
         <b>Media</b>
       </p>
       <img alt="" width="100%" src={ancientOdysseyBanner} />

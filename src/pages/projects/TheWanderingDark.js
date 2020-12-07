@@ -41,7 +41,7 @@ const TheWanderingDark = () => (
       </p>
     </section>
     <section>
-      <p className="body-xl">
+      <p className="body-lg">
         <b>Beta</b>
       </p>
       <Link
@@ -64,7 +64,7 @@ const TheWanderingDark = () => (
       />
     </section>
     <section>
-      <p className="body-xl">
+      <p className="body-lg">
         <b>Alpha</b>
       </p>
       <Link
