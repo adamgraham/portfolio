@@ -29,7 +29,7 @@ const Games = () => (
         id: 'squishem',
         title: 'Squish-em!',
         description:
-          "Squish-em! is an arcade game with ever so squishy moles just asking for a tap on the head! It's a simple whack-a-mole re-creation designed for highscore-play. Squish your way to the top of the leaderboards, earn achievements along the way, and brag to your friends once you beat their best score! Do you have what it takes to become the best squisher around?",
+          "Squish-em! is an arcade game with ever so squishy moles just asking for a tap on the head! It's a simple whack-a-mole re-creation designed for highscore-play. Squish your way to the top of the leaderboards, earn achievements along the way, and brag to your friends once you beat their best score!",
         link: '/games/squishem',
         image: paintingSquishem,
       },

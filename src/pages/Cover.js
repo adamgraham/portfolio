@@ -19,12 +19,7 @@ const Cover = () => {
             cooperative-play.
           </p>
           <div className="display-flex align-items-center">
-            <Button
-              onClick={() => {
-                history.push('/games');
-              }}
-              size="small"
-            >
+            <Button history={history} link="/games" size="small">
               View Gallery
             </Button>
             <SocialNavLinks
