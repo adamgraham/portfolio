@@ -42,11 +42,11 @@ const Elegy = () => (
     <section>
       <p className="body-lg">
         <b>Media</b>
-        <ImageGallery
-          columns={1}
-          images={[elegyScreenshot01, elegyScreenshot02]}
-        />
       </p>
+      <ImageGallery
+        columns={1}
+        images={[elegyScreenshot01, elegyScreenshot02]}
+      />
     </section>
   </Project>
 );

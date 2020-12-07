@@ -38,15 +38,15 @@ const Hexahedroniks = () => (
     <section>
       <p className="body-lg">
         <b>Media</b>
-        <ImageGallery
-          columns={1}
-          images={[
-            hexahedroniksScreenshot01,
-            hexahedroniksScreenshot02,
-            hexahedroniksScreenshot03,
-          ]}
-        />
       </p>
+      <ImageGallery
+        columns={1}
+        images={[
+          hexahedroniksScreenshot01,
+          hexahedroniksScreenshot02,
+          hexahedroniksScreenshot03,
+        ]}
+      />
     </section>
   </Project>
 );

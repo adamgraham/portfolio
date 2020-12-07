@@ -34,11 +34,11 @@ const Ferro = () => (
     <section>
       <p className="body-lg">
         <b>Media</b>
-        <ImageGallery
-          columns={1}
-          images={[ferroScreenshot01, ferroScreenshot02]}
-        />
       </p>
+      <ImageGallery
+        columns={1}
+        images={[ferroScreenshot01, ferroScreenshot02]}
+      />
     </section>
   </Project>
 );

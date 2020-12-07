@@ -39,11 +39,11 @@ const BossRush = () => (
     <section>
       <p className="body-lg">
         <b>Media</b>
-        <ImageGallery
-          columns={1}
-          images={[bossRushScreenshot01, bossRushScreenshot02]}
-        />
       </p>
+      <ImageGallery
+        columns={1}
+        images={[bossRushScreenshot01, bossRushScreenshot02]}
+      />
     </section>
   </Project>
 );

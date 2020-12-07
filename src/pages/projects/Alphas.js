@@ -40,11 +40,11 @@ const Alphas = () => (
     <section>
       <p className="body-lg">
         <b>Media</b>
-        <ImageGallery
-          columns={1}
-          images={[alphasScreenshot01, alphasScreenshot02]}
-        />
       </p>
+      <ImageGallery
+        columns={1}
+        images={[alphasScreenshot01, alphasScreenshot02]}
+      />
     </section>
   </Project>
 );

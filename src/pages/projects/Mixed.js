@@ -39,14 +39,14 @@ const Mixed = () => (
     <section>
       <p className="body-lg">
         <b>Media</b>
-        <ImageGallery
-          columns={1}
-          images={[
-            { className: 'box-shadow-2', src: mixedScreenshot01 },
-            { className: 'box-shadow-2', src: mixedScreenshot02 },
-          ]}
-        />
       </p>
+      <ImageGallery
+        columns={1}
+        images={[
+          { className: 'box-shadow-2', src: mixedScreenshot01 },
+          { className: 'box-shadow-2', src: mixedScreenshot02 },
+        ]}
+      />
     </section>
   </Project>
 );

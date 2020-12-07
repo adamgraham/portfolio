@@ -38,11 +38,11 @@ const Canvas = () => (
     <section>
       <p className="body-lg">
         <b>Media</b>
-        <ImageGallery
-          columns={1}
-          images={[canvasScreenshot01, canvasScreenshot02]}
-        />
       </p>
+      <ImageGallery
+        columns={1}
+        images={[canvasScreenshot01, canvasScreenshot02]}
+      />
     </section>
   </Project>
 );

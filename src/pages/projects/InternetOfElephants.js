@@ -39,14 +39,14 @@ const InternetOfElephants = () => (
     <section>
       <p className="body-lg">
         <b>Media</b>
-        <ImageGallery
-          columns={1}
-          images={[
-            internetOfElephantsScreenshot01,
-            internetOfElephantsScreenshot02,
-          ]}
-        />
       </p>
+      <ImageGallery
+        columns={1}
+        images={[
+          internetOfElephantsScreenshot01,
+          internetOfElephantsScreenshot02,
+        ]}
+      />
     </section>
   </Project>
 );

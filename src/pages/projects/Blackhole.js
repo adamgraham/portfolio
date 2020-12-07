@@ -39,15 +39,15 @@ const Blackhole = () => (
     <section>
       <p className="body-lg">
         <b>Media</b>
-        <ImageGallery
-          columns={1}
-          images={[
-            blackholeScreenshot01,
-            blackholeScreenshot02,
-            blackholeScreenshot03,
-          ]}
-        />
       </p>
+      <ImageGallery
+        columns={1}
+        images={[
+          blackholeScreenshot01,
+          blackholeScreenshot02,
+          blackholeScreenshot03,
+        ]}
+      />
     </section>
   </Project>
 );
