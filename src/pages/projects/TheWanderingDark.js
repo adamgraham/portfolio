@@ -54,7 +54,7 @@ const TheWanderingDark = () => (
         origin="http://adamgraham.io"
         videoId="JtCg7oB67wY"
         width="100%"
-        height="480"
+        height="468"
       />
       <ImageGallery
         images={[
