@@ -207,19 +207,19 @@ const tech = {
   blockchainGardens: {
     id: 'blockchain-gardens',
     name: 'Blockchain Gardens',
-    path: '/art/blockchain-gardens',
+    path: '/tech/blockchain-gardens',
     component: BlockchainGardens,
   },
   rockstar: {
     id: 'rockstar',
     name: 'RockstAR',
-    path: '/art/rockstar',
+    path: '/tech/rockstar',
     component: RockstAR,
   },
   venderVR: {
     id: 'vender-vr',
     name: 'Vender VR',
-    path: '/art/vender-vr',
+    path: '/tech/vender-vr',
     component: VenderVR,
   },
 };
@@ -228,25 +228,25 @@ const presentations = {
   anAnimationStory: {
     id: 'an-animation-story',
     name: 'An Animation Story',
-    path: '/art/an-animation-story',
+    path: '/presentations/an-animation-story',
     component: AnAnimationStory,
   },
   applicationDevelopmentOverview: {
     id: '3d-application-development-overview',
     name: '3D Application Development Overview',
-    path: '/art/3d-application-development-overview',
+    path: '/presentations/3d-application-development-overview',
     component: ApplicationDevelopmentOverview,
   },
   enteringTheNewReality: {
     id: 'entering-the-new-reality',
     name: 'Entering the New Reality',
-    path: '/art/entering-the-new-reality',
+    path: '/presentations/entering-the-new-reality',
     component: EnteringTheNewReality,
   },
   theLifeOfAUXEngineer: {
     id: 'the-life-of-a-ux-engineer',
     name: 'The Life of a UX Engineer',
-    path: '/art/the-life-of-a-ux-engineer',
+    path: '/presentations/the-life-of-a-ux-engineer',
     component: TheLifeOfAUXEngineer,
   },
 };
