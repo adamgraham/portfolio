@@ -1,0 +1,75 @@
+import { EmbeddedYouTube, ImageGallery } from '@zigurous/react-components';
+import React from 'react';
+import { Project } from '../../components';
+import venderVRScreenshot01 from '../../images/screenshots/vender-vr-screenshot-01.png';
+import venderVRScreenshot02 from '../../images/screenshots/vender-vr-screenshot-02.png';
+import venderVRScreenshot03 from '../../images/screenshots/vender-vr-screenshot-03.png';
+
+const VenderVR = () => (
+  <Project>
+    <section>
+      <h1>Vender VR</h1>
+    </section>
+    <section>
+      <p>
+        Vender is an IoT connected vending machine that started as an R&amp;D
+        project at Solstice before I joined the team. Less than a month before
+        Solstice&apos;s digital innovation summit – Solstice FWD – Vender was
+        expanded to the virtual world. I took on the project head first and
+        developed the first ever virtual reality vending machine experience.
+      </p>
+      <p>
+        A user vends the drink of their choice by putting their hand up to one
+        of the drink taps and waiting for the cup to be filled. Once filled, a
+        service call is made to the Raspberry Pi hooked up to the vending
+        machine, which then vends the user&apos;s drink. Drink choices are
+        populated from a Hybris Platform which stores and manages all of
+        Vender&apos;s data.
+      </p>
+    </section>
+    <section>
+      <p className="body-sm">
+        <em>ROLE —</em> Sole VR / Unity Developer
+        <br />
+        <em>TECH —</em> Unity, C#, Oculus Rift, Leap Motion, Raspberry Pi,
+        Hybris Platform
+        <br />
+        <em>DATE —</em> September 2015
+      </p>
+    </section>
+    <section>
+      <p className="body-lg">
+        <b>Media</b>
+      </p>
+      <ImageGallery
+        images={[
+          venderVRScreenshot01,
+          venderVRScreenshot02,
+          venderVRScreenshot03,
+        ]}
+      />
+      <EmbeddedYouTube
+        className="margin-bottom-lg"
+        origin="http://adamgraham.io"
+        videoId="aBnGN1j3OMM"
+        width="100%"
+        height="468"
+      />
+      <EmbeddedYouTube
+        className="margin-bottom-lg"
+        origin="http://adamgraham.io"
+        videoId="Y-1ZXwGhHM8"
+        width="100%"
+        height="468"
+      />
+      <EmbeddedYouTube
+        origin="http://adamgraham.io"
+        videoId="nHNOTxh7Rdg"
+        width="100%"
+        height="468"
+      />
+    </section>
+  </Project>
+);
+
+export default VenderVR;
