@@ -17,11 +17,12 @@ const InternetOfElephants = () => (
         deeper connection between the human and the animal.
       </p>
       <p>
-        “On November 14th and 15th over 60 people came together to explore and
-        develop innovative ways to engage worldwide audiences with wild animals.
-        The hackathon teams created amazing concepts through a combination of
-        technologies that include GPS hardware, data, games, and social media to
-        create a stronger, more vested connection between people and animals.”
+        &quot;On November 14th and 15th over 60 people came together to explore
+        and develop innovative ways to engage worldwide audiences with wild
+        animals. The hackathon teams created amazing concepts through a
+        combination of technologies that include GPS hardware, data, games, and
+        social media to create a stronger, more vested connection between people
+        and animals.&quot;
       </p>
     </section>
     <section>

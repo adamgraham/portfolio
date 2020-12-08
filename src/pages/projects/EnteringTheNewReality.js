@@ -47,11 +47,11 @@ const EnteringTheNewReality = () => (
         at a mature state at this point where the barrier entry for producing a
         successful application have been reduced that any developer can produce
         a VR or AR application? What’s the difference between VR and AR? What
-        does it take to build one of these “new reality” applications? What
-        problems will they solve? What industries will it disrupt and who will
-        be building these applications? Will it only be important to the gaming
-        industry? Are we scratching the surface with these platforms? What can
-        we predict these platforms will become in the near future?
+        does it take to build one of these new &quot;reality&quot; applications?
+        What problems will they solve? What industries will it disrupt and who
+        will be building these applications? Will it only be important to the
+        gaming industry? Are we scratching the surface with these platforms?
+        What can we predict these platforms will become in the near future?
       </p>
     </section>
     <section>

@@ -54,7 +54,7 @@ const Websites = () => (
         id: 'let-it-beard',
         title: 'Let It Beard',
         description:
-          'Let It Beard is an animated short film that follows the misadventures of an enigmatic religious family known simply as “The Cult”. The Captain and his bevy of devoted followers aim for truth, inner peace, and run various entrepreneurial endeavors on their path to transcendent enlightenment.',
+          'Let It Beard is an animated short film that follows the misadventures of an enigmatic religious family known simply as "The Cult". The Captain and his bevy of devoted followers aim for truth, inner peace, and run various entrepreneurial endeavors on their path to transcendent enlightenment.',
         link: '/websites/let-it-beard',
         image: paintingLetItBeard,
       },

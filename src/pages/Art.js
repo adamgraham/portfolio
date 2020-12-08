@@ -12,7 +12,7 @@ const Art = () => (
         id: 'canvas',
         title: 'Canvas',
         description:
-          'Canvas is a never-ending, interactive painting. Alter the direction of the “brushes” and see what kind of abstract paintings you can create, or sit back and let it paint for you. Every thirty seconds the canvas is cleared and a new set of design principles are put in place. Learn to let go and design with the flow.',
+          'Canvas is a never-ending, interactive painting. Alter the direction of the "brushes" and see what kind of abstract paintings you can create, or sit back and let it paint for you. Every thirty seconds the canvas is cleared and a new set of design principles are put in place. Learn to let go and design with the flow.',
         link: '/art/canvas',
         image: paintingCanvas,
         imageBorder: 'none',
@@ -21,7 +21,7 @@ const Art = () => (
         id: 'blackhole',
         title: 'Blackhole',
         description:
-          'Blackhole is a free-form, avant-garde game that enables the player to control particles in unique ways. Individuals explore their own creative design within the art piece, loosely making their own objectives and discovering new ways of controlling this “creative chaos”.',
+          'Blackhole is a free-form, avant-garde game that enables the player to control particles in unique ways. Individuals explore their own creative design within the art piece, loosely making their own objectives and discovering new ways of controlling this "creative chaos".',
         link: '/art/blackhole',
         image: paintingBlackhole,
         imageBorder: 'black',
