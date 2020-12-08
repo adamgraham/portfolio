@@ -1,9 +1,9 @@
 import { EmbeddedYouTube, ImageGallery } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import venderVRScreenshot01 from '../../images/screenshots/vender-vr-screenshot-01.png';
-import venderVRScreenshot02 from '../../images/screenshots/vender-vr-screenshot-02.png';
-import venderVRScreenshot03 from '../../images/screenshots/vender-vr-screenshot-03.png';
+import screenshot01 from '../../images/screenshots/vender-vr-screenshot-01.png';
+import screenshot02 from '../../images/screenshots/vender-vr-screenshot-02.png';
+import screenshot03 from '../../images/screenshots/vender-vr-screenshot-03.png';
 
 const VenderVR = () => (
   <Project>
@@ -41,13 +41,7 @@ const VenderVR = () => (
       <p className="body-lg">
         <b>Media</b>
       </p>
-      <ImageGallery
-        images={[
-          venderVRScreenshot01,
-          venderVRScreenshot02,
-          venderVRScreenshot03,
-        ]}
-      />
+      <ImageGallery images={[screenshot01, screenshot02, screenshot03]} />
       <EmbeddedYouTube
         className="margin-bottom-lg"
         origin="http://adamgraham.io"

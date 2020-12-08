@@ -5,9 +5,9 @@ import {
 } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import blackholeScreenshot01 from '../../images/screenshots/blackhole-screenshot-01.png';
-import blackholeScreenshot02 from '../../images/screenshots/blackhole-screenshot-02.png';
-import blackholeScreenshot03 from '../../images/screenshots/blackhole-screenshot-03.png';
+import screenshot01 from '../../images/screenshots/blackhole-screenshot-01.png';
+import screenshot02 from '../../images/screenshots/blackhole-screenshot-02.png';
+import screenshot03 from '../../images/screenshots/blackhole-screenshot-03.png';
 
 const Blackhole = () => (
   <Project>
@@ -46,11 +46,7 @@ const Blackhole = () => (
       </p>
       <ImageGallery
         columns={1}
-        images={[
-          blackholeScreenshot01,
-          blackholeScreenshot02,
-          blackholeScreenshot03,
-        ]}
+        images={[screenshot01, screenshot02, screenshot03]}
       />
       <EmbeddedYouTube
         origin="http://adamgraham.io"

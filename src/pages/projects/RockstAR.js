@@ -1,9 +1,9 @@
 import { EmbeddedYouTube, ImageGallery } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import rockstarScreenshot01 from '../../images/screenshots/rockstar-screenshot-01.png';
-import rockstarScreenshot02 from '../../images/screenshots/rockstar-screenshot-02.png';
-import rockstarScreenshot03 from '../../images/screenshots/rockstar-screenshot-03.png';
+import screenshot01 from '../../images/screenshots/rockstar-screenshot-01.png';
+import screenshot02 from '../../images/screenshots/rockstar-screenshot-02.png';
+import screenshot03 from '../../images/screenshots/rockstar-screenshot-03.png';
 
 const RockstAR = () => (
   <Project>
@@ -41,13 +41,7 @@ const RockstAR = () => (
       <p className="body-lg">
         <b>Media</b>
       </p>
-      <ImageGallery
-        images={[
-          rockstarScreenshot01,
-          rockstarScreenshot02,
-          rockstarScreenshot03,
-        ]}
-      />
+      <ImageGallery images={[screenshot01, screenshot02, screenshot03]} />
       <EmbeddedYouTube
         className="margin-bottom-lg"
         origin="http://adamgraham.io"

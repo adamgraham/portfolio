@@ -1,14 +1,14 @@
 import { Button, ImageGallery } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import escapeTheEstateBanner from '../../images/banners/escape-the-estate-banner.png';
-import escapeTheEstateScreenshot01 from '../../images/screenshots/escape-the-estate-screenshot-01.png';
-import escapeTheEstateScreenshot02 from '../../images/screenshots/escape-the-estate-screenshot-02.png';
-import escapeTheEstateScreenshot03 from '../../images/screenshots/escape-the-estate-screenshot-03.png';
-import escapeTheEstateScreenshot04 from '../../images/screenshots/escape-the-estate-screenshot-04.png';
-import escapeTheEstateScreenshot05 from '../../images/screenshots/escape-the-estate-screenshot-05.png';
-import escapeTheEstateScreenshot06 from '../../images/screenshots/escape-the-estate-screenshot-06.png';
-import escapeTheEstateScreenshot07 from '../../images/screenshots/escape-the-estate-screenshot-07.png';
+import banner from '../../images/banners/escape-the-estate-banner.png';
+import screenshot01 from '../../images/screenshots/escape-the-estate-screenshot-01.png';
+import screenshot02 from '../../images/screenshots/escape-the-estate-screenshot-02.png';
+import screenshot03 from '../../images/screenshots/escape-the-estate-screenshot-03.png';
+import screenshot04 from '../../images/screenshots/escape-the-estate-screenshot-04.png';
+import screenshot05 from '../../images/screenshots/escape-the-estate-screenshot-05.png';
+import screenshot06 from '../../images/screenshots/escape-the-estate-screenshot-06.png';
+import screenshot07 from '../../images/screenshots/escape-the-estate-screenshot-07.png';
 
 const EscapeTheEstate = () => (
   <Project>
@@ -47,16 +47,16 @@ const EscapeTheEstate = () => (
       <p className="body-lg">
         <b>Media</b>
       </p>
-      <img alt="" width="100%" src={escapeTheEstateBanner} />
+      <img alt="Escape the Estate Banner" width="100%" src={banner} />
       <ImageGallery
         images={[
-          escapeTheEstateScreenshot01,
-          escapeTheEstateScreenshot02,
-          escapeTheEstateScreenshot03,
-          escapeTheEstateScreenshot04,
-          escapeTheEstateScreenshot05,
-          escapeTheEstateScreenshot06,
-          escapeTheEstateScreenshot07,
+          screenshot01,
+          screenshot02,
+          screenshot03,
+          screenshot04,
+          screenshot05,
+          screenshot06,
+          screenshot07,
         ]}
       />
     </section>

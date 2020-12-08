@@ -37,7 +37,7 @@ const Slide = ({ inactive = false, slide }) => {
     >
       <div className="slide__image-wrapper">
         <img
-          alt=""
+          alt={slide.altText || ''}
           className={classNames(
             'slide__image',
             {
@@ -61,13 +61,14 @@ const Slide = ({ inactive = false, slide }) => {
 };
 
 export const SlideProps = PropTypes.shape({
-  id: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  altText: PropTypes.string,
   description: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   imageBorder: PropTypes.string,
   link: PropTypes.string.isRequired,
   linkText: PropTypes.string,
+  title: PropTypes.string.isRequired,
 });
 
 Slide.propTypes = {

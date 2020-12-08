@@ -5,8 +5,8 @@ import {
 } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import elegyScreenshot01 from '../../images/screenshots/elegy-screenshot-01.png';
-import elegyScreenshot02 from '../../images/screenshots/elegy-screenshot-02.png';
+import screenshot01 from '../../images/screenshots/elegy-screenshot-01.png';
+import screenshot02 from '../../images/screenshots/elegy-screenshot-02.png';
 
 const Elegy = () => (
   <Project>
@@ -47,10 +47,7 @@ const Elegy = () => (
       <p className="body-lg">
         <b>Media</b>
       </p>
-      <ImageGallery
-        columns={1}
-        images={[elegyScreenshot01, elegyScreenshot02]}
-      />
+      <ImageGallery columns={1} images={[screenshot01, screenshot02]} />
       <EmbeddedYouTube
         origin="http://adamgraham.io"
         videoId="KQxgLDEK05g"

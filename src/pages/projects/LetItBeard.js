@@ -1,7 +1,7 @@
 import { Link } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import screenshot from '../../images/screenshots/let-it-beard-screenshot-spread.png';
+import screenshot from '../../images/screenshots/let-it-beard-screenshot.png';
 
 const LetItBeard = () => (
   <Project>

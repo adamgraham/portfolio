@@ -1,10 +1,10 @@
 import { EmbeddedYouTube, ImageGallery } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import blockchainGardensScreenshot01 from '../../images/screenshots/blockchain-gardens-screenshot-01.png';
-import blockchainGardensScreenshot02 from '../../images/screenshots/blockchain-gardens-screenshot-02.png';
-import blockchainGardensScreenshot03 from '../../images/screenshots/blockchain-gardens-screenshot-03.png';
-import blockchainGardensScreenshot04 from '../../images/screenshots/blockchain-gardens-screenshot-04.png';
+import screenshot01 from '../../images/screenshots/blockchain-gardens-screenshot-01.png';
+import screenshot02 from '../../images/screenshots/blockchain-gardens-screenshot-02.png';
+import screenshot03 from '../../images/screenshots/blockchain-gardens-screenshot-03.png';
+import screenshot04 from '../../images/screenshots/blockchain-gardens-screenshot-04.png';
 
 const BlockchainGardens = () => (
   <Project>
@@ -47,12 +47,7 @@ const BlockchainGardens = () => (
         <b>Media</b>
       </p>
       <ImageGallery
-        images={[
-          blockchainGardensScreenshot01,
-          blockchainGardensScreenshot02,
-          blockchainGardensScreenshot03,
-          blockchainGardensScreenshot04,
-        ]}
+        images={[screenshot01, screenshot02, screenshot03, screenshot04]}
       />
       <EmbeddedYouTube
         className="margin-bottom-lg"

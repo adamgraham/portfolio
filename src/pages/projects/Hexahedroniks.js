@@ -5,9 +5,9 @@ import {
 } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import hexahedroniksScreenshot01 from '../../images/screenshots/hexahedroniks-screenshot-01.png';
-import hexahedroniksScreenshot02 from '../../images/screenshots/hexahedroniks-screenshot-02.png';
-import hexahedroniksScreenshot03 from '../../images/screenshots/hexahedroniks-screenshot-03.png';
+import screenshot01 from '../../images/screenshots/hexahedroniks-screenshot-01.png';
+import screenshot02 from '../../images/screenshots/hexahedroniks-screenshot-02.png';
+import screenshot03 from '../../images/screenshots/hexahedroniks-screenshot-03.png';
 
 const Hexahedroniks = () => (
   <Project>
@@ -45,11 +45,7 @@ const Hexahedroniks = () => (
       </p>
       <ImageGallery
         columns={1}
-        images={[
-          hexahedroniksScreenshot01,
-          hexahedroniksScreenshot02,
-          hexahedroniksScreenshot03,
-        ]}
+        images={[screenshot01, screenshot02, screenshot03]}
       />
       <EmbeddedYouTube
         origin="http://adamgraham.io"

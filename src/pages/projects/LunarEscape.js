@@ -1,13 +1,13 @@
 import { Button, ImageGallery } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import lunarEscapeBanner from '../../images/banners/lunar-escape-banner.png';
-import lunarEscapeScreenshot01 from '../../images/screenshots/lunar-escape-screenshot-01.png';
-import lunarEscapeScreenshot02 from '../../images/screenshots/lunar-escape-screenshot-02.png';
-import lunarEscapeScreenshot03 from '../../images/screenshots/lunar-escape-screenshot-03.png';
-import lunarEscapeScreenshot04 from '../../images/screenshots/lunar-escape-screenshot-04.png';
-import lunarEscapeScreenshot05 from '../../images/screenshots/lunar-escape-screenshot-05.png';
-import lunarEscapeScreenshot06 from '../../images/screenshots/lunar-escape-screenshot-06.png';
+import banner from '../../images/banners/lunar-escape-banner.png';
+import screenshot01 from '../../images/screenshots/lunar-escape-screenshot-01.png';
+import screenshot02 from '../../images/screenshots/lunar-escape-screenshot-02.png';
+import screenshot03 from '../../images/screenshots/lunar-escape-screenshot-03.png';
+import screenshot04 from '../../images/screenshots/lunar-escape-screenshot-04.png';
+import screenshot05 from '../../images/screenshots/lunar-escape-screenshot-05.png';
+import screenshot06 from '../../images/screenshots/lunar-escape-screenshot-06.png';
 
 const LunarEscape = () => (
   <Project>
@@ -53,15 +53,15 @@ const LunarEscape = () => (
       <p className="body-lg">
         <b>Media</b>
       </p>
-      <img alt="" width="100%" src={lunarEscapeBanner} />
+      <img alt="Lunar Escape Banner" width="100%" src={banner} />
       <ImageGallery
         images={[
-          lunarEscapeScreenshot01,
-          lunarEscapeScreenshot02,
-          lunarEscapeScreenshot03,
-          lunarEscapeScreenshot04,
-          lunarEscapeScreenshot05,
-          lunarEscapeScreenshot06,
+          screenshot01,
+          screenshot02,
+          screenshot03,
+          screenshot04,
+          screenshot05,
+          screenshot06,
         ]}
       />
     </section>

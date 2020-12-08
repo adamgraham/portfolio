@@ -5,8 +5,8 @@ import {
 } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import mixedScreenshot01 from '../../images/screenshots/mixed-screenshot-01.png';
-import mixedScreenshot02 from '../../images/screenshots/mixed-screenshot-02.png';
+import screenshot01 from '../../images/screenshots/mixed-screenshot-01.png';
+import screenshot02 from '../../images/screenshots/mixed-screenshot-02.png';
 
 const Mixed = () => (
   <Project>
@@ -47,8 +47,8 @@ const Mixed = () => (
       <ImageGallery
         columns={1}
         images={[
-          { className: 'box-shadow-2', src: mixedScreenshot01 },
-          { className: 'box-shadow-2', src: mixedScreenshot02 },
+          { className: 'box-shadow-2', src: screenshot01 },
+          { className: 'box-shadow-2', src: screenshot02 },
         ]}
       />
       <EmbeddedYouTube

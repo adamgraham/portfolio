@@ -1,13 +1,13 @@
 import { Button, ImageGallery } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import theRiseBanner from '../../images/banners/the-rise-banner.png';
-import theRiseScreenshot01 from '../../images/screenshots/the-rise-screenshot-01.png';
-import theRiseScreenshot02 from '../../images/screenshots/the-rise-screenshot-02.png';
-import theRiseScreenshot03 from '../../images/screenshots/the-rise-screenshot-03.png';
-import theRiseScreenshot04 from '../../images/screenshots/the-rise-screenshot-04.png';
-import theRiseScreenshot05 from '../../images/screenshots/the-rise-screenshot-05.png';
-import theRiseScreenshot06 from '../../images/screenshots/the-rise-screenshot-06.png';
+import banner from '../../images/banners/the-rise-banner.png';
+import screenshot01 from '../../images/screenshots/the-rise-screenshot-01.png';
+import screenshot02 from '../../images/screenshots/the-rise-screenshot-02.png';
+import screenshot03 from '../../images/screenshots/the-rise-screenshot-03.png';
+import screenshot04 from '../../images/screenshots/the-rise-screenshot-04.png';
+import screenshot05 from '../../images/screenshots/the-rise-screenshot-05.png';
+import screenshot06 from '../../images/screenshots/the-rise-screenshot-06.png';
 
 const TheRise = () => (
   <Project>
@@ -45,15 +45,15 @@ const TheRise = () => (
       <p className="body-lg">
         <b>Media</b>
       </p>
-      <img alt="" width="100%" src={theRiseBanner} />
+      <img alt="The Rise Banner" width="100%" src={banner} />
       <ImageGallery
         images={[
-          theRiseScreenshot01,
-          theRiseScreenshot02,
-          theRiseScreenshot03,
-          theRiseScreenshot04,
-          theRiseScreenshot05,
-          theRiseScreenshot06,
+          screenshot01,
+          screenshot02,
+          screenshot03,
+          screenshot04,
+          screenshot05,
+          screenshot06,
         ]}
       />
     </section>

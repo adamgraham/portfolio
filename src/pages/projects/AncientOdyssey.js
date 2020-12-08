@@ -1,13 +1,13 @@
 import { Button, ImageGallery } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import ancientOdysseyBanner from '../../images/banners/ancient-odyssey-banner.png';
-import ancientOdysseyScreenshot01 from '../../images/screenshots/ancient-odyssey-screenshot-01.png';
-import ancientOdysseyScreenshot02 from '../../images/screenshots/ancient-odyssey-screenshot-02.png';
-import ancientOdysseyScreenshot03 from '../../images/screenshots/ancient-odyssey-screenshot-03.png';
-import ancientOdysseyScreenshot04 from '../../images/screenshots/ancient-odyssey-screenshot-04.png';
-import ancientOdysseyScreenshot05 from '../../images/screenshots/ancient-odyssey-screenshot-05.png';
-import ancientOdysseyScreenshot06 from '../../images/screenshots/ancient-odyssey-screenshot-06.png';
+import banner from '../../images/banners/ancient-odyssey-banner.png';
+import screenshot01 from '../../images/screenshots/ancient-odyssey-screenshot-01.png';
+import screenshot02 from '../../images/screenshots/ancient-odyssey-screenshot-02.png';
+import screenshot03 from '../../images/screenshots/ancient-odyssey-screenshot-03.png';
+import screenshot04 from '../../images/screenshots/ancient-odyssey-screenshot-04.png';
+import screenshot05 from '../../images/screenshots/ancient-odyssey-screenshot-05.png';
+import screenshot06 from '../../images/screenshots/ancient-odyssey-screenshot-06.png';
 
 const AncientOdyssey = () => (
   <Project>
@@ -53,15 +53,15 @@ const AncientOdyssey = () => (
       <p className="body-lg">
         <b>Media</b>
       </p>
-      <img alt="" width="100%" src={ancientOdysseyBanner} />
+      <img alt="Ancient Odyssey Banner" width="100%" src={banner} />
       <ImageGallery
         images={[
-          ancientOdysseyScreenshot01,
-          ancientOdysseyScreenshot02,
-          ancientOdysseyScreenshot03,
-          ancientOdysseyScreenshot04,
-          ancientOdysseyScreenshot05,
-          ancientOdysseyScreenshot06,
+          screenshot01,
+          screenshot02,
+          screenshot03,
+          screenshot04,
+          screenshot05,
+          screenshot06,
         ]}
       />
     </section>

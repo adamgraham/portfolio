@@ -5,8 +5,8 @@ import {
 } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import alphasScreenshot01 from '../../images/screenshots/alphas-screenshot-01.png';
-import alphasScreenshot02 from '../../images/screenshots/alphas-screenshot-02.png';
+import screenshot01 from '../../images/screenshots/alphas-screenshot-01.png';
+import screenshot02 from '../../images/screenshots/alphas-screenshot-02.png';
 
 const Alphas = () => (
   <Project>
@@ -45,10 +45,7 @@ const Alphas = () => (
       <p className="body-lg">
         <b>Media</b>
       </p>
-      <ImageGallery
-        columns={1}
-        images={[alphasScreenshot01, alphasScreenshot02]}
-      />
+      <ImageGallery columns={1} images={[screenshot01, screenshot02]} />
       <EmbeddedYouTube
         origin="http://adamgraham.io"
         videoId="waZor8haeuY"

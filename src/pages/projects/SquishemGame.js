@@ -1,11 +1,11 @@
 import { Button, ImageGallery } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import squishemBanner from '../../images/banners/squishem-banner.png';
-import squishemScreenshot01 from '../../images/screenshots/squishem-screenshot-01.png';
-import squishemScreenshot02 from '../../images/screenshots/squishem-screenshot-02.png';
-import squishemScreenshot03 from '../../images/screenshots/squishem-screenshot-03.png';
-import squishemScreenshot04 from '../../images/screenshots/squishem-screenshot-04.png';
+import banner from '../../images/banners/squishem-banner.png';
+import screenshot01 from '../../images/screenshots/squishem-screenshot-01.png';
+import screenshot02 from '../../images/screenshots/squishem-screenshot-02.png';
+import screenshot03 from '../../images/screenshots/squishem-screenshot-03.png';
+import screenshot04 from '../../images/screenshots/squishem-screenshot-04.png';
 
 const Squishem = () => (
   <Project>
@@ -41,14 +41,9 @@ const Squishem = () => (
       <p className="body-lg">
         <b>Media</b>
       </p>
-      <img alt="" width="100%" src={squishemBanner} />
+      <img alt="Squish-em! Banner" width="100%" src={banner} />
       <ImageGallery
-        images={[
-          squishemScreenshot01,
-          squishemScreenshot02,
-          squishemScreenshot03,
-          squishemScreenshot04,
-        ]}
+        images={[screenshot01, screenshot02, screenshot03, screenshot04]}
       />
     </section>
   </Project>

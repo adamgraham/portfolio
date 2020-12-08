@@ -1,13 +1,13 @@
 import { Button, ImageGallery } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import escapeTheBasementBanner from '../../images/banners/escape-the-basement-banner.png';
-import escapeTheBasementScreenshot01 from '../../images/screenshots/escape-the-basement-screenshot-01.png';
-import escapeTheBasementScreenshot02 from '../../images/screenshots/escape-the-basement-screenshot-02.png';
-import escapeTheBasementScreenshot03 from '../../images/screenshots/escape-the-basement-screenshot-03.png';
-import escapeTheBasementScreenshot04 from '../../images/screenshots/escape-the-basement-screenshot-04.png';
-import escapeTheBasementScreenshot05 from '../../images/screenshots/escape-the-basement-screenshot-05.png';
-import escapeTheBasementScreenshot06 from '../../images/screenshots/escape-the-basement-screenshot-06.png';
+import banner from '../../images/banners/escape-the-basement-banner.png';
+import screenshot01 from '../../images/screenshots/escape-the-basement-screenshot-01.png';
+import screenshot02 from '../../images/screenshots/escape-the-basement-screenshot-02.png';
+import screenshot03 from '../../images/screenshots/escape-the-basement-screenshot-03.png';
+import screenshot04 from '../../images/screenshots/escape-the-basement-screenshot-04.png';
+import screenshot05 from '../../images/screenshots/escape-the-basement-screenshot-05.png';
+import screenshot06 from '../../images/screenshots/escape-the-basement-screenshot-06.png';
 
 const EscapeTheBasement = () => (
   <Project>
@@ -45,15 +45,15 @@ const EscapeTheBasement = () => (
       <p className="body-lg">
         <b>Media</b>
       </p>
-      <img alt="" width="100%" src={escapeTheBasementBanner} />
+      <img alt="Escape the Basement Banner" width="100%" src={banner} />
       <ImageGallery
         images={[
-          escapeTheBasementScreenshot01,
-          escapeTheBasementScreenshot02,
-          escapeTheBasementScreenshot03,
-          escapeTheBasementScreenshot04,
-          escapeTheBasementScreenshot05,
-          escapeTheBasementScreenshot06,
+          screenshot01,
+          screenshot02,
+          screenshot03,
+          screenshot04,
+          screenshot05,
+          screenshot06,
         ]}
       />
     </section>
