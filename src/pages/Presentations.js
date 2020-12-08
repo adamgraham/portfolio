@@ -37,7 +37,7 @@ const Presentations = () => (
         title: '3D Application Development Overview',
         description:
           'An introductory presentation to teach new developers concepts – ranging from art to technical – that apply to 3D application development, a starting point to which creators can continue to grow their knowledge.',
-        link: '/presentations/3d-application-development',
+        link: '/presentations/3d-application-development-overview',
         image: painting3DApplicationDevelopment,
       },
     ]}
