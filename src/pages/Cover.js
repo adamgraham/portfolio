@@ -1,13 +1,15 @@
-import { Button, SocialNavLinks } from '@zigurous/react-components';
+import { Button, SocialNavLinks, useMounted } from '@zigurous/react-components';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import classNames from 'classnames';
 import socials from '../socials';
 import '../styles/cover.css';
 
 const Cover = () => {
   const history = useHistory();
+  const mounted = useMounted();
   return (
-    <article className="cover">
+    <article className={classNames('cover', { loaded: mounted })}>
       <section className="wrapper margin-bottom-4em">
         <div className="content">
           <b className="padding-left-sm">Hello, my name is</b>

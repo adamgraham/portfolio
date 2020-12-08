@@ -9,6 +9,11 @@
   width: 100%;
   height: 80px;
   padding: 24px;
+  transition: transform 0.3s;
+}
+
+.app-menu-bar.hidden {
+  transform: translateY(100%);
 }
 
 .app-menu-bar .nav-bar {

@@ -1,9 +1,19 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  useRouteMatch,
+} from 'react-router-dom';
+import { MenuBar } from './components';
 import routes from './routes';
 import './styles/app.css';
 
 const App = () => {
+  const root = useRouteMatch({
+    path: '/',
+    exact: true,
+  });
   return (
     <div className="app">
       <Switch>
@@ -19,6 +29,7 @@ const App = () => {
         })}
         <Route component={routes.cover.component} />
       </Switch>
+      <MenuBar hidden={root !== null} />
     </div>
   );
 };

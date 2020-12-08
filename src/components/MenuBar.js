@@ -11,10 +11,13 @@ import routes from '../routes';
 import socials from '../socials';
 import '../styles/menu-bar.css';
 
-const MenuBar = ({ className }) => {
+const MenuBar = ({ className, hidden = false }) => {
   const history = useHistory();
   return (
-    <div className={classNames('app-menu-bar', className)} theme="dark-1">
+    <div
+      className={classNames('app-menu-bar', { hidden }, className)}
+      theme="dark-1"
+    >
       <div className="app-menu-bar__content">
         <ClickableDiv
           className="h5 font-weight-semibold margin-none"
@@ -45,6 +48,7 @@ const MenuBar = ({ className }) => {
 
 MenuBar.propTypes = {
   className: PropTypes.string,
+  hidden: PropTypes.bool,
 };
 
 export default MenuBar;
