@@ -23,8 +23,11 @@ export default (
     <Route path="/art/mixed" />
     <Route path="/websites" />
     <Route path="/websites/allium" />
+    <Route path="/websites/ashantis-jones" />
+    <Route path="/websites/be-super" />
     <Route path="/websites/demonthon" />
     <Route path="/websites/let-it-beard" />
+    <Route path="/websites/margaret-baughman" />
     <Route path="/websites/squishem" />
     <Route path="/websites/taylor-cochran-music" />
     <Route path="/websites/zigurous" />
@@ -34,7 +37,7 @@ export default (
     <Route path="/tech/vender-vr" />
     <Route path="/presentations" />
     <Route path="/presentations/an-animation-story" />
-    <Route path="/presentations/application-development-overview" />
+    <Route path="/presentations/3d-application-development-overview" />
     <Route path="/presentations/entering-the-new-reality" />
     <Route path="/presentations/the-life-of-a-ux-engineer" />
     <Route path="/software" />
