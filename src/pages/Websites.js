@@ -2,12 +2,13 @@ import React from 'react';
 import { Gallery } from '../components';
 import paintingAllium from '../images/banners/allium-painting.png';
 import paintingAshantisJones from '../images/banners/ashantis-jones-painting.png';
+import paintingBeSuper from '../images/banners/be-super-painting.png';
 import paintingDemonthon from '../images/banners/demonthon-painting.png';
+import paintingLetItBeard from '../images/banners/let-it-beard-painting.png';
 import paintingMargaretBaughman from '../images/banners/margaret-baughman-painting.png';
 import paintingSquishem from '../images/banners/squishem-website-painting.png';
-import paintingZigurous from '../images/banners/zigurous-painting.png';
 import paintingTaylorCochranMusic from '../images/banners/taylor-cochran-music-painting.png';
-import paintingLetItBeard from '../images/banners/let-it-beard-painting.png';
+import paintingZigurous from '../images/banners/zigurous-painting.png';
 
 const Websites = () => (
   <Gallery
@@ -67,6 +68,14 @@ const Websites = () => (
           'Taylor Cochran is a singer/songwriter from Nashville, Tennessee who pursued his songwriting career in early 2013 by gaining experience playing in local bars, venues, and with his church. Through his music, he aspires to send a message of joy, hope, and love.',
         link: '/websites/taylor-cochran-music',
         image: paintingTaylorCochranMusic,
+      },
+      {
+        id: 'be-super',
+        title: 'Be Super',
+        description:
+          'Be Super strives to use comic book characters as educational tools to understand social justice issues. A movement calling for everyone to be the hero within.',
+        link: '/websites/be-super',
+        image: paintingBeSuper,
       },
       {
         id: 'let-it-beard',

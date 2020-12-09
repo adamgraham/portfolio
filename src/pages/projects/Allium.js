@@ -32,7 +32,7 @@ const Allium = () => (
         href="http://alliumfloral.adamgraham.io/"
         undecorated
       >
-        <img alt="Allium Website" src={screenshot} />
+        <img alt="Allium Website" className="box-shadow-3" src={screenshot} />
       </Link>
     </section>
   </Project>

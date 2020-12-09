@@ -21,6 +21,7 @@ export { default as Mixed } from './Mixed';
 /* Websites */
 export { default as Allium } from './Allium';
 export { default as AshantisJones } from './AshantisJones';
+export { default as BeSuper } from './BeSuper';
 export { default as DemonTHON } from './DemonTHON';
 export { default as LetItBeard } from './LetItBeard';
 export { default as MargaretBaughman } from './MargaretBaughman';

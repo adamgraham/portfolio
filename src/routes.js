@@ -30,6 +30,7 @@ import {
   /* Websites */
   Allium,
   AshantisJones,
+  BeSuper,
   DemonTHON,
   LetItBeard,
   MargaretBaughman,
@@ -178,6 +179,12 @@ const websites = {
     name: 'Ashantis Jones',
     path: '/websites/ashantis-jones',
     component: AshantisJones,
+  },
+  beSuper: {
+    id: 'be-super',
+    name: 'Be Super',
+    path: '/websites/be-super',
+    component: BeSuper,
   },
   demonthon: {
     id: 'demonthon',
