@@ -35,20 +35,20 @@ const Websites = () => (
         image: paintingSquishem,
       },
       {
+        id: 'zigurous',
+        title: 'Zigurous',
+        description:
+          'Zigurous is an indie game development studio. Adam has managed and designed the website since he founded the game studio in 2012. The website is redesigned with a new theme to fit the project being worked on.',
+        link: '/websites/zigurous',
+        image: paintingZigurous,
+      },
+      {
         id: 'taylor-cochran-music',
         title: 'Taylor Cochran Music',
         description:
           'Taylor Cochran is a singer/songwriter from Nashville, Tennessee who pursued his songwriting career in early 2013 by gaining experience playing in local bars, venues, and with his church. Through his music, he aspires to send a message of joy, hope, and love.',
         link: '/websites/taylor-cochran-music',
         image: paintingTaylorCochranMusic,
-      },
-      {
-        id: 'zigurous',
-        title: 'Zigurous',
-        description:
-          'Zigurous is an independent video game developer focused on creating games that have a strong balance of play, design, and art through storytelling and self-expression.',
-        link: '/websites/zigurous',
-        image: paintingZigurous,
       },
       {
         id: 'let-it-beard',

@@ -23,7 +23,7 @@ const Squishem = () => (
       </p>
     </section>
     <section>
-      <p>
+      <p className="body-lg">
         <Link external href="http://www.squishem.com/">
           <b>Website</b>
         </Link>

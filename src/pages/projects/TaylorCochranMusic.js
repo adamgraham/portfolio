@@ -22,7 +22,7 @@ const TaylorCochranMusic = () => (
       </p>
     </section>
     <section>
-      <p>
+      <p className="body-lg">
         <Link external href="http://taylorcochranmusic.adamgraham.io/">
           <b>Website</b>
         </Link>

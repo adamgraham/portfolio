@@ -21,7 +21,7 @@ const Allium = () => (
       </p>
     </section>
     <section>
-      <p>
+      <p className="body-lg">
         <Link external href="http://alliumfloral.adamgraham.io/">
           <b>Website</b>
         </Link>

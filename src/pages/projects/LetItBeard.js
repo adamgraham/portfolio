@@ -24,7 +24,7 @@ const LetItBeard = () => (
       </p>
     </section>
     <section>
-      <p>
+      <p className="body-lg">
         <Link external href="http://letitbeard.adamgraham.io/">
           <b>Website</b>
         </Link>
