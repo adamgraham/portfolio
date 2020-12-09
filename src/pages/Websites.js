@@ -3,6 +3,7 @@ import { Gallery } from '../components';
 import paintingAllium from '../images/banners/allium-painting.png';
 import paintingAshantisJones from '../images/banners/ashantis-jones-painting.png';
 import paintingDemonthon from '../images/banners/demonthon-painting.png';
+import paintingMargaretBaughman from '../images/banners/margaret-baughman-painting.png';
 import paintingSquishem from '../images/banners/squishem-website-painting.png';
 import paintingZigurous from '../images/banners/zigurous-painting.png';
 import paintingTaylorCochranMusic from '../images/banners/taylor-cochran-music-painting.png';
@@ -50,6 +51,14 @@ const Websites = () => (
           'Ashantis is a native Clevelander that entertains and creates memorable events through detail oriented design and calculated execution.',
         link: '/websites/ashantis-jones',
         image: paintingAshantisJones,
+      },
+      {
+        id: 'margaret-baughman',
+        title: 'Margaret Baughman',
+        description:
+          'Director, choreographer, and empathetic human, Margaret Baughman is enchanted by a world of contradictions that allows her to shake up perspectives through theatre, advocacy, and impeccable organization.',
+        link: '/websites/margaret-baughman',
+        image: paintingMargaretBaughman,
       },
       {
         id: 'taylor-cochran-music',

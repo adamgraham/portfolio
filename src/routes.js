@@ -32,6 +32,7 @@ import {
   AshantisJones,
   DemonTHON,
   LetItBeard,
+  MargaretBaughman,
   SquishemWebsite,
   TaylorCochranMusic,
   Zigurous,
@@ -189,6 +190,12 @@ const websites = {
     name: 'Let It Beard',
     path: '/websites/let-it-beard',
     component: LetItBeard,
+  },
+  margaretBaughman: {
+    id: 'margaret-baughman',
+    name: 'Margaret Baughman',
+    path: '/websites/margaret-baughman',
+    component: MargaretBaughman,
   },
   squishemWebsite: {
     id: 'squishem-website',

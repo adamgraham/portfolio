@@ -23,6 +23,7 @@ export { default as Allium } from './Allium';
 export { default as AshantisJones } from './AshantisJones';
 export { default as DemonTHON } from './DemonTHON';
 export { default as LetItBeard } from './LetItBeard';
+export { default as MargaretBaughman } from './MargaretBaughman';
 export { default as SquishemWebsite } from './SquishemWebsite';
 export { default as TaylorCochranMusic } from './TaylorCochranMusic';
 export { default as Zigurous } from './Zigurous';
