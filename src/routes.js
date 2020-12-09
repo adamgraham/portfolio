@@ -29,6 +29,7 @@ import {
   Mixed,
   /* Websites */
   Allium,
+  AshantisJones,
   DemonTHON,
   LetItBeard,
   SquishemWebsite,
@@ -170,6 +171,12 @@ const websites = {
     name: 'Allium',
     path: '/websites/allium',
     component: Allium,
+  },
+  ashantisJones: {
+    id: 'ashantis-jones',
+    name: 'Ashantis Jones',
+    path: '/websites/ashantis-jones',
+    component: AshantisJones,
   },
   demonthon: {
     id: 'demonthon',

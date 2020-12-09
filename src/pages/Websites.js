@@ -1,6 +1,7 @@
 import React from 'react';
 import { Gallery } from '../components';
 import paintingAllium from '../images/banners/allium-painting.png';
+import paintingAshantisJones from '../images/banners/ashantis-jones-painting.png';
 import paintingDemonthon from '../images/banners/demonthon-painting.png';
 import paintingSquishem from '../images/banners/squishem-website-painting.png';
 import paintingZigurous from '../images/banners/zigurous-painting.png';
@@ -41,6 +42,14 @@ const Websites = () => (
           'Zigurous is an indie game development studio. Adam has managed and designed the website since he founded the game studio in 2012. The website is redesigned with a new theme to fit the project being worked on.',
         link: '/websites/zigurous',
         image: paintingZigurous,
+      },
+      {
+        id: 'ashantis-jones',
+        title: 'Ashantis Jones',
+        description:
+          'Ashantis is a native Clevelander that entertains and creates memorable events through detail oriented design and calculated execution.',
+        link: '/websites/ashantis-jones',
+        image: paintingAshantisJones,
       },
       {
         id: 'taylor-cochran-music',
