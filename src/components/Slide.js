@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import '../styles/slide.css';
 
-const Slide = ({ inactive = false, slide }) => {
+const Slide = ({ inactive = false, slide, showInfo = true }) => {
   const imageRef = useRef();
   const [loading, setLoading] = useState(true);
 
@@ -49,13 +49,15 @@ const Slide = ({ inactive = false, slide }) => {
           src={slide.image}
         ></img>
       </div>
-      <div className="slide__text-container">
-        <div className="h4">{slide.title}</div>
-        <p>{slide.description}</p>
-        <a className="font-weight-semibold" href={slide.link}>
-          {slide.linkText || 'More Details'}
-        </a>
-      </div>
+      {showInfo && (
+        <div className="slide__text-container">
+          <div className="h4">{slide.title}</div>
+          <p>{slide.description}</p>
+          <a className="font-weight-semibold" href={slide.link}>
+            {slide.linkText || 'More Details'}
+          </a>
+        </div>
+      )}
     </div>
   );
 };
@@ -74,6 +76,7 @@ export const SlideProps = PropTypes.shape({
 Slide.propTypes = {
   inactive: PropTypes.bool,
   slide: SlideProps,
+  showInfo: PropTypes.bool,
 };
 
 export default Slide;

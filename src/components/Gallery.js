@@ -7,10 +7,12 @@ import '../styles/gallery.css';
 
 const Gallery = ({ className, slides = [] }) => {
   const [slideIndex, setSlideIndex] = useState(0);
+  const [showInfo, setShowInfo] = useState(true);
   return (
     <Page>
       <article className={classNames('gallery', className)}>
         <button
+          aria-label="Previous Slide"
           className="gallery__button left"
           disabled={slideIndex <= 0}
           onClick={() => {
@@ -20,19 +22,13 @@ const Gallery = ({ className, slides = [] }) => {
           {slideIndex > 0 && (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="19.3"
-              height="31.54"
-              viewBox="0 0 19.3 31.54"
+              viewBox="0 0 24 24"
+              fill="black"
+              width="48px"
+              height="48px"
             >
-              <polyline
-                points="17.54 1.77 3.54 15.77 17.54 29.77"
-                style={{
-                  fill: 'none',
-                  stroke: '#242424',
-                  strokeMiterlimit: 10,
-                  strokeWidth: '5px',
-                }}
-              />
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path d="M14.71 6.71c-.39-.39-1.02-.39-1.41 0L8.71 11.3c-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L10.83 12l3.88-3.88c.39-.39.38-1.03 0-1.41z" />
             </svg>
           )}
         </button>
@@ -42,10 +38,12 @@ const Gallery = ({ className, slides = [] }) => {
               key={slide.id}
               inactive={slideIndex !== index}
               slide={slide}
+              showInfo={showInfo}
             />
           ))}
         </div>
         <button
+          aria-label="Next Slide"
           className="gallery__button right"
           disabled={slideIndex >= slides.length - 1}
           onClick={() => {
@@ -55,19 +53,44 @@ const Gallery = ({ className, slides = [] }) => {
           {slideIndex < slides.length - 1 && (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="19.3"
-              height="31.54"
-              viewBox="0 0 19.3 31.54"
+              viewBox="0 0 24 24"
+              fill="black"
+              width="48px"
+              height="48px"
             >
-              <polyline
-                points="1.77 29.77 15.77 15.77 1.77 1.77"
-                style={{
-                  fill: 'none',
-                  stroke: '#242424',
-                  strokeMiterlimit: 10,
-                  strokeWidth: '5px',
-                }}
-              />
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z" />
+            </svg>
+          )}
+        </button>
+        <button
+          aria-label={showInfo ? 'Hide Info' : 'Show Info'}
+          className="gallery__button info"
+          onClick={() => {
+            setShowInfo(!showInfo);
+          }}
+        >
+          {showInfo ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="black"
+              width="36px"
+              height="36px"
+            >
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z" />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="black"
+              width="36px"
+              height="36px"
+            >
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
             </svg>
           )}
         </button>
