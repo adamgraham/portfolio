@@ -15,7 +15,7 @@ const App = () => {
     exact: true,
   });
   return (
-    <div className="app">
+    <main className="app">
       <Switch>
         {Object.values(routes).map((route) => {
           return (
@@ -30,7 +30,7 @@ const App = () => {
         <Route component={routes.cover.component} />
       </Switch>
       <MenuBar hidden={root !== null} />
-    </div>
+    </main>
   );
 };
 

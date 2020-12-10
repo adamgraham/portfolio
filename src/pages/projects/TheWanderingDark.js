@@ -51,6 +51,8 @@ const TheWanderingDark = () => (
         </Link>
       </p>
       <EmbeddedYouTube
+        id="beta-playthrough-video"
+        title="Beta Playthrough"
         origin="http://adamgraham.io"
         videoId="JtCg7oB67wY"
         width="100%"
@@ -78,6 +80,8 @@ const TheWanderingDark = () => (
         </Link>
       </p>
       <EmbeddedYouTube
+        id="alpha-playthrough-video"
+        title="Alpha Playthrough"
         origin="http://adamgraham.io"
         videoId="EF8ywk3Qq48"
         width="100%"

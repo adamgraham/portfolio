@@ -51,6 +51,8 @@ const BlockchainGardens = () => (
       />
       <EmbeddedYouTube
         className="margin-bottom-lg"
+        id="data-visualization-video"
+        title="Data Visualization"
         origin="http://adamgraham.io"
         videoId="R-OoF7NQWOI"
         width="100%"
@@ -58,12 +60,16 @@ const BlockchainGardens = () => (
       />
       <EmbeddedYouTube
         className="margin-bottom-lg"
+        id="solstice-labs-video"
+        title="Solstice Labs"
         origin="http://adamgraham.io"
         videoId="s7MI_uzRdMI"
         width="100%"
         height="468"
       />
       <EmbeddedYouTube
+        id="fwd-recap-video"
+        title="FWD Recap"
         origin="http://adamgraham.io"
         videoId="Ng0IEkbdkHc"
         width="100%"

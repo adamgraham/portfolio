@@ -14,13 +14,13 @@ import '../styles/menu-bar.css';
 const MenuBar = ({ className, hidden = false }) => {
   const history = useHistory();
   return (
-    <div
+    <header
       className={classNames('app-menu-bar', { hidden }, className)}
       theme="dark-1"
     >
       <div className="app-menu-bar__content">
         <ClickableDiv
-          className="h5 font-weight-semibold margin-none"
+          className="logo h5 font-weight-semibold margin-none"
           onClick={() => {
             history.push('/');
           }}
@@ -42,7 +42,7 @@ const MenuBar = ({ className, hidden = false }) => {
           links={Object.values(socials)}
         />
       </div>
-    </div>
+    </header>
   );
 };
 

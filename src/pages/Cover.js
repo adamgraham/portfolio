@@ -13,7 +13,7 @@ const Cover = () => {
       <section className="wrapper margin-bottom-4em">
         <div className="content">
           <b className="padding-left-sm">Hello, my name is</b>
-          <div className="h2">Adam Graham</div>
+          <h1 className="h2">Adam Graham</h1>
           <p>
             I am a game developer and UX Engineer based in Chicago, IL fueled by
             a passion for art and design. As the founder of Zigurous, I make

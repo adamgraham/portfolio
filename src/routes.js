@@ -322,7 +322,7 @@ const routes = {
   },
   software: {
     id: 'software',
-    name: 'Software 🔗',
+    name: 'Software 🡕',
     path: '/software',
     component: Software,
     includeInNavBar: true,

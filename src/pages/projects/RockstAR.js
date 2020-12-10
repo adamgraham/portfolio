@@ -44,6 +44,8 @@ const RockstAR = () => (
       <ImageGallery images={[screenshot01, screenshot02, screenshot03]} />
       <EmbeddedYouTube
         className="margin-bottom-lg"
+        id="solstice-labs-video"
+        title="Solstice Labs"
         origin="http://adamgraham.io"
         videoId="9VotoUsUsew"
         width="100%"
@@ -51,12 +53,16 @@ const RockstAR = () => (
       />
       <EmbeddedYouTube
         className="margin-bottom-lg"
+        id="experience-demo-video"
+        title="Experience Demo"
         origin="http://adamgraham.io"
         videoId="fUKUr3F2VVM"
         width="100%"
         height="468"
       />
       <EmbeddedYouTube
+        id="fwd-recap-video"
+        title="FWD Recap"
         origin="http://adamgraham.io"
         videoId="zQn6-UV4tGQ"
         width="100%"
