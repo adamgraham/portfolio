@@ -36,7 +36,7 @@ const Presentations = () => (
         image: paintingEnteringTheNewReality,
       },
       {
-        id: '3d-application-development',
+        id: '3d-application-development-overview',
         title: '3D Application Development Overview',
         description:
           'An introductory presentation to teach new developers concepts – ranging from art to technical – that apply to 3D application development, a starting point to which creators can continue to grow their knowledge.',
