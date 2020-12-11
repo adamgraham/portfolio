@@ -38,8 +38,8 @@ const Mixed = () => (
       >
         Download
       </Button>
+      <div className="height-1em" />
     </section>
-    <section className="height-1em" />
     <section>
       <p className="body-lg">
         <b>Media</b>

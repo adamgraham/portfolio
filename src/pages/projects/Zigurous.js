@@ -24,8 +24,8 @@ const Zigurous = () => (
         have worked on. Below you can see different examples and the progression
         of the website over time.
       </p>
+      <div className="height-1em" />
     </section>
-    <section className="height-1em" />
     <section>
       <p className="body-lg">
         <b>2017 - Abstract Theme</b>
