@@ -1,4 +1,4 @@
-import { Link } from '@zigurous/react-components';
+import { Button } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
 import screenshot from '../../images/screenshots/taylor-cochran-music-screenshot-spread.png';
@@ -22,19 +22,16 @@ const TaylorCochranMusic = () => (
       </p>
     </section>
     <section>
-      <p className="body-lg">
-        <Link external href="http://taylorcochranmusic.adamgraham.io/">
-          <b>Website</b>
-        </Link>
-      </p>
-      <Link
-        className="image-link"
+      <Button
         external
-        href="http://taylorcochranmusic.adamgraham.io/"
-        undecorated
+        link="http://taylorcochranmusic.adamgraham.io/"
+        size="small"
       >
-        <img alt="Taylor Cochran Music Website" src={screenshot} />
-      </Link>
+        View Website
+      </Button>
+    </section>
+    <section>
+      <img alt="Taylor Cochran Music Website" src={screenshot} />
     </section>
   </Project>
 );

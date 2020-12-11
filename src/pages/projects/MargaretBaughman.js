@@ -1,4 +1,4 @@
-import { Link } from '@zigurous/react-components';
+import { Button } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
 import screenshot from '../../images/screenshots/margaret-baughman-screenshot-spread.png';
@@ -17,23 +17,20 @@ const MargaretBaughman = () => (
       </p>
     </section>
     <section>
-      <p className="body-lg">
-        <Link external href="http://margaretbaughman.adamgraham.io/">
-          <b>Website</b>
-        </Link>
-      </p>
-      <Link
-        className="image-link"
+      <Button
         external
-        href="http://margaretbaughman.adamgraham.io/"
-        undecorated
+        link="http://margaretbaughman.adamgraham.io/"
+        size="small"
       >
-        <img
-          alt="Margaret Baughman Website"
-          className="box-shadow-3"
-          src={screenshot}
-        />
-      </Link>
+        View Website
+      </Button>
+    </section>
+    <section>
+      <img
+        alt="Margaret Baughman Website"
+        className="box-shadow-3"
+        src={screenshot}
+      />
     </section>
   </Project>
 );

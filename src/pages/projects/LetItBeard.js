@@ -1,4 +1,4 @@
-import { Link } from '@zigurous/react-components';
+import { Button } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
 import screenshot from '../../images/screenshots/let-it-beard-screenshot.png';
@@ -24,19 +24,12 @@ const LetItBeard = () => (
       </p>
     </section>
     <section>
-      <p className="body-lg">
-        <Link external href="http://letitbeard.adamgraham.io/">
-          <b>Website</b>
-        </Link>
-      </p>
-      <Link
-        className="image-link"
-        external
-        href="http://letitbeard.adamgraham.io/"
-        undecorated
-      >
-        <img alt="Let It Beard Website" src={screenshot} />
-      </Link>
+      <Button external link="http://letitbeard.adamgraham.io/" size="small">
+        View Website
+      </Button>
+    </section>
+    <section>
+      <img alt="Let It Beard Website" src={screenshot} />
     </section>
   </Project>
 );

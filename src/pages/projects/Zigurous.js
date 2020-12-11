@@ -1,4 +1,4 @@
-import { Link } from '@zigurous/react-components';
+import { Button } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
 import abstractTheme from '../../images/screenshots/zigurous-screenshot-abstract-theme.png';
@@ -13,17 +13,17 @@ const Zigurous = () => (
     </section>
     <section>
       <p>
-        <Link external href="http://www.zigurous.com/">
-          <b>www.zigurous.com</b>
-        </Link>
-      </p>
-      <p>
         Zigurous is an indie game development studio. I have managed and
         designed the website since I founded the game studio in 2012. The
         website has been redesigned with a new theme for most of the projects we
         have worked on. Below you can see different examples and the progression
         of the website over time.
       </p>
+    </section>
+    <section>
+      <Button external link="http://www.zigurous.com/" size="small">
+        Visit Website
+      </Button>
       <div className="height-1em" />
     </section>
     <section>

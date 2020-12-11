@@ -1,4 +1,4 @@
-import { Link } from '@zigurous/react-components';
+import { Button } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
 import screenshot from '../../images/screenshots/squishem-website-screenshot-spread.png';
@@ -23,19 +23,12 @@ const Squishem = () => (
       </p>
     </section>
     <section>
-      <p className="body-lg">
-        <Link external href="http://www.squishem.com/">
-          <b>Website</b>
-        </Link>
-      </p>
-      <Link
-        className="image-link"
-        external
-        href="http://www.squishem.com/"
-        undecorated
-      >
-        <img alt="Squish-em! Website" src={screenshot} />
-      </Link>
+      <Button external link="http://www.squishem.com/" size="small">
+        Visit Website
+      </Button>
+    </section>
+    <section>
+      <img alt="Squish-em! Website" src={screenshot} />
     </section>
   </Project>
 );

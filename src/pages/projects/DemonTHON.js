@@ -1,4 +1,4 @@
-import { Link } from '@zigurous/react-components';
+import { Button } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
 import screenshot from '../../images/screenshots/demonthon-screenshot-spread.png';
@@ -22,19 +22,12 @@ const DemonTHON = () => (
       </p>
     </section>
     <section>
-      <p className="body-lg">
-        <Link external href="http://demonthon.adamgraham.io/">
-          <b>Website</b>
-        </Link>
-      </p>
-      <Link
-        className="image-link"
-        external
-        href="http://demonthon.adamgraham.io/"
-        undecorated
-      >
-        <img alt="DemonTHON Website" src={screenshot} />
-      </Link>
+      <Button external link="http://demonthon.adamgraham.io/" size="small">
+        View Website
+      </Button>
+    </section>
+    <section>
+      <img alt="DemonTHON Website" src={screenshot} />
     </section>
   </Project>
 );
