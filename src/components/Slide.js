@@ -1,6 +1,6 @@
 import { ClickableDiv } from '@zigurous/react-components';
 import React, { useEffect, useRef, useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import '../styles/slide.css';
@@ -60,9 +60,9 @@ const Slide = ({ inactive = false, slide, showInfo = true }) => {
         <div className="slide__text-container">
           <h1 className="h4">{slide.title}</h1>
           <p>{slide.description}</p>
-          <a className="font-weight-semibold" href={slide.link}>
+          <Link className="font-weight-semibold" to={slide.link}>
             {slide.linkText || 'More Details'}
-          </a>
+          </Link>
         </div>
       )}
     </div>

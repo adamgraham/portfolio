@@ -1,5 +1,6 @@
 import { Button, ImageGallery } from '@zigurous/react-components';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Project } from '../../components';
 import banner from '../../images/banners/escape-the-estate-banner.png';
 import screenshot01 from '../../images/screenshots/escape-the-estate-screenshot-01.png';
@@ -21,7 +22,7 @@ const EscapeTheEstate = () => (
         Your life is on the line! Kane is at it again, and this time he is
         angry! Do you have what it takes to prevent his cruel intentions? Put
         your puzzle-solving skills to the test in the sequel to{' '}
-        <a href="/games/escape-the-basement">Escape the Basement</a>!
+        <Link to="/games/escape-the-basement">Escape the Basement</Link>!
       </p>
     </section>
     <section>
