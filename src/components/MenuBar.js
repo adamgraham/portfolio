@@ -15,7 +15,10 @@ import '../styles/menu-bar.css';
 const MenuBar = ({ className, hidden = false }) => {
   const history = useHistory();
   return (
-    <header className={classNames('app-menu-bar', className)}>
+    <header
+      className={classNames('app-menu-bar', className)}
+      aria-disabled={hidden}
+    >
       <div className="app-menu-bar__content">
         <ClickableDiv
           className="logo h5 font-weight-bold margin-none"
