@@ -48,6 +48,7 @@
   width: 0;
   margin-left: 0;
   opacity: 0;
+  pointer-events: none;
 }
 
 .slide__text-container {

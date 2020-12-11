@@ -44,15 +44,6 @@ const Slide = ({ className, inactive = false, slide, showInfo = true }) => {
           </Link>
         </div>
       </div>
-      {/* {showInfo && (
-        <div className="slide__text-container">
-          <h1 className="h4">{slide.title}</h1>
-          <p>{slide.description}</p>
-          <Link className="font-weight-semibold" to={slide.link}>
-            {slide.linkText || 'More Details'}
-          </Link>
-        </div>
-      )} */}
     </div>
   );
 };

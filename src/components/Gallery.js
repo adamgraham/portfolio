@@ -6,6 +6,8 @@ import Page from './Page';
 import Slide, { SlideProps } from './Slide';
 import '../styles/gallery.css';
 
+let globalShowInfo = true;
+
 const findInitialIndex = (history, slides) => {
   const hash = history.location.hash.replace('#', '');
   const hashIndex = slides.findIndex((slide) => slide.id === hash);
@@ -14,10 +16,14 @@ const findInitialIndex = (history, slides) => {
 
 const Gallery = ({ className, slides = [] }) => {
   const history = useHistory();
-  const [showInfo, setShowInfo] = useState(true);
+  const [showInfo, setShowInfo] = useState(globalShowInfo);
   const [slideIndex, setSlideIndex] = useState(
     findInitialIndex(history, slides)
   );
+
+  useEffect(() => {
+    globalShowInfo = showInfo;
+  }, [showInfo]);
 
   useEffect(() => {
     const currentSlide = slides[slideIndex];
