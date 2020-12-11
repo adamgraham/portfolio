@@ -1,15 +1,15 @@
-import { Button, SocialNavLinks, useMounted } from '@zigurous/react-components';
+import { Button, fadeIn, SocialNavLinks } from '@zigurous/react-components';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import socials from '../socials';
 import '../styles/cover.css';
 
-const Cover = () => {
+const Cover = ({ className }) => {
   const history = useHistory();
-  const mounted = useMounted();
   return (
-    <article className={classNames('cover', { loaded: mounted })}>
+    <article className={classNames('cover', className)}>
       <section className="wrapper margin-bottom-4em">
         <div className="content">
           <b className="padding-left-sm">Hello, my name is</b>
@@ -37,4 +37,8 @@ const Cover = () => {
   );
 };
 
-export default Cover;
+Cover.propTypes = {
+  className: PropTypes.string,
+};
+
+export default fadeIn(Cover);

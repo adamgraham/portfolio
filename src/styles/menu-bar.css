@@ -11,11 +11,6 @@
   padding: 24px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   background-color: var(--color-background, white);
-  transition: transform 0.3s;
-}
-
-.app-menu-bar.hidden {
-  transform: translateY(100%);
 }
 
 .app-menu-bar .nav-bar {

@@ -1,3 +1,4 @@
+import { fadeIn } from '@zigurous/react-components';
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -12,4 +13,4 @@ Page.propTypes = {
   className: PropTypes.string,
 };
 
-export default Page;
+export default fadeIn(Page);
