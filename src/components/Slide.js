@@ -31,7 +31,11 @@ const Slide = ({ className, inactive = false, slide, showInfo = true }) => {
           src={slide.image}
         />
       </ClickableDiv>
-      {showInfo && (
+      <div
+        className={classNames('slide__text-wrapper', {
+          'slide__text-wrapper--hide-info': !showInfo,
+        })}
+      >
         <div className="slide__text-container">
           <h1 className="h4">{slide.title}</h1>
           <p>{slide.description}</p>
@@ -39,7 +43,16 @@ const Slide = ({ className, inactive = false, slide, showInfo = true }) => {
             {slide.linkText || 'More Details'}
           </Link>
         </div>
-      )}
+      </div>
+      {/* {showInfo && (
+        <div className="slide__text-container">
+          <h1 className="h4">{slide.title}</h1>
+          <p>{slide.description}</p>
+          <Link className="font-weight-semibold" to={slide.link}>
+            {slide.linkText || 'More Details'}
+          </Link>
+        </div>
+      )} */}
     </div>
   );
 };

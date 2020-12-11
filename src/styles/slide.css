@@ -37,8 +37,20 @@
   box-shadow: none !important;
 }
 
+.slide__text-wrapper {
+  position: relative;
+  width: 420px;
+  margin-left: 6em;
+  transition: opacity 0.3s, width 0.3s, margin-left 0.3s;
+}
+
+.slide__text-wrapper--hide-info {
+  width: 0;
+  margin-left: 0;
+  opacity: 0;
+}
+
 .slide__text-container {
   width: 420px;
   min-width: 420px;
-  margin-left: 6em;
 }
