@@ -1,13 +1,32 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Page from './Page';
 import Slide, { SlideProps } from './Slide';
 import '../styles/gallery.css';
 
+const findInitialIndex = (history, slides) => {
+  const hash = history.location.hash.replace('#', '');
+  const hashIndex = slides.findIndex((slide) => slide.id === hash);
+  return hashIndex !== -1 ? hashIndex : 0;
+};
+
 const Gallery = ({ className, slides = [] }) => {
-  const [slideIndex, setSlideIndex] = useState(0);
+  const history = useHistory();
   const [showInfo, setShowInfo] = useState(true);
+  const [slideIndex, setSlideIndex] = useState(
+    findInitialIndex(history, slides)
+  );
+
+  useEffect(() => {
+    const currentSlide = slides[slideIndex];
+    const hash = history.location.hash.replace('#', '');
+    if (hash !== currentSlide.id) {
+      history.replace(`${history.location.pathname}#${currentSlide.id}`);
+    }
+  }, [history, slideIndex, slides]);
+
   return (
     <Page>
       <article className={classNames('gallery', className)}>
