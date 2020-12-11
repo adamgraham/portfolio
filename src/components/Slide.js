@@ -1,10 +1,13 @@
+import { ClickableDiv } from '@zigurous/react-components';
 import React, { useEffect, useRef, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import '../styles/slide.css';
 
 const Slide = ({ inactive = false, slide, showInfo = true }) => {
   const imageRef = useRef();
+  const history = useHistory();
   const [loading, setLoading] = useState(true);
 
   const loadComplete = () => {
@@ -35,7 +38,11 @@ const Slide = ({ inactive = false, slide, showInfo = true }) => {
       })}
       key={slide.id}
     >
-      <div className="slide__image-wrapper">
+      <ClickableDiv
+        className="slide__image-wrapper"
+        history={history}
+        link={slide.link}
+      >
         <img
           alt={slide.altText || ''}
           className={classNames(
@@ -48,7 +55,7 @@ const Slide = ({ inactive = false, slide, showInfo = true }) => {
           ref={imageRef}
           src={slide.image}
         ></img>
-      </div>
+      </ClickableDiv>
       {showInfo && (
         <div className="slide__text-container">
           <h1 className="h4">{slide.title}</h1>
