@@ -6,7 +6,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  width: 100vw;
   height: 80px;
   padding: 24px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
