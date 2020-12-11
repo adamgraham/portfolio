@@ -38,6 +38,14 @@ const Blackhole = () => (
       >
         Download
       </Button>
+      <Button
+        className="margin-top-lg"
+        external
+        link="https://github.com/adamgraham/blackhole"
+        size="small"
+      >
+        Source Code
+      </Button>
       <div className="height-1em" />
     </section>
     <section>
