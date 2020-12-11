@@ -18,7 +18,7 @@ const MenuBar = ({ className, hidden = false }) => {
     <header className={classNames('app-menu-bar', className)}>
       <div className="app-menu-bar__content">
         <ClickableDiv
-          className="logo h5 font-weight-semibold margin-none"
+          className="logo h5 font-weight-bold margin-none"
           onClick={() => {
             history.push('/');
           }}
