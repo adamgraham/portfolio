@@ -28,10 +28,13 @@ const Gallery = ({ className, slides = [] }) => {
   useEffect(() => {
     const currentSlide = slides[slideIndex];
     const hash = history.location.hash.replace('#', '');
-    if (hash !== currentSlide.id) {
+    if (!hash) {
       history.replace(`${history.location.pathname}#${currentSlide.id}`);
+    } else if (hash !== currentSlide.id) {
+      const hashIndex = slides.findIndex((slide) => slide.id === hash);
+      setSlideIndex(Math.max(hashIndex, 0));
     }
-  }, [history, slideIndex, slides]);
+  }, [history, history.location, slideIndex, slides]);
 
   return (
     <Page>
@@ -41,7 +44,9 @@ const Gallery = ({ className, slides = [] }) => {
           className="gallery__button left"
           disabled={slideIndex <= 0}
           onClick={() => {
-            setSlideIndex(Math.max(slideIndex - 1, 0));
+            const previousIndex = Math.max(slideIndex - 1, 0);
+            const previousSlide = slides[previousIndex];
+            history.replace(`${history.location.pathname}#${previousSlide.id}`);
           }}
         >
           {slideIndex > 0 && (
@@ -72,7 +77,9 @@ const Gallery = ({ className, slides = [] }) => {
           className="gallery__button right"
           disabled={slideIndex >= slides.length - 1}
           onClick={() => {
-            setSlideIndex(Math.min(slideIndex + 1, slides.length - 1));
+            const nextIndex = Math.min(slideIndex + 1, slides.length - 1);
+            const nextSlide = slides[nextIndex];
+            history.replace(`${history.location.pathname}#${nextSlide.id}`);
           }}
         >
           {slideIndex < slides.length - 1 && (

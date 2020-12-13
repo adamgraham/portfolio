@@ -20,7 +20,7 @@ const Menu = ({ className, hidden = false }) => {
 
   useEffect(() => {
     setGalleryView(false);
-  }, [hidden, history]);
+  }, [hidden, history, history.location]);
 
   return (
     <div
@@ -32,12 +32,11 @@ const Menu = ({ className, hidden = false }) => {
     >
       <div className="app-menu__container">
         <header className="app-menu__header" aria-disabled={hidden}>
-          <div className="app-menu__nav">
+          <div className="app-menu__navigation">
             <ClickableDiv
               className="logo h5 font-weight-bold margin-none"
-              onClick={() => {
-                history.push('/');
-              }}
+              history={history}
+              link="/"
             >
               Adam Graham
             </ClickableDiv>
@@ -56,6 +55,7 @@ const Menu = ({ className, hidden = false }) => {
               links={Object.values(socials)}
             />
             <button
+              aria-label={galleryView ? 'Hide Gallery' : 'Show Gallery'}
               className="margin-left-xxxl"
               onClick={() => {
                 setGalleryView(!galleryView);
@@ -90,20 +90,28 @@ const Menu = ({ className, hidden = false }) => {
         <div className="app-menu__gallery">
           <div className="app-menu__thumbnails">
             {getData(history.location.pathname).map((item) => (
-              <ImageFadeIn
-                alt={item.altText || ''}
+              <button
+                aria-hidden={hidden || !galleryView}
                 aria-label={item.title}
-                className={classNames(
-                  'app-menu__thumbnail',
-                  {
-                    'app-menu__thumbnail--border-white': !item.imageBorder,
-                    [`app-menu__thumbnail--border-${item.imageBorder}`]: item.imageBorder,
-                  },
-                  'box-shadow-1'
-                )}
+                className="app-menu__thumbnail"
                 key={item.id}
-                src={item.image}
-              />
+                onClick={() => {
+                  history.push(`${history.location.pathname}#${item.id}`);
+                }}
+              >
+                <ImageFadeIn
+                  alt={item.altText || ''}
+                  className={classNames(
+                    'app-menu__thumbnail-image',
+                    {
+                      'app-menu__thumbnail-image--border-white': !item.imageBorder,
+                      [`app-menu__thumbnail-image--border-${item.imageBorder}`]: item.imageBorder,
+                    },
+                    'box-shadow-1'
+                  )}
+                  src={item.image}
+                />
+              </button>
             ))}
           </div>
         </div>
