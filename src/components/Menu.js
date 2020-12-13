@@ -21,7 +21,7 @@ const Menu = ({ className, hidden = false }) => {
 
   useEffect(() => {
     setShowGallery(false);
-  }, [hidden, history, history.location]);
+  }, [hidden, history.location]);
 
   return (
     <div
@@ -59,12 +59,12 @@ const Menu = ({ className, hidden = false }) => {
               aria-label={showGallery ? 'Hide Gallery' : 'Show Gallery'}
               className="margin-left-xxxl"
               onClick={() => {
-                if (showGallery) {
-                  setShowGallery(false);
-                } else {
-                  setGalleryData(getData(history.location.pathname));
-                  setShowGallery(true);
-                }
+                setShowGallery(!showGallery);
+                setTimeout(() => {
+                  if (!showGallery) {
+                    setGalleryData(getData(history.location.pathname));
+                  }
+                }, 400);
               }}
             >
               {showGallery ? (
