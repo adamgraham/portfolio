@@ -16,17 +16,18 @@ import '../styles/menu.css';
 
 const Menu = ({ className, hidden = false }) => {
   const history = useHistory();
-  const [galleryView, setGalleryView] = useState(false);
+  const [showGallery, setShowGallery] = useState(false);
+  const [galleryData, setGalleryData] = useState([]);
 
   useEffect(() => {
-    setGalleryView(false);
+    setShowGallery(false);
   }, [hidden, history, history.location]);
 
   return (
     <div
       className={classNames(
         'app-menu',
-        { 'app-menu--gallery-view': galleryView },
+        { 'app-menu--gallery-view': showGallery },
         className
       )}
     >
@@ -55,13 +56,18 @@ const Menu = ({ className, hidden = false }) => {
               links={Object.values(socials)}
             />
             <button
-              aria-label={galleryView ? 'Hide Gallery' : 'Show Gallery'}
+              aria-label={showGallery ? 'Hide Gallery' : 'Show Gallery'}
               className="margin-left-xxxl"
               onClick={() => {
-                setGalleryView(!galleryView);
+                if (showGallery) {
+                  setShowGallery(false);
+                } else {
+                  setGalleryData(getData(history.location.pathname));
+                  setShowGallery(true);
+                }
               }}
             >
-              {galleryView ? (
+              {showGallery ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -89,9 +95,9 @@ const Menu = ({ className, hidden = false }) => {
         </header>
         <div className="app-menu__gallery">
           <div className="app-menu__thumbnails">
-            {getData(history.location.pathname).map((item) => (
+            {galleryData.map((item) => (
               <button
-                aria-hidden={hidden || !galleryView}
+                aria-hidden={hidden || !showGallery}
                 aria-label={item.title}
                 className="app-menu__thumbnail"
                 key={item.id}

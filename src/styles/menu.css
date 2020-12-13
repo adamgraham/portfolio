@@ -11,7 +11,7 @@
 .app-menu__container {
   width: 100%;
   height: 80px;
-  transition: height 0.5s;
+  transition: height 0.4s;
 }
 
 .app-menu--gallery-view .app-menu__container {
