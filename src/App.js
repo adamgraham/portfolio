@@ -5,7 +5,7 @@ import {
   Switch,
   useRouteMatch,
 } from 'react-router-dom';
-import { MenuBar } from './components';
+import { Menu } from './components';
 import routes from './routes';
 import './styles/app.css';
 
@@ -29,7 +29,7 @@ const App = () => {
         })}
         <Route component={routes.cover.component} />
       </Switch>
-      <MenuBar hidden={root !== null} />
+      <Menu hidden={root !== null} />
     </main>
   );
 };
