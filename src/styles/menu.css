@@ -37,6 +37,13 @@
 .app-menu__social {
   display: flex;
   align-items: center;
+  flex: none;
+}
+
+.app-menu .logo {
+  margin: 0;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 .app-menu .nav-bar {

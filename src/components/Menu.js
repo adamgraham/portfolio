@@ -1,5 +1,4 @@
 import {
-  ClickableDiv,
   ImageFadeIn,
   NavBar,
   SocialNavLinks,
@@ -34,13 +33,14 @@ const Menu = ({ className, hidden = false }) => {
       <div className="app-menu__container">
         <header className="app-menu__header" aria-disabled={hidden}>
           <div className="app-menu__navigation">
-            <ClickableDiv
-              className="logo h5 font-weight-bold margin-none"
-              history={history}
-              link="/"
+            <button
+              className="logo h5"
+              onClick={() => {
+                history.push('/');
+              }}
             >
               Adam Graham
-            </ClickableDiv>
+            </button>
             <NavBar
               NavLink={NavLink}
               routes={Object.values(routes).filter(
