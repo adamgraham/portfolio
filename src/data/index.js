@@ -1,5 +1,23 @@
-export { default as art } from './art';
-export { default as games } from './games';
-export { default as presentations } from './presentations';
-export { default as tech } from './tech';
-export { default as websites } from './websites';
+import art from './art';
+import games from './games';
+import presentations from './presentations';
+import tech from './tech';
+import websites from './websites';
+
+export { art, games, presentations, tech, websites };
+
+export function getData(pathname) {
+  if (pathname.includes('/art')) {
+    return art;
+  } else if (pathname.includes('/games')) {
+    return games;
+  } else if (pathname.includes('/presentations')) {
+    return presentations;
+  } else if (pathname.includes('/tech')) {
+    return tech;
+  } else if (pathname.includes('/websites')) {
+    return websites;
+  } else {
+    return [];
+  }
+}

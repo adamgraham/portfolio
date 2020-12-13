@@ -1,5 +1,6 @@
 import {
   ClickableDiv,
+  ImageFadeIn,
   NavBar,
   SocialNavLinks,
   withTransition,
@@ -8,6 +9,7 @@ import React, { useEffect, useState } from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import { getData } from '../data';
 import routes from '../routes';
 import socials from '../socials';
 import '../styles/menu.css';
@@ -18,7 +20,7 @@ const Menu = ({ className, hidden = false }) => {
 
   useEffect(() => {
     setGalleryView(false);
-  }, [history]);
+  }, [hidden, history]);
 
   return (
     <div
@@ -85,7 +87,26 @@ const Menu = ({ className, hidden = false }) => {
             </button>
           </div>
         </header>
-        <div className="app-menu__gallery"></div>
+        <div className="app-menu__gallery">
+          <div className="app-menu__thumbnails">
+            {getData(history.location.pathname).map((item) => (
+              <ImageFadeIn
+                alt={item.altText || ''}
+                aria-label={item.title}
+                className={classNames(
+                  'app-menu__thumbnail',
+                  {
+                    'app-menu__thumbnail--border-white': !item.imageBorder,
+                    [`app-menu__thumbnail--border-${item.imageBorder}`]: item.imageBorder,
+                  },
+                  'box-shadow-1'
+                )}
+                key={item.id}
+                src={item.image}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

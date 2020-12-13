@@ -48,6 +48,7 @@
   height: calc(100% - 80px);
   background-color: var(--color-background, white);
   pointer-events: none;
+  overflow: hidden;
 }
 
 .app-menu--gallery-view .app-menu__container {
@@ -56,4 +57,34 @@
 
 .app-menu--gallery-view .app-menu__gallery {
   pointer-events: all;
+}
+
+.app-menu__thumbnails {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  column-gap: 32px;
+  row-gap: 32px;
+  padding: 64px;
+}
+
+.app-menu__thumbnail {
+  width: 100%;
+  border-style: solid;
+  border-width: 4px;
+}
+
+.app-menu__thumbnail--border-white {
+  border-color: var(--color-scale-white, white);
+  background-color: var(--color-scale-white, white);
+}
+
+.app-menu__thumbnail--border-black {
+  border-color: var(--color-scale-black, black);
+  background-color: var(--color-scale-black, black);
+}
+
+.app-menu__thumbnail--border-none {
+  border: none;
+  background-color: transparent;
+  box-shadow: none !important;
 }
