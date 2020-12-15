@@ -28,7 +28,7 @@ const TheWanderingDark = () => (
         through a girl&apos;s dreams and nightmares as she deals with her
         struggles and fears in life. Battle through these nightmares, explore
         her different dream worlds, and fight for survival as she matures and
-        grows. I developed the game alongside Michael Louden for my senior
+        grows. Adam developed the game alongside Michael Louden for his senior
         capstone project before graduating.
       </p>
     </section>

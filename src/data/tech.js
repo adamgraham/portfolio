@@ -25,7 +25,7 @@ const tech = [
     id: 'vender-vr',
     title: 'Vender VR',
     description:
-      "Vender is an IoT connected vending machine that started as an R&D project at Solstice. Less than a month before Solstice's digital innovation summit, Vender was expanded to the virtual world. I took on the project head first and developed the first ever virtual reality vending machine experience.",
+      "Vender is an IoT connected vending machine that started as an R&D project at Solstice. Less than a month before Solstice's digital innovation summit, Vender was expanded to the virtual world. Adam took on the project head first and developed the first ever virtual reality vending machine experience.",
     link: '/tech/vender-vr',
     altText: 'Vender VR Painting',
     image: paintingVenderVR,

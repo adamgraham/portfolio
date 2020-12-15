@@ -15,7 +15,7 @@ const DemonTHON = () => (
         24-hour Dance Marathon.
       </p>
       <p>
-        As the Director of Technology, I designed and managed the
+        As the Director of Technology, Adam designed and managed the
         organization&apos;s website from June 2014 to May 2016. The site was
         awarded &quot;Best Website&quot; by Children&apos;s Miracle Network
         Hospitals for the 2014-15 Dance Marathon year.

@@ -13,8 +13,8 @@ const RockstAR = () => (
     <section>
       <p>
         Augmented reality is making it possible to merge virtual objects into
-        the physical world around us. To explore the possibilities, fellow
-        Solstice engineers and I built RockstAR, an interactive AR experience
+        the physical world around us. To explore the possibilities, Adam and
+        fellow Solstice engineers built RockstAR, an interactive AR experience
         demoed at Solstice FWD. By coupling the power of Microsoft’s HoloLens,
         Philips Hue Lightbulbs, and a series of stage technologies, users are
         given the ability to customize a live rockband experience.

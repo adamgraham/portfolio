@@ -13,8 +13,8 @@ const Zigurous = () => (
     </section>
     <section>
       <p>
-        Zigurous is an indie game development studio. I have managed and
-        designed the website since I founded the game studio in 2012. The
+        Zigurous is an indie game development studio. Adam has managed and
+        designed the website since he founded the game studio in 2012. The
         website has been redesigned with a new theme for most of the projects we
         have worked on. Below you can see different examples and the progression
         of the website over time.

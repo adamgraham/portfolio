@@ -13,10 +13,10 @@ const VenderVR = () => (
     <section>
       <p>
         Vender is an IoT connected vending machine that started as an R&amp;D
-        project at Solstice before I joined the team. Less than a month before
-        Solstice&apos;s digital innovation summit – Solstice FWD – Vender was
-        expanded to the virtual world. I took on the project head first and
-        developed the first ever virtual reality vending machine experience.
+        project at Solstice before Adam joined the team. Less than a month
+        before Solstice&apos;s digital innovation summit – Solstice FWD – Vender
+        was expanded to the virtual world. Adam took on the project head first
+        and developed the first ever virtual reality vending machine experience.
       </p>
       <p>
         A user vends the drink of their choice by putting their hand up to one

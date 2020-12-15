@@ -16,9 +16,9 @@ const TaylorCochranMusic = () => (
         he aspires to send a message of joy, hope, and love.
       </p>
       <p>
-        I designed and managed Taylor’s website from late 2013 to mid 2014. The
-        website was launched alongside the success of Taylor&apos;s debut EP
-        Kickstarter campaign, for which I also helped produce the promo video.
+        Adam designed and managed Taylor’s website from late 2013 to mid 2014.
+        The website was launched alongside the success of Taylor&apos;s debut EP
+        Kickstarter campaign for which he also helped produce the promo video.
       </p>
     </section>
     <section>

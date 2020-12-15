@@ -17,7 +17,7 @@ const presentations = [
     id: 'an-animation-story',
     title: 'An Animation Story',
     description:
-      'A simple love story between a girl named Design and a boy named Animation. I created, narrated, and presented this story to a group of developers at Solstice in order to talk about the importance of having a “design-gineering” mindset and the value of the relationship between designers and engineers.',
+      'A simple love story between a girl named Design and a boy named Animation. Adam created, narrated, and presented this story to a group of developers in order to talk about the importance of having a “design-gineering” mindset and the value of the relationship between designers and engineers.',
     link: '/presentations/an-animation-story',
     altText: 'An Animation Story Painting',
     image: paintingAnAnimationStory,

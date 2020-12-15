@@ -15,9 +15,9 @@ const Allium = () => (
         design shops, Kim started her own business to flex her creative muscles.
       </p>
       <p>
-        I designed a new website for Allium to improve the old WordPress site.
-        The goal of the new design was to better promote the business and its
-        floral services.
+        Adam designed a new website for Allium as an improvement to the old
+        WordPress site. The goal of the new design was to better promote the
+        business and its floral services.
       </p>
     </section>
     <section>

@@ -27,7 +27,7 @@ const ThreeDApplicationDevelopmentOverview = () => (
         developing a 3D application. The presentation serves as a starting point
         to which creators can continue to grow their foundation of knowledge.
         The deck is grounded in the Unity engine to provide real, applicable
-        examples of the concepts. I presented this deck at Solstice to around 30
+        examples of the concepts. Adam presented this deck to around 30
         developers who were interested in learning more.
       </p>
     </section>
