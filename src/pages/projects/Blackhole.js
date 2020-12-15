@@ -56,12 +56,7 @@ const Blackhole = () => (
         columns={1}
         images={[screenshot01, screenshot02, screenshot03]}
       />
-      <EmbeddedYouTube
-        origin="http://adamgraham.io"
-        videoId="-rvjwFqjres"
-        width="100%"
-        height="468"
-      />
+      <EmbeddedYouTube origin="http://adamgraham.io" videoId="-rvjwFqjres" />
     </section>
   </Project>
 );

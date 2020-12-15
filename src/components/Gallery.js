@@ -28,11 +28,13 @@ const Gallery = ({ className, slides = [] }) => {
   useEffect(() => {
     const currentSlide = slides[slideIndex];
     const hash = history.location.hash.replace('#', '');
-    if (!hash) {
-      history.replace(`${history.location.pathname}#${currentSlide.id}`);
-    } else if (hash !== currentSlide.id) {
+    if (hash !== currentSlide.id) {
       const hashIndex = slides.findIndex((slide) => slide.id === hash);
-      setSlideIndex(Math.max(hashIndex, 0));
+      if (hashIndex !== -1) {
+        setSlideIndex(Math.max(hashIndex, 0));
+      } else {
+        history.replace(`${history.location.pathname}#${currentSlide.id}`);
+      }
     }
   }, [history, history.location, slideIndex, slides]);
 
@@ -62,7 +64,11 @@ const Gallery = ({ className, slides = [] }) => {
             </svg>
           )}
         </button>
-        <div className="gallery__slides">
+        <div
+          className={classNames('gallery__slides', {
+            'gallery__slides--hide-info': !showInfo,
+          })}
+        >
           {slides.map((slide, index) => (
             <Slide
               key={slide.id}

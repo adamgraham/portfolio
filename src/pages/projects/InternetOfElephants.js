@@ -42,12 +42,7 @@ const InternetOfElephants = () => (
         <b>Media</b>
       </p>
       <ImageGallery columns={1} images={[screenshot01, screenshot02]} />
-      <EmbeddedYouTube
-        origin="http://adamgraham.io"
-        videoId="VXWw1CmOkEw"
-        width="100%"
-        height="468"
-      />
+      <EmbeddedYouTube origin="http://adamgraham.io" videoId="VXWw1CmOkEw" />
     </section>
   </Project>
 );

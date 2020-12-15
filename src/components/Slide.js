@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import '../styles/slide.css';
 
-const Slide = ({ className, inactive = false, slide, showInfo = true }) => {
+const Slide = ({ className, inactive = false, slide }) => {
   const history = useHistory();
   return (
     <div className={classNames('slide', className)} key={slide.id}>
@@ -31,11 +31,7 @@ const Slide = ({ className, inactive = false, slide, showInfo = true }) => {
           src={slide.image}
         />
       </ClickableDiv>
-      <div
-        className={classNames('slide__text-wrapper', {
-          'slide__text-wrapper--hide-info': !showInfo,
-        })}
-      >
+      <div className="slide__text-wrapper">
         <div className="slide__text-container">
           <h1 className="h4">{slide.title}</h1>
           <p>{slide.description}</p>
@@ -63,7 +59,6 @@ Slide.propTypes = {
   className: PropTypes.string,
   inactive: PropTypes.bool,
   slide: SlideProps,
-  showInfo: PropTypes.bool,
 };
 
 export default withTransition(Slide, 'fade-out', 'inactive');

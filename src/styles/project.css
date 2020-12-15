@@ -1,9 +1,7 @@
 .project {
-  position: relative;
-  width: 960px;
-  padding: 64px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-top: 32px;
   margin-bottom: 256px;
 }
 

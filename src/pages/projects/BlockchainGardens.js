@@ -55,8 +55,6 @@ const BlockchainGardens = () => (
         title="Data Visualization"
         origin="http://adamgraham.io"
         videoId="R-OoF7NQWOI"
-        width="100%"
-        height="468"
       />
       <EmbeddedYouTube
         className="margin-bottom-lg"
@@ -64,16 +62,12 @@ const BlockchainGardens = () => (
         title="Solstice Labs"
         origin="http://adamgraham.io"
         videoId="s7MI_uzRdMI"
-        width="100%"
-        height="468"
       />
       <EmbeddedYouTube
         id="fwd-recap-video"
         title="FWD Recap"
         origin="http://adamgraham.io"
         videoId="Ng0IEkbdkHc"
-        width="100%"
-        height="468"
       />
     </section>
   </Project>

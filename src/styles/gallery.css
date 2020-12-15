@@ -12,6 +12,7 @@
   justify-content: center;
   align-items: center;
   width: 10%;
+  min-width: 40px;
   height: 100%;
   font-size: 64px;
 }
@@ -29,6 +30,8 @@
   top: 0;
   right: 0;
   height: 10vw;
+  min-width: 80px;
+  min-height: 80px;
 }
 
 .gallery__slides {
@@ -36,6 +39,21 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  width: 80%;
   height: 100%;
+  max-width: 80%;
+  flex-grow: 1;
+}
+
+@media (max-width: 1365px) {
+  .gallery__slides {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery__slides {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
 }

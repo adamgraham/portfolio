@@ -17,12 +17,7 @@ const AnAnimationStory = () => (
       </p>
     </section>
     <section>
-      <EmbeddedYouTube
-        origin="http://adamgraham.io"
-        videoId="uHQvPFud3-I"
-        width="100%"
-        height="468"
-      />
+      <EmbeddedYouTube origin="http://adamgraham.io" videoId="uHQvPFud3-I" />
     </section>
     <hr />
     <section>

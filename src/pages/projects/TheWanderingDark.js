@@ -55,8 +55,6 @@ const TheWanderingDark = () => (
         title="Beta Playthrough"
         origin="http://adamgraham.io"
         videoId="JtCg7oB67wY"
-        width="100%"
-        height="468"
       />
       <ImageGallery
         images={[
@@ -84,8 +82,6 @@ const TheWanderingDark = () => (
         title="Alpha Playthrough"
         origin="http://adamgraham.io"
         videoId="EF8ywk3Qq48"
-        width="100%"
-        height="468"
       />
       <ImageGallery
         images={[

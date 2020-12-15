@@ -50,7 +50,6 @@ const Alphas = () => (
         origin="http://adamgraham.io"
         videoId="waZor8haeuY"
         width="800"
-        height="450"
       />
     </section>
   </Project>

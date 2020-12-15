@@ -48,8 +48,6 @@ const VenderVR = () => (
         title="Solstice Labs"
         origin="http://adamgraham.io"
         videoId="aBnGN1j3OMM"
-        width="100%"
-        height="468"
       />
       <EmbeddedYouTube
         className="margin-bottom-lg"
@@ -57,16 +55,12 @@ const VenderVR = () => (
         title="Experience Demo"
         origin="http://adamgraham.io"
         videoId="Y-1ZXwGhHM8"
-        width="100%"
-        height="468"
       />
       <EmbeddedYouTube
         id="fwd-recap-video"
         title="FWD Recap"
         origin="http://adamgraham.io"
         videoId="nHNOTxh7Rdg"
-        width="100%"
-        height="468"
       />
     </section>
   </Project>

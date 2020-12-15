@@ -6,7 +6,9 @@ import '../styles/project.css';
 
 const Project = ({ children, className }) => (
   <Page>
-    <article className={classNames('project', className)}>{children}</article>
+    <article className={classNames('project', 'container-md', className)}>
+      {children}
+    </article>
   </Page>
 );
 

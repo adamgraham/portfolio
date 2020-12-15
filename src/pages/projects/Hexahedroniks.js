@@ -55,12 +55,7 @@ const Hexahedroniks = () => (
         columns={1}
         images={[screenshot01, screenshot02, screenshot03]}
       />
-      <EmbeddedYouTube
-        origin="http://adamgraham.io"
-        videoId="_QMCs2V_IA4"
-        width="100%"
-        height="468"
-      />
+      <EmbeddedYouTube origin="http://adamgraham.io" videoId="_QMCs2V_IA4" />
     </section>
   </Project>
 );

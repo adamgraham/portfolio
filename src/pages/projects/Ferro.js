@@ -33,12 +33,7 @@ const Ferro = () => (
         <b>Media</b>
       </p>
       <ImageGallery columns={1} images={[screenshot01, screenshot02]} />
-      <EmbeddedYouTube
-        origin="http://adamgraham.io"
-        videoId="nybrBOkmNkM"
-        width="100%"
-        height="468"
-      />
+      <EmbeddedYouTube origin="http://adamgraham.io" videoId="nybrBOkmNkM" />
     </section>
   </Project>
 );

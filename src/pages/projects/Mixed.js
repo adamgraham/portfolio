@@ -63,8 +63,6 @@ const Mixed = () => (
         className="box-shadow-2"
         origin="http://adamgraham.io"
         videoId="aMqgmqNu9Qw"
-        width="100%"
-        height="468"
       />
     </section>
   </Project>
