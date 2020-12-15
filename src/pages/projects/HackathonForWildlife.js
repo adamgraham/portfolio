@@ -1,20 +1,20 @@
 import { EmbeddedYouTube, ImageGallery } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import screenshot01 from '../../images/screenshots/internet-of-elephants-screenshot-01.png';
-import screenshot02 from '../../images/screenshots/internet-of-elephants-screenshot-02.png';
+import screenshot01 from '../../images/screenshots/hackathon-for-wildlife-screenshot-01.png';
+import screenshot02 from '../../images/screenshots/hackathon-for-wildlife-screenshot-02.png';
 
-const InternetOfElephants = () => (
+const HackathonForWildlife = () => (
   <Project>
     <section>
-      <h1>Internet of Elephants</h1>
+      <h1>Hackathon for Wildlife</h1>
     </section>
     <section>
       <p>
-        During a 24 hour hackathon, I set out to create an empathetic game that
-        invokes the emotions an elephant feels while being hunted by a deadly
-        poacher. By putting the player in the role of the elephant, it creates a
-        deeper connection between the human and the animal.
+        During a 24 hour hackathon, Adam set out to create an empathetic game
+        that invokes the emotions an elephant feels while being hunted by a
+        deadly poacher. By putting the player in the role of the elephant, it
+        creates a deeper connection between the human and the animal.
       </p>
       <p>
         &quot;On November 14th and 15th over 60 people came together to explore
@@ -47,4 +47,4 @@ const InternetOfElephants = () => (
   </Project>
 );
 
-export default InternetOfElephants;
+export default HackathonForWildlife;

@@ -17,7 +17,7 @@ import {
   EscapeTheBasement,
   EscapeTheEstate,
   Ferro,
-  InternetOfElephants,
+  HackathonForWildlife,
   LunarEscape,
   SquishemGame,
   TheRise,
@@ -108,11 +108,11 @@ const games = {
     path: '/games/ferro',
     component: Ferro,
   },
-  internetOfElephants: {
-    id: 'internet-of-elephants',
-    name: 'Internet of Elephants',
-    path: '/games/internet-of-elephants',
-    component: InternetOfElephants,
+  hackathonForWildlife: {
+    id: 'hackathon-for-wildlife',
+    name: 'Hackathon for Wildlife',
+    path: '/games/hackathon-for-wildlife',
+    component: HackathonForWildlife,
   },
   lunarEscape: {
     id: 'lunar-escape',

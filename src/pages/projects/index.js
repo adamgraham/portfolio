@@ -6,7 +6,7 @@ export { default as Elegy } from './Elegy';
 export { default as EscapeTheBasement } from './EscapeTheBasement';
 export { default as EscapeTheEstate } from './EscapeTheEstate';
 export { default as Ferro } from './Ferro';
-export { default as InternetOfElephants } from './InternetOfElephants';
+export { default as HackathonForWildlife } from './HackathonForWildlife';
 export { default as LunarEscape } from './LunarEscape';
 export { default as SquishemGame } from './SquishemGame';
 export { default as TheRise } from './TheRise';

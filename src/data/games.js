@@ -5,7 +5,7 @@ import paintingAncienyOdyssey from '../images/banners/ancient-odyssey-painting.p
 import paintingLunarEscape from '../images/banners/lunar-escape-painting.png';
 import paintingEscapeTheBasement from '../images/banners/escape-the-basement-painting.png';
 import paintingEscapeTheEstate from '../images/banners/escape-the-estate-painting.png';
-import paintingInternetOfElephants from '../images/banners/internet-of-elephants-painting.png';
+import paintingHackathonForWildlife from '../images/banners/hackathon-for-wildlife-painting.png';
 import paintingBossRush from '../images/banners/boss-rush-painting.png';
 import paintingAlphas from '../images/banners/alphas-painting.png';
 import paintingFerro from '../images/banners/ferro-painting.png';
@@ -79,13 +79,13 @@ const games = [
     imageBorder: 'black',
   },
   {
-    id: 'internet-of-elephants',
-    title: 'Internet of Elephants',
+    id: 'hackathon-for-wildlife',
+    title: 'Hackathon for Wildlife',
     description:
       'During a 24 hour hackathon, Adam set out to create an empathetic game that invokes the emotions an elephant feels while being hunted by a deadly poacher. By putting the player in the role of the elephant, it creates a deeper connection between the human and the animal.',
-    link: '/games/internet-of-elephants',
-    altText: 'Internet of Elephants Painting',
-    image: paintingInternetOfElephants,
+    link: '/games/hackathon-for-wildlife',
+    altText: 'Hackathon for Wildlife Painting',
+    image: paintingHackathonForWildlife,
   },
   {
     id: 'boss-rush',

@@ -11,7 +11,7 @@ export default (
     <Route path="/games/escape-the-basement" />
     <Route path="/games/escape-the-estate" />
     <Route path="/games/ferro" />
-    <Route path="/games/internet-of-elephants" />
+    <Route path="/games/hackathon-for-wildlife" />
     <Route path="/games/lunar-escape" />
     <Route path="/games/squishem" />
     <Route path="/games/the-rise" />
