@@ -1,9 +1,14 @@
+import { useMediaQuery } from '@zigurous/react-components';
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Page from './Page';
 import Slide, { SlideProps } from './Slide';
+import chevronLeftIcon from '../images/icons/chevron_left-black-48dp.svg';
+import chevronRightIcon from '../images/icons/chevron_right-black-48dp.svg';
+import imageIcon from '../images/icons/image-black-36dp.svg';
+import infoIcon from '../images/icons/info-black-36dp.svg';
 import '../styles/gallery.css';
 
 let globalShowInfo = true;
@@ -16,6 +21,9 @@ const findInitialIndex = (history, slides) => {
 
 const Gallery = ({ className, slides = [] }) => {
   const history = useHistory();
+  const mobileWidth = useMediaQuery('(max-width: 767px)');
+  const mobileHeight = useMediaQuery('(max-height: 767px)');
+  const verticalLayout = useMediaQuery('(max-width: 1365px)');
   const [showInfo, setShowInfo] = useState(globalShowInfo);
   const [slideIndex, setSlideIndex] = useState(
     findInitialIndex(history, slides)
@@ -28,6 +36,7 @@ const Gallery = ({ className, slides = [] }) => {
   useEffect(() => {
     const currentSlide = slides[slideIndex];
     const hash = history.location.hash.replace('#', '');
+
     if (hash !== currentSlide.id) {
       const hashIndex = slides.findIndex((slide) => slide.id === hash);
       if (hashIndex !== -1) {
@@ -40,7 +49,13 @@ const Gallery = ({ className, slides = [] }) => {
 
   return (
     <Page>
-      <article className={classNames('gallery', className)}>
+      <article
+        className={classNames(
+          'gallery',
+          { 'gallery--vertical-layout': verticalLayout },
+          className
+        )}
+      >
         <button
           aria-label="Previous Slide"
           className="gallery__button left"
@@ -51,22 +66,12 @@ const Gallery = ({ className, slides = [] }) => {
             history.replace(`${history.location.pathname}#${previousSlide.id}`);
           }}
         >
-          {slideIndex > 0 && (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="black"
-              width="48px"
-              height="48px"
-            >
-              <path d="M0 0h24v24H0V0z" fill="none" />
-              <path d="M14.71 6.71c-.39-.39-1.02-.39-1.41 0L8.71 11.3c-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L10.83 12l3.88-3.88c.39-.39.38-1.03 0-1.41z" />
-            </svg>
-          )}
+          {slideIndex > 0 && <img alt="" src={chevronLeftIcon} />}
         </button>
         <div
           className={classNames('gallery__slides', {
-            'gallery__slides--hide-info': !showInfo,
+            'gallery__slides--hide-info':
+              !showInfo && !mobileWidth && !mobileHeight,
           })}
         >
           {slides.map((slide, index) => (
@@ -89,49 +94,24 @@ const Gallery = ({ className, slides = [] }) => {
           }}
         >
           {slideIndex < slides.length - 1 && (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="black"
-              width="48px"
-              height="48px"
-            >
-              <path d="M0 0h24v24H0V0z" fill="none" />
-              <path d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z" />
-            </svg>
+            <img alt="" src={chevronRightIcon} />
           )}
         </button>
-        <button
-          aria-label={showInfo ? 'Hide Info' : 'Show Info'}
-          className="gallery__button info"
-          onClick={() => {
-            setShowInfo(!showInfo);
-          }}
-        >
-          {showInfo ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="black"
-              width="36px"
-              height="36px"
-            >
-              <path d="M0 0h24v24H0V0z" fill="none" />
-              <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z" />
-            </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="black"
-              width="36px"
-              height="36px"
-            >
-              <path d="M0 0h24v24H0V0z" fill="none" />
-              <path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
-            </svg>
-          )}
-        </button>
+        {!mobileWidth && !mobileHeight && (
+          <button
+            aria-label={showInfo ? 'Hide Info' : 'Show Info'}
+            className="gallery__button info"
+            onClick={() => {
+              setShowInfo(!showInfo);
+            }}
+          >
+            {showInfo ? (
+              <img alt="" src={imageIcon} />
+            ) : (
+              <img alt="" src={infoIcon} />
+            )}
+          </button>
+        )}
       </article>
     </Page>
   );
