@@ -1,3 +1,4 @@
+import { useThemedFavicon } from '@zigurous/react-components';
 import React from 'react';
 import {
   BrowserRouter as Router,
@@ -10,6 +11,7 @@ import routes from './routes';
 import './styles/app.css';
 
 const App = () => {
+  useThemedFavicon();
   const root = useRouteMatch({
     path: '/',
     exact: true,
