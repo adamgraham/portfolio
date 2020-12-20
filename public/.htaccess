@@ -6,8 +6,8 @@ RewriteBase /
 # RewriteRule (.*) http://www.adamgraham.io/$1 [R=301,L]
 
 # Redirect www to non www
-# RewriteCond %{HTTP_HOST} ^www.adamgraham.io
-# RewriteRule (.*) http://adamgraham.io/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.adamgraham.io
+RewriteRule (.*) http://adamgraham.io/$1 [R=301,L]
 
 # Redirect http to https
 RewriteCond %{HTTPS} !=on
