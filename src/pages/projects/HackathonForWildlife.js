@@ -11,10 +11,10 @@ const HackathonForWildlife = () => (
     </section>
     <section>
       <p>
-        During a 24 hour hackathon, Adam set out to create an empathetic game
-        that invokes the emotions an elephant feels while being hunted by a
-        deadly poacher. By putting the player in the role of the elephant, it
-        creates a deeper connection between the human and the animal.
+        An empathetic game created in 24 hours that invokes the emotions an
+        elephant feels while being hunted by a deadly poacher. By putting the
+        player in the role of the elephant, it creates a deeper connection
+        between the human and the animal.
       </p>
       <p>
         &quot;On November 14th and 15th over 60 people came together to explore

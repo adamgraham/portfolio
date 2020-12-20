@@ -82,7 +82,7 @@ const games = [
     id: 'hackathon-for-wildlife',
     title: 'Hackathon for Wildlife',
     description:
-      'During a 24 hour hackathon, Adam set out to create an empathetic game that invokes the emotions an elephant feels while being hunted by a deadly poacher. By putting the player in the role of the elephant, it creates a deeper connection between the human and the animal.',
+      'An empathetic game that invokes the emotions an elephant feels while being hunted by a deadly poacher. By putting the player in the role of the elephant, it creates a deeper connection between the human and the animal.',
     link: '/games/hackathon-for-wildlife',
     altText: 'Hackathon for Wildlife Painting',
     image: paintingHackathonForWildlife,
