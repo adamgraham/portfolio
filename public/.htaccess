@@ -1,20 +1,22 @@
 RewriteEngine on
 RewriteBase /
 
-# Redirect non www to www
-# RewriteCond %{HTTP_HOST} ^adamgraham.io
-# RewriteRule (.*) http://www.adamgraham.io/$1 [R=301,L]
-
 # Redirect www to non www
 RewriteCond %{HTTP_HOST} ^www.adamgraham.io
 RewriteRule (.*) http://adamgraham.io/$1 [R=301,L]
 
 # Redirect http to https
-RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^adamgraham.io
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
-Header always set Content-Security-Policy "upgrade-insecure-requests;"
+#Header always set Content-Security-Policy "upgrade-insecure-requests;"
 
 # Redirect all file requests to index.html (SPA)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule (.*) index.html [QSA,L]
+
+# Redirect directories
+RewriteRule ^game/(.*)$ /games [R=301,L]
+RewriteRule ^website/(.*)$ /websites [R=301,L]
+RewriteRule ^presentation/(.*)$ /presentations [R=301,L]
