@@ -15,7 +15,7 @@ import galleryIcon from '../images/icons/fullscreen-black-36dp.svg';
 import menuOpenIcon from '../images/icons/menu_open-black-36dp.svg';
 import menuIcon from '../images/icons/menu-black-36dp.svg';
 import routes from '../routes';
-import socials from '../socials';
+import socialLinks from '../socialLinks';
 import '../styles/menu.css';
 
 const Menu = ({ className, hidden = false }) => {
@@ -68,9 +68,10 @@ const Menu = ({ className, hidden = false }) => {
           <div className="app-menu__header-right">
             <SocialNavLinks
               className="margin-left-md"
+              foregroundColor="black"
               iconSize={24}
               iconInnerPadding={12}
-              links={Object.values(socials)}
+              links={Object.values(socialLinks)}
             />
             <button
               aria-label={showGallery ? 'Hide Gallery' : 'Show Gallery'}
@@ -116,9 +117,6 @@ const Menu = ({ className, hidden = false }) => {
                       >
                         <b>{route.name}</b>
                       </NavLink>
-                      <span aria-hidden className="margin-left-md body-xs">
-                        0{index + 1}.
-                      </span>
                     </li>
                   ))}
               </ul>
@@ -139,7 +137,15 @@ const Menu = ({ className, hidden = false }) => {
                   disabled={!showGallery}
                   key={item.id}
                   onClick={() => {
-                    history.push(`${history.location.pathname}#${item.id}`);
+                    const pathname = history.location.pathname;
+                    const paths = pathname.startsWith('/')
+                      ? pathname.substr(1).split('/')
+                      : pathname.split('/');
+                    if (paths.length >= 2) {
+                      history.push(`/${paths[0]}#${item.id}`);
+                    } else {
+                      history.push(`${pathname}#${item.id}`);
+                    }
                   }}
                 >
                   <ImageFadeIn

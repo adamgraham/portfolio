@@ -48,6 +48,11 @@
 
 .app-menu .nav-bar {
   margin-left: 16px;
+  margin-right: 16px;
+}
+
+.app-menu .nav-bar__item {
+  font-weight: 600;
 }
 
 .app-menu__body {
@@ -67,12 +72,14 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.2s, visibility 0.4s;
+  pointer-events: none;
 }
 
 .app-menu__menu-view.open,
 .app-menu__gallery-view.open {
   opacity: 1;
   visibility: visible;
+  pointer-events: all;
 }
 
 .app-menu__gallery {
@@ -126,9 +133,9 @@
   margin-inline-start: 0;
   margin-inline-end: 0;
   padding-inline-start: 0;
-  font-size: 32px;
+  font-size: 2rem;
   font-size: 8vmin;
-  line-height: 1.2em;
+  line-height: 1.25;
   text-align: right;
   text-transform: uppercase;
   list-style: none;
@@ -146,7 +153,7 @@
 
 .app-menu__nav-list a:hover {
   color: var(--color-nav-skin-decoration);
-  border: none;
+  border-bottom: solid 1px transparent;
 }
 
 .app-menu__nav-list a.selected {

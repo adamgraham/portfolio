@@ -24,7 +24,7 @@ const Blackhole = () => (
       </p>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>TECH —</em> Adobe Flash, ActionScript 3.0
         <br />
         <em>DATE —</em> January 2015
@@ -39,7 +39,7 @@ const Blackhole = () => (
         Download
       </Button>
       <Button
-        className="margin-top-lg"
+        className="margin-left-lg"
         external
         link="https://github.com/adamgraham/blackhole"
         size="small"
@@ -49,7 +49,7 @@ const Blackhole = () => (
       <div className="height-1em" />
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>Media</b>
       </p>
       <ImageGallery

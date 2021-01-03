@@ -16,14 +16,14 @@ const LunarEscape = () => (
     </section>
     <section>
       <p>
-        Lunar Escape is a puzzle &quot;doors escape&quot; game. There are a
+        Lunar Escape is a &quot;doors escape&quot; puzzle game. There are a
         total of 30 unique levels. Each is an individual puzzle designed to make
         your brain think out of this world! Do you have the logical skills
         needed to transcend all 30 levels?
       </p>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>ROLE —</em> Lead Programmer, Producer, Designer, Artist
         <br />
         <em>TECH —</em> Adobe Flash, ActionScript 3.0
@@ -40,7 +40,7 @@ const LunarEscape = () => (
         Play Game
       </Button>
       <Button
-        className="margin-top-lg"
+        className="margin-left-lg"
         external
         link="https://itunes.apple.com/app/escape-to-space/id681843951"
         size="small"
@@ -50,11 +50,12 @@ const LunarEscape = () => (
       <div className="height-1em" />
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>Media</b>
       </p>
       <img alt="Lunar Escape Banner" width="100%" src={banner} />
       <ImageGallery
+        minWidth={128}
         images={[
           screenshot01,
           screenshot02,

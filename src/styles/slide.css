@@ -44,7 +44,7 @@
 .slide__text-wrapper {
   position: relative;
   width: 420px;
-  margin-left: 6em;
+  margin-left: 6rem;
   transition: opacity 0.3s, width 0.3s, margin-left 0.3s;
 }
 
@@ -74,7 +74,7 @@
 .gallery--vertical-layout .slide__text-wrapper {
   width: 100%;
   margin-left: 0;
-  margin-top: 4em;
+  margin-top: 4rem;
   transition: none;
 }
 
@@ -107,7 +107,7 @@
 
 @media (max-height: 1023px) {
   .gallery--vertical-layout .slide__text-wrapper {
-    margin-top: 2em;
+    margin-top: 2rem;
   }
 }
 

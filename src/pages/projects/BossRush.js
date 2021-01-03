@@ -22,7 +22,7 @@ const BossRush = () => (
       </p>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>ROLE —</em> Gameplay &amp; Systems Programmer
         <br />
         <em>TECH —</em> Unity, C#
@@ -39,7 +39,7 @@ const BossRush = () => (
         Download
       </Button>
       <Button
-        className="margin-top-lg"
+        className="margin-left-lg"
         external
         link="https://github.com/ModSquadWorkshop/BossRush"
         size="small"
@@ -49,7 +49,7 @@ const BossRush = () => (
       <div className="height-1em" />
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>Media</b>
       </p>
       <ImageGallery columns={1} images={[screenshot01, screenshot02]} />

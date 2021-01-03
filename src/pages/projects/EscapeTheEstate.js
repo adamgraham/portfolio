@@ -18,15 +18,15 @@ const EscapeTheEstate = () => (
     </section>
     <section>
       <p>
-        Escape the Estate is a point-and-click puzzle &quot;escape&quot; game.
-        Your life is on the line! Kane is at it again, and this time he is
-        angry! Do you have what it takes to prevent his cruel intentions? Put
-        your puzzle-solving skills to the test in the sequel to{' '}
+        Escape the Estate is a point-and-click &quot;escape&quot; game. Your
+        life is on the line! Kane is at it again, and this time he is angry! Do
+        you have what it takes to prevent his cruel intentions? Put your
+        puzzle-solving skills to the test in the sequel to{' '}
         <Link to="/games/escape-the-basement">Escape the Basement</Link>!
       </p>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>ROLE —</em> Lead Programmer, Producer, Designer, Artist
         <br />
         <em>TECH —</em> Adobe Flash, ActionScript 3.0
@@ -45,11 +45,12 @@ const EscapeTheEstate = () => (
       <div className="height-1em" />
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>Media</b>
       </p>
       <img alt="Escape the Estate Banner" width="100%" src={banner} />
       <ImageGallery
+        minWidth={128}
         images={[
           screenshot01,
           screenshot02,

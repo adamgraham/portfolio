@@ -25,7 +25,7 @@ const Elegy = () => (
       </p>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>ROLE —</em> Lead Programmer, Designer
         <br />
         <em>TECH —</em> Adobe Flash, ActionScript 3.0
@@ -42,7 +42,7 @@ const Elegy = () => (
         Download
       </Button>
       <Button
-        className="margin-top-lg"
+        className="margin-left-lg"
         external
         link="https://github.com/adamgraham/elegy"
         size="small"
@@ -52,7 +52,7 @@ const Elegy = () => (
       <div className="height-1em" />
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>Media</b>
       </p>
       <ImageGallery columns={1} images={[screenshot01, screenshot02]} />

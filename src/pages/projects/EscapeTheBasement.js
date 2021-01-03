@@ -16,14 +16,14 @@ const EscapeTheBasement = () => (
     </section>
     <section>
       <p>
-        Escape the Basement is a point-and-click &quot;escape&quot; puzzle game
-        with several uniquely drawn scenes. You of all people were chosen to
-        die. A cruel man named Kane has locked you in his basement with no
-        thought of letting you free. Can you outwit his evil plan and escape?
+        Escape the Basement is a point-and-click &quot;escape&quot; game with
+        several uniquely drawn scenes. You of all people were chosen to die. A
+        cruel man named Kane has locked you in his basement with no thought of
+        letting you free. Can you outwit his evil plan and escape?
       </p>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>ROLE —</em> Lead Programmer, Producer, Designer
         <br />
         <em>TECH —</em> Adobe Flash, ActionScript 3.0
@@ -42,11 +42,12 @@ const EscapeTheBasement = () => (
       <div className="height-1em" />
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>Media</b>
       </p>
       <img alt="Escape the Basement Banner" width="100%" src={banner} />
       <ImageGallery
+        minWidth={128}
         images={[
           screenshot01,
           screenshot02,

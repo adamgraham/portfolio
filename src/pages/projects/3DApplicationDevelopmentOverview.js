@@ -16,7 +16,7 @@ const ThreeDApplicationDevelopmentOverview = () => (
       <h1>3D Application Development Overview</h1>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>May 2016</em>
       </p>
       <p>
@@ -33,6 +33,7 @@ const ThreeDApplicationDevelopmentOverview = () => (
     </section>
     <section>
       <ImageGallery
+        minWidth={128}
         images={[
           screenshot01,
           screenshot02,

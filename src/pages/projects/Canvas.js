@@ -23,7 +23,7 @@ const Canvas = () => (
       </p>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>TECH —</em> Adobe Flash, ActionScript 3.0
         <br />
         <em>DATE —</em> March 2015
@@ -38,7 +38,7 @@ const Canvas = () => (
         Download
       </Button>
       <Button
-        className="margin-top-lg"
+        className="margin-left-lg"
         external
         link="https://github.com/adamgraham/canvas"
         size="small"
@@ -48,7 +48,7 @@ const Canvas = () => (
       <div className="height-1em" />
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>Media</b>
       </p>
       <ImageGallery columns={1} images={[screenshot01, screenshot02]} />

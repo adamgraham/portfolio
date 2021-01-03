@@ -28,7 +28,7 @@ const VenderVR = () => (
       </p>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>ROLE —</em> Sole VR / Unity Developer
         <br />
         <em>TECH —</em> Unity, C#, Oculus Rift, Leap Motion, Raspberry Pi,
@@ -38,10 +38,13 @@ const VenderVR = () => (
       </p>
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>Media</b>
       </p>
-      <ImageGallery images={[screenshot01, screenshot02, screenshot03]} />
+      <ImageGallery
+        minWidth={128}
+        images={[screenshot01, screenshot02, screenshot03]}
+      />
       <EmbeddedYouTube
         className="margin-bottom-lg"
         id="solstice-labs-video"

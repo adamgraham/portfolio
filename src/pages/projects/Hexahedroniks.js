@@ -23,7 +23,7 @@ const Hexahedroniks = () => (
       </p>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>TECH —</em> Unity, C#, Oculus Rift
         <br />
         <em>DATE —</em> June 2015
@@ -38,7 +38,7 @@ const Hexahedroniks = () => (
         Download
       </Button>
       <Button
-        className="margin-top-lg"
+        className="margin-left-lg"
         external
         link="https://github.com/adamgraham/hexahedroniks"
         size="small"
@@ -48,7 +48,7 @@ const Hexahedroniks = () => (
       <div className="height-1em" />
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>Media</b>
       </p>
       <ImageGallery

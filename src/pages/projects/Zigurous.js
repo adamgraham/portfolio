@@ -27,25 +27,25 @@ const Zigurous = () => (
       <div className="height-1em" />
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>2017 - Abstract Theme</b>
       </p>
       <img alt="Zigurous Website Abstract Theme" src={abstractTheme} />
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>2016 - Cube Theme</b>
       </p>
       <img alt="Zigurous Website Cube Theme" src={cubeTheme} />
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>2015 - Adventure Theme</b>
       </p>
       <img alt="Zigurous Website Adventure Theme" src={adventureTheme} />
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>2014 - Medieval Theme</b>
       </p>
       <img alt="Zigurous Website Medieval Theme" src={medievalTheme} />

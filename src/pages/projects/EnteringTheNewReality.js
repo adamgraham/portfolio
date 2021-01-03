@@ -16,7 +16,7 @@ const EnteringTheNewReality = () => (
       <h1>Entering The New &quot;Reality&quot;</h1>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>May 2016</em>
       </p>
       <p>
@@ -56,6 +56,7 @@ const EnteringTheNewReality = () => (
     </section>
     <section>
       <ImageGallery
+        minWidth={128}
         images={[
           screenshot01,
           screenshot02,

@@ -24,7 +24,7 @@ const Mixed = () => (
       </p>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>TECH —</em> Adobe Flash, ActionScript 3.0
         <br />
         <em>DATE —</em> February 2015
@@ -39,7 +39,7 @@ const Mixed = () => (
         Download
       </Button>
       <Button
-        className="margin-top-lg"
+        className="margin-left-lg"
         external
         link="https://github.com/adamgraham/mixed"
         size="small"
@@ -49,7 +49,7 @@ const Mixed = () => (
       <div className="height-1em" />
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>Media</b>
       </p>
       <ImageGallery

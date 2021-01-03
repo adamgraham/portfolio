@@ -33,7 +33,7 @@ const BlockchainGardens = () => (
       </p>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>ROLE —</em> Sole Front-end Developer, 3D Visualization Designer
         <br />
         <em>TECH —</em> Unity, Ethereum, IoT RFID Readers, Google Firebase, PCF,
@@ -43,10 +43,11 @@ const BlockchainGardens = () => (
       </p>
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>Media</b>
       </p>
       <ImageGallery
+        minWidth={128}
         images={[screenshot01, screenshot02, screenshot03, screenshot04]}
       />
       <EmbeddedYouTube

@@ -28,7 +28,7 @@ const RockstAR = () => (
       </p>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>ROLE —</em> Front-end Developer, Experience Designer
         <br />
         <em>TECH —</em> Unity, HoloLens, Raspberry Pi + Node.js, Phillips Hue
@@ -38,10 +38,13 @@ const RockstAR = () => (
       </p>
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>Media</b>
       </p>
-      <ImageGallery images={[screenshot01, screenshot02, screenshot03]} />
+      <ImageGallery
+        minWidth={128}
+        images={[screenshot02, screenshot03, screenshot01]}
+      />
       <EmbeddedYouTube
         className="margin-bottom-lg"
         id="solstice-labs-video"

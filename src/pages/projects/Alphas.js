@@ -23,7 +23,7 @@ const Alphas = () => (
       </p>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>ROLE —</em> Team Lead, Lead Programmer &amp; Designer
         <br />
         <em>TECH —</em> XNA, C#
@@ -42,7 +42,7 @@ const Alphas = () => (
       <div className="height-1em" />
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>Media</b>
       </p>
       <ImageGallery columns={1} images={[screenshot01, screenshot02]} />

@@ -23,7 +23,7 @@ const AncientOdyssey = () => (
       </p>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>ROLE —</em> Lead Programmer, Producer, Designer
         <br />
         <em>TECH —</em> Adobe Flash, ActionScript 3.0
@@ -40,7 +40,7 @@ const AncientOdyssey = () => (
         Play Game
       </Button>
       <Button
-        className="margin-top-lg"
+        className="margin-left-lg"
         external
         link="https://itunes.apple.com/app/pharaoh's-escape/id702877946"
         size="small"
@@ -50,11 +50,12 @@ const AncientOdyssey = () => (
       <div className="height-1em" />
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>Media</b>
       </p>
       <img alt="Ancient Odyssey Banner" width="100%" src={banner} />
       <ImageGallery
+        minWidth={128}
         images={[
           screenshot01,
           screenshot02,

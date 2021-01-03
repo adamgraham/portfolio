@@ -8,7 +8,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import socials from '../socials';
+import socialLinks from '../socialLinks';
 
 const Cover = ({ className }) => {
   const history = useHistory();
@@ -19,12 +19,11 @@ const Cover = ({ className }) => {
         <h1 className="h2">Adam Graham</h1>
         <p>
           I am a game developer and UX Engineer based in Chicago, IL fueled by a
-          passion for art and design. As the founder of{' '}
+          passion for art and design. I founded an indie game studio called{' '}
           <Link external to="https://zigurous.com/">
-            Zigurous
-          </Link>
-          , I make games and art with a focus on self-expression, creative
-          thinking, and procedural generation.
+            <b>Zigurous</b>
+          </Link>{' '}
+          where I make games, assets, and tutorials for the community.
         </p>
         <div className="display-flex align-items-center flex-wrap">
           <Button
@@ -36,9 +35,10 @@ const Cover = ({ className }) => {
             View Gallery
           </Button>
           <SocialNavLinks
+            foregroundColor="black"
             iconSize={24}
             iconInnerPadding={12}
-            links={Object.values(socials)}
+            links={Object.values(socialLinks)}
           />
         </div>
       </article>

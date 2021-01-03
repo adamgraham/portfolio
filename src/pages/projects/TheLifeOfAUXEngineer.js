@@ -16,7 +16,7 @@ const TheLifeOfAUXEngineer = () => (
       <h1>The Life of a UX Engineer</h1>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>August 2020</em>
       </p>
       <p>
@@ -29,6 +29,7 @@ const TheLifeOfAUXEngineer = () => (
     </section>
     <section>
       <ImageGallery
+        minWidth={128}
         images={[
           screenshot01,
           screenshot02,

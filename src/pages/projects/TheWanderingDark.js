@@ -33,7 +33,7 @@ const TheWanderingDark = () => (
       </p>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>ROLE —</em> Lead Programmer, Co-Designer
         <br />
         <em>TECH —</em> Unity, C#
@@ -42,7 +42,7 @@ const TheWanderingDark = () => (
       </p>
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <Link
           external
           href="https://drive.google.com/open?id=0BzUWUmwjB6l2ZW00Z3poTXE3UVU"
@@ -57,6 +57,7 @@ const TheWanderingDark = () => (
         videoId="JtCg7oB67wY"
       />
       <ImageGallery
+        minWidth={128}
         images={[
           theWanderingDarkScreenshot01,
           theWanderingDarkScreenshot02,
@@ -69,7 +70,7 @@ const TheWanderingDark = () => (
       />
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <Link
           external
           href="https://drive.google.com/open?id=0BzUWUmwjB6l2QUd2RTNOYnI3TWs"
@@ -84,6 +85,7 @@ const TheWanderingDark = () => (
         videoId="EF8ywk3Qq48"
       />
       <ImageGallery
+        minWidth={128}
         images={[
           projectDreamScreenshot01,
           projectDreamScreenshot02,

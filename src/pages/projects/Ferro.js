@@ -20,7 +20,7 @@ const Ferro = () => (
       </p>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>ROLE —</em> I/O Programmer
         <br />
         <em>TECH —</em> Unity, C#, Oculus Rift, Midi Keyboard
@@ -29,7 +29,7 @@ const Ferro = () => (
       </p>
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>Media</b>
       </p>
       <ImageGallery columns={1} images={[screenshot01, screenshot02]} />

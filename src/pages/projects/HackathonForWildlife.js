@@ -26,7 +26,7 @@ const HackathonForWildlife = () => (
       </p>
     </section>
     <section>
-      <p className="body-sm">
+      <p className="font-sm">
         <em>AWARDS —</em> 1st place &quot;Best Prototype&quot;, 2nd place
         &quot;Most Innovative Use of Technology&quot;
         <br />
@@ -38,7 +38,7 @@ const HackathonForWildlife = () => (
       </p>
     </section>
     <section>
-      <p className="body-lg">
+      <p className="font-lg">
         <b>Media</b>
       </p>
       <ImageGallery columns={1} images={[screenshot01, screenshot02]} />
