@@ -1,6 +1,7 @@
 import {
   ClickableDiv,
-  ImageFadeIn,
+  LoadingSpinner,
+  useLoading,
   withTransition,
 } from '@zigurous/react-components';
 import React from 'react';
@@ -11,14 +12,15 @@ import '../styles/slide.css';
 
 const Slide = ({ className, inactive = false, slide }) => {
   const history = useHistory();
+  const [image, loading] = useLoading();
   return (
     <div className={classNames('slide', className)} key={slide.id}>
       <ClickableDiv
-        className="slide__image-wrapper"
+        className={classNames('slide__image-wrapper', { loading })}
         history={history}
         link={slide.link}
       >
-        <ImageFadeIn
+        <img
           alt={slide.altText}
           className={classNames(
             'slide__image',
@@ -26,10 +28,13 @@ const Slide = ({ className, inactive = false, slide }) => {
               'slide__image--border-white': !slide.imageBorder,
               [`slide__image--border-${slide.imageBorder}`]: slide.imageBorder,
             },
+            { loading },
             'box-shadow-4'
           )}
+          ref={image}
           src={slide.image}
         />
+        {loading && <LoadingSpinner loading={loading} />}
       </ClickableDiv>
       <div className="slide__text-wrapper">
         <div className="slide__text-container">

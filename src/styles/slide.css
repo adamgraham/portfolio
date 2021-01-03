@@ -16,6 +16,10 @@
   max-width: 1280px;
 }
 
+.slide__image-wrapper.loading {
+  width: 100%;
+}
+
 .slide__image {
   width: auto;
   height: auto;
@@ -36,6 +40,12 @@
 }
 
 .slide__image--border-none {
+  border: none;
+  background-color: transparent;
+  box-shadow: none !important;
+}
+
+.slide__image.loading {
   border: none;
   background-color: transparent;
   box-shadow: none !important;
