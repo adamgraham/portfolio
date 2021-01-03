@@ -322,8 +322,9 @@ const routes = {
   },
   software: {
     id: 'software',
-    name: 'Software 🡕',
+    name: 'Software',
     path: '/software',
+    rightIcon: 'open_in_new',
     component: Software,
     includeInNavBar: true,
   },
