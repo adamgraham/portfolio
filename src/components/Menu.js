@@ -156,7 +156,7 @@ const Menu = ({ className, hidden = false }) => {
                         'app-menu__thumbnail-image--border-white': !item.imageBorder,
                         [`app-menu__thumbnail-image--border-${item.imageBorder}`]: item.imageBorder,
                       },
-                      'box-shadow-1'
+                      'shadow-sm'
                     )}
                     src={item.image}
                   />

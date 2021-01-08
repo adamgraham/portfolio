@@ -26,7 +26,7 @@ const Allium = () => (
       </Button>
     </section>
     <section>
-      <img alt="Allium Website" className="box-shadow-3" src={screenshot} />
+      <img alt="Allium Website" className="shadow-md" src={screenshot} />
     </section>
   </Project>
 );

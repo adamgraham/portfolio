@@ -28,7 +28,7 @@ const MargaretBaughman = () => (
     <section>
       <img
         alt="Margaret Baughman Website"
-        className="box-shadow-3"
+        className="shadow-md"
         src={screenshot}
       />
     </section>

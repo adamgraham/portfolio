@@ -22,7 +22,7 @@ const BeSuper = () => (
       </Button>
     </section>
     <section>
-      <img alt="Be Super Website" className="box-shadow-3" src={screenshot} />
+      <img alt="Be Super Website" className="shadow-md" src={screenshot} />
     </section>
   </Project>
 );

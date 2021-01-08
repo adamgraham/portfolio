@@ -55,12 +55,12 @@ const Mixed = () => (
       <ImageGallery
         columns={1}
         images={[
-          { className: 'box-shadow-2', src: screenshot01 },
-          { className: 'box-shadow-2', src: screenshot02 },
+          { className: 'shadow-md', src: screenshot01 },
+          { className: 'shadow-md', src: screenshot02 },
         ]}
       />
       <EmbeddedYouTube
-        className="box-shadow-2"
+        className="shadow-md"
         origin="http://adamgraham.io"
         videoId="aMqgmqNu9Qw"
       />

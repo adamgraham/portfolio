@@ -8,7 +8,6 @@ import {
 } from 'react-router-dom';
 import { Menu } from './components';
 import routes from './routes';
-import './styles/app.css';
 
 const App = () => {
   useThemedFavicon();

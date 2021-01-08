@@ -29,7 +29,7 @@ const Slide = ({ className, inactive = false, slide }) => {
               [`slide__image--border-${slide.imageBorder}`]: slide.imageBorder,
             },
             { loading },
-            'box-shadow-4'
+            'shadow-lg'
           )}
           ref={image}
           src={slide.image}
