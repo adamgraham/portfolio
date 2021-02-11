@@ -1,8 +1,8 @@
 import {
-  ImageFadeIn,
   NavBar,
+  ProgressiveImage,
   SocialNavLinks,
-  useFullscreenMenu,
+  useModal,
   withTransition,
 } from '@zigurous/react-components';
 import React, { useEffect, useState } from 'react';
@@ -20,7 +20,7 @@ import '../styles/menu.css';
 
 const Menu = ({ className, hidden = false }) => {
   const history = useHistory();
-  const [fullscreen, setFullscreen] = useFullscreenMenu(false);
+  const [fullscreen, setFullscreen] = useModal();
   const [showMenu, setShowMenu] = useState(false);
   const [showGallery, setShowGallery] = useState(false);
   const [galleryData, setGalleryData] = useState([]);
@@ -104,7 +104,7 @@ const Menu = ({ className, hidden = false }) => {
               <ul>
                 {Object.values(routes)
                   .filter((route) => route.includeInNavBar)
-                  .map((route, index) => (
+                  .map((route) => (
                     <li key={route.path}>
                       <NavLink
                         activeClassName="selected"
@@ -148,7 +148,7 @@ const Menu = ({ className, hidden = false }) => {
                     }
                   }}
                 >
-                  <ImageFadeIn
+                  <ProgressiveImage
                     alt={item.altText || ''}
                     className={classNames(
                       'app-menu__thumbnail-image',
@@ -158,6 +158,11 @@ const Menu = ({ className, hidden = false }) => {
                       },
                       'shadow-sm'
                     )}
+                    imageProps={{
+                      className: 'img-fluid',
+                      importance: 'low',
+                      loading: 'lazy',
+                    }}
                     src={item.image}
                   />
                 </button>

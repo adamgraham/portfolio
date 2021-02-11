@@ -74,14 +74,11 @@ const Gallery = ({ className, slides = [] }) => {
               !showInfo && !mobileWidth && !mobileHeight,
           })}
         >
-          {slides.map((slide, index) => (
-            <Slide
-              key={slide.id}
-              inactive={slideIndex !== index}
-              slide={slide}
-              showInfo={showInfo}
-            />
-          ))}
+          <Slide
+            key={slides[slideIndex].id}
+            slide={slides[slideIndex]}
+            showInfo={showInfo}
+          />
         </div>
         <button
           aria-label="Next Slide"
