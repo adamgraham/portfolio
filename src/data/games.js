@@ -1,15 +1,15 @@
-import paintingTheWanderingDark from '../images/banners/the-wandering-dark-painting.png';
-import paintingSquishem from '../images/banners/squishem-game-painting.png';
-import paintingTheRise from '../images/banners/the-rise-painting.png';
-import paintingAncienyOdyssey from '../images/banners/ancient-odyssey-painting.png';
-import paintingLunarEscape from '../images/banners/lunar-escape-painting.png';
-import paintingEscapeTheBasement from '../images/banners/escape-the-basement-painting.png';
-import paintingEscapeTheEstate from '../images/banners/escape-the-estate-painting.png';
-import paintingHackathonForWildlife from '../images/banners/hackathon-for-wildlife-painting.png';
-import paintingBossRush from '../images/banners/boss-rush-painting.png';
-import paintingAlphas from '../images/banners/alphas-painting.png';
-import paintingFerro from '../images/banners/ferro-painting.png';
-import paintingElegy from '../images/banners/elegy-painting.png';
+import paintingTheWanderingDark from '../images/banners/the-wandering-dark-painting.jpg';
+import paintingSquishem from '../images/banners/squishem-game-painting.jpg';
+import paintingTheRise from '../images/banners/the-rise-painting.jpg';
+import paintingAncienyOdyssey from '../images/banners/ancient-odyssey-painting.jpg';
+import paintingLunarEscape from '../images/banners/lunar-escape-painting.jpg';
+import paintingEscapeTheBasement from '../images/banners/escape-the-basement-painting.jpg';
+import paintingEscapeTheEstate from '../images/banners/escape-the-estate-painting.jpg';
+import paintingHackathonForWildlife from '../images/banners/hackathon-for-wildlife-painting.jpg';
+import paintingBossRush from '../images/banners/boss-rush-painting.jpg';
+import paintingAlphas from '../images/banners/alphas-painting.jpg';
+import paintingFerro from '../images/banners/ferro-painting.jpg';
+import paintingElegy from '../images/banners/elegy-painting.jpg';
 
 const games = [
   {

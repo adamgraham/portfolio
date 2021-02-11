@@ -1,7 +1,7 @@
-import paintingCanvas from '../images/banners/canvas-painting.png';
-import paintingBlackhole from '../images/banners/blackhole-painting.png';
-import paintingMixed from '../images/banners/mixed-painting.png';
-import paintingHexahedroniks from '../images/banners/hexahedroniks-painting.png';
+import paintingCanvas from '../images/banners/canvas-painting.jpg';
+import paintingBlackhole from '../images/banners/blackhole-painting.jpg';
+import paintingMixed from '../images/banners/mixed-painting.jpg';
+import paintingHexahedroniks from '../images/banners/hexahedroniks-painting.jpg';
 
 const art = [
   {

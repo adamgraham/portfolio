@@ -1,13 +1,13 @@
 import { Button, ImageGallery } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import banner from '../../images/banners/ancient-odyssey-banner.png';
-import screenshot01 from '../../images/screenshots/ancient-odyssey-screenshot-01.png';
-import screenshot02 from '../../images/screenshots/ancient-odyssey-screenshot-02.png';
-import screenshot03 from '../../images/screenshots/ancient-odyssey-screenshot-03.png';
-import screenshot04 from '../../images/screenshots/ancient-odyssey-screenshot-04.png';
-import screenshot05 from '../../images/screenshots/ancient-odyssey-screenshot-05.png';
-import screenshot06 from '../../images/screenshots/ancient-odyssey-screenshot-06.png';
+import banner from '../../images/banners/ancient-odyssey-banner.jpg';
+import screenshot01 from '../../images/screenshots/ancient-odyssey-screenshot-01.jpg';
+import screenshot02 from '../../images/screenshots/ancient-odyssey-screenshot-02.jpg';
+import screenshot03 from '../../images/screenshots/ancient-odyssey-screenshot-03.jpg';
+import screenshot04 from '../../images/screenshots/ancient-odyssey-screenshot-04.jpg';
+import screenshot05 from '../../images/screenshots/ancient-odyssey-screenshot-05.jpg';
+import screenshot06 from '../../images/screenshots/ancient-odyssey-screenshot-06.jpg';
 
 const AncientOdyssey = () => (
   <Project>

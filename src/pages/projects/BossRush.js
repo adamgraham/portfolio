@@ -5,8 +5,8 @@ import {
 } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import screenshot01 from '../../images/screenshots/boss-rush-screenshot-01.png';
-import screenshot02 from '../../images/screenshots/boss-rush-screenshot-02.png';
+import screenshot01 from '../../images/screenshots/boss-rush-screenshot-01.jpg';
+import screenshot02 from '../../images/screenshots/boss-rush-screenshot-02.jpg';
 
 const BossRush = () => (
   <Project>

@@ -1,7 +1,7 @@
 import { Button } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import screenshot from '../../images/screenshots/let-it-beard-screenshot.png';
+import screenshot from '../../images/screenshots/let-it-beard-screenshot.jpg';
 
 const LetItBeard = () => (
   <Project>

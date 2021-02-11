@@ -5,17 +5,17 @@ import {
 } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import projectDreamScreenshot01 from '../../images/screenshots/project-dream-screenshot-01.png';
-import projectDreamScreenshot02 from '../../images/screenshots/project-dream-screenshot-02.png';
-import projectDreamScreenshot03 from '../../images/screenshots/project-dream-screenshot-03.png';
-import projectDreamScreenshot04 from '../../images/screenshots/project-dream-screenshot-04.png';
-import theWanderingDarkScreenshot01 from '../../images/screenshots/the-wandering-dark-screenshot-01.png';
-import theWanderingDarkScreenshot02 from '../../images/screenshots/the-wandering-dark-screenshot-02.png';
-import theWanderingDarkScreenshot03 from '../../images/screenshots/the-wandering-dark-screenshot-03.png';
-import theWanderingDarkScreenshot04 from '../../images/screenshots/the-wandering-dark-screenshot-04.png';
-import theWanderingDarkScreenshot05 from '../../images/screenshots/the-wandering-dark-screenshot-05.png';
-import theWanderingDarkScreenshot06 from '../../images/screenshots/the-wandering-dark-screenshot-06.png';
-import theWanderingDarkScreenshot07 from '../../images/screenshots/the-wandering-dark-screenshot-07.png';
+import projectDreamScreenshot01 from '../../images/screenshots/project-dream-screenshot-01.jpg';
+import projectDreamScreenshot02 from '../../images/screenshots/project-dream-screenshot-02.jpg';
+import projectDreamScreenshot03 from '../../images/screenshots/project-dream-screenshot-03.jpg';
+import projectDreamScreenshot04 from '../../images/screenshots/project-dream-screenshot-04.jpg';
+import theWanderingDarkScreenshot01 from '../../images/screenshots/the-wandering-dark-screenshot-01.jpg';
+import theWanderingDarkScreenshot02 from '../../images/screenshots/the-wandering-dark-screenshot-02.jpg';
+import theWanderingDarkScreenshot03 from '../../images/screenshots/the-wandering-dark-screenshot-03.jpg';
+import theWanderingDarkScreenshot04 from '../../images/screenshots/the-wandering-dark-screenshot-04.jpg';
+import theWanderingDarkScreenshot05 from '../../images/screenshots/the-wandering-dark-screenshot-05.jpg';
+import theWanderingDarkScreenshot06 from '../../images/screenshots/the-wandering-dark-screenshot-06.jpg';
+import theWanderingDarkScreenshot07 from '../../images/screenshots/the-wandering-dark-screenshot-07.jpg';
 
 const TheWanderingDark = () => (
   <Project>

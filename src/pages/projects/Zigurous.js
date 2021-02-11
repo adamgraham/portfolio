@@ -1,10 +1,10 @@
 import { Button } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import abstractTheme from '../../images/screenshots/zigurous-screenshot-abstract-theme.png';
-import adventureTheme from '../../images/screenshots/zigurous-screenshot-adventure-theme-spread.png';
-import cubeTheme from '../../images/screenshots/zigurous-screenshot-cube-theme-spread.png';
-import medievalTheme from '../../images/screenshots/zigurous-screenshot-medieval-theme-spread.png';
+import abstractTheme from '../../images/screenshots/zigurous-screenshot-abstract-theme.jpg';
+import adventureTheme from '../../images/screenshots/zigurous-screenshot-adventure-theme-spread.jpg';
+import cubeTheme from '../../images/screenshots/zigurous-screenshot-cube-theme-spread.jpg';
+import medievalTheme from '../../images/screenshots/zigurous-screenshot-medieval-theme-spread.jpg';
 
 const Zigurous = () => (
   <Project>

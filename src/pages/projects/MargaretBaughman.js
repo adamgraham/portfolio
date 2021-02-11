@@ -1,7 +1,7 @@
 import { Button } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import screenshot from '../../images/screenshots/margaret-baughman-screenshot-spread.png';
+import screenshot from '../../images/screenshots/margaret-baughman-screenshot-spread.jpg';
 
 const MargaretBaughman = () => (
   <Project>

@@ -1,14 +1,14 @@
 import { Button, ImageGallery } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import screenshot01 from '../../images/screenshots/the-life-of-a-ux-engineer-screenshot-01.png';
-import screenshot02 from '../../images/screenshots/the-life-of-a-ux-engineer-screenshot-02.png';
-import screenshot03 from '../../images/screenshots/the-life-of-a-ux-engineer-screenshot-03.png';
-import screenshot04 from '../../images/screenshots/the-life-of-a-ux-engineer-screenshot-04.png';
-import screenshot05 from '../../images/screenshots/the-life-of-a-ux-engineer-screenshot-05.png';
-import screenshot06 from '../../images/screenshots/the-life-of-a-ux-engineer-screenshot-06.png';
-import screenshot07 from '../../images/screenshots/the-life-of-a-ux-engineer-screenshot-07.png';
-import screenshot08 from '../../images/screenshots/the-life-of-a-ux-engineer-screenshot-08.png';
+import screenshot01 from '../../images/screenshots/the-life-of-a-ux-engineer-screenshot-01.jpg';
+import screenshot02 from '../../images/screenshots/the-life-of-a-ux-engineer-screenshot-02.jpg';
+import screenshot03 from '../../images/screenshots/the-life-of-a-ux-engineer-screenshot-03.jpg';
+import screenshot04 from '../../images/screenshots/the-life-of-a-ux-engineer-screenshot-04.jpg';
+import screenshot05 from '../../images/screenshots/the-life-of-a-ux-engineer-screenshot-05.jpg';
+import screenshot06 from '../../images/screenshots/the-life-of-a-ux-engineer-screenshot-06.jpg';
+import screenshot07 from '../../images/screenshots/the-life-of-a-ux-engineer-screenshot-07.jpg';
+import screenshot08 from '../../images/screenshots/the-life-of-a-ux-engineer-screenshot-08.jpg';
 
 const TheLifeOfAUXEngineer = () => (
   <Project>

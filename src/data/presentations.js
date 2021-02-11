@@ -1,7 +1,7 @@
-import paintingTheLifeOfAUXEngineer from '../images/banners/the-life-of-a-ux-engineer-painting.png';
-import paintingAnAnimationStory from '../images/banners/an-animation-story-painting.png';
-import paintingEnteringTheNewReality from '../images/banners/entering-the-new-reality-painting.png';
-import painting3DApplicationDevelopment from '../images/banners/3d-application-development-overview-painting.png';
+import paintingTheLifeOfAUXEngineer from '../images/banners/the-life-of-a-ux-engineer-painting.jpg';
+import paintingAnAnimationStory from '../images/banners/an-animation-story-painting.jpg';
+import paintingEnteringTheNewReality from '../images/banners/entering-the-new-reality-painting.jpg';
+import painting3DApplicationDevelopment from '../images/banners/3d-application-development-overview-painting.jpg';
 
 const presentations = [
   {

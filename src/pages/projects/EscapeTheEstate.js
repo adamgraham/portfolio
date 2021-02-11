@@ -2,14 +2,14 @@ import { Button, ImageGallery } from '@zigurous/react-components';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Project } from '../../components';
-import banner from '../../images/banners/escape-the-estate-banner.png';
-import screenshot01 from '../../images/screenshots/escape-the-estate-screenshot-01.png';
-import screenshot02 from '../../images/screenshots/escape-the-estate-screenshot-02.png';
-import screenshot03 from '../../images/screenshots/escape-the-estate-screenshot-03.png';
-import screenshot04 from '../../images/screenshots/escape-the-estate-screenshot-04.png';
-import screenshot05 from '../../images/screenshots/escape-the-estate-screenshot-05.png';
-import screenshot06 from '../../images/screenshots/escape-the-estate-screenshot-06.png';
-import screenshot07 from '../../images/screenshots/escape-the-estate-screenshot-07.png';
+import banner from '../../images/banners/escape-the-estate-banner.jpg';
+import screenshot01 from '../../images/screenshots/escape-the-estate-screenshot-01.jpg';
+import screenshot02 from '../../images/screenshots/escape-the-estate-screenshot-02.jpg';
+import screenshot03 from '../../images/screenshots/escape-the-estate-screenshot-03.jpg';
+import screenshot04 from '../../images/screenshots/escape-the-estate-screenshot-04.jpg';
+import screenshot05 from '../../images/screenshots/escape-the-estate-screenshot-05.jpg';
+import screenshot06 from '../../images/screenshots/escape-the-estate-screenshot-06.jpg';
+import screenshot07 from '../../images/screenshots/escape-the-estate-screenshot-07.jpg';
 
 const EscapeTheEstate = () => (
   <Project>

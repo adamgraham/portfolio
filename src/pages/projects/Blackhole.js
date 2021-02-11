@@ -5,9 +5,9 @@ import {
 } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import screenshot01 from '../../images/screenshots/blackhole-screenshot-01.png';
-import screenshot02 from '../../images/screenshots/blackhole-screenshot-02.png';
-import screenshot03 from '../../images/screenshots/blackhole-screenshot-03.png';
+import screenshot01 from '../../images/screenshots/blackhole-screenshot-01.jpg';
+import screenshot02 from '../../images/screenshots/blackhole-screenshot-02.jpg';
+import screenshot03 from '../../images/screenshots/blackhole-screenshot-03.jpg';
 
 const Blackhole = () => (
   <Project>

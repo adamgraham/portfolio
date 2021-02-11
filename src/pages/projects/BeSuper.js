@@ -1,7 +1,7 @@
 import { Button } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import screenshot from '../../images/screenshots/be-super-screenshot-spread.png';
+import screenshot from '../../images/screenshots/be-super-screenshot-spread.jpg';
 
 const BeSuper = () => (
   <Project>

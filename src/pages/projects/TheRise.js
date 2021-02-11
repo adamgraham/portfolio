@@ -1,13 +1,13 @@
 import { Button, ImageGallery } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import banner from '../../images/banners/the-rise-banner.png';
-import screenshot01 from '../../images/screenshots/the-rise-screenshot-01.png';
-import screenshot02 from '../../images/screenshots/the-rise-screenshot-02.png';
-import screenshot03 from '../../images/screenshots/the-rise-screenshot-03.png';
-import screenshot04 from '../../images/screenshots/the-rise-screenshot-04.png';
-import screenshot05 from '../../images/screenshots/the-rise-screenshot-05.png';
-import screenshot06 from '../../images/screenshots/the-rise-screenshot-06.png';
+import banner from '../../images/banners/the-rise-banner.jpg';
+import screenshot01 from '../../images/screenshots/the-rise-screenshot-01.jpg';
+import screenshot02 from '../../images/screenshots/the-rise-screenshot-02.jpg';
+import screenshot03 from '../../images/screenshots/the-rise-screenshot-03.jpg';
+import screenshot04 from '../../images/screenshots/the-rise-screenshot-04.jpg';
+import screenshot05 from '../../images/screenshots/the-rise-screenshot-05.jpg';
+import screenshot06 from '../../images/screenshots/the-rise-screenshot-06.jpg';
 
 const TheRise = () => (
   <Project>

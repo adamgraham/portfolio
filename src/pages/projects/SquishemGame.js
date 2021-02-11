@@ -1,11 +1,11 @@
 import { Button, ImageGallery } from '@zigurous/react-components';
 import React from 'react';
 import { Project } from '../../components';
-import banner from '../../images/banners/squishem-banner.png';
-import screenshot01 from '../../images/screenshots/squishem-screenshot-01.png';
-import screenshot02 from '../../images/screenshots/squishem-screenshot-02.png';
-import screenshot03 from '../../images/screenshots/squishem-screenshot-03.png';
-import screenshot04 from '../../images/screenshots/squishem-screenshot-04.png';
+import banner from '../../images/banners/squishem-banner.jpg';
+import screenshot01 from '../../images/screenshots/squishem-screenshot-01.jpg';
+import screenshot02 from '../../images/screenshots/squishem-screenshot-02.jpg';
+import screenshot03 from '../../images/screenshots/squishem-screenshot-03.jpg';
+import screenshot04 from '../../images/screenshots/squishem-screenshot-04.jpg';
 
 const Squishem = () => (
   <Project>

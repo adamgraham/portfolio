@@ -1,6 +1,6 @@
-import paintingBlockchainGardens from '../images/banners/blockchain-gardens-painting.png';
-import paintingRockstar from '../images/banners/rockstar-painting.png';
-import paintingVenderVR from '../images/banners/vender-vr-painting.png';
+import paintingBlockchainGardens from '../images/banners/blockchain-gardens-painting.jpg';
+import paintingRockstar from '../images/banners/rockstar-painting.jpg';
+import paintingVenderVR from '../images/banners/vender-vr-painting.jpg';
 
 const tech = [
   {

@@ -1,12 +1,12 @@
-import paintingAllium from '../images/banners/allium-painting.png';
-import paintingAshantisJones from '../images/banners/ashantis-jones-painting.png';
-import paintingBeSuper from '../images/banners/be-super-painting.png';
-import paintingDemonthon from '../images/banners/demonthon-painting.png';
-import paintingLetItBeard from '../images/banners/let-it-beard-painting.png';
-import paintingMargaretBaughman from '../images/banners/margaret-baughman-painting.png';
-import paintingSquishem from '../images/banners/squishem-website-painting.png';
-import paintingTaylorCochranMusic from '../images/banners/taylor-cochran-music-painting.png';
-import paintingZigurous from '../images/banners/zigurous-painting.png';
+import paintingAllium from '../images/banners/allium-painting.jpg';
+import paintingAshantisJones from '../images/banners/ashantis-jones-painting.jpg';
+import paintingBeSuper from '../images/banners/be-super-painting.jpg';
+import paintingDemonthon from '../images/banners/demonthon-painting.jpg';
+import paintingLetItBeard from '../images/banners/let-it-beard-painting.jpg';
+import paintingMargaretBaughman from '../images/banners/margaret-baughman-painting.jpg';
+import paintingSquishem from '../images/banners/squishem-website-painting.jpg';
+import paintingTaylorCochranMusic from '../images/banners/taylor-cochran-music-painting.jpg';
+import paintingZigurous from '../images/banners/zigurous-painting.jpg';
 
 const websites = [
   {
