@@ -13,12 +13,9 @@ const Slide = ({ className, slide }) => {
   const history = useHistory();
   const [image, loading] = useLoading();
   return (
-    <div
-      className={classNames('slide', 'animation-medium', 'fade-in', className)}
-      key={slide.id}
-    >
+    <div className={classNames('slide', className)} key={slide.id}>
       <ClickableDiv
-        className={classNames('slide__image-wrapper', { loading })}
+        className="slide__image-wrapper"
         history={history}
         link={slide.link}
       >
