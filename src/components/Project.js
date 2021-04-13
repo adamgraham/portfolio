@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import Page from './Page';
+import PropTypes from 'prop-types';
+import React from 'react';
+import Page from './page';
 import '../styles/project.css';
 
 const Project = ({ children, className }) => (

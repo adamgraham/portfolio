@@ -3,14 +3,12 @@ import {
   LoadingSpinner,
   useLoading,
 } from '@zigurous/react-components';
-import React, { useRef } from 'react';
-import { Link, useHistory } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
+import React, { useRef } from 'react';
 import '../styles/slide.css';
 
 const Slide = ({ className, slide }) => {
-  const history = useHistory();
   const image = useRef();
   const loading = useLoading(image);
   return (
@@ -41,9 +39,9 @@ const Slide = ({ className, slide }) => {
         <div className="slide__text-container">
           <h1 className="h4">{slide.title}</h1>
           <p>{slide.description}</p>
-          <Link className="font-weight-semibold" to={slide.link}>
+          {/* <Link className="font-weight-semibold" to={slide.link}>
             {slide.linkText || 'More Details'}
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

@@ -1,29 +1,26 @@
 import {
-  NavBar,
+  // NavBar,
   ProgressiveImage,
   SocialNavLinks,
   useModalOverlay,
-  withTransition,
 } from '@zigurous/react-components';
-import React, { useEffect, useState } from 'react';
-import { NavLink, useHistory } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { getData } from '../data';
+import PropTypes from 'prop-types';
+import React, { useEffect, useState } from 'react';
+// import { getData } from '../data';
 import galleryOpenIcon from '../images/icons/fullscreen_exit-black-36dp.svg';
 import galleryIcon from '../images/icons/fullscreen-black-36dp.svg';
 import menuOpenIcon from '../images/icons/menu_open-black-36dp.svg';
 import menuIcon from '../images/icons/menu-black-36dp.svg';
-import routes from '../routes';
+// import routes from '../routes';
 import socialLinks from '../socialLinks';
 import '../styles/menu.css';
 
 const Menu = ({ className, hidden = false }) => {
-  const history = useHistory();
   const [fullscreen, setFullscreen] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [showGallery, setShowGallery] = useState(false);
-  const [galleryData, setGalleryData] = useState([]);
+  const [galleryData] = useState([]);
 
   useModalOverlay(fullscreen);
 
@@ -31,10 +28,10 @@ const Menu = ({ className, hidden = false }) => {
     setFullscreen(false);
     setShowMenu(false);
     setShowGallery(false);
-    setTimeout(() => {
-      setGalleryData(getData(history.location.pathname));
-    }, 400);
-  }, [hidden, history.location, setFullscreen]);
+    // setTimeout(() => {
+    //   setGalleryData(getData(history.location.pathname));
+    // }, 400);
+  }, [hidden, setFullscreen]);
 
   useEffect(() => {
     setFullscreen(showMenu || showGallery);
@@ -60,12 +57,12 @@ const Menu = ({ className, hidden = false }) => {
             >
               Adam Graham
             </button>
-            <NavBar
+            {/* <NavBar
               NavLink={NavLink}
               routes={Object.values(routes).filter(
                 (route) => route.includeInNavBar
               )}
-            />
+            /> */}
           </div>
           <div className="app-menu__header-right">
             <SocialNavLinks
@@ -104,7 +101,7 @@ const Menu = ({ className, hidden = false }) => {
           >
             <div className="app-menu__nav-list">
               <ul>
-                {Object.values(routes)
+                {/* {Object.values(routes)
                   .filter((route) => route.includeInNavBar)
                   .map((route) => (
                     <li key={route.path}>
@@ -120,7 +117,7 @@ const Menu = ({ className, hidden = false }) => {
                         <b>{route.name}</b>
                       </NavLink>
                     </li>
-                  ))}
+                  ))} */}
               </ul>
             </div>
           </div>
@@ -182,4 +179,4 @@ Menu.propTypes = {
   hidden: PropTypes.bool,
 };
 
-export default withTransition(Menu, 'translate-down', 'hidden');
+export default Menu;

@@ -1,11 +1,10 @@
-import { fadeIn } from '@zigurous/react-components';
-import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
+import React from 'react';
 import '../styles/page.css';
 
 const Page = ({ children, className }) => (
-  <div className={classNames('app-page', className)}>{children}</div>
+  <main className={classNames('app-page', className)}>{children}</main>
 );
 
 Page.propTypes = {
@@ -13,4 +12,4 @@ Page.propTypes = {
   className: PropTypes.string,
 };
 
-export default fadeIn(Page);
+export default Page;

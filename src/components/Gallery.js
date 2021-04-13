@@ -1,10 +1,9 @@
 import { useMediaQuery } from '@zigurous/react-components';
-import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import Page from './Page';
-import Slide, { SlideProps } from './Slide';
+import PropTypes from 'prop-types';
+import React, { useEffect, useState } from 'react';
+import Page from './page';
+import Slide, { SlideProps } from './slide';
 import chevronLeftIcon from '../images/icons/chevron_left-black-48dp.svg';
 import chevronRightIcon from '../images/icons/chevron_right-black-48dp.svg';
 import imageIcon from '../images/icons/image-black-36dp.svg';
@@ -13,39 +12,41 @@ import '../styles/gallery.css';
 
 let globalShowInfo = true;
 
-const findInitialIndex = (history, slides) => {
-  const hash = history.location.hash.replace('#', '');
-  const hashIndex = slides.findIndex((slide) => slide.id === hash);
-  return hashIndex !== -1 ? hashIndex : 0;
-};
+// const findInitialIndex = (history, slides) => {
+//   const hash = history.location.hash.replace('#', '');
+//   const hashIndex = slides.findIndex((slide) => slide.id === hash);
+//   return hashIndex !== -1 ? hashIndex : 0;
+// };
 
 const Gallery = ({ className, slides = [] }) => {
-  const history = useHistory();
   const mobileWidth = useMediaQuery('(max-width: 767px)');
   const mobileHeight = useMediaQuery('(max-height: 767px)');
   const verticalLayout = useMediaQuery('(max-width: 1365px)');
   const [showInfo, setShowInfo] = useState(globalShowInfo);
-  const [slideIndex, setSlideIndex] = useState(
-    findInitialIndex(history, slides)
-  );
+  const [slideIndex] = useState(0);
+  const slide = slides[slideIndex];
+
+  // const [slideIndex, setSlideIndex] = useState(
+  //   findInitialIndex(history, slides)
+  // );
 
   useEffect(() => {
     globalShowInfo = showInfo;
   }, [showInfo]);
 
-  useEffect(() => {
-    const currentSlide = slides[slideIndex];
-    const hash = history.location.hash.replace('#', '');
+  // useEffect(() => {
+  //   const currentSlide = slides[slideIndex];
+  //   const hash = history.location.hash.replace('#', '');
 
-    if (hash !== currentSlide.id) {
-      const hashIndex = slides.findIndex((slide) => slide.id === hash);
-      if (hashIndex !== -1) {
-        setSlideIndex(Math.max(hashIndex, 0));
-      } else {
-        history.replace(`${history.location.pathname}#${currentSlide.id}`);
-      }
-    }
-  }, [history, history.location, slideIndex, slides]);
+  //   if (hash !== currentSlide.id) {
+  //     const hashIndex = slides.findIndex((slide) => slide.id === hash);
+  //     if (hashIndex !== -1) {
+  //       setSlideIndex(Math.max(hashIndex, 0));
+  //     } else {
+  //       history.replace(`${history.location.pathname}#${currentSlide.id}`);
+  //     }
+  //   }
+  // }, [slideIndex, slides]);
 
   return (
     <Page>
@@ -74,11 +75,7 @@ const Gallery = ({ className, slides = [] }) => {
               !showInfo && !mobileWidth && !mobileHeight,
           })}
         >
-          <Slide
-            key={slides[slideIndex].id}
-            slide={slides[slideIndex]}
-            showInfo={showInfo}
-          />
+          {slide && <Slide key={slide.id} slide={slide} showInfo={showInfo} />}
         </div>
         <button
           aria-label="Next Slide"

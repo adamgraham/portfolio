@@ -1,5 +1,5 @@
-export { default as Gallery } from './Gallery';
-export { default as Menu } from './Menu';
-export { default as Page } from './Page';
-export { default as Project } from './Project';
-export { default as Slide } from './Slide';
+export { default as Gallery } from './gallery';
+export { default as Menu } from './menu';
+export { default as Page } from './page';
+export { default as Project } from './project';
+export { default as Slide } from './slide';
