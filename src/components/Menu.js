@@ -2,7 +2,7 @@ import {
   NavBar,
   ProgressiveImage,
   SocialNavLinks,
-  useModal,
+  useModalOverlay,
   withTransition,
 } from '@zigurous/react-components';
 import React, { useEffect, useState } from 'react';
@@ -20,10 +20,12 @@ import '../styles/menu.css';
 
 const Menu = ({ className, hidden = false }) => {
   const history = useHistory();
-  const [fullscreen, setFullscreen] = useModal();
+  const [fullscreen, setFullscreen] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [showGallery, setShowGallery] = useState(false);
   const [galleryData, setGalleryData] = useState([]);
+
+  useModalOverlay(fullscreen);
 
   useEffect(() => {
     setFullscreen(false);

@@ -3,7 +3,7 @@ import {
   LoadingSpinner,
   useLoading,
 } from '@zigurous/react-components';
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -11,7 +11,8 @@ import '../styles/slide.css';
 
 const Slide = ({ className, slide }) => {
   const history = useHistory();
-  const [image, loading] = useLoading();
+  const image = useRef();
+  const loading = useLoading(image);
   return (
     <div className={classNames('slide', className)} key={slide.id}>
       <ClickableDiv
