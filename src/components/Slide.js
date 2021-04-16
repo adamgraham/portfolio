@@ -1,47 +1,40 @@
-import {
-  ClickableDiv,
-  LoadingSpinner,
-  useLoading,
-} from '@zigurous/react-components';
+import { Link, ProgressiveImage } from '@zigurous/react-components';
 import classNames from 'classnames';
+import { Link as GatsbyLink } from 'gatsby';
 import PropTypes from 'prop-types';
-import React, { useRef } from 'react';
+import React from 'react';
 import '../styles/slide.css';
 
 const Slide = ({ className, slide }) => {
-  const image = useRef();
-  const loading = useLoading(image);
+  const offline = typeof navigator !== 'undefined' && !navigator.onLine;
+  const projectPath = `/${slide.category}/${slide.id}`;
   return (
     <div className={classNames('slide', className)} key={slide.id}>
-      <ClickableDiv
-        className="slide__image-wrapper"
-        history={history}
-        link={slide.link}
-      >
-        <img
-          alt={slide.altText}
-          className={classNames(
-            'slide__image',
-            {
-              'slide__image--border-white': !slide.imageBorder,
+      <div className="slide__image-wrapper">
+        <Link ElementType={GatsbyLink} to={projectPath} unstyled>
+          <ProgressiveImage
+            alt={slide.imageAltText || ''}
+            className={classNames('slide__image', {
               [`slide__image--border-${slide.imageBorder}`]: slide.imageBorder,
-            },
-            { loading },
-            'shadow-lg'
-          )}
-          loading="lazy"
-          ref={image}
-          src={slide.image}
-        />
-        {loading && <LoadingSpinner loading={loading} />}
-      </ClickableDiv>
+            })}
+            width={slide.image.sharp && slide.image.sharp.original.width}
+            height={slide.image.sharp && slide.image.sharp.original.height}
+            src={slide.image.publicURL || slide.image.sharp.original.src}
+            showLoadingSpinner={!offline}
+          />
+        </Link>
+      </div>
       <div className="slide__text-wrapper">
         <div className="slide__text-container">
           <h1 className="h4">{slide.title}</h1>
-          <p>{slide.description}</p>
-          {/* <Link className="font-weight-semibold" to={slide.link}>
-            {slide.linkText || 'More Details'}
-          </Link> */}
+          <p>{slide.description_short || slide.description}</p>
+          <Link
+            className="font-weight-semibold"
+            ElementType={GatsbyLink}
+            to={projectPath}
+          >
+            More Details
+          </Link>
         </div>
       </div>
     </div>
@@ -49,13 +42,22 @@ const Slide = ({ className, slide }) => {
 };
 
 export const SlideProps = PropTypes.shape({
-  altText: PropTypes.string,
-  description: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  description_short: PropTypes.string,
   id: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  image: PropTypes.shape({
+    publicURL: PropTypes.string,
+    sharp: PropTypes.shape({
+      original: PropTypes.shape({
+        src: PropTypes.string.isRequired,
+        width: PropTypes.number,
+        height: PropTypes.number,
+      }),
+    }),
+  }).isRequired,
+  imageAltText: PropTypes.string,
   imageBorder: PropTypes.string,
-  link: PropTypes.string.isRequired,
-  linkText: PropTypes.string,
   title: PropTypes.string.isRequired,
 });
 
