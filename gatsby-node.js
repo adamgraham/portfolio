@@ -40,7 +40,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       description: String
       description_short: String
       description_long: [String]
-      image: ImageSharp! @fileByRelativePath
+      image: File! @fileByRelativePath
       imageAltText: String
       imageBorder: String
       details: [ProjectDetail]
@@ -55,7 +55,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       description: String
       description_short: String
       description_long: [String]
-      image: ImageSharp! @fileByRelativePath
+      image: File! @fileByRelativePath
       imageAltText: String
       imageBorder: String
       details: [ProjectDetail]
@@ -70,7 +70,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       description: String
       description_short: String
       description_long: [String]
-      image: ImageSharp! @fileByRelativePath
+      image: File! @fileByRelativePath
       imageAltText: String
       imageBorder: String
       details: [ProjectDetail]
@@ -85,7 +85,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       description: String
       description_short: String
       description_long: [String]
-      image: ImageSharp! @fileByRelativePath
+      image: File! @fileByRelativePath
       imageAltText: String
       imageBorder: String
       details: [ProjectDetail]
@@ -100,7 +100,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       description: String
       description_short: String
       description_long: [String]
-      image: ImageSharp! @fileByRelativePath
+      image: File! @fileByRelativePath
       imageAltText: String
       imageBorder: String
       details: [ProjectDetail]

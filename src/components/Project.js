@@ -9,6 +9,7 @@ import {
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { ImageProps } from './image';
 import '../styles/project.css';
 
 const Project = ({ className, project }) => (
@@ -75,7 +76,9 @@ const Project = ({ className, project }) => (
           {section.mainImage && (
             <ProgressiveImage
               alt={`${project.title} Screenshot`}
-              src={section.mainImage.publicURL}
+              width={section.mainImage.sharp.original.width}
+              height={section.mainImage.sharp.original.height}
+              src={section.mainImage.sharp.original.src}
             />
           )}
           {section.mainVideo && (
@@ -95,7 +98,13 @@ const Project = ({ className, project }) => (
             ))}
           {section.gallery && (
             <ImageGallery
-              images={section.gallery.map((image) => image.publicURL)}
+              images={section.gallery.map((image) => {
+                return {
+                  width: image.sharp.original.width,
+                  height: image.sharp.original.height,
+                  src: image.sharp.original.src,
+                };
+              })}
               minWidth={128}
             />
           )}
@@ -135,16 +144,10 @@ export const ProjectProps = PropTypes.shape({
     PropTypes.shape({
       title: PropTypes.string,
       link: PropTypes.string,
-      mainImage: PropTypes.shape({
-        publicURL: PropTypes.string.isRequired,
-      }),
+      mainImage: ImageProps,
       mainVideo: PropTypes.string,
       paragraphs: PropTypes.arrayOf(PropTypes.string),
-      gallery: PropTypes.arrayOf(
-        PropTypes.shape({
-          publicURL: PropTypes.string.isRequired,
-        })
-      ),
+      gallery: PropTypes.arrayOf(ImageProps),
       videos: PropTypes.arrayOf(PropTypes.string),
     })
   ),

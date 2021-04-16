@@ -209,15 +209,9 @@ const Menu = ({
                       importance: 'low',
                       loading: 'lazy',
                     }}
-                    width={
-                      slide.image.sharp && slide.image.sharp.original.width
-                    }
-                    height={
-                      slide.image.sharp && slide.image.sharp.original.height
-                    }
-                    src={
-                      slide.image.publicURL || slide.image.sharp.original.src
-                    }
+                    width={slide.image.sharp.original.width}
+                    height={slide.image.sharp.original.height}
+                    src={slide.image.sharp.original.src}
                   />
                 </button>
               ))}

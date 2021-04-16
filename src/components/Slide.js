@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import { Link as GatsbyLink } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { ImageProps } from './image';
 import '../styles/slide.css';
 
 const Slide = ({ className, slide }) => {
@@ -17,9 +18,9 @@ const Slide = ({ className, slide }) => {
             className={classNames('slide__image', {
               [`slide__image--border-${slide.imageBorder}`]: slide.imageBorder,
             })}
-            width={slide.image.sharp && slide.image.sharp.original.width}
-            height={slide.image.sharp && slide.image.sharp.original.height}
-            src={slide.image.publicURL || slide.image.sharp.original.src}
+            width={slide.image.sharp.original.width}
+            height={slide.image.sharp.original.height}
+            src={slide.image.sharp.original.src}
             showLoadingSpinner={!offline}
           />
         </Link>
@@ -46,16 +47,7 @@ export const SlideProps = PropTypes.shape({
   description: PropTypes.string,
   description_short: PropTypes.string,
   id: PropTypes.string.isRequired,
-  image: PropTypes.shape({
-    publicURL: PropTypes.string,
-    sharp: PropTypes.shape({
-      original: PropTypes.shape({
-        src: PropTypes.string.isRequired,
-        width: PropTypes.number,
-        height: PropTypes.number,
-      }),
-    }),
-  }).isRequired,
+  image: ImageProps.isRequired,
   imageAltText: PropTypes.string,
   imageBorder: PropTypes.string,
   title: PropTypes.string.isRequired,

@@ -25,12 +25,24 @@ export const query = graphql`
         title
         link
         mainImage {
-          publicURL
+          sharp: childImageSharp {
+            original {
+              src
+              width
+              height
+            }
+          }
         }
         mainVideo
         paragraphs
         gallery {
-          publicURL
+          sharp: childImageSharp {
+            original {
+              src
+              width
+              height
+            }
+          }
         }
         videos
       }
@@ -43,7 +55,13 @@ export const query = graphql`
         description
         description_short
         image {
-          publicURL
+          sharp: childImageSharp {
+            original {
+              src
+              width
+              height
+            }
+          }
         }
         imageAltText
         imageBorder
