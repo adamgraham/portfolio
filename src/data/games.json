@@ -1,1 +1,518 @@
-[]
+[
+  {
+    "id": "the-wandering-dark",
+    "category": "games",
+    "title": "The Wandering Dark",
+    "description": "The Wandering Dark is a unique indie adventure game that takes you through a girl's dreams and nightmares as she deals with her struggles and fears in life. Battle through these nightmares, explore her different dream worlds, and fight for survival as she matures and grows. Adam developed the game alongside Michael Louden for his senior capstone project before graduating.",
+    "description_short": "The Wandering Dark is a unique indie adventure game that takes you through a girl's dreams and nightmares as she deals with her struggles and fears in life. Battle through these nightmares, explore her different dream worlds, and fight for survival as she matures and grows.",
+    "image": "../images/banners/the-wandering-dark-painting.jpg",
+    "imageAltText": "The Wandering Dark Painting",
+    "details": [
+      {
+        "key": "ROLE —",
+        "value": "Lead Programmer, Co-Designer"
+      },
+      {
+        "key": "TECH —",
+        "value": "Unity, C#"
+      },
+      {
+        "key": "DATE —",
+        "value": "June 2015"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Beta",
+        "link": "https://drive.google.com/open?id=0BzUWUmwjB6l2ZW00Z3poTXE3UVU",
+        "mainVideo": "JtCg7oB67wY",
+        "gallery": [
+          "../images/screenshots/the-wandering-dark-screenshot-01.jpg",
+          "../images/screenshots/the-wandering-dark-screenshot-02.jpg",
+          "../images/screenshots/the-wandering-dark-screenshot-03.jpg",
+          "../images/screenshots/the-wandering-dark-screenshot-04.jpg",
+          "../images/screenshots/the-wandering-dark-screenshot-05.jpg",
+          "../images/screenshots/the-wandering-dark-screenshot-06.jpg",
+          "../images/screenshots/the-wandering-dark-screenshot-07.jpg"
+        ]
+      },
+      {
+        "title": "Alpha",
+        "link": "https://drive.google.com/open?id=0BzUWUmwjB6l2QUd2RTNOYnI3TWs",
+        "mainVideo": "EF8ywk3Qq48",
+        "gallery": [
+          "../images/screenshots/project-dream-screenshot-01.jpg",
+          "../images/screenshots/project-dream-screenshot-02.jpg",
+          "../images/screenshots/project-dream-screenshot-03.jpg",
+          "../images/screenshots/project-dream-screenshot-04.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "squishem",
+    "category": "games",
+    "title": "Squish-em!",
+    "description": "Squish-em! is an arcade game with ever so squishy moles just asking for a tap on the head! It's a simple whack-a-mole re-creation designed for highscore-play. Squish your way to the top of the leaderboards, earn achievements along the way, and brag to your friends once you beat their best score! Do you have what it takes to become the best squisher around?",
+    "description_short": "Squish-em! is an arcade game with ever so squishy moles just asking for a tap on the head! It's a simple whack-a-mole re-creation designed for highscore-play. Squish your way to the top of the leaderboards, earn achievements along the way, and brag to your friends once you beat their best score!",
+    "image": "../images/banners/squishem-game-painting.jpg",
+    "imageAltText": "Squish-em! Painting",
+    "details": [
+      {
+        "key": "ROLE —",
+        "value": "Lead Programmer, Producer, Designer"
+      },
+      {
+        "key": "TECH —",
+        "value": "Adobe Flash, ActionScript 3.0"
+      },
+      {
+        "key": "DATE —",
+        "value": "April 2015"
+      }
+    ],
+    "buttons": [
+      {
+        "name": "Play Game",
+        "link": "https://squishem.com/"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Media",
+        "mainImage": "../images/banners/squishem-banner.jpg",
+        "gallery": [
+          "../images/screenshots/squishem-screenshot-01.jpg",
+          "../images/screenshots/squishem-screenshot-02.jpg",
+          "../images/screenshots/squishem-screenshot-03.jpg",
+          "../images/screenshots/squishem-screenshot-04.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "the-rise",
+    "category": "games",
+    "title": "The Rise",
+    "description": "The Rise is a \"doors escape\" puzzle game with a total of 30 unique levels. Each is an individual puzzle designed to make you think hard. Put your logical skills to the test, rise to the top, and conquer all 30 levels.",
+    "image": "../images/banners/the-rise-painting.jpg",
+    "imageAltText": "The Rise Painting",
+    "details": [
+      {
+        "key": "ROLE —",
+        "value": "Lead Programmer, Producer, Designer"
+      },
+      {
+        "key": "TECH —",
+        "value": "Adobe Flash, ActionScript 3.0"
+      },
+      {
+        "key": "DATE —",
+        "value": "July 2013"
+      }
+    ],
+    "buttons": [
+      {
+        "name": "Play Game",
+        "link": "https://www.newgrounds.com/portal/view/622585"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Media",
+        "mainImage": "../images/banners/the-rise-banner.jpg",
+        "gallery": [
+          "../images/screenshots/the-rise-screenshot-01.jpg",
+          "../images/screenshots/the-rise-screenshot-02.jpg",
+          "../images/screenshots/the-rise-screenshot-03.jpg",
+          "../images/screenshots/the-rise-screenshot-04.jpg",
+          "../images/screenshots/the-rise-screenshot-05.jpg",
+          "../images/screenshots/the-rise-screenshot-06.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ancient-odyssey",
+    "category": "games",
+    "title": "Ancient Odyssey",
+    "description": "Ancient Odyssey is a \"doors escape\" puzzle game containing 30 unique levels. Each is an individual puzzle designed to make your brain think hard! Can you survive the journey to the underworld by plundering all 30 levels?",
+    "image": "../images/banners/ancient-odyssey-painting.jpg",
+    "imageAltText": "Ancient Odyssey Painting",
+    "details": [
+      {
+        "key": "ROLE —",
+        "value": "Lead Programmer, Producer, Designer"
+      },
+      {
+        "key": "TECH —",
+        "value": "Adobe Flash, ActionScript 3.0"
+      },
+      {
+        "key": "DATE —",
+        "value": "November 2013"
+      }
+    ],
+    "buttons": [
+      {
+        "name": "Play Game",
+        "link": "https://www.newgrounds.com/portal/view/628001"
+      },
+      {
+        "name": "iOS Download",
+        "link": "https://apps.apple.com/app/pharaohs-escape/id702877946"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Media",
+        "mainImage": "../images/banners/ancient-odyssey-banner.jpg",
+        "gallery": [
+          "../images/screenshots/ancient-odyssey-screenshot-01.jpg",
+          "../images/screenshots/ancient-odyssey-screenshot-02.jpg",
+          "../images/screenshots/ancient-odyssey-screenshot-03.jpg",
+          "../images/screenshots/ancient-odyssey-screenshot-04.jpg",
+          "../images/screenshots/ancient-odyssey-screenshot-05.jpg",
+          "../images/screenshots/ancient-odyssey-screenshot-06.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lunar-escape",
+    "category": "games",
+    "title": "Lunar Escape",
+    "description": "Lunar Escape is a \"doors escape\" puzzle game. There are a total of 30 unique levels. Each is an individual puzzle designed to make your brain think out of this world! Do you have the logical skills needed to transcend all 30 levels?",
+    "image": "../images/banners/lunar-escape-painting.jpg",
+    "imageAltText": "Lunar Escape Painting",
+    "details": [
+      {
+        "key": "ROLE —",
+        "value": "Lead Programmer, Producer, Designer, Artist"
+      },
+      {
+        "key": "TECH —",
+        "value": "Adobe Flash, ActionScript 3.0"
+      },
+      {
+        "key": "DATE —",
+        "value": "September 2013"
+      }
+    ],
+    "buttons": [
+      {
+        "name": "Play Game",
+        "link": "https://www.newgrounds.com/portal/view/625640"
+      },
+      {
+        "name": "iOS Download",
+        "link": "https://apps.apple.com/app/escape-to-space/id681843951"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Media",
+        "mainImage": "../images/banners/lunar-escape-banner.jpg",
+        "gallery": [
+          "../images/screenshots/lunar-escape-screenshot-01.jpg",
+          "../images/screenshots/lunar-escape-screenshot-02.jpg",
+          "../images/screenshots/lunar-escape-screenshot-03.jpg",
+          "../images/screenshots/lunar-escape-screenshot-04.jpg",
+          "../images/screenshots/lunar-escape-screenshot-05.jpg",
+          "../images/screenshots/lunar-escape-screenshot-06.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "escape-the-basement",
+    "category": "games",
+    "title": "Escape the Basement",
+    "description": "Escape the Basement is a point-and-click \"escape\" game. You of all people were chosen to die. A cruel man named Kane has locked you in his basement with no thought of letting you free. Can you outwit his evil plan and escape?",
+    "image": "../images/banners/escape-the-basement-painting.jpg",
+    "imageAltText": "Escape the Basement Painting",
+    "details": [
+      {
+        "key": "ROLE —",
+        "value": "Lead Programmer, Producer, Designer"
+      },
+      {
+        "key": "TECH —",
+        "value": "Adobe Flash, ActionScript 3.0"
+      },
+      {
+        "key": "DATE —",
+        "value": "August 2012"
+      }
+    ],
+    "buttons": [
+      {
+        "name": "Play Game",
+        "link": "https://www.newgrounds.com/portal/view/601869"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Media",
+        "mainImage": "../images/banners/escape-the-basement-banner.jpg",
+        "gallery": [
+          "../images/screenshots/escape-the-basement-screenshot-01.jpg",
+          "../images/screenshots/escape-the-basement-screenshot-02.jpg",
+          "../images/screenshots/escape-the-basement-screenshot-03.jpg",
+          "../images/screenshots/escape-the-basement-screenshot-04.jpg",
+          "../images/screenshots/escape-the-basement-screenshot-05.jpg",
+          "../images/screenshots/escape-the-basement-screenshot-06.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "escape-the-estate",
+    "category": "games",
+    "title": "Escape the Estate",
+    "description": "Escape the Estate is a point-and-click \"escape\" game. Your life is on the line! Kane is at it again, and this time he is angry! Do you have what it takes to prevent his cruel intentions? Put your puzzle-solving skills to the test in the sequel to Escape the Basement!",
+    "image": "../images/banners/escape-the-estate-painting.jpg",
+    "imageAltText": "Escape the Estate Painting",
+    "details": [
+      {
+        "key": "ROLE —",
+        "value": "Lead Programmer, Producer, Designer, Artist"
+      },
+      {
+        "key": "TECH —",
+        "value": "Adobe Flash, ActionScript 3.0"
+      },
+      {
+        "key": "DATE —",
+        "value": "August 2013"
+      }
+    ],
+    "buttons": [
+      {
+        "name": "Play Game",
+        "link": "https://www.newgrounds.com/portal/view/622915"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Media",
+        "mainImage": "../images/banners/escape-the-estate-banner.jpg",
+        "gallery": [
+          "../images/screenshots/escape-the-estate-screenshot-01.jpg",
+          "../images/screenshots/escape-the-estate-screenshot-02.jpg",
+          "../images/screenshots/escape-the-estate-screenshot-03.jpg",
+          "../images/screenshots/escape-the-estate-screenshot-04.jpg",
+          "../images/screenshots/escape-the-estate-screenshot-05.jpg",
+          "../images/screenshots/escape-the-estate-screenshot-06.jpg",
+          "../images/screenshots/escape-the-estate-screenshot-07.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hackathon-for-wildlife",
+    "category": "games",
+    "title": "Hackathon for Wildlife",
+    "description_short": "An empathetic game that invokes the emotions an elephant feels while being hunted by a deadly poacher. By putting the player in the role of the elephant, it creates a deeper connection between the human and the animal.",
+    "description_long": [
+      "An empathetic game created in 24 hours that invokes the emotions an elephant feels while being hunted by a deadly poacher. By putting the player in the role of the elephant, it creates a deeper connection between the human and the animal.",
+      "\"On November 14th and 15th over 60 people came together to explore and develop innovative ways to engage worldwide audiences with wild animals. The hackathon teams created amazing concepts through a combination of technologies that include GPS hardware, data, games, and social media to create a stronger, more vested connection between people and animals.\""
+    ],
+    "image": "../images/banners/hackathon-for-wildlife-painting.jpg",
+    "imageAltText": "Hackathon for Wildlife Painting",
+    "details": [
+      {
+        "key": "AWARDS —",
+        "value": "1st place \"Best Prototype\", 2nd place \"Most Innovative Use of Technology\""
+      },
+      {
+        "key": "ROLE —",
+        "value": "Team Lead, Lead Programmer & Designer"
+      },
+      {
+        "key": "TECH —",
+        "value": "Unity, C#"
+      },
+      {
+        "key": "DATE —",
+        "value": "November 2015"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Media",
+        "gallery": [
+          "../images/screenshots/hackathon-for-wildlife-screenshot-01.jpg",
+          "../images/screenshots/hackathon-for-wildlife-screenshot-02.jpg"
+        ],
+        "videos": [
+          "VXWw1CmOkEw"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "boss-rush",
+    "category": "games",
+    "title": "Boss Rush",
+    "description": "Boss Rush is a top-down, twin-stick shooter consisting of nothing but boss fights. Developed for a course at DePaul University, the objective was to create a slice of a complete game, so it consists of one action-packed boss fight – the Spider Tank.",
+    "image": "../images/banners/boss-rush-painting.jpg",
+    "imageAltText": "Boss Rush Painting",
+    "details": [
+      {
+        "key": "ROLE —",
+        "value": "Gameplay & Systems Programmer"
+      },
+      {
+        "key": "TECH —",
+        "value": "Unity, C#"
+      },
+      {
+        "key": "DATE —",
+        "value": "November 2014"
+      }
+    ],
+    "buttons": [
+      {
+        "name": "Download",
+        "link": "https://github.com/ModSquadWorkshop/BossRush/releases"
+      },
+      {
+        "name": "Source Code",
+        "link": "https://github.com/adamgraham/boss-rush"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Media",
+        "gallery": [
+          "../images/screenshots/boss-rush-screenshot-01.jpg",
+          "../images/screenshots/boss-rush-screenshot-02.jpg"
+        ],
+        "videos": [
+          "mbLD45xPQME"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "alphas",
+    "category": "games",
+    "title": "Alphas",
+    "description": "Alphas is a top-down twin stick action shooter developed for a course at DePaul University. The game consists of five interlinked deadly arenas, several unique weapons, and a multitude of engaging enemies lead by the alpha boss. Can you survive the swarm?",
+    "image": "../images/banners/alphas-painting.jpg",
+    "imageAltText": "Alphas Painting",
+    "details": [
+      {
+        "key": "ROLE —",
+        "value": "Team Lead, Lead Programmer & Designer"
+      },
+      {
+        "key": "TECH —",
+        "value": "XNA, C#"
+      },
+      {
+        "key": "DATE —",
+        "value": "June 2013"
+      }
+    ],
+    "buttons": [
+      {
+        "name": "Download",
+        "link": "https://drive.google.com/open?id=0BzUWUmwjB6l2b2M2b00zR25xc28"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Media",
+        "gallery": [
+          "../images/screenshots/alphas-screenshot-01.jpg",
+          "../images/screenshots/alphas-screenshot-02.jpg"
+        ],
+        "videos": [
+          "waZor8haeuY"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ferro",
+    "category": "games",
+    "title": "Ferro",
+    "description": "Inspired by ferrofluids, Ferro is a unique virtual reality experience created by Michael Louden and myself. As a scientist who has discovered a potential gateway into another universe, your job is to channel it to the right frequency. Alongside virtual reality technologies, players use a midi keyboard as the primary input device to initiate the machines and tune the portal.",
+    "description_short": "Ferro is a unique virtual reality experience inspired by ferrofluids. As a scientist who has discovered a potential gateway into another universe, your job is to channel it to the right frequency. Players use a midi keyboard as the primary input device to initiate the machines and tune the portal.",
+    "image": "../images/banners/ferro-painting.jpg",
+    "imageAltText": "Ferro Painting",
+    "details": [
+      {
+        "key": "ROLE —",
+        "value": "I/O Programmer"
+      },
+      {
+        "key": "TECH —",
+        "value": "Unity, C#, Oculus Rift, Midi Keyboard"
+      },
+      {
+        "key": "DATE —",
+        "value": "April 2015"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Media",
+        "gallery": [
+          "../images/screenshots/ferro-screenshot-01.jpg",
+          "../images/screenshots/ferro-screenshot-02.jpg"
+        ],
+        "videos": [
+          "nybrBOkmNkM"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "elegy",
+    "category": "games",
+    "title": "Elegy",
+    "description": "Elegy is a deep game covering the five stages of grief as a parent deals with the loss of their child. A parent attends the funeral of their child and tries to rewind time to stop the child's death from occurring. The player engages in different scenes to figure out how they can stop the events from happening, but ultimately they must accept the death of their child.",
+    "description_short": "Elegy is a deep game covering the five stages of grief as a parent deals with the loss of their child. A parent attends the funeral of their child and tries to rewind time to stop the child's death from occurring, but ultimately they must accept the death of their child.",
+    "image": "../images/banners/elegy-painting.jpg",
+    "imageAltText": "Elegy Painting",
+    "details": [
+      {
+        "key": "ROLE —",
+        "value": "Lead Programmer, Designer"
+      },
+      {
+        "key": "TECH —",
+        "value": "Adobe Flash, ActionScript 3.0"
+      },
+      {
+        "key": "DATE —",
+        "value": "March 2015"
+      }
+    ],
+    "buttons": [
+      {
+        "name": "Download",
+        "link": "https://drive.google.com/open?id=1RHmvqyU1B5gXo0hb18n7ahSxnKQeSTra"
+      },
+      {
+        "name": "Source Code",
+        "link": "https://github.com/adamgraham/elegy"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Media",
+        "gallery": [
+          "../images/screenshots/elegy-screenshot-01.jpg",
+          "../images/screenshots/elegy-screenshot-02.jpg"
+        ],
+        "videos": [
+          "KQxgLDEK05g"
+        ]
+      }
+    ]
+  }
+]
