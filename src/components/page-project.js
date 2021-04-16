@@ -6,7 +6,12 @@ import { SlideProps } from './slide';
 
 const ProjectPage = ({ gallery, location, project }) => {
   return (
-    <Page gallery={gallery} id={project.id} location={location}>
+    <Page
+      category={project.category}
+      gallery={gallery}
+      id={project.id}
+      location={location}
+    >
       <Project project={project} />
     </Page>
   );

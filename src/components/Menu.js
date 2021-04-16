@@ -10,6 +10,8 @@ import { Link as GatsbyLink, navigate } from 'gatsby';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import { SlideProps } from './slide';
+import chevronLeftIcon from '../images/icons/chevron_left-black-48dp.svg';
+import chevronRightIcon from '../images/icons/chevron_right-black-48dp.svg';
 import galleryOpenIcon from '../images/icons/fullscreen_exit-black-36dp.svg';
 import galleryIcon from '../images/icons/fullscreen-black-36dp.svg';
 import menuOpenIcon from '../images/icons/menu_open-black-36dp.svg';
@@ -49,10 +51,12 @@ const links = [
 ];
 
 const Menu = ({
+  category,
   className,
   gallery = [],
   location,
-  onRequestSlideIndex = () => {},
+  setSlideIndex = () => {},
+  slideIndex,
 }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [showGallery, setShowGallery] = useState(false);
@@ -68,17 +72,58 @@ const Menu = ({
     >
       <div className="app-menu__container">
         <header className="app-menu__header">
-          <div className="app-menu__header-left">
-            <button className="logo h4" onClick={() => navigate('/')}>
+          <div>
+            <Link className="logo h4" ElementType={GatsbyLink} to="/" unstyled>
               Adam Graham
-            </button>
+            </Link>
+            {slideIndex === undefined && !fullscreen && (
+              <Link
+                className="app-menu__page-title h4 display-none margin-bottom-none"
+                ElementType={GatsbyLink}
+                to={`/${category}`}
+                unstyled
+              >
+                {category.replace(/\b\w/g, (l) => l.toUpperCase())}
+              </Link>
+            )}
+            {slideIndex !== undefined && (
+              <div
+                className="app-menu__slide-buttons display-none"
+                style={{ marginLeft: '-8px' }}
+              >
+                <button
+                  aria-label="Previous Slide"
+                  disabled={slideIndex <= 0}
+                  onClick={() => {
+                    const previousIndex = Math.max(slideIndex - 1, 0);
+                    setSlideIndex(previousIndex);
+                  }}
+                >
+                  <img alt="" src={chevronLeftIcon} />
+                </button>
+                <button
+                  aria-label="Next Slide"
+                  className="margin-left-md"
+                  disabled={slideIndex >= gallery.length - 1}
+                  onClick={() => {
+                    const nextIndex = Math.min(
+                      slideIndex + 1,
+                      gallery.length - 1
+                    );
+                    setSlideIndex(nextIndex);
+                  }}
+                >
+                  <img alt="" src={chevronRightIcon} />
+                </button>
+              </div>
+            )}
             <NavBar
               links={links}
               LinkElementType={GatsbyLink}
               location={location}
             />
           </div>
-          <div className="app-menu__header-right">
+          <div>
             <SocialNavLinks
               className="margin-left-md margin-right-md"
               foregroundColor="black"
@@ -123,6 +168,7 @@ const Menu = ({
                     disabled={!showMenu}
                     ElementType={link.ElementType || GatsbyLink}
                     external={link.external}
+                    onClick={() => setShowMenu(false)}
                     tabIndex={fullscreen ? 0 : -1}
                     to={link.to}
                     unstyled
@@ -150,7 +196,7 @@ const Menu = ({
                   onClick={() => {
                     setShowGallery(false);
                     setSessionIndex(slide.category, index);
-                    onRequestSlideIndex(index);
+                    setSlideIndex(index);
                     navigate(`/${slide.category}`);
                   }}
                 >
@@ -184,10 +230,12 @@ const Menu = ({
 };
 
 Menu.propTypes = {
+  category: PropTypes.string,
   className: PropTypes.string,
   gallery: PropTypes.arrayOf(SlideProps),
   location: PropTypes.object,
-  onRequestSlideIndex: PropTypes.func,
+  setSlideIndex: PropTypes.func,
+  slideIndex: PropTypes.number,
 };
 
 export default Menu;

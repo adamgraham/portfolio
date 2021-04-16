@@ -7,8 +7,8 @@ export const query = graphql`
   query Games {
     json: allGamesJson {
       gallery: nodes {
-        category
         id
+        category
         title
         description
         description_short

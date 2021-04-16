@@ -7,6 +7,7 @@ export const query = graphql`
   query($id: String!) {
     project: techJson(id: { eq: $id }) {
       id
+      category
       title
       date
       description
@@ -36,8 +37,8 @@ export const query = graphql`
     }
     json: allTechJson {
       gallery: nodes {
-        category
         id
+        category
         title
         description
         description_short

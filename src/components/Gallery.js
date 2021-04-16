@@ -1,31 +1,23 @@
 import { useMediaQuery } from '@zigurous/react-components';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Slide, { SlideProps } from './slide';
 import chevronLeftIcon from '../images/icons/chevron_left-black-48dp.svg';
 import chevronRightIcon from '../images/icons/chevron_right-black-48dp.svg';
 import imageIcon from '../images/icons/image-black-36dp.svg';
 import infoIcon from '../images/icons/info-black-36dp.svg';
-import { getSessionIndex, setSessionIndex } from '../session';
 import '../styles/gallery.css';
 
-const Gallery = ({ category, className, requestedIndex, slides = [] }) => {
+const Gallery = ({
+  className,
+  gallery = [],
+  setSlideIndex = () => {},
+  slideIndex,
+}) => {
   const verticalLayout = useMediaQuery('(max-width: 1365px)');
   const [showInfo, setShowInfo] = useState(true);
-  const [slideIndex, setSlideIndex] = useState(getSessionIndex(category));
-  const slide = slides[slideIndex];
-
-  useEffect(() => {
-    if (requestedIndex !== undefined && requestedIndex !== null) {
-      setSlideIndex(requestedIndex);
-    }
-  }, [requestedIndex]);
-
-  useEffect(() => {
-    setSessionIndex(category, slideIndex);
-  }, [category, slideIndex]);
-
+  const slide = gallery[slideIndex];
   return (
     <article
       className={classNames(
@@ -52,13 +44,13 @@ const Gallery = ({ category, className, requestedIndex, slides = [] }) => {
       <button
         aria-label="Next Slide"
         className="gallery__button right"
-        disabled={slideIndex >= slides.length - 1}
+        disabled={slideIndex >= gallery.length - 1}
         onClick={() => {
-          const nextIndex = Math.min(slideIndex + 1, slides.length - 1);
+          const nextIndex = Math.min(slideIndex + 1, gallery.length - 1);
           setSlideIndex(nextIndex);
         }}
       >
-        {slideIndex < slides.length - 1 && (
+        {slideIndex < gallery.length - 1 && (
           <img alt="" src={chevronRightIcon} />
         )}
       </button>
@@ -78,10 +70,10 @@ const Gallery = ({ category, className, requestedIndex, slides = [] }) => {
 };
 
 Gallery.propTypes = {
-  category: PropTypes.string,
   className: PropTypes.string,
-  requestedIndex: PropTypes.number,
-  slides: PropTypes.arrayOf(SlideProps),
+  gallery: PropTypes.arrayOf(SlideProps),
+  setSlideIndex: PropTypes.func,
+  slideIndex: PropTypes.number,
 };
 
 export default Gallery;

@@ -5,32 +5,38 @@ import Menu from './menu';
 import { SlideProps } from './slide';
 
 const Page = ({
+  category,
   children,
   className,
   gallery,
   id,
   location,
-  onRequestSlideIndex,
+  setSlideIndex,
+  slideIndex,
 }) => (
   <div className="app">
     <main className={classNames('page', className)} id={id}>
       {children}
     </main>
     <Menu
+      category={category}
       gallery={gallery}
       location={location}
-      onRequestSlideIndex={onRequestSlideIndex}
+      setSlideIndex={setSlideIndex}
+      slideIndex={slideIndex}
     />
   </div>
 );
 
 Page.propTypes = {
+  category: PropTypes.string,
   children: PropTypes.node,
   className: PropTypes.string,
   gallery: PropTypes.arrayOf(SlideProps),
   id: PropTypes.string,
   location: PropTypes.object,
-  onRequestSlideIndex: PropTypes.func,
+  setSlideIndex: PropTypes.func,
+  slideIndex: PropTypes.number,
 };
 
 export default Page;
