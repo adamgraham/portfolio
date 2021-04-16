@@ -12,7 +12,7 @@
   width: 100%;
   height: 80px;
   transition: height 0.4s;
-  background-color: var(--color-background, white);
+  background-color: white;
 }
 
 .app-menu--fullscreen .app-menu__container {
@@ -30,7 +30,7 @@
   width: 100%;
   height: 80px;
   padding: 24px 32px;
-  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15)
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 10%);
 }
 
 .app-menu__header-left,
@@ -42,7 +42,7 @@
 
 .app-menu .logo {
   margin: 0;
-  font-weight: 700;
+  font-weight: 600;
   white-space: nowrap;
 }
 
@@ -60,8 +60,9 @@
   width: 100%;
   height: calc(100vh - 80px);
   padding: 32px;
-  overflow: hidden;
-  background-color: var(--color-background, white);
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: white;
 }
 
 .app-menu__menu-view,
@@ -97,19 +98,10 @@
 }
 
 .app-menu__thumbnail-image {
-  width: 100%;
-  border-style: solid;
-  border-width: 4px;
-}
-
-.app-menu__thumbnail-image--border-white {
-  border-color: var(--color-scale-white, white);
-  background-color: var(--color-scale-white, white);
-}
-
-.app-menu__thumbnail-image--border-black {
-  border-color: var(--color-scale-black, black);
-  background-color: var(--color-scale-black, black);
+  box-shadow: 0 0 3rem rgb(0 0 0 / 15%);
+  border: 4px solid white;
+  border-radius: 0.25rem;
+  background-color: white;
 }
 
 .app-menu__thumbnail-image--border-none {
@@ -119,49 +111,22 @@
 }
 
 .app-menu__nav-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
-  height: 100%;
-}
-
-.app-menu__nav-list ul {
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
   padding-inline-start: 0;
+  font-weight: 600;
   font-size: 2rem;
-  font-size: 8vmin;
   line-height: 1.25;
-  text-align: right;
-  text-transform: uppercase;
+  text-align: left;
   list-style: none;
   white-space: nowrap;
 }
 
-.app-menu__nav-list li > span {
-  color: var(--color-scale-gray-600);
-}
-
-.app-menu__nav-list a,
-.app-menu__nav-list a:visited {
-  color: var(--color-nav-skin);
-}
-
-.app-menu__nav-list a:hover {
-  color: var(--color-nav-skin-decoration);
-  border-bottom: solid 1px transparent;
-}
-
-.app-menu__nav-list a.selected {
-  color: var(--color-nav-skin-decoration);
-}
-
-.app-menu__nav-list a b {
-  font-weight: 700;
+.app-menu__nav-list a {
+  color: inherit;
+  border-bottom: none !important;
 }
 
 @media (max-width: 767px) {
@@ -179,6 +144,18 @@
 @media (max-width: 1439px) {
   .app-menu .social-nav-links {
     display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .app-menu__nav-list {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .app-menu__nav-list {
+    font-size: 3rem;
   }
 }
 

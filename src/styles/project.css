@@ -1,7 +1,6 @@
 .project {
   padding-top: 32px;
-  padding-bottom: 32px;
-  margin-bottom: 256px;
+  padding-bottom: 208px;
 }
 
 .project section {
@@ -12,7 +11,7 @@
 .project em {
   font-style: normal;
   letter-spacing: -0.5px;
-  color: var(--color-scale-gray-600, gray);
+  color: #757575;
 }
 
 .project img {
@@ -24,6 +23,11 @@
   display: block;
 }
 
+.project .progressive-image,
+.project .embedded-video {
+  box-shadow: 0 0 2rem rgb(0, 0, 0, 5%);
+}
+
 @media (max-width: 767px) {
   .project section {
     margin-top: 1rem;
@@ -33,6 +37,6 @@
 
 @media (max-width: 1024px) {
   .project {
-    margin-bottom: 128px;
+    padding-bottom: 144px;
   }
 }

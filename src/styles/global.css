@@ -1,3 +1,17 @@
+:root {
+  --header-height: 0;
+  --footer-height: 80px;
+}
+
 html {
   font-size: 1.125rem;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.app > .page {
+  padding-bottom: 0;
 }
