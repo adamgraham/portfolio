@@ -18,38 +18,8 @@ import menuOpenIcon from '../images/icons/menu_open-black-36dp.svg';
 import menuIcon from '../images/icons/menu-black-36dp.svg';
 import { titleCase } from '../formatting';
 import { setSessionIndex } from '../session';
-import socialLinks from '../socialLinks';
+import { navLinks, socialLinks } from '../links';
 import '../styles/menu.css';
-
-const links = [
-  {
-    name: 'Games',
-    to: '/games',
-  },
-  {
-    name: 'Visual Art',
-    to: '/art',
-  },
-  {
-    name: 'Web Design',
-    to: '/websites',
-  },
-  {
-    name: 'Emerging Tech',
-    to: '/tech',
-  },
-  {
-    name: 'Presentations',
-    to: '/presentations',
-  },
-  {
-    name: 'Software',
-    to: 'https://github.com/adamgraham',
-    rightIcon: 'open_in_new',
-    ElementType: 'a',
-    external: true,
-  },
-];
 
 const Menu = ({
   category,
@@ -119,7 +89,7 @@ const Menu = ({
               </div>
             )}
             <NavBar
-              links={links}
+              links={navLinks}
               LinkElementType={GatsbyLink}
               location={location}
             />
@@ -130,7 +100,7 @@ const Menu = ({
               foregroundColor="black"
               iconSize={24}
               iconInnerPadding={12}
-              links={Object.values(socialLinks)}
+              links={socialLinks}
             />
             <button
               aria-label={showGallery ? 'Hide Gallery' : 'Show Gallery'}
@@ -160,7 +130,7 @@ const Menu = ({
             className={classNames('app-menu__menu-view', { open: showMenu })}
           >
             <ul className="app-menu__nav-list">
-              {links.map((link) => (
+              {navLinks.map((link) => (
                 <li key={link.to}>
                   <Link
                     activeClassName=""

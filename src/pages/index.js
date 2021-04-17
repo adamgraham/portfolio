@@ -1,7 +1,7 @@
 import { Button, Link /*, SocialNavLinks */ } from '@zigurous/react-components';
 import { Link as GatsbyLink } from 'gatsby';
 import React from 'react';
-// import socialLinks from '../socialLinks';
+// import { socialLinks } from '../links';
 
 const Home = () => {
   return (
@@ -28,7 +28,7 @@ const Home = () => {
             foregroundColor="black"
             iconSize={24}
             iconInnerPadding={12}
-            links={Object.values(socialLinks)}
+            links={socialLinks}
           /> */}
         </div>
       </article>
