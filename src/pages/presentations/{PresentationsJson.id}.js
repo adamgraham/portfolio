@@ -11,7 +11,17 @@ export const query = graphql`
       title
       date
       description
+      description_short
       description_long
+      image {
+        sharp: childImageSharp {
+          original {
+            src
+            width
+            height
+          }
+        }
+      }
       details {
         key
         value

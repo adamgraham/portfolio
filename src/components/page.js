@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Menu from './menu';
+import Metadata from './metadata';
 import { SlideProps } from './slide';
 
 const Page = ({
@@ -11,10 +12,12 @@ const Page = ({
   gallery,
   id,
   location,
+  metadata,
   setSlideIndex,
   slideIndex,
 }) => (
   <div className="app">
+    <Metadata {...metadata} />
     <main className={classNames('page', className)} id={id}>
       {children}
     </main>
@@ -35,6 +38,7 @@ Page.propTypes = {
   gallery: PropTypes.arrayOf(SlideProps),
   id: PropTypes.string,
   location: PropTypes.object,
+  metadata: PropTypes.object,
   setSlideIndex: PropTypes.func,
   slideIndex: PropTypes.number,
 };

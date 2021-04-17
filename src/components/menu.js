@@ -16,6 +16,7 @@ import galleryOpenIcon from '../images/icons/fullscreen_exit-black-36dp.svg';
 import galleryIcon from '../images/icons/fullscreen-black-36dp.svg';
 import menuOpenIcon from '../images/icons/menu_open-black-36dp.svg';
 import menuIcon from '../images/icons/menu-black-36dp.svg';
+import { titleCase } from '../formatting';
 import { setSessionIndex } from '../session';
 import socialLinks from '../socialLinks';
 import '../styles/menu.css';
@@ -83,7 +84,7 @@ const Menu = ({
                 to={`/${category}`}
                 unstyled
               >
-                {category.replace(/\b\w/g, (l) => l.toUpperCase())}
+                {titleCase(category)}
               </Link>
             )}
             {slideIndex !== undefined && (

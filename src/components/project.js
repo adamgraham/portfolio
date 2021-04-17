@@ -130,8 +130,10 @@ export const ProjectProps = PropTypes.shape({
       icon: PropTypes.string,
     })
   ),
+  category: PropTypes.string.isRequired,
   date: PropTypes.string,
   description: PropTypes.string,
+  description_short: PropTypes.string,
   description_long: PropTypes.arrayOf(PropTypes.string),
   details: PropTypes.arrayOf(
     PropTypes.shape({
@@ -140,6 +142,7 @@ export const ProjectProps = PropTypes.shape({
     })
   ),
   id: PropTypes.string.isRequired,
+  image: ImageProps.isRequired,
   sections: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
