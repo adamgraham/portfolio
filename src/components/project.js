@@ -98,13 +98,11 @@ const Project = ({ className, project }) => (
             ))}
           {section.gallery && (
             <ImageGallery
-              images={section.gallery.map((image) => {
-                return {
-                  width: image.sharp.original.width,
-                  height: image.sharp.original.height,
-                  src: image.sharp.original.src,
-                };
-              })}
+              images={section.gallery.map((image) => ({
+                width: image.sharp.original.width,
+                height: image.sharp.original.height,
+                src: image.sharp.original.src,
+              }))}
               minWidth={128}
             />
           )}
