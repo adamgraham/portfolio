@@ -24,3 +24,6 @@ RewriteRule ^(.*)/$ /$1 [L,R=301]
 RewriteRule ^game/(.*)$ /games [R=301,L]
 RewriteRule ^website/(.*)$ /websites [R=301,L]
 RewriteRule ^presentation/(.*)$ /presentations [R=301,L]
+
+# Redirect home on 404
+ErrorDocument 404 /
