@@ -12,7 +12,7 @@
   width: 100%;
   height: 80px;
   transition: height 400ms;
-  background-color: white;
+  background-color: var(--color-background-secondary);
 }
 
 .app-menu--fullscreen .app-menu__container {
@@ -30,7 +30,7 @@
   width: 100%;
   height: 80px;
   padding: 24px 32px;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 10%);
+  background-color: var(--color-background-tertiary);
 }
 
 .app-menu__header > div {
@@ -50,8 +50,21 @@
   margin-right: 16px;
 }
 
-.app-menu .nav-bar__item {
-  font-weight: 600;
+.app-menu .nav-bar__item a {
+  color: inherit;
+  border: none;
+  opacity: 0.54;
+  transition: color 200ms, opacity 200ms;
+}
+
+.app-menu .nav-bar__item a > .icon {
+  color: inherit;
+  transition: color 200ms, opacity 200ms;
+}
+
+.app-menu .nav-bar__item a.active,
+.app-menu .nav-bar__item a:hover {
+  opacity: 1;
 }
 
 .app-menu__body {
@@ -61,7 +74,7 @@
   padding: 32px;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: white;
+  background-color: var(--color-background-tertiary);
 }
 
 .app-menu__menu-view,
@@ -94,19 +107,6 @@
   display: flex;
   align-items: center;
   height: max-content;
-}
-
-.app-menu__thumbnail-image {
-  box-shadow: 0 0 3rem rgb(0 0 0 / 15%);
-  border: 4px solid white;
-  border-radius: 0.25rem;
-  background-color: white;
-}
-
-.app-menu__thumbnail-image--border-none {
-  border: none;
-  background-color: transparent;
-  box-shadow: none !important;
 }
 
 .app-menu__nav-list {

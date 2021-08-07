@@ -10,12 +10,12 @@ import { Link as GatsbyLink, navigate } from 'gatsby';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import { SlideProps } from './slide';
-import chevronLeftIcon from '../images/icons/chevron_left-black-48dp.svg';
-import chevronRightIcon from '../images/icons/chevron_right-black-48dp.svg';
-import galleryOpenIcon from '../images/icons/fullscreen_exit-black-36dp.svg';
-import galleryIcon from '../images/icons/fullscreen-black-36dp.svg';
-import menuOpenIcon from '../images/icons/menu_open-black-36dp.svg';
-import menuIcon from '../images/icons/menu-black-36dp.svg';
+import chevronLeftIcon from '../images/icons/chevron-left.svg';
+import chevronRightIcon from '../images/icons/chevron-right.svg';
+import galleryOpenIcon from '../images/icons/fullscreen-exit.svg';
+import galleryIcon from '../images/icons/fullscreen.svg';
+import menuOpenIcon from '../images/icons/menu-open.svg';
+import menuIcon from '../images/icons/menu.svg';
 import { titleCase } from '../formatting';
 import { setSessionIndex } from '../session';
 import { navLinks, socialLinks } from '../links';
@@ -97,9 +97,9 @@ const Menu = ({
           <div>
             <SocialNavLinks
               className="margin-left-md margin-right-md"
-              foregroundColor="black"
-              iconSize={24}
-              iconInnerPadding={12}
+              foregroundColor="var(--color-foreground-secondary)"
+              iconSize={20}
+              iconInnerPadding={10}
               links={socialLinks}
             />
             <button
@@ -174,7 +174,8 @@ const Menu = ({
                   <ProgressiveImage
                     alt={slide.imageAltText || ''}
                     className={classNames('app-menu__thumbnail-image', {
-                      [`app-menu__thumbnail-image--border-${slide.imageBorder}`]: slide.imageBorder,
+                      [`app-menu__thumbnail-image--border-${slide.imageBorder}`]:
+                        slide.imageBorder,
                     })}
                     imageProps={{
                       importance: 'low',

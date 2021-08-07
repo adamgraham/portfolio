@@ -24,10 +24,10 @@
 .slide__image {
   display: inline-flex;
   max-height: 100%;
-  border: 12px solid white;
+  border: 12px solid var(--color-background-secondary);
   border-radius: 0.25rem;
-  box-shadow: 0 0 3rem rgb(0 0 0 / 15%);
-  background-color: white;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 10%);
+  background-color: var(--color-background-secondary);
   overflow: hidden;
 }
 

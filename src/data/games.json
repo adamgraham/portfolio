@@ -53,8 +53,8 @@
     "id": "squish-em",
     "category": "games",
     "title": "Squish-em!",
-    "description": "Squish-em! is an arcade game with ever so squishy moles just asking for a tap on the head! It's a simple whack-a-mole re-creation designed for highscore-play. Squish your way to the top of the leaderboards, earn achievements along the way, and brag to your friends once you beat their best score! Do you have what it takes to become the best squisher around?",
-    "description_short": "Squish-em! is an arcade game with ever so squishy moles just asking for a tap on the head! It's a simple whack-a-mole re-creation designed for highscore-play. Squish your way to the top of the leaderboards, earn achievements along the way, and brag to your friends once you beat their best score!",
+    "description": "Squish-em! is an arcade game with ever so squishy moles just asking for a tap on the head! It is a simple whack-a-mole re-creation designed for highscore-play. Squish your way to the top of the leaderboards, earn achievements along the way, and brag to your friends once you beat their best score! Do you have what it takes to become the best squisher around?",
+    "description_short": "Squish-em! is an arcade game with ever so squishy moles just asking for a tap on the head! It is a simple whack-a-mole re-creation designed for highscore-play. Squish your way to the top of the leaderboards, earn achievements along the way, and brag to your friends once you beat their best score!",
     "image": "../images/banners/squishem-game-painting.jpg",
     "imageAltText": "Squish-em! Painting",
     "details": [
@@ -94,7 +94,7 @@
     "id": "the-rise",
     "category": "games",
     "title": "The Rise",
-    "description": "The Rise is a \"doors escape\" puzzle game with a total of 30 unique levels. Each is an individual puzzle designed to make you think hard. Put your logical skills to the test, rise to the top, and conquer all 30 levels.",
+    "description": "The Rise is a \"doors escape\" puzzle game containing 30 unique levels. Each level is individually designed to make you think harder and harder. Put your logical skills to the test, rise to the top, and conquer all 30 levels.",
     "image": "../images/banners/the-rise-painting.jpg",
     "imageAltText": "The Rise Painting",
     "details": [
@@ -136,7 +136,7 @@
     "id": "ancient-odyssey",
     "category": "games",
     "title": "Ancient Odyssey",
-    "description": "Ancient Odyssey is a \"doors escape\" puzzle game containing 30 unique levels. Each is an individual puzzle designed to make your brain think hard! Can you survive the journey to the underworld by plundering all 30 levels?",
+    "description": "Ancient Odyssey is a \"doors escape\" puzzle game containing 30 unique levels. Each level is individually designed to make you think harder and harder. Can you survive the journey to the underworld by plundering all 30 levels?",
     "image": "../images/banners/ancient-odyssey-painting.jpg",
     "imageAltText": "Ancient Odyssey Painting",
     "details": [
@@ -182,7 +182,7 @@
     "id": "lunar-escape",
     "category": "games",
     "title": "Lunar Escape",
-    "description": "Lunar Escape is a \"doors escape\" puzzle game. There are a total of 30 unique levels. Each is an individual puzzle designed to make your brain think out of this world! Do you have the logical skills needed to transcend all 30 levels?",
+    "description": "Lunar Escape is a \"doors escape\" puzzle game containing 30 unique levels. Each level is individually designed to make you think out of this world. Do you have the logical skills needed to transcend all 30 levels?",
     "image": "../images/banners/lunar-escape-painting.jpg",
     "imageAltText": "Lunar Escape Painting",
     "details": [
@@ -228,7 +228,7 @@
     "id": "escape-the-basement",
     "category": "games",
     "title": "Escape the Basement",
-    "description": "Escape the Basement is a point-and-click \"escape\" game. You of all people were chosen to die. A cruel man named Kane has locked you in his basement with no thought of letting you free. Can you outwit his evil plan and escape?",
+    "description": "Escape the Basement is a point-and-click \"escape\" game with several uniquely drawn scenes. You of all people were chosen to die. A cruel man named Kane has locked you in his basement with no thought of letting you free. Can you outwit his evil plan and escape?",
     "image": "../images/banners/escape-the-basement-painting.jpg",
     "imageAltText": "Escape the Basement Painting",
     "details": [

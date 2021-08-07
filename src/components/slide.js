@@ -10,11 +10,12 @@ const Slide = ({ className, slide }) => {
   const offline = typeof navigator !== 'undefined' && !navigator.onLine;
   const projectPath = `/${slide.category}/${slide.id}`;
   return (
-    <div className={classNames('slide', className)} key={slide.id}>
+    <div className={classNames('slide', className)}>
       <div className="slide__image-wrapper">
         <Link ElementType={GatsbyLink} to={projectPath} unstyled>
           <ProgressiveImage
             alt={slide.imageAltText || ''}
+            animated={false}
             className={classNames('slide__image', {
               [`slide__image--border-${slide.imageBorder}`]: slide.imageBorder,
             })}
@@ -27,12 +28,15 @@ const Slide = ({ className, slide }) => {
       </div>
       <div className="slide__text-wrapper">
         <div className="slide__text-container">
-          <h1 className="h4">{slide.title}</h1>
-          <p>{slide.description_short || slide.description}</p>
+          <h1 className="h3">{slide.title}</h1>
+          <p className="text-foreground-secondary">
+            {slide.description_short || slide.description}
+          </p>
           <Link
-            className="font-weight-semibold"
+            className="btn btn--solid btn--sm"
             ElementType={GatsbyLink}
             to={projectPath}
+            unstyled
           >
             More Details
           </Link>

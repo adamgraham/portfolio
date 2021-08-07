@@ -11,7 +11,7 @@
 .project em {
   font-style: normal;
   letter-spacing: -0.5px;
-  color: #757575;
+  color: var(--color-foreground-tertiary);
 }
 
 .project img {

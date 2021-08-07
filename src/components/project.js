@@ -23,10 +23,14 @@ const Project = ({ className, project }) => (
           <em>{project.date}</em>
         </p>
       )}
-      {project.description && <p>{project.description}</p>}
+      {project.description && (
+        <p className="text-foreground-secondary">{project.description}</p>
+      )}
       {project.description_long &&
         project.description_long.map((description) => (
-          <p key={description}>{description}</p>
+          <p className="text-foreground-secondary" key={description}>
+            {description}
+          </p>
         ))}
     </section>
     {project.details && (
@@ -51,7 +55,7 @@ const Project = ({ className, project }) => (
               iconName={button.icon}
               key={button.name}
               link={button.link}
-              size="small"
+              size={Button.size.small}
             >
               {button.name}
             </Button>
@@ -90,7 +94,7 @@ const Project = ({ className, project }) => (
           {section.paragraphs &&
             section.paragraphs.map((paragraph, paragraphIndex) => (
               <p
-                className="font-sm"
+                className="text-foreground-secondary font-sm"
                 key={`section-${index}-paragraph-${paragraphIndex}`}
               >
                 {paragraph}

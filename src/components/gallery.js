@@ -1,12 +1,12 @@
 import { useMediaQuery } from '@zigurous/react-components';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import React, { useState } from 'react';
+import React from 'react';
 import Slide, { SlideProps } from './slide';
-import chevronLeftIcon from '../images/icons/chevron_left-black-48dp.svg';
-import chevronRightIcon from '../images/icons/chevron_right-black-48dp.svg';
-import imageIcon from '../images/icons/image-black-36dp.svg';
-import infoIcon from '../images/icons/info-black-36dp.svg';
+import chevronLeftIcon from '../images/icons/chevron-left.svg';
+import chevronRightIcon from '../images/icons/chevron-right.svg';
+// import imageIcon from '../images/icons/image.svg';
+// import infoIcon from '../images/icons/info.svg';
 import '../styles/gallery.css';
 
 const Gallery = ({
@@ -16,13 +16,13 @@ const Gallery = ({
   slideIndex,
 }) => {
   const verticalLayout = useMediaQuery('(max-width: 1365px)');
-  const [showInfo, setShowInfo] = useState(true);
+  // const [showInfo, setShowInfo] = useState(true);
   const slide = gallery[slideIndex];
   return (
     <article
       className={classNames(
         'gallery',
-        { 'gallery--hide-info': !showInfo },
+        // { 'gallery--hide-info': !showInfo },
         { 'gallery--vertical-layout': verticalLayout },
         className
       )}
@@ -38,9 +38,7 @@ const Gallery = ({
       >
         {slideIndex > 0 && <img alt="" src={chevronLeftIcon} />}
       </button>
-      <div className="gallery__slides">
-        {slide && <Slide key={slide.id} slide={slide} />}
-      </div>
+      <div className="gallery__slides">{slide && <Slide slide={slide} />}</div>
       <button
         aria-label="Next Slide"
         className="gallery__button right"
@@ -54,7 +52,7 @@ const Gallery = ({
           <img alt="" src={chevronRightIcon} />
         )}
       </button>
-      <button
+      {/* <button
         aria-label={showInfo ? 'Hide Info' : 'Show Info'}
         className="gallery__button info"
         onClick={() => setShowInfo(!showInfo)}
@@ -64,7 +62,7 @@ const Gallery = ({
         ) : (
           <img alt="" src={infoIcon} />
         )}
-      </button>
+      </button> */}
     </article>
   );
 };
