@@ -14,16 +14,16 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
   const typeDefs = `
-    type ProjectDetail implements Node {
+    type ProjectDetail {
       key: String!
       value: String!
     }
-    type ProjectButton implements Node {
+    type ProjectButton {
       name: String!
       link: String!
       icon: String
     }
-    type ProjectSection implements Node {
+    type ProjectSection {
       title: String
       link: String
       mainImage: File @fileByRelativePath
