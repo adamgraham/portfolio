@@ -4,7 +4,9 @@ import './src/styles/global.css';
 
 const updateFavicon = (isDark) => {
   const favicon = document.querySelector('link[rel*="icon"]');
-  favicon.href = isDark ? '/favicon-dark.png' : '/favicon-light.png';
+  if (favicon) {
+    favicon.href = isDark ? '/favicon-dark.png' : '/favicon-light.png';
+  }
 };
 
 export const onRouteUpdate = () => {
