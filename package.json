@@ -4,8 +4,8 @@
   "homepage": "https://adamgraham.io",
   "private": true,
   "dependencies": {
-    "@zigurous/css-styles": "^1.2.0",
-    "@zigurous/react-components": "^1.2.0",
+    "@zigurous/css-styles": "latest",
+    "@zigurous/react-components": "latest",
     "classnames": "^2.3.1",
     "gatsby": "^3.2.0",
     "gatsby-plugin-google-analytics": "^3.2.0",
