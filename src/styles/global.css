@@ -25,7 +25,3 @@ body {
   overflow-y: auto;
   background-color: #101214;
 }
-
-.app > .page {
-  padding-bottom: 0;
-}

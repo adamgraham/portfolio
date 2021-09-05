@@ -1,8 +1,13 @@
+.page > .gallery {
+  padding-bottom: 0;
+}
+
 .gallery {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 0;
   width: 100vw;
   height: calc(100vh - 80px);
   overflow: hidden;
