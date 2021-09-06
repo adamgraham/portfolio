@@ -1,0 +1,112 @@
+<manifest alg="2" build="2017.0.2.363" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.alliumfloraldesigns.com" resolutions="1x" timestamp="1516673106011">
+  <folder name="css">
+    <file name="site_global.css" crc="3789954478"/>
+    <file name="master_a-master.css" crc="4261280693" ref="index:error:blog"/>
+    <file name="index.css" crc="525644374" ref="index"/>
+    <file name="error.css" crc="4180441611" ref="error"/>
+    <file name="iefonts_error.css" crc="31940750" ref="error"/>
+    <file name="blog.css" crc="83529676" ref="blog"/>
+    <file name="iefonts_blog.css" crc="67024788" ref="blog"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:error:blog"/>
+    <file name="museutils.js" crc="4232573551" ref="index:error:blog"/>
+    <file name="whatinput.js" crc="86476730" ref="index:error:blog"/>
+    <file name="museconfig.js" crc="3849126041" ref="index:error:blog"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="3880853905" ref="index:error"/>
+    <file name="jquery.watch.js" crc="3844535323" ref="index:error:blog"/>
+    <file name="webpro.js" crc="3770351119" ref="index"/>
+    <file name="musewpslideshow.js" crc="4244742588" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="432750910" ref="index"/>
+    <file name="touchswipe.js" crc="3912873526" ref="index"/>
+    <file name="form_check.php" crc="3841221102" ref="index"/>
+    <file name="form_throttle.php" crc="4048049783" ref="index"/>
+    <file name="form_process.php" crc="3899230280" ref="index"/>
+    <file name="form-u2228.php" crc="4003420169" ref="index"/>
+    <file name="require.js" crc="4234670167" ref="index:error:blog"/>
+  </folder>
+  <folder name="images">
+    <file name="favicon.ico" crc="4164308807" ref="index"/>
+    <file name="allium-logo-black.png" crc="4141068987" seo="true" ref="index:error:blog">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="error" alt=""/>
+      <caption webpage="error" alt=""/>
+      <caption webpage="blog" alt=""/>
+      <caption webpage="blog" alt=""/>
+    </file>
+    <file name="cover.jpg" crc="3899940852" ref="index:error">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="background.jpg" crc="3954826880" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="kim-stanke.jpg" crc="4046611662" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="facebook-f-white-u2939.png" crc="4204530768" ref="index"/>
+    <file name="facebook-f-white-u2939-r.png" crc="519885434" ref="index"/>
+    <file name="instagram-icon-white-u2938.png" crc="6909995" ref="index"/>
+    <file name="instagram-icon-white-u2938-r.png" crc="3854046435" ref="index"/>
+    <file name="pinterest-icon-white-u2940.png" crc="4259722708" ref="index"/>
+    <file name="pinterest-icon-white-u2940-r.png" crc="4275054949" ref="index"/>
+    <file name="gallery-01.jpg" crc="4213742966" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="gallery-02.jpg" crc="341978199" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="gallery-03.jpg" crc="112097388" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="gallery-04.jpg" crc="494696957" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="gallery-05.jpg" crc="4042161530" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="gallery-06.jpg" crc="3758888878" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="gallery-01-full.jpg" crc="3862220331" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="gallery-02-full.jpg" crc="64256993" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="gallery-03-full.jpg" crc="4064378070" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="gallery-04-full.jpg" crc="148043204" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="gallery-05-full.jpg" crc="4126110801" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="gallery-06-full.jpg" crc="4242650211" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="badge-borrowed-and-blue-featured-vendor.png" crc="3774549338" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="badge-wedding-wire-couples-choice-award.jpg" crc="26872168" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="banner-01-u1008-3-fr.png" crc="4110860106" ref="index"/>
+    <file name="banner-02-u1029-3-fr.png" crc="295253949" ref="index"/>
+    <file name="banner-03-u1032-3-fr.png" crc="141173672" ref="index"/>
+    <file name="arrows-mn_arrow_right.png" crc="4062137678" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="facebook-f-white-u2875.png" crc="3836381546" ref="index:error:blog"/>
+    <file name="facebook-f-white-u2875-r.png" crc="3939872693" ref="index:error:blog"/>
+    <file name="instagram-icon-white-u2877.png" crc="3956864119" ref="index:error:blog"/>
+    <file name="instagram-icon-white-u2877-r.png" crc="3841215399" ref="index:error:blog"/>
+    <file name="pinterest-icon-white-u2876.png" crc="379906371" ref="index:error:blog"/>
+    <file name="pinterest-icon-white-u2876-r.png" crc="368463022" ref="index:error:blog"/>
+  </folder>
+  <file name="index.html" crc="4141197798" seo="true" mt="1466961606411" redirect="true"/>
+  <file name="error.html" crc="238816918" seo="true" mt="1466961606411" redirect="true"/>
+  <file name="blog.html" crc="238995644" seo="true" mt="1466961606411" redirect="true"/>
+</manifest>
