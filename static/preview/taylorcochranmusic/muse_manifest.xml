@@ -1,0 +1,258 @@
+<manifest alg="2" build="2017.0.1.363" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster" ftp_hostname="ftp://107.180.56.174" ftp_rootfolder="/public_html/websites/taylorcochranmusic" exportTarget="FTP" domain="www.taylorcochranmusic.com" resolutions="1x" timestamp="1486699886625">
+  <folder name="css">
+    <file name="site_global.css" crc="190588842"/>
+    <file name="master_blogentry-master.css" crc="4281542843" ref="blog-entry-0007:blog-entry-0013:blog-entry-0008:blog-entry-0005:blog-entry-0009:blog-entry-0004:blog-entry-0010:blog-entry-0001:blog-entry-0012:blog-entry-0002:blog-entry-0014:blog-entry-0003:blog-entry-0011:blog-entry-0006"/>
+    <file name="master_a-master.css" crc="507286666" ref="about:blog-entry-0007:blog-entry-0013:blog-archive-2014-10:index:blog-archive-2014-11:error:blog-archive-2014-03:blog-archive-2014-12:blog-entry-0008:blog-archive-2014-04:blog-entry-0005:connect:blog-entry-0009:blog-entry-0004:music:blog-entry-0010:blog-archive-2014-02:blog:blog-entry-0001:blog-archive-2014-01:blog-entry-0012:blog-archive-2013-12:blog-archive-2014-06:blog-entry-0002:blog-entry-0014:blog-entry-0003:blog-archive-2014-07:blog-entry-0011:blog-archive-2014-08:blog-archive-2014-05:blog-entry-0006:blog-archive-2014-09"/>
+    <file name="master_blogarchive-master.css" crc="228081442" ref="blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-03:blog-archive-2014-12:blog-archive-2014-04:blog-archive-2014-02:blog:blog-archive-2014-01:blog-archive-2013-12:blog-archive-2014-06:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-05:blog-archive-2014-09"/>
+    <file name="about.css" crc="185709040" ref="about"/>
+    <file name="blog-entry-0007.css" crc="3870759006" ref="blog-entry-0007"/>
+    <file name="blog-entry-0013.css" crc="4265303819" ref="blog-entry-0013"/>
+    <file name="blog-archive-2014-10.css" crc="4168457324" ref="blog-archive-2014-10"/>
+    <file name="index.css" crc="68862992" ref="index"/>
+    <file name="blog-archive-2014-11.css" crc="45728190" ref="blog-archive-2014-11"/>
+    <file name="error.css" crc="3759827268" ref="error"/>
+    <file name="blog-archive-2014-03.css" crc="4120395217" ref="blog-archive-2014-03"/>
+    <file name="blog-archive-2014-12.css" crc="4265675544" ref="blog-archive-2014-12"/>
+    <file name="blog-entry-0008.css" crc="3876146252" ref="blog-entry-0008"/>
+    <file name="blog-archive-2014-04.css" crc="509019125" ref="blog-archive-2014-04"/>
+    <file name="blog-entry-0005.css" crc="461360862" ref="blog-entry-0005"/>
+    <file name="connect.css" crc="4169561622" ref="connect"/>
+    <file name="blog-entry-0009.css" crc="398285186" ref="blog-entry-0009"/>
+    <file name="blog-entry-0004.css" crc="65168795" ref="blog-entry-0004"/>
+    <file name="music.css" crc="251739589" ref="music"/>
+    <file name="blog-entry-0010.css" crc="3812178403" ref="blog-entry-0010"/>
+    <file name="blog-archive-2014-02.css" crc="4157913282" ref="blog-archive-2014-02"/>
+    <file name="blog.css" crc="4094755593" ref="blog"/>
+    <file name="blog-entry-0001.css" crc="4114606860" ref="blog-entry-0001"/>
+    <file name="blog-archive-2014-01.css" crc="4224430111" ref="blog-archive-2014-01"/>
+    <file name="blog-entry-0012.css" crc="168360912" ref="blog-entry-0012"/>
+    <file name="blog-archive-2013-12.css" crc="3936140503" ref="blog-archive-2013-12"/>
+    <file name="blog-archive-2014-06.css" crc="62400003" ref="blog-archive-2014-06"/>
+    <file name="blog-entry-0002.css" crc="4100758728" ref="blog-entry-0002"/>
+    <file name="blog-entry-0014.css" crc="4176166297" ref="blog-entry-0014"/>
+    <file name="blog-entry-0003.css" crc="113182587" ref="blog-entry-0003"/>
+    <file name="blog-archive-2014-07.css" crc="3835387431" ref="blog-archive-2014-07"/>
+    <file name="blog-entry-0011.css" crc="423133110" ref="blog-entry-0011"/>
+    <file name="blog-archive-2014-08.css" crc="3956258897" ref="blog-archive-2014-08"/>
+    <file name="blog-archive-2014-05.css" crc="342199758" ref="blog-archive-2014-05"/>
+    <file name="blog-entry-0006.css" crc="3773240718" ref="blog-entry-0006"/>
+    <file name="blog-archive-2014-09.css" crc="285468035" ref="blog-archive-2014-09"/>
+  </folder>
+  <folder name="fonts">
+    <file name="yanonekaffeesatz-light.woff" crc="3875063587"/>
+    <file name="yanonekaffeesatz-light.eot" crc="301074607"/>
+    <file name="yanonekaffeesatz-light.svg" crc="3719619"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="museutils.js" crc="4148063285" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="whatinput.js" crc="86476730" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="museconfig.js" crc="172512987" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="jquery.musemenu.js" crc="3765830709" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="jquery.watch.js" crc="437028206" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="require.js" crc="4159430777" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="webpro.js" crc="3986320349" ref="about:connect:music:blog:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-archive-2014-03:blog-archive-2014-05:blog-archive-2014-06:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="musewpslideshow.js" crc="405464237" ref="about:connect:music:blog:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-archive-2014-03:blog-archive-2014-05:blog-archive-2014-06:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="jquery.museoverlay.js" crc="305414130" ref="about:connect:music:blog:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-archive-2014-03:blog-archive-2014-05:blog-archive-2014-06:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="touchswipe.js" crc="221459597" ref="about:connect:music:blog:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-archive-2014-03:blog-archive-2014-05:blog-archive-2014-06:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+  </folder>
+  <folder name="images">
+    <file name="favicon.ico" crc="386103040" ref="index"/>
+    <file name="emblem.jpg" crc="4080327290" seo="true" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="icon-facebook-normal-u4167.png" crc="3902446525" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="icon-facebook-rollover-u4167-r.png" crc="337354231" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="icon-twitter-normal-u5886.png" crc="381607137" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="icon-twitter-rollover-u5886-r.png" crc="4271358383" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="icon-instagram-normal-u5885.png" crc="4161511929" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="icon-instagram-rollover-u5885-r.png" crc="404654825" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="icon-youtube-normal-u5887.png" crc="249193116" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="icon-youtube-rollover-u5887-r.png" crc="40039625" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="icon-wordpress-normal-u4285.png" crc="4274316908" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="icon-wordpress-rollover-u4285-r.png" crc="3793216425" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="slideshow-kickstarter-success.jpg" crc="3887556876" seo="true" ref="index"/>
+    <file name="blog-0014-thumbnail.jpg" crc="4170136137" seo="true" ref="index:blog:blog-archive-2014-06"/>
+    <file name="blog-0013-thumbnail.jpg" crc="465967163" seo="true" ref="index:blog:blog-archive-2014-05"/>
+    <file name="blog-0012-thumbnail.jpg" crc="4133514851" seo="true" ref="index:blog:blog-archive-2014-05"/>
+    <file name="blog-0011-thumbnail.jpg" crc="3847640307" seo="true" ref="index:blog:blog-archive-2014-05"/>
+    <file name="background.jpg" crc="55552972" ref="index:about:connect:music:blog:error:blog-entry-0001:blog-entry-0002:blog-entry-0003:blog-entry-0004:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-entry-0005:blog-entry-0006:blog-entry-0007:blog-entry-0008:blog-archive-2014-03:blog-entry-0009:blog-archive-2014-05:blog-entry-0010:blog-entry-0012:blog-entry-0011:blog-entry-0013:blog-archive-2014-06:blog-entry-0014:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="taylorcochran-about.jpg" crc="3784556378" seo="true" ref="about"/>
+    <file name="banner-01.jpg" crc="487453833" seo="true" ref="about:connect:music:blog:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-archive-2014-03:blog-archive-2014-05:blog-archive-2014-06:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="blank.gif" crc="4208392903" ref="about:connect:music:blog:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-archive-2014-03:blog-archive-2014-05:blog-archive-2014-06:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="banner-06.jpg" crc="288095882" seo="true" ref="about:connect:music:blog:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-archive-2014-03:blog-archive-2014-05:blog-archive-2014-06:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="banner-07.jpg" crc="3989790113" seo="true" ref="about:connect:music:blog:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-archive-2014-03:blog-archive-2014-05:blog-archive-2014-06:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="loading.gif" crc="3815509949" ref="about:connect:music:blog"/>
+    <file name="banner-winter-02.jpg" crc="3998816549" seo="true" ref="connect:music:blog:blog-archive-2014-01:blog-archive-2014-02:blog-archive-2013-12:blog-archive-2014-03:blog-archive-2014-05:blog-archive-2014-06:blog-archive-2014-07:blog-archive-2014-08:blog-archive-2014-09:blog-archive-2014-10:blog-archive-2014-11:blog-archive-2014-12:blog-archive-2014-04"/>
+    <file name="taylorcochran-connect.jpg" crc="3771969373" seo="true" ref="connect"/>
+    <file name="banner-04.jpg" crc="4285728718" seo="true" ref="error"/>
+    <file name="blog-0003.jpg" crc="3809427964" seo="true" ref="blog-entry-0003"/>
+    <file name="blog-0004.jpg" crc="227270244" seo="true" ref="blog-entry-0004"/>
+    <file name="blog-0003-thumbnail.jpg" crc="4054145040" seo="true" ref="blog-archive-2014-01"/>
+    <file name="blog-0002-thumbnail.jpg" crc="492560995" seo="true" ref="blog-archive-2014-01"/>
+    <file name="blog-0006-thumbnail.jpg" crc="3914320668" seo="true" ref="blog-archive-2014-02"/>
+    <file name="blog-0005-thumbnail.jpg" crc="4062277510" seo="true" ref="blog-archive-2014-02"/>
+    <file name="blog-0004-thumbnail.jpg" crc="4189203424" seo="true" ref="blog-archive-2014-02"/>
+    <file name="blog-0001-thumbnail.jpg" crc="3848576860" seo="true" ref="blog-archive-2013-12"/>
+    <file name="blog-0005.jpg" crc="461079809" seo="true" ref="blog-entry-0005"/>
+    <file name="blog-0006.jpg" crc="4013281440" seo="true" ref="blog-entry-0006"/>
+    <file name="blog-0007.jpg" crc="3960714174" seo="true" ref="blog-entry-0007"/>
+    <file name="blog-0009-thumbnail.jpg" crc="3808067721" seo="true" ref="blog-archive-2014-03"/>
+    <file name="blog-0008-thumbnail.jpg" crc="3956855209" seo="true" ref="blog-archive-2014-03"/>
+    <file name="blog-0007-thumbnail.jpg" crc="233253744" seo="true" ref="blog-archive-2014-03"/>
+    <file name="blog-0010-thumbnail.jpg" crc="67927281" seo="true" ref="blog-archive-2014-05"/>
+    <file name="blog-0012.jpg" crc="3840718323" seo="true" ref="blog-entry-0012"/>
+    <file name="blog-0011-01.jpg" crc="4070121893" seo="true" ref="blog-entry-0011"/>
+    <file name="blog-0011-02.jpg" crc="4196391945" seo="true" ref="blog-entry-0011"/>
+    <file name="blog-0011-03.jpg" crc="4237118145" seo="true" ref="blog-entry-0011"/>
+    <file name="blog-0014.jpg" crc="4159163773" seo="true" ref="blog-entry-0014"/>
+  </folder>
+  <file name="index.html" crc="3897287010" seo="true" mt="1486699027995" redirect="true"/>
+  <file name="about.html" crc="4053765552" seo="true" mt="1486699027995" redirect="true"/>
+  <file name="connect.html" crc="317735494" seo="true" mt="1486699027995" redirect="true"/>
+  <file name="music.html" crc="3993713418" seo="true" mt="1486699027995" redirect="true"/>
+  <file name="blog.html" crc="4017232882" seo="true" mt="1486699170393" redirect="true"/>
+  <file name="error.html" crc="81832648" seo="true" mt="1486699125900" redirect="true"/>
+  <file name="blog-entry-0001.html" crc="4281241614" seo="true" mt="1486699210621" redirect="true"/>
+  <file name="blog-entry-0002.html" crc="3781900853" seo="true" mt="1486699210621" redirect="true"/>
+  <file name="blog-entry-0003.html" crc="365612666" seo="true" mt="1486699210621" redirect="true"/>
+  <file name="blog-entry-0004.html" crc="14957153" seo="true" mt="1486699210621" redirect="true"/>
+  <file name="blog-archive-2014-01.html" crc="3910340054" seo="true" mt="1486699637036" redirect="true"/>
+  <file name="blog-archive-2014-02.html" crc="3832484027" seo="true" mt="1486699677246" redirect="true"/>
+  <file name="blog-archive-2013-12.html" crc="4280118176" seo="true" mt="1486699610863" redirect="true"/>
+  <file name="blog-entry-0005.html" crc="3775505553" seo="true" mt="1486699210621" redirect="true"/>
+  <file name="blog-entry-0006.html" crc="317805240" seo="true" mt="1486699210621" redirect="true"/>
+  <file name="blog-entry-0007.html" crc="198941780" seo="true" mt="1486699210621" redirect="true"/>
+  <file name="blog-entry-0008.html" crc="3889694362" seo="true" mt="1486699210621" redirect="true"/>
+  <file name="blog-archive-2014-03.html" crc="3901675062" seo="true" mt="1486699718197" redirect="true"/>
+  <file name="blog-entry-0009.html" crc="3970927521" seo="true" mt="1486699210621" redirect="true"/>
+  <file name="blog-archive-2014-05.html" crc="3977055759" seo="true" mt="1486699170393" redirect="true"/>
+  <file name="blog-entry-0010.html" crc="4187216465" seo="true" mt="1486699210621" redirect="true"/>
+  <file name="blog-entry-0012.html" crc="3905512990" seo="true" mt="1486699210621" redirect="true"/>
+  <file name="blog-entry-0011.html" crc="4150140781" seo="true" mt="1486699210621" redirect="true"/>
+  <file name="blog-entry-0013.html" crc="459505794" seo="true" mt="1486699210621" redirect="true"/>
+  <file name="blog-archive-2014-06.html" crc="38881463" seo="true" mt="1486699734702" redirect="true"/>
+  <file name="blog-entry-0014.html" crc="8947343" seo="true" mt="1486699210621" redirect="true"/>
+  <file name="blog-archive-2014-07.html" crc="233006371" seo="true" mt="1486699170393" redirect="true"/>
+  <file name="blog-archive-2014-08.html" crc="461038469" seo="true" mt="1486699170393" redirect="true"/>
+  <file name="blog-archive-2014-09.html" crc="344438529" seo="true" mt="1486699170393" redirect="true"/>
+  <file name="blog-archive-2014-10.html" crc="4170991057" seo="true" mt="1486699170393" redirect="true"/>
+  <file name="blog-archive-2014-11.html" crc="4234005557" seo="true" mt="1486699170393" redirect="true"/>
+  <file name="blog-archive-2014-12.html" crc="26127954" seo="true" mt="1486699170393" redirect="true"/>
+  <file name="blog-archive-2014-04.html" crc="172513540" seo="true" mt="1486699170393" redirect="true"/>
+  <site/>
+  <renditions>
+    <rendition device="desktop">
+      <page name="Home" filename="index.html" muse_href="page:U68" master="U59">
+        <breakpoint uid="U7054" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <masterPage name="A-Master" master="U55" uid="U59">
+        <breakpoint uid="U7056" maxwidth="1160" minwidth="0" squishy="false"/>
+      </masterPage>
+      <masterPage name="None" master="null" uid="U55">
+        <breakpoint uid="U7045" maxwidth="1160" minwidth="0" squishy="false"/>
+      </masterPage>
+      <page name="About" filename="about.html" muse_href="page:U74" master="U59">
+        <breakpoint uid="U7055" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="Connect" filename="connect.html" muse_href="page:U80" master="U59">
+        <breakpoint uid="U7060" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="Music" filename="music.html" muse_href="page:U86" master="U59">
+        <breakpoint uid="U7064" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="Blog" filename="blog.html" muse_href="page:U98" master="U5488">
+        <breakpoint uid="U7067" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <masterPage name="BlogArchive-Master" master="U59" uid="U5488">
+        <breakpoint uid="U7068" maxwidth="1160" minwidth="0" squishy="false"/>
+      </masterPage>
+      <page name="Error" filename="error.html" muse_href="page:U3005" master="U59">
+        <breakpoint uid="U7046" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="0001" filename="blog-entry-0001.html" muse_href="page:U3914" master="U4171">
+        <breakpoint uid="U7074" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <masterPage name="BlogEntry-Master" master="U59" uid="U4171">
+        <breakpoint uid="U7059" maxwidth="1160" minwidth="0" squishy="false"/>
+      </masterPage>
+      <page name="0002" filename="blog-entry-0002.html" muse_href="page:U4025" master="U4171">
+        <breakpoint uid="U7073" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="0003" filename="blog-entry-0003.html" muse_href="page:U4031" master="U4171">
+        <breakpoint uid="U7077" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="0004" filename="blog-entry-0004.html" muse_href="page:U4278" master="U4171">
+        <breakpoint uid="U7062" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="2014-January" filename="blog-archive-2014-01.html" muse_href="page:U5475" master="U5488">
+        <breakpoint uid="U7075" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="2014-February" filename="blog-archive-2014-02.html" muse_href="page:U5481" master="U5488">
+        <breakpoint uid="U7066" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="2013-December" filename="blog-archive-2013-12.html" muse_href="page:U5487" master="U5488">
+        <breakpoint uid="U7071" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="0005" filename="blog-entry-0005.html" muse_href="page:U5960" master="U4171">
+        <breakpoint uid="U7058" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="0006" filename="blog-entry-0006.html" muse_href="page:U6056" master="U4171">
+        <breakpoint uid="U7082" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="0007" filename="blog-entry-0007.html" muse_href="page:U6171" master="U4171">
+        <breakpoint uid="U7051" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="0008" filename="blog-entry-0008.html" muse_href="page:U6186" master="U4171">
+        <breakpoint uid="U7049" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="2014-March" filename="blog-archive-2014-03.html" muse_href="page:U6221" master="U5488">
+        <breakpoint uid="U7052" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="0009" filename="blog-entry-0009.html" muse_href="page:U6331" master="U4171">
+        <breakpoint uid="U7061" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="2014-May" filename="blog-archive-2014-05.html" muse_href="page:U6432" master="U5488">
+        <breakpoint uid="U7081" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="0010" filename="blog-entry-0010.html" muse_href="page:U6447" master="U4171">
+        <breakpoint uid="U7065" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="0012" filename="blog-entry-0012.html" muse_href="page:U6512" master="U4171">
+        <breakpoint uid="U7070" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="0011" filename="blog-entry-0011.html" muse_href="page:U6523" master="U4171">
+        <breakpoint uid="U7079" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="0013" filename="blog-entry-0013.html" muse_href="page:U6714" master="U4171">
+        <breakpoint uid="U7047" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="2014-June" filename="blog-archive-2014-06.html" muse_href="page:U6858" master="U5488">
+        <breakpoint uid="U7072" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="0014" filename="blog-entry-0014.html" muse_href="page:U6875" master="U4171">
+        <breakpoint uid="U7076" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="2014-July" filename="blog-archive-2014-07.html" muse_href="page:U6887" master="U5488">
+        <breakpoint uid="U7078" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="2014-August" filename="blog-archive-2014-08.html" muse_href="page:U6893" master="U5488">
+        <breakpoint uid="U7080" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="2014-September" filename="blog-archive-2014-09.html" muse_href="page:U6899" master="U5488">
+        <breakpoint uid="U7083" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="2014-October" filename="blog-archive-2014-10.html" muse_href="page:U6905" master="U5488">
+        <breakpoint uid="U7048" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="2014-November" filename="blog-archive-2014-11.html" muse_href="page:U6911" master="U5488">
+        <breakpoint uid="U7050" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="2014-December" filename="blog-archive-2014-12.html" muse_href="page:U6917" master="U5488">
+        <breakpoint uid="U7053" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="2014-April" filename="blog-archive-2014-04.html" muse_href="page:U6923" master="U5488">
+        <breakpoint uid="U7057" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+    </rendition>
+  </renditions>
+</manifest>
