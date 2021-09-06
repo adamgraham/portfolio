@@ -1,0 +1,192 @@
+<manifest alg="2" build="2015.2.1.352" opt="false" iceEnabled="false" ftp_hostname="ftp://107.180.56.174" ftp_rootfolder="/public_html/websites/demonthon.org" exportTarget="FTP" domain="www.demonthon.org" resolutions="1x" timestamp="1474595795224">
+  <folder name="css">
+    <file name="site_global.css" crc="342556089"/>
+    <file name="master_resources-master.css" crc="4058825735" ref="resources:alternative-fundraising:donor-drive:fundraising-faq:fundraising:canning:contact:partnership:forms-and-guides"/>
+    <file name="master_a-master.css" crc="4239023379" ref="resources:for-the-kup:alternative-fundraising:alumni:donor-drive:fundraising-faq:committee:error:fundraising:canning:events:contact:partnership:dancers:register:forms-and-guides:volunteers:get-involved:donate:morale-captains:about:comma-club"/>
+    <file name="master_getinvolved-master.css" crc="289103213" ref="for-the-kup:alumni:committee:events:dancers:volunteers:get-involved:morale-captains:comma-club"/>
+    <file name="resources.css" crc="4089765971" ref="resources"/>
+    <file name="index.css" crc="3897771928" ref="index"/>
+    <file name="for-the-kup.css" crc="4061616819" ref="for-the-kup"/>
+    <file name="alternative-fundraising.css" crc="219174462" ref="alternative-fundraising"/>
+    <file name="alumni.css" crc="278885996" ref="alumni"/>
+    <file name="donor-drive.css" crc="409012022" ref="donor-drive"/>
+    <file name="fundraising-faq.css" crc="4149087858" ref="fundraising-faq"/>
+    <file name="committee.css" crc="4014901262" ref="committee"/>
+    <file name="error.css" crc="186894852" ref="error"/>
+    <file name="fundraising.css" crc="4236053606" ref="fundraising"/>
+    <file name="canning.css" crc="3831728548" ref="canning"/>
+    <file name="events.css" crc="106724649" ref="events"/>
+    <file name="contact.css" crc="4155040611" ref="contact"/>
+    <file name="partnership.css" crc="4171444311" ref="partnership"/>
+    <file name="dancers.css" crc="3893606373" ref="dancers"/>
+    <file name="register.css" crc="3978990514" ref="register"/>
+    <file name="forms-and-guides.css" crc="305215634" ref="forms-and-guides"/>
+    <file name="volunteers.css" crc="3765785350" ref="volunteers"/>
+    <file name="get-involved.css" crc="3980490891" ref="get-involved"/>
+    <file name="donate.css" crc="3978990514" ref="donate"/>
+    <file name="morale-captains.css" crc="10491803" ref="morale-captains"/>
+    <file name="about.css" crc="66070368" ref="about"/>
+    <file name="comma-club.css" crc="531878537" ref="comma-club"/>
+  </folder>
+  <folder name="fonts">
+    <file name="agbookrounded-medium.woff" crc="60100111"/>
+    <file name="agbookrounded-medium.eot" crc="4072231519"/>
+    <file name="agbookrounded-medium.svg" crc="225584784"/>
+    <file name="agbookrounded-regular.woff" crc="3877259347"/>
+    <file name="agbookrounded-regular.eot" crc="4228835161"/>
+    <file name="agbookrounded-regular.svg" crc="4094133437"/>
+    <file name="agbookrounded-bold.woff" crc="4079556333"/>
+    <file name="agbookrounded-bold.eot" crc="4038580627"/>
+    <file name="agbookrounded-bold.svg" crc="3865170659"/>
+  </folder>
+  <folder name="assets">
+    <file name="demonthon-brand-guide.pdf" crc="4259814250" seo="true" mt="1441490967000"/>
+    <file name="demonthon-fundraising-letter-templates.pdf" crc="196026600" seo="true" mt="1461202783000"/>
+    <file name="demonthon-fundraising-packet.pdf" crc="472058464" seo="true" mt="1458494850000"/>
+    <file name="demonthon-inkind-donation-form.pdf" crc="3912338909" seo="true" mt="1442188050000"/>
+    <file name="demonthon-mission-and-vision.pdf" crc="445996395" seo="true" mt="1442188416000"/>
+    <file name="demonthon-offline-donation-form.pdf" crc="3764985423" seo="true" mt="1442188049000"/>
+    <file name="demonthon-partnership-packet.pdf" crc="4187352188" seo="true" mt="1441241791000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="169078940" ref="about:get-involved:resources:events:dancers:volunteers:morale-captains:committee:alumni:fundraising:partnership:forms-and-guides:for-the-kup:comma-club:index:donor-drive:canning:fundraising-faq:alternative-fundraising:error:contact:register:donate"/>
+    <file name="museutils.js" crc="3851988764" ref="about:get-involved:resources:events:dancers:volunteers:morale-captains:committee:alumni:fundraising:partnership:forms-and-guides:for-the-kup:comma-club:index:donor-drive:canning:fundraising-faq:alternative-fundraising:error:contact:register:donate"/>
+    <file name="whatinput.js" crc="86476730" ref="about:get-involved:resources:events:dancers:volunteers:morale-captains:committee:alumni:fundraising:partnership:forms-and-guides:for-the-kup:comma-club:index:donor-drive:canning:fundraising-faq:alternative-fundraising:error:contact:register:donate"/>
+    <file name="museconfig.js" crc="4242129463" ref="about:get-involved:resources:events:dancers:volunteers:morale-captains:committee:alumni:fundraising:partnership:forms-and-guides:for-the-kup:comma-club:index:donor-drive:canning:fundraising-faq:alternative-fundraising:error:contact:register:donate"/>
+    <file name="jquery.musemenu.js" crc="4150485998" ref="about:get-involved:resources:events:dancers:volunteers:morale-captains:committee:alumni:fundraising:partnership:forms-and-guides:for-the-kup:comma-club:index:donor-drive:canning:fundraising-faq:alternative-fundraising:error:contact:register:donate"/>
+    <file name="jquery.watch.js" crc="3842844514" ref="about:get-involved:resources:events:dancers:volunteers:morale-captains:committee:alumni:fundraising:partnership:forms-and-guides:for-the-kup:comma-club:index:donor-drive:canning:fundraising-faq:alternative-fundraising:error:contact:register:donate"/>
+    <file name="html5shiv.js" crc="4241844378" ref="about:get-involved:resources:events:dancers:volunteers:morale-captains:committee:alumni:fundraising:partnership:forms-and-guides:for-the-kup:comma-club:index:donor-drive:canning:fundraising-faq:alternative-fundraising:error:contact:register:donate"/>
+    <file name="require.js" crc="4108833657" ref="about:get-involved:resources:events:dancers:volunteers:morale-captains:committee:alumni:fundraising:partnership:forms-and-guides:for-the-kup:comma-club:index:donor-drive:canning:fundraising-faq:alternative-fundraising:error:contact:register:donate"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="271560940" ref="forms-and-guides:index:contact"/>
+  </folder>
+  <folder name="images">
+    <file name="a-master-favicon.ico" crc="412052385" ref="about"/>
+    <file name="logo-demonthon.png" crc="405847031" seo="true" ref="about:get-involved:resources:events:dancers:volunteers:morale-captains:committee:alumni:fundraising:partnership:forms-and-guides:for-the-kup:comma-club:donor-drive:canning:fundraising-faq:alternative-fundraising:error:contact:register:donate"/>
+    <file name="about-mission-and-vision.jpg" crc="362929049" seo="true" ref="about"/>
+    <file name="about-what-is-demonthon.jpg" crc="4029833622" seo="true" ref="about"/>
+    <file name="background-crowd-u5968-fr.png" crc="98774830" ref="about:index"/>
+    <file name="about-who-we-benefit-lurie-childrens.jpg" crc="3987505638" seo="true" ref="about"/>
+    <file name="about-who-we-benefit-cmnh.jpg" crc="4254410460" seo="true" ref="about"/>
+    <file name="about-miracle-families-crop-u7125.png" crc="3840676714" ref="about"/>
+    <file name="icon-facebook-u7300.png" crc="4091837312" ref="about:get-involved:resources:events:dancers:volunteers:morale-captains:committee:alumni:fundraising:partnership:forms-and-guides:for-the-kup:comma-club:donor-drive:canning:fundraising-faq:alternative-fundraising:error:contact:register:donate"/>
+    <file name="icon-facebook-u7300-r.png" crc="3826874393" ref="about:get-involved:resources:events:dancers:volunteers:morale-captains:committee:alumni:fundraising:partnership:forms-and-guides:for-the-kup:comma-club:donor-drive:canning:fundraising-faq:alternative-fundraising:error:contact:register:donate"/>
+    <file name="icon-twitter-u7298.png" crc="4091436861" ref="about:get-involved:resources:events:dancers:volunteers:morale-captains:committee:alumni:fundraising:partnership:forms-and-guides:for-the-kup:comma-club:donor-drive:canning:fundraising-faq:alternative-fundraising:error:contact:register:donate"/>
+    <file name="icon-twitter-u7298-r.png" crc="473405651" ref="about:get-involved:resources:events:dancers:volunteers:morale-captains:committee:alumni:fundraising:partnership:forms-and-guides:for-the-kup:comma-club:donor-drive:canning:fundraising-faq:alternative-fundraising:error:contact:register:donate"/>
+    <file name="icon-instagram-u7299.png" crc="328023157" ref="about:get-involved:resources:events:dancers:volunteers:morale-captains:committee:alumni:fundraising:partnership:forms-and-guides:for-the-kup:comma-club:donor-drive:canning:fundraising-faq:alternative-fundraising:error:contact:register:donate"/>
+    <file name="icon-instagram-u7299-r.png" crc="121273707" ref="about:get-involved:resources:events:dancers:volunteers:morale-captains:committee:alumni:fundraising:partnership:forms-and-guides:for-the-kup:comma-club:donor-drive:canning:fundraising-faq:alternative-fundraising:error:contact:register:donate"/>
+    <file name="icon-youtube-u7297.png" crc="128624318" ref="about:get-involved:resources:events:dancers:volunteers:morale-captains:committee:alumni:fundraising:partnership:forms-and-guides:for-the-kup:comma-club:donor-drive:canning:fundraising-faq:alternative-fundraising:error:contact:register:donate"/>
+    <file name="icon-youtube-u7297-r.png" crc="323518600" ref="about:get-involved:resources:events:dancers:volunteers:morale-captains:committee:alumni:fundraising:partnership:forms-and-guides:for-the-kup:comma-club:donor-drive:canning:fundraising-faq:alternative-fundraising:error:contact:register:donate"/>
+    <file name="banner-getinvolved-crop-u10490.png" crc="239021650" ref="get-involved"/>
+    <file name="banner-resources-crop-u10455.png" crc="4266563900" ref="resources"/>
+    <file name="banner-getinvolved-events-crop-u7736.png" crc="4005246237" ref="events"/>
+    <file name="banner-getinvolved-dancers-crop-u7305.png" crc="4002358604" ref="dancers"/>
+    <file name="banner-getinvolved-volunteers-crop-u7333.png" crc="4127041720" ref="volunteers"/>
+    <file name="banner-getinvolved-moralecaptains-crop-u7362.png" crc="4268185370" ref="morale-captains"/>
+    <file name="banner-getinvolved-committee-crop-u7422.png" crc="425303590" ref="committee"/>
+    <file name="headshot-ashantis-hones-crop-u15384.png" crc="64146933" ref="committee"/>
+    <file name="headshot-richie-roesner-crop-u15392.png" crc="153497731" ref="committee"/>
+    <file name="headshot-sadie-brown-crop-u15388.png" crc="4272606691" ref="committee"/>
+    <file name="headshot-brigid-stegemoeller-crop-u15397.png" crc="114003180" ref="committee"/>
+    <file name="headshot-brenna-palazzo-crop-u15504.png" crc="191431027" ref="committee"/>
+    <file name="headshot-spencer-olson-crop-u15413.png" crc="4080696490" ref="committee"/>
+    <file name="headshot-guadalupe-estrada-crop-u15409.png" crc="3914099383" ref="committee"/>
+    <file name="headshot-ellen-golackson-crop-u17668.png" crc="505030127" ref="committee"/>
+    <file name="headshot-sara-towle-crop-u15378.png" crc="434308883" ref="committee"/>
+    <file name="headshot-aubrye-brower-crop-u15375.png" crc="3861053557" ref="committee"/>
+    <file name="headshot-erin-mcgee-crop-u15370.png" crc="135693556" ref="committee"/>
+    <file name="headshot-shobie-rao-crop-u15446.png" crc="272808099" ref="committee"/>
+    <file name="headshot-christine-harder-crop-u15442.png" crc="235177986" ref="committee"/>
+    <file name="headshot-lena-zinkl-crop-u15451.png" crc="4079222942" ref="committee"/>
+    <file name="headshot-sarah-kish-crop-u15467.png" crc="267465674" ref="committee"/>
+    <file name="headshot-danielle-hale-crop-u15461.png" crc="43008794" ref="committee"/>
+    <file name="headshot-daniel-furlan-crop-u15475.png" crc="408561891" ref="committee"/>
+    <file name="headshot-aj-bolano-crop-u15479.png" crc="236615188" ref="committee"/>
+    <file name="headshot-jesse-renteria-crop-u15403.png" crc="500363547" ref="committee"/>
+    <file name="headshot-karli-bahner-crop-u15426.png" crc="3946600554" ref="committee"/>
+    <file name="headshot-asa-arreola-hester-crop-u15417.png" crc="362628215" ref="committee"/>
+    <file name="headshot-sia-drakoulis-crop-u15422.png" crc="3900862096" ref="committee"/>
+    <file name="headshot-zoe-wildasin-crop-u19405.png" crc="327982699" ref="committee"/>
+    <file name="headshot-kelly-stapleton-crop-u15524.png" crc="4087015128" ref="committee"/>
+    <file name="headshot-hannah-roth-crop-u15529.png" crc="4259562358" ref="committee"/>
+    <file name="headshot-dylan-weiss-crop-u15494.png" crc="4039999881" ref="committee"/>
+    <file name="headshot-andrew-herrera-crop-u15485.png" crc="41901020" ref="committee"/>
+    <file name="headshot-nicolette-prociuk-crop-u15499.png" crc="348100543" ref="committee"/>
+    <file name="headshot-margaret-baughman-crop-u15533.png" crc="3917071374" ref="committee"/>
+    <file name="headshot-will-brunker-crop-u15433.png" crc="533892249" ref="committee"/>
+    <file name="headshot-josue-ortiz-crop-u15436.png" crc="4149620079" ref="committee"/>
+    <file name="banner-getinvolved-alumni-crop-u7398.png" crc="3804692683" ref="alumni"/>
+    <file name="banner-resources-fundraising-crop-u8659.png" crc="298041579" ref="fundraising"/>
+    <file name="banner-resources-partnership-crop-u8540.png" crc="100927948" ref="partnership"/>
+    <file name="image-resources-formsandguides.png" crc="466220165" ref="forms-and-guides"/>
+    <file name="banner-involvement-forthekup-crop-u7712.png" crc="4173058095" ref="for-the-kup"/>
+    <file name="banner-involvement-commaclub-crop-u7670.png" crc="321364079" ref="comma-club"/>
+    <file name="home-favicon.ico" crc="412052385" ref="index"/>
+    <file name="cover-home-main.png" crc="3893208384" ref="index"/>
+    <file name="logo-demonthon-540x180-u7836.png" crc="244211077" ref="index"/>
+    <file name="thumbnail-home-getinvolved-events.jpg" crc="4121026402" ref="index"/>
+    <file name="thumbnail-home-getinvolved-events-rollover.jpg" crc="52804099" ref="index"/>
+    <file name="thumbnail-home-getinvolved-moralecaptains.jpg" crc="4260523220" ref="index"/>
+    <file name="thumbnail-home-getinvolved-moralecaptains-rollover.jpg" crc="41902572" ref="index"/>
+    <file name="thumbnail-home-getinvolved-committee.jpg" crc="4265429968" ref="index"/>
+    <file name="thumbnail-home-getinvolved-committee-rollover.jpg" crc="3829647386" ref="index"/>
+    <file name="thumbnail-home-involvement-forthekup.jpg" crc="413090428" ref="index"/>
+    <file name="thumbnail-home-involvement-forthekup-rollover.jpg" crc="4282685623" ref="index"/>
+    <file name="thumbnail-home-getinvolved-dancers.jpg" crc="297851038" ref="index"/>
+    <file name="thumbnail-home-getinvolved-dancers-rollover.jpg" crc="408775518" ref="index"/>
+    <file name="thumbnail-home-getinvolved-volunteers.jpg" crc="4263262030" ref="index"/>
+    <file name="thumbnail-home-getinvolved-volunteers-rollover.jpg" crc="241124243" ref="index"/>
+    <file name="thumbnail-home-getinvolved-alumni.jpg" crc="15621396" ref="index"/>
+    <file name="thumbnail-home-getinvolved-alumni-rollover.jpg" crc="263231900" ref="index"/>
+    <file name="thumbnail-home-involvement-commaclub.jpg" crc="405377005" ref="index"/>
+    <file name="thumbnail-home-involvement-commaclub-rollover.jpg" crc="515064238" ref="index"/>
+    <file name="thumbnail-home-resources-fundraising.jpg" crc="263569524" ref="index"/>
+    <file name="thumbnail-home-resources-fundraising-rollover.jpg" crc="4174890582" ref="index"/>
+    <file name="thumbnail-home-resources-partnership.jpg" crc="3902026724" ref="index"/>
+    <file name="thumbnail-home-resources-partnership-rollover.jpg" crc="153560680" ref="index"/>
+    <file name="thumbnail-home-resources-formsguides.jpg" crc="468660366" ref="index"/>
+    <file name="thumbnail-home-resources-formsguides-rollover.jpg" crc="257438931" ref="index"/>
+    <file name="sky-carter.png" crc="4189553936" seo="true" ref="index"/>
+    <file name="logo-ann-and-robert-h-lurie-childrens.png" crc="3794912276" seo="true" ref="index"/>
+    <file name="logo-depaul-university.png" crc="4105193014" seo="true" ref="index"/>
+    <file name="logo-miracle-network-dance-marathon.png" crc="3999793814" seo="true" ref="index"/>
+    <file name="icon-facebook-u7848.png" crc="242001215" ref="index"/>
+    <file name="icon-facebook-u7848-r.png" crc="131465084" ref="index"/>
+    <file name="icon-facebook-u7848-m.png" crc="4135101884" ref="index"/>
+    <file name="icon-twitter-u7846.png" crc="147637770" ref="index"/>
+    <file name="icon-twitter-u7846-r.png" crc="3763750987" ref="index"/>
+    <file name="icon-twitter-u7846-m.png" crc="518417923" ref="index"/>
+    <file name="icon-instagram-u7847.png" crc="256483514" ref="index"/>
+    <file name="icon-instagram-u7847-r.png" crc="363806024" ref="index"/>
+    <file name="icon-instagram-u7847-m.png" crc="88152462" ref="index"/>
+    <file name="icon-youtube-u7845.png" crc="3974305949" ref="index"/>
+    <file name="icon-youtube-u7845-r.png" crc="4068681284" ref="index"/>
+    <file name="icon-youtube-u7845-m.png" crc="419169120" ref="index"/>
+    <file name="banner-resources-fundraising-donordrive-crop-u8894.png" crc="4284419108" ref="donor-drive"/>
+    <file name="banner-resources-fundraising-canning-crop-u8930.png" crc="358504929" ref="canning"/>
+    <file name="banner-resources-fundraising-alternativefundraising-crop-u9087.png" crc="3885997455" ref="alternative-fundraising"/>
+    <file name="image-contact.jpg" crc="63636920" ref="contact"/>
+  </folder>
+  <file name="about.html" crc="3928683270" seo="true" mt="1474595739373" redirect="true"/>
+  <file name="get-involved.html" crc="3833952244" seo="true" mt="1474595739365" redirect="true"/>
+  <file name="resources.html" crc="499926208" seo="true" mt="1474595739369" redirect="true"/>
+  <file name="events.html" crc="208125467" seo="true" mt="1474595739365" redirect="true"/>
+  <file name="dancers.html" crc="3934828531" seo="true" mt="1474595739365" redirect="true"/>
+  <file name="volunteers.html" crc="17579572" seo="true" mt="1474595739365" redirect="true"/>
+  <file name="morale-captains.html" crc="164555024" seo="true" mt="1474595739365" redirect="true"/>
+  <file name="committee.html" crc="101148178" seo="true" mt="1474595739365" redirect="true"/>
+  <file name="alumni.html" crc="4292417411" seo="true" mt="1474595739365" redirect="true"/>
+  <file name="fundraising.html" crc="284069400" seo="true" mt="1474595739369" redirect="true"/>
+  <file name="partnership.html" crc="4273947952" seo="true" mt="1474595739369" redirect="true"/>
+  <file name="forms-and-guides.html" crc="4099286351" seo="true" mt="1474595739369" redirect="true"/>
+  <file name="for-the-kup.html" crc="460334302" seo="true" mt="1474595739365" redirect="true"/>
+  <file name="comma-club.html" crc="3897281021" seo="true" mt="1474595739365" redirect="true"/>
+  <file name="index.html" crc="3829766454" seo="true" mt="1474595754255" redirect="true"/>
+  <file name="donor-drive.html" crc="488363415" seo="true" mt="1474595739369" redirect="true"/>
+  <file name="canning.html" crc="492707401" seo="true" mt="1474595739369" redirect="true"/>
+  <file name="fundraising-faq.html" crc="3912688244" seo="true" mt="1474595739369" redirect="true"/>
+  <file name="alternative-fundraising.html" crc="407874801" seo="true" mt="1474595739369" redirect="true"/>
+  <file name="error.html" crc="4038077467" seo="true" mt="1474595739360" redirect="true"/>
+  <file name="contact.html" crc="4265978237" seo="true" mt="1474595739369" redirect="true"/>
+  <file name="register.html" crc="149555978" seo="true" mt="1474595739360" redirect="true"/>
+  <file name="donate.html" crc="116464590" seo="true" mt="1474595739360" redirect="true"/>
+</manifest>
