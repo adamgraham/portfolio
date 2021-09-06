@@ -1,0 +1,306 @@
+<manifest alg="2" build="2015.2.1.352" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" ftp_hostname="ftp://107.180.56.174" ftp_rootfolder="/public_html/margaretbaughman.com" exportTarget="FTP" domain="www.margaretbaughman.com" resolutions="1x" timestamp="1473819282822">
+  <folder name="css">
+    <file name="site_global.css" crc="276431955"/>
+    <file name="master_a-master.css" crc="4248168955" ref="on-spirituality-death-and-the-last-piece-of-pie:index:said-she:pr0ne-the-hardcore-amateur-musical!:much-ado:these-shining-lives:symphony-of-clouds:bleeding-through-the-tax:the-guide-to-being-single:the-lady-from-the-sea"/>
+    <file name="master_subpage-master.css" crc="176118204" ref="on-spirituality-death-and-the-last-piece-of-pie:said-she:pr0ne-the-hardcore-amateur-musical!:much-ado:these-shining-lives:symphony-of-clouds:bleeding-through-the-tax:the-guide-to-being-single:the-lady-from-the-sea"/>
+    <file name="on-spirituality-death-and-the-last-piece-of-pie.css" crc="11342896" ref="on-spirituality-death-and-the-last-piece-of-pie"/>
+    <file name="iefonts_on-spirituality-death-and-the-last-piece-of-pie.css" crc="338534167" ref="on-spirituality-death-and-the-last-piece-of-pie"/>
+    <file name="index.css" crc="432842469" ref="index"/>
+    <file name="iefonts_index.css" crc="85955893" ref="index"/>
+    <file name="said-she.css" crc="112146736" ref="said-she"/>
+    <file name="iefonts_said-she.css" crc="17652962" ref="said-she"/>
+    <file name="pr0ne-the-hardcore-amateur-musical_.css" crc="3846791767" ref="pr0ne-the-hardcore-amateur-musical!"/>
+    <file name="iefonts_pr0ne-the-hardcore-amateur-musical_.css" crc="152442334" ref="pr0ne-the-hardcore-amateur-musical!"/>
+    <file name="much-ado.css" crc="306036576" ref="much-ado"/>
+    <file name="iefonts_much-ado.css" crc="3938046777" ref="much-ado"/>
+    <file name="these-shining-lives.css" crc="3994723687" ref="these-shining-lives"/>
+    <file name="iefonts_these-shining-lives.css" crc="4158945368" ref="these-shining-lives"/>
+    <file name="symphony-of-clouds.css" crc="514669927" ref="symphony-of-clouds"/>
+    <file name="iefonts_symphony-of-clouds.css" crc="3995774469" ref="symphony-of-clouds"/>
+    <file name="bleeding-through-the-tax.css" crc="3777706941" ref="bleeding-through-the-tax"/>
+    <file name="iefonts_bleeding-through-the-tax.css" crc="220551570" ref="bleeding-through-the-tax"/>
+    <file name="the-guide-to-being-single.css" crc="4011945566" ref="the-guide-to-being-single"/>
+    <file name="iefonts_the-guide-to-being-single.css" crc="3816457339" ref="the-guide-to-being-single"/>
+    <file name="the-lady-from-the-sea.css" crc="401713409" ref="the-lady-from-the-sea"/>
+    <file name="iefonts_the-lady-from-the-sea.css" crc="3776607035" ref="the-lady-from-the-sea"/>
+  </folder>
+  <folder name="assets">
+    <file name="background-video.mp4" crc="3907893548" seo="true" mt="1455670829000"/>
+    <file name="background-video.webm" crc="3869975685" seo="true" mt="1455670829000"/>
+    <file name="margaret-baughman-resume.pdf" crc="152703424" seo="true" mt="1458009574000"/>
+    <file name="margaret-baughman-portfolio.png" crc="511114157" seo="true" mt="1459569953000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="169078940" ref="tablet>index:tablet>bleeding-through-the-tax:tablet>on-spirituality-death-and-the-last-piece-of-pie:tablet>said-she:tablet>symphony-of-clouds:tablet>much-ado:tablet>the-lady-from-the-sea:tablet>pr0ne-the-hardcore-amateur-musical!:tablet>these-shining-lives:tablet>the-guide-to-being-single:index:much-ado:the-lady-from-the-sea:pr0ne-the-hardcore-amateur-musical!:these-shining-lives:the-guide-to-being-single:said-she:symphony-of-clouds:bleeding-through-the-tax:on-spirituality-death-and-the-last-piece-of-pie"/>
+    <file name="museutils.js" crc="3851988764" ref="tablet>index:tablet>bleeding-through-the-tax:tablet>on-spirituality-death-and-the-last-piece-of-pie:tablet>said-she:tablet>symphony-of-clouds:tablet>much-ado:tablet>the-lady-from-the-sea:tablet>pr0ne-the-hardcore-amateur-musical!:tablet>these-shining-lives:tablet>the-guide-to-being-single:index:much-ado:the-lady-from-the-sea:pr0ne-the-hardcore-amateur-musical!:these-shining-lives:the-guide-to-being-single:said-she:symphony-of-clouds:bleeding-through-the-tax:on-spirituality-death-and-the-last-piece-of-pie"/>
+    <file name="whatinput.js" crc="86476730" ref="tablet>index:tablet>bleeding-through-the-tax:tablet>on-spirituality-death-and-the-last-piece-of-pie:tablet>said-she:tablet>symphony-of-clouds:tablet>much-ado:tablet>the-lady-from-the-sea:tablet>pr0ne-the-hardcore-amateur-musical!:tablet>these-shining-lives:tablet>the-guide-to-being-single:index:much-ado:the-lady-from-the-sea:pr0ne-the-hardcore-amateur-musical!:these-shining-lives:the-guide-to-being-single:said-she:symphony-of-clouds:bleeding-through-the-tax:on-spirituality-death-and-the-last-piece-of-pie"/>
+    <file name="museconfig.js" crc="4242129463" ref="tablet>index:tablet>bleeding-through-the-tax:tablet>on-spirituality-death-and-the-last-piece-of-pie:tablet>said-she:tablet>symphony-of-clouds:tablet>much-ado:tablet>the-lady-from-the-sea:tablet>pr0ne-the-hardcore-amateur-musical!:tablet>these-shining-lives:tablet>the-guide-to-being-single:index:much-ado:the-lady-from-the-sea:pr0ne-the-hardcore-amateur-musical!:these-shining-lives:the-guide-to-being-single:said-she:symphony-of-clouds:bleeding-through-the-tax:on-spirituality-death-and-the-last-piece-of-pie"/>
+    <file name="jquery.watch.js" crc="3842844514" ref="tablet>index:tablet>bleeding-through-the-tax:tablet>on-spirituality-death-and-the-last-piece-of-pie:tablet>said-she:tablet>symphony-of-clouds:tablet>much-ado:tablet>the-lady-from-the-sea:tablet>pr0ne-the-hardcore-amateur-musical!:tablet>these-shining-lives:tablet>the-guide-to-being-single:index:much-ado:the-lady-from-the-sea:pr0ne-the-hardcore-amateur-musical!:these-shining-lives:the-guide-to-being-single:said-she:symphony-of-clouds:bleeding-through-the-tax:on-spirituality-death-and-the-last-piece-of-pie"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="271560940" ref="tablet>index:tablet>bleeding-through-the-tax:tablet>on-spirituality-death-and-the-last-piece-of-pie:index:bleeding-through-the-tax:on-spirituality-death-and-the-last-piece-of-pie"/>
+    <file name="jquery.musemenu.js" crc="4150485998" ref="tablet>index:tablet>bleeding-through-the-tax:tablet>on-spirituality-death-and-the-last-piece-of-pie:tablet>said-she:tablet>symphony-of-clouds:tablet>much-ado:tablet>the-lady-from-the-sea:tablet>pr0ne-the-hardcore-amateur-musical!:tablet>these-shining-lives:tablet>the-guide-to-being-single:index:much-ado:the-lady-from-the-sea:pr0ne-the-hardcore-amateur-musical!:these-shining-lives:the-guide-to-being-single:said-she:symphony-of-clouds:bleeding-through-the-tax:on-spirituality-death-and-the-last-piece-of-pie"/>
+    <file name="webpro.js" crc="4067903014" ref="tablet>index:tablet>said-she:tablet>symphony-of-clouds:tablet>much-ado:tablet>the-lady-from-the-sea:tablet>pr0ne-the-hardcore-amateur-musical!:tablet>these-shining-lives:tablet>the-guide-to-being-single:index:much-ado:the-lady-from-the-sea:pr0ne-the-hardcore-amateur-musical!:these-shining-lives:the-guide-to-being-single:said-she:symphony-of-clouds"/>
+    <file name="musewpslideshow.js" crc="4265225696" ref="tablet>index:tablet>said-she:tablet>symphony-of-clouds:tablet>much-ado:tablet>the-lady-from-the-sea:tablet>pr0ne-the-hardcore-amateur-musical!:tablet>these-shining-lives:tablet>the-guide-to-being-single:index:much-ado:the-lady-from-the-sea:pr0ne-the-hardcore-amateur-musical!:these-shining-lives:the-guide-to-being-single:said-she:symphony-of-clouds"/>
+    <file name="jquery.museoverlay.js" crc="4075157096" ref="tablet>index:tablet>said-she:tablet>symphony-of-clouds:tablet>much-ado:tablet>the-lady-from-the-sea:tablet>pr0ne-the-hardcore-amateur-musical!:tablet>these-shining-lives:tablet>the-guide-to-being-single:index:much-ado:the-lady-from-the-sea:pr0ne-the-hardcore-amateur-musical!:these-shining-lives:the-guide-to-being-single:said-she:symphony-of-clouds"/>
+    <file name="touchswipe.js" crc="474750357" ref="tablet>index:tablet>said-she:tablet>symphony-of-clouds:tablet>much-ado:tablet>the-lady-from-the-sea:tablet>pr0ne-the-hardcore-amateur-musical!:tablet>these-shining-lives:tablet>the-guide-to-being-single:index:much-ado:the-lady-from-the-sea:pr0ne-the-hardcore-amateur-musical!:these-shining-lives:the-guide-to-being-single:said-she:symphony-of-clouds"/>
+    <file name="musewpdisclosure.js" crc="338211507" ref="tablet>index:index"/>
+    <file name="form_check.php" crc="121412709" ref="tablet>index"/>
+    <file name="form_throttle.php" crc="4268640971" ref="tablet>index"/>
+    <file name="form_process.php" crc="444429785" ref="tablet>index"/>
+    <file name="form-u15094.php" crc="335198557" ref="tablet>index"/>
+    <file name="jquery.scrolleffects.js" crc="511146689" ref="tablet>index:tablet>bleeding-through-the-tax:tablet>on-spirituality-death-and-the-last-piece-of-pie:index:bleeding-through-the-tax:on-spirituality-death-and-the-last-piece-of-pie"/>
+    <file name="html5shiv.js" crc="4241844378" ref="tablet>index:tablet>bleeding-through-the-tax:tablet>on-spirituality-death-and-the-last-piece-of-pie:tablet>said-she:tablet>symphony-of-clouds:tablet>much-ado:tablet>the-lady-from-the-sea:tablet>pr0ne-the-hardcore-amateur-musical!:tablet>these-shining-lives:tablet>the-guide-to-being-single:index:much-ado:the-lady-from-the-sea:pr0ne-the-hardcore-amateur-musical!:these-shining-lives:the-guide-to-being-single:said-she:symphony-of-clouds:bleeding-through-the-tax:on-spirituality-death-and-the-last-piece-of-pie"/>
+    <file name="require.js" crc="4108833657" ref="tablet>index:tablet>bleeding-through-the-tax:tablet>on-spirituality-death-and-the-last-piece-of-pie:tablet>said-she:tablet>symphony-of-clouds:tablet>much-ado:tablet>the-lady-from-the-sea:tablet>pr0ne-the-hardcore-amateur-musical!:tablet>these-shining-lives:tablet>the-guide-to-being-single:index:much-ado:the-lady-from-the-sea:pr0ne-the-hardcore-amateur-musical!:these-shining-lives:the-guide-to-being-single:said-she:symphony-of-clouds:bleeding-through-the-tax:on-spirituality-death-and-the-last-piece-of-pie"/>
+    <file name="pie.js" crc="3831537696" ref="tablet>bleeding-through-the-tax:tablet>on-spirituality-death-and-the-last-piece-of-pie:tablet>said-she:tablet>symphony-of-clouds:tablet>much-ado:tablet>the-lady-from-the-sea:tablet>pr0ne-the-hardcore-amateur-musical!:tablet>these-shining-lives:tablet>the-guide-to-being-single:index:much-ado:the-lady-from-the-sea:pr0ne-the-hardcore-amateur-musical!:these-shining-lives:the-guide-to-being-single:said-she:symphony-of-clouds:bleeding-through-the-tax:on-spirituality-death-and-the-last-piece-of-pie"/>
+    <file name="form-u3433.php" crc="4171255894" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="cover-home-u14972-fr.png" crc="231696320" ref="tablet>index:index"/>
+    <file name="diagonallines-u14971-fr.png" crc="296114469" ref="tablet>index:index"/>
+    <file name="logo-polkadot-u4026-fr.png" crc="148138671" ref="tablet>index:index"/>
+    <file name="much ado 6-crop-u26781.png" crc="442530978" ref="tablet>index"/>
+    <file name="blank.gif" crc="4208392903" ref="tablet>index:tablet>said-she:tablet>symphony-of-clouds:tablet>much-ado:tablet>the-lady-from-the-sea:tablet>pr0ne-the-hardcore-amateur-musical!:tablet>these-shining-lives:tablet>the-guide-to-being-single:index:much-ado:the-lady-from-the-sea:pr0ne-the-hardcore-amateur-musical!:these-shining-lives:the-guide-to-being-single:said-she:symphony-of-clouds"/>
+    <file name="these shining lives 1-crop-u26761.png" crc="4159626185" ref="tablet>index"/>
+    <file name="the lady from the sea 1-crop-u26891.png" crc="4010551381" ref="tablet>index"/>
+    <file name="the guide to being single 1-crop-u6481.png" crc="3949535165" ref="tablet>index"/>
+    <file name="pr0ne 1-crop-u26801.png" crc="4274146925" ref="tablet>index"/>
+    <file name="much ado 6241x160.jpg" crc="331535664" seo="true" ref="tablet>index"/>
+    <file name="these shining lives 1283x160.jpg" crc="330353246" seo="true" ref="tablet>index"/>
+    <file name="the lady from the sea 1240x160.jpg" crc="482798355" seo="true" ref="tablet>index"/>
+    <file name="the guide to being single 1240x160.jpg" crc="4167776000" seo="true" ref="tablet>index"/>
+    <file name="pr0ne 1-crop-u26810.png" crc="4066124919" ref="tablet>index"/>
+    <file name="loading.gif" crc="3815509949" ref="tablet>index:tablet>said-she:tablet>symphony-of-clouds:tablet>much-ado:tablet>the-lady-from-the-sea:tablet>pr0ne-the-hardcore-amateur-musical!:tablet>these-shining-lives:tablet>the-guide-to-being-single:index:much-ado:the-lady-from-the-sea:pr0ne-the-hardcore-amateur-musical!:these-shining-lives:the-guide-to-being-single:said-she:symphony-of-clouds"/>
+    <file name="said she 1-crop-u27742.png" crc="4119187664" ref="tablet>index"/>
+    <file name="said she 1242x160.jpg" crc="3973189742" seo="true" ref="tablet>index"/>
+    <file name="symphony of clouds 1-crop-u27888.png" crc="190447223" ref="tablet>index"/>
+    <file name="symphony of clouds 1240x160.jpg" crc="107345450" seo="true" ref="tablet>index"/>
+    <file name="cover-about.jpg" crc="438549516" ref="tablet>index:tablet>on-spirituality-death-and-the-last-piece-of-pie:on-spirituality-death-and-the-last-piece-of-pie"/>
+    <file name="profile-photo.png" crc="54243647" seo="true" ref="tablet>index:index"/>
+    <file name="icon_tweets.png" crc="3764802012" seo="true" ref="tablet>index:index"/>
+    <file name="icon_instagram.png" crc="3865211146" seo="true" ref="tablet>index:index"/>
+    <file name="icon_twitter.png" crc="4158872068" seo="true" ref="tablet>index:index"/>
+    <file name="icon_tumblr.png" crc="431699437" seo="true" ref="tablet>index:index"/>
+    <file name="u15104-17.png" crc="265864809" ref="tablet>index"/>
+    <file name="u15104-17-r.png" crc="3762871457" ref="tablet>index"/>
+    <file name="u15104-17-m.png" crc="3762871457" ref="tablet>index"/>
+    <file name="u15104-17-fs.png" crc="3762871457" ref="tablet>index"/>
+    <file name="cover-home.jpg" crc="237127910" ref="tablet>bleeding-through-the-tax:bleeding-through-the-tax"/>
+    <file name="said she 1.jpg" crc="3788985047" seo="true" ref="tablet>said-she:said-she"/>
+    <file name="said she 2.jpg" crc="339906197" seo="true" ref="tablet>said-she:said-she"/>
+    <file name="said she 3.jpg" crc="16206183" seo="true" ref="tablet>said-she:said-she"/>
+    <file name="said she 4.jpg" crc="330852923" seo="true" ref="tablet>said-she:said-she"/>
+    <file name="said she 5.jpg" crc="3837603711" seo="true" ref="tablet>said-she:said-she"/>
+    <file name="said she 6.jpg" crc="4279126815" seo="true" ref="tablet>said-she:said-she"/>
+    <file name="said she 7.jpg" crc="3886224010" seo="true" ref="tablet>said-she:said-she"/>
+    <file name="symphony of clouds 1.jpg" crc="412304829" seo="true" ref="tablet>symphony-of-clouds:symphony-of-clouds"/>
+    <file name="symphony of clouds 2.jpg" crc="99999276" seo="true" ref="tablet>symphony-of-clouds:symphony-of-clouds"/>
+    <file name="symphony of clouds 3.jpg" crc="488887845" seo="true" ref="tablet>symphony-of-clouds:symphony-of-clouds"/>
+    <file name="symphony of clouds 4.jpg" crc="484929596" seo="true" ref="tablet>symphony-of-clouds:symphony-of-clouds"/>
+    <file name="symphony of clouds 5.jpg" crc="395715769" seo="true" ref="tablet>symphony-of-clouds:symphony-of-clouds"/>
+    <file name="symphony of clouds 6.jpg" crc="4089451413" seo="true" ref="tablet>symphony-of-clouds:symphony-of-clouds"/>
+    <file name="symphony of clouds 7.jpg" crc="3801726801" seo="true" ref="tablet>symphony-of-clouds:symphony-of-clouds"/>
+    <file name="much ado 1.jpg" crc="4258006152" seo="true" ref="tablet>much-ado:much-ado"/>
+    <file name="much ado 2.jpg" crc="4254124411" seo="true" ref="tablet>much-ado:much-ado"/>
+    <file name="much ado 3.jpg" crc="100325927" seo="true" ref="tablet>much-ado:much-ado"/>
+    <file name="much ado 4.jpg" crc="23972819" seo="true" ref="tablet>much-ado:much-ado"/>
+    <file name="much ado 5-crop-u26276.png" crc="4227724511" ref="tablet>much-ado"/>
+    <file name="much ado 6.jpg" crc="4095696005" seo="true" ref="tablet>much-ado:much-ado"/>
+    <file name="much ado 7-crop-u26316.png" crc="462374182" ref="tablet>much-ado"/>
+    <file name="much ado 8.jpg" crc="3817232293" seo="true" ref="tablet>much-ado:much-ado"/>
+    <file name="much ado 9-crop-u26356.png" crc="75337396" ref="tablet>much-ado"/>
+    <file name="the lady from the sea 1.jpg" crc="102745820" seo="true" ref="tablet>the-lady-from-the-sea:the-lady-from-the-sea"/>
+    <file name="the lady from the sea 2.jpg" crc="4099913682" seo="true" ref="tablet>the-lady-from-the-sea:the-lady-from-the-sea"/>
+    <file name="the lady from the sea 3-crop-u26436.png" crc="3941610133" ref="tablet>the-lady-from-the-sea"/>
+    <file name="the lady from the sea 4-crop-u26456.png" crc="102216096" ref="tablet>the-lady-from-the-sea"/>
+    <file name="the lady from the sea 5.jpg" crc="4152566634" seo="true" ref="tablet>the-lady-from-the-sea:the-lady-from-the-sea"/>
+    <file name="the lady from the sea 6-crop-u26496.png" crc="33528532" ref="tablet>the-lady-from-the-sea"/>
+    <file name="the lady from the sea 7.jpg" crc="3956410208" seo="true" ref="tablet>the-lady-from-the-sea:the-lady-from-the-sea"/>
+    <file name="pr0ne 1-crop-u26131.png" crc="342027334" ref="tablet>pr0ne-the-hardcore-amateur-musical!"/>
+    <file name="these shining lives 1.jpg" crc="36093970" seo="true" ref="tablet>these-shining-lives:these-shining-lives"/>
+    <file name="these shining lives 2-crop-u26566.png" crc="3907933263" ref="tablet>these-shining-lives"/>
+    <file name="these shining lives 3.jpg" crc="4277755429" seo="true" ref="tablet>these-shining-lives:these-shining-lives"/>
+    <file name="these shining lives 4.jpg" crc="382601950" seo="true" ref="tablet>these-shining-lives:these-shining-lives"/>
+    <file name="these shining lives 5.jpg" crc="100665667" seo="true" ref="tablet>these-shining-lives:these-shining-lives"/>
+    <file name="the guide to being single 1708x472.jpg" crc="495614216" seo="true" ref="tablet>the-guide-to-being-single"/>
+    <file name="the guide to being single 2708x472.jpg" crc="307811227" seo="true" ref="tablet>the-guide-to-being-single"/>
+    <file name="the guide to being single 3708x472.jpg" crc="4118476357" seo="true" ref="tablet>the-guide-to-being-single"/>
+    <file name="the guide to being single 4708x472.jpg" crc="4143117172" seo="true" ref="tablet>the-guide-to-being-single"/>
+    <file name="much ado 6-crop-u26856.png" crc="442530978" ref="index"/>
+    <file name="these shining lives 1-crop-u23179.png" crc="4159626185" ref="index"/>
+    <file name="the lady from the sea 1-crop-u23139.png" crc="4010551381" ref="index"/>
+    <file name="the guide to being single 1-crop-u23119.png" crc="3949535165" ref="index"/>
+    <file name="pr0ne 1-crop-u23099.png" crc="4274146925" ref="index"/>
+    <file name="much ado 6301x200.jpg" crc="67514592" seo="true" ref="index"/>
+    <file name="these shining lives 1354x200.jpg" crc="4058107235" seo="true" ref="index"/>
+    <file name="the lady from the sea 1300x201.jpg" crc="4227471378" seo="true" ref="index"/>
+    <file name="the guide to being single 1300x200.jpg" crc="237405089" seo="true" ref="index"/>
+    <file name="pr0ne 1-crop-u23093.png" crc="4124325699" ref="index"/>
+    <file name="symphony of clouds 1300x201.jpg" crc="3827525043" seo="true" ref="index"/>
+    <file name="symphony of clouds 1-crop-u23425.png" crc="190447223" ref="index"/>
+    <file name="said she 1303x200.jpg" crc="49785238" seo="true" ref="index"/>
+    <file name="said she 1-crop-u23224.png" crc="4119187664" ref="index"/>
+    <file name="cover-about-u1638-fr.png" crc="3864623795" ref="index"/>
+    <file name="u3434-17.png" crc="3832349312" ref="index"/>
+    <file name="u3434-17-r.png" crc="4120549708" ref="index"/>
+    <file name="u3434-17-m.png" crc="4120549708" ref="index"/>
+    <file name="u3434-17-fs.png" crc="4120549708" ref="index"/>
+    <file name="photo-contact.jpg" crc="3856893645" ref="index"/>
+    <file name="much ado 5-crop-u19658.png" crc="80860159" ref="much-ado"/>
+    <file name="much ado 7-crop-u19698.png" crc="258876598" ref="much-ado"/>
+    <file name="much ado 9-crop-u19738.png" crc="3899685664" ref="much-ado"/>
+    <file name="the lady from the sea 3.jpg" crc="50535813" seo="true" ref="the-lady-from-the-sea"/>
+    <file name="the lady from the sea 4.jpg" crc="4080945932" seo="true" ref="the-lady-from-the-sea"/>
+    <file name="the lady from the sea 6.jpg" crc="4054191064" seo="true" ref="the-lady-from-the-sea"/>
+    <file name="pr0ne 1-crop-u20320.png" crc="456314771" ref="pr0ne-the-hardcore-amateur-musical!"/>
+    <file name="these shining lives 2-crop-u20455.png" crc="240339256" ref="these-shining-lives"/>
+    <file name="the guide to being single 1.jpg" crc="495614216" seo="true" ref="the-guide-to-being-single"/>
+    <file name="the guide to being single 2.jpg" crc="307811227" seo="true" ref="the-guide-to-being-single"/>
+    <file name="the guide to being single 3.jpg" crc="4118476357" seo="true" ref="the-guide-to-being-single"/>
+    <file name="the guide to being single 4.jpg" crc="4143117172" seo="true" ref="the-guide-to-being-single"/>
+  </folder>
+  <folder name="tablet">
+    <folder name="css">
+      <file name="master_a-master.css" crc="270425209" ref="tablet>symphony-of-clouds:tablet>said-she:tablet>the-guide-to-being-single:tablet>index:tablet>much-ado:tablet>on-spirituality-death-and-the-last-piece-of-pie:tablet>the-lady-from-the-sea:tablet>these-shining-lives:tablet>bleeding-through-the-tax:tablet>pr0ne-the-hardcore-amateur-musical!"/>
+      <file name="master_subpage-master.css" crc="487692660" ref="tablet>symphony-of-clouds:tablet>said-she:tablet>the-guide-to-being-single:tablet>much-ado:tablet>on-spirituality-death-and-the-last-piece-of-pie:tablet>the-lady-from-the-sea:tablet>these-shining-lives:tablet>bleeding-through-the-tax:tablet>pr0ne-the-hardcore-amateur-musical!"/>
+      <file name="symphony-of-clouds.css" crc="4055879980" ref="tablet>symphony-of-clouds"/>
+      <file name="iefonts_symphony-of-clouds.css" crc="152002476" ref="tablet>symphony-of-clouds"/>
+      <file name="said-she.css" crc="179154291" ref="tablet>said-she"/>
+      <file name="iefonts_said-she.css" crc="405062409" ref="tablet>said-she"/>
+      <file name="the-guide-to-being-single.css" crc="3998151303" ref="tablet>the-guide-to-being-single"/>
+      <file name="iefonts_the-guide-to-being-single.css" crc="3801375416" ref="tablet>the-guide-to-being-single"/>
+      <file name="index.css" crc="4246872456" ref="tablet>index"/>
+      <file name="iefonts_index.css" crc="3798248166" ref="tablet>index"/>
+      <file name="much-ado.css" crc="458855009" ref="tablet>much-ado"/>
+      <file name="iefonts_much-ado.css" crc="4126675550" ref="tablet>much-ado"/>
+      <file name="on-spirituality-death-and-the-last-piece-of-pie.css" crc="527104619" ref="tablet>on-spirituality-death-and-the-last-piece-of-pie"/>
+      <file name="iefonts_on-spirituality-death-and-the-last-piece-of-pie.css" crc="3845820278" ref="tablet>on-spirituality-death-and-the-last-piece-of-pie"/>
+      <file name="the-lady-from-the-sea.css" crc="523030447" ref="tablet>the-lady-from-the-sea"/>
+      <file name="iefonts_the-lady-from-the-sea.css" crc="3768711397" ref="tablet>the-lady-from-the-sea"/>
+      <file name="these-shining-lives.css" crc="3781131592" ref="tablet>these-shining-lives"/>
+      <file name="iefonts_these-shining-lives.css" crc="3801575127" ref="tablet>these-shining-lives"/>
+      <file name="bleeding-through-the-tax.css" crc="443114713" ref="tablet>bleeding-through-the-tax"/>
+      <file name="iefonts_bleeding-through-the-tax.css" crc="370443196" ref="tablet>bleeding-through-the-tax"/>
+      <file name="pr0ne-the-hardcore-amateur-musical_.css" crc="171765036" ref="tablet>pr0ne-the-hardcore-amateur-musical!"/>
+      <file name="iefonts_pr0ne-the-hardcore-amateur-musical_.css" crc="317270347" ref="tablet>pr0ne-the-hardcore-amateur-musical!"/>
+    </folder>
+    <file name="index.html" crc="534143729" seo="true" mt="1473819238035" redirect="true"/>
+    <file name="bleeding-through-the-tax.html" crc="3917939846" seo="true" mt="1473819238035" redirect="true"/>
+    <file name="on-spirituality-death-and-the-last-piece-of-pie.html" crc="397982059" seo="true" mt="1473819238035" redirect="true"/>
+    <file name="said-she.html" crc="4197481286" seo="true" mt="1473819238035" redirect="true"/>
+    <file name="symphony-of-clouds.html" crc="3877681788" seo="true" mt="1473819238035" redirect="true"/>
+    <file name="much-ado.html" crc="3955294962" seo="true" mt="1473819238035" redirect="true"/>
+    <file name="the-lady-from-the-sea.html" crc="3952583057" seo="true" mt="1473819238035" redirect="true"/>
+    <file name="pr0ne-the-hardcore-amateur-musical!.html" crc="306768602" seo="true" mt="1473819238035" redirect="true"/>
+    <file name="these-shining-lives.html" crc="412135616" seo="true" mt="1473819238035" redirect="true"/>
+    <file name="the-guide-to-being-single.html" crc="4252635214" seo="true" mt="1473819238035" redirect="true"/>
+  </folder>
+  <file name="index.html" crc="4068276969" seo="true" mt="1473819019453" redirect="true"/>
+  <file name="much-ado.html" crc="3762613453" seo="true" mt="1473819019453" redirect="true"/>
+  <file name="the-lady-from-the-sea.html" crc="4016214449" seo="true" mt="1473819019453" redirect="true"/>
+  <file name="pr0ne-the-hardcore-amateur-musical!.html" crc="534189063" seo="true" mt="1473819019453" redirect="true"/>
+  <file name="these-shining-lives.html" crc="419597857" seo="true" mt="1473819019453" redirect="true"/>
+  <file name="the-guide-to-being-single.html" crc="4294289806" seo="true" mt="1473819019453" redirect="true"/>
+  <file name="said-she.html" crc="3940858492" seo="true" mt="1473819019453" redirect="true"/>
+  <file name="symphony-of-clouds.html" crc="3854400795" seo="true" mt="1473819019453" redirect="true"/>
+  <file name="bleeding-through-the-tax.html" crc="479535568" seo="true" mt="1473819019453" redirect="true"/>
+  <file name="on-spirituality-death-and-the-last-piece-of-pie.html" crc="3933995694" seo="true" mt="1473819019453" redirect="true"/>
+  <site>
+    <asset filename="background-video.mp4" muse_href="upload:U15518"/>
+    <asset filename="background-video.webm" muse_href="upload:U15520"/>
+    <asset filename="margaret-baughman-resume.pdf" muse_href="upload:U17322"/>
+    <asset filename="margaret-baughman-portfolio.png" muse_href="upload:U28168"/>
+  </site>
+  <renditions>
+    <rendition device="desktop">
+      <page name="Home" filename="index.html" muse_href="page:U68" master="U59">
+        <breakpoint uid="U11365" maxwidth="1160" minwidth="0" squishy="false"/>
+        <anchor name="home" html_id="home" muse_href="anchor:U63:U11131" includeInBPs="U11365"/>
+        <anchor name="about" html_id="about" muse_href="anchor:U63:U11132" includeInBPs="U11365"/>
+        <anchor name="contact" html_id="contact" muse_href="anchor:U63:U11133" includeInBPs="U11365"/>
+        <anchor name="work" html_id="work" muse_href="anchor:U63:U11134" includeInBPs="U11365"/>
+        <anchor name="articles" html_id="articles" muse_href="anchor:U63:U11135" includeInBPs="U11365"/>
+      </page>
+      <masterPage name="A-Master" master="U55" uid="U59">
+        <breakpoint uid="U11369" maxwidth="1160" minwidth="0" squishy="false"/>
+      </masterPage>
+      <masterPage name="None" master="null" uid="U55">
+        <breakpoint uid="U11376" maxwidth="1160" minwidth="0" squishy="false"/>
+      </masterPage>
+      <page name="much ado" filename="much-ado.html" muse_href="page:U17661" master="U3544">
+        <breakpoint uid="U17573" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <masterPage name="Subpage-Master" master="U59" uid="U3544">
+        <breakpoint uid="U11366" maxwidth="1160" minwidth="0" squishy="false"/>
+      </masterPage>
+      <page name="The Lady from the Sea" filename="the-lady-from-the-sea.html" muse_href="page:U18129" master="U3544">
+        <breakpoint uid="U18011" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="Pr0ne: the Hardcore Amateur Musical!" filename="pr0ne-the-hardcore-amateur-musical!.html" muse_href="page:U18349" master="U3544">
+        <breakpoint uid="U18232" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="These Shining Lives" filename="these-shining-lives.html" muse_href="page:U18569" master="U3544">
+        <breakpoint uid="U18446" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="The Guide to Being Single" filename="the-guide-to-being-single.html" muse_href="page:U18789" master="U3544">
+        <breakpoint uid="U18586" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="Said She" filename="said-she.html" muse_href="page:U20994" master="U3544">
+        <breakpoint uid="U20927" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="Symphony of Clouds" filename="symphony-of-clouds.html" muse_href="page:U21118" master="U3544">
+        <breakpoint uid="U21022" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="Bleeding Through the Tax" filename="bleeding-through-the-tax.html" muse_href="page:U23661" master="U3544">
+        <breakpoint uid="U23583" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="On Spirituality Death and the Last Piece of Pie" filename="on-spirituality-death-and-the-last-piece-of-pie.html" muse_href="page:U23751" master="U3544">
+        <breakpoint uid="U23667" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+    </rendition>
+    <rendition device="tablet">
+      <page name="Home" filename="index.html" muse_href="page:U3864" master="U3819">
+        <breakpoint uid="U11367" maxwidth="768" minwidth="0" squishy="false"/>
+        <anchor name="t-home" html_id="t-home" muse_href="anchor:U3841:U11207" includeInBPs="U11367"/>
+        <anchor name="t-contact" html_id="t-contact" muse_href="anchor:U3841:U11208" includeInBPs="U11367"/>
+        <anchor name="t-work" html_id="t-work" muse_href="anchor:U3841:U11209" includeInBPs="U11367"/>
+        <anchor name="t-about" html_id="t-about" muse_href="anchor:U3841:U11210" includeInBPs="U11367"/>
+        <anchor name="t-articles" html_id="t-articles" muse_href="anchor:U3841:U11211" includeInBPs="U11367"/>
+      </page>
+      <masterPage name="A-Master" master="U3797" uid="U3819">
+        <breakpoint uid="U11360" maxwidth="768" minwidth="0" squishy="false"/>
+      </masterPage>
+      <masterPage name="None" master="null" uid="U3797">
+        <breakpoint uid="U11377" maxwidth="768" minwidth="0" squishy="false"/>
+      </masterPage>
+      <page name="Bleeding Through the Tax" filename="bleeding-through-the-tax.html" muse_href="page:U24085" master="U3865">
+        <breakpoint uid="U24036" maxwidth="768" minwidth="0" squishy="false"/>
+      </page>
+      <masterPage name="Subpage-Master" master="U3819" uid="U3865">
+        <breakpoint uid="U11361" maxwidth="768" minwidth="0" squishy="false"/>
+      </masterPage>
+      <page name="On Spirituality Death and the Last Piece of Pie" filename="on-spirituality-death-and-the-last-piece-of-pie.html" muse_href="page:U24173" master="U3865">
+        <breakpoint uid="U24106" maxwidth="768" minwidth="0" squishy="false"/>
+      </page>
+      <page name="Said She" filename="said-she.html" muse_href="page:U24607" master="U3865">
+        <breakpoint uid="U24495" maxwidth="768" minwidth="0" squishy="false"/>
+      </page>
+      <page name="Symphony of Clouds" filename="symphony-of-clouds.html" muse_href="page:U24970" master="U3865">
+        <breakpoint uid="U24801" maxwidth="768" minwidth="0" squishy="false"/>
+      </page>
+      <page name="much ado" filename="much-ado.html" muse_href="page:U25166" master="U3865">
+        <breakpoint uid="U24997" maxwidth="768" minwidth="0" squishy="false"/>
+      </page>
+      <page name="The Lady from the Sea" filename="the-lady-from-the-sea.html" muse_href="page:U25362" master="U3865">
+        <breakpoint uid="U25191" maxwidth="768" minwidth="0" squishy="false"/>
+      </page>
+      <page name="Pr0ne: the Hardcore Amateur Musical!" filename="pr0ne-the-hardcore-amateur-musical!.html" muse_href="page:U25558" master="U3865">
+        <breakpoint uid="U25449" maxwidth="768" minwidth="0" squishy="false"/>
+      </page>
+      <page name="These Shining Lives" filename="these-shining-lives.html" muse_href="page:U25754" master="U3865">
+        <breakpoint uid="U25651" maxwidth="768" minwidth="0" squishy="false"/>
+      </page>
+      <page name="The Guide to Being Single" filename="the-guide-to-being-single.html" muse_href="page:U25950" master="U3865">
+        <breakpoint uid="U25767" maxwidth="768" minwidth="0" squishy="false"/>
+      </page>
+    </rendition>
+  </renditions>
+</manifest>
