@@ -1,0 +1,159 @@
+<manifest alg="2" build="2015.2.1.352" opt="false" iceEnabled="false" ftp_hostname="ftp://107.180.56.174" ftp_rootfolder="/public_html/besuperinitiative.com" exportTarget="FTP" domain="www.besuperinitiative.com" resolutions="1x,2x" timestamp="1473818467829">
+  <folder name="css">
+    <file name="site_global.css" crc="4259802623"/>
+    <file name="master_a-master-dark.css" crc="3764288315" ref="about-krystal-kara:about-matthew-manning"/>
+    <file name="master_a-master-light.css" crc="189403346" ref="importance:education:team:heroes:origins:contact:resources:blog:index"/>
+    <file name="importance.css" crc="120836450" ref="importance"/>
+    <file name="education.css" crc="329532313" ref="education"/>
+    <file name="team.css" crc="3927925461" ref="team"/>
+    <file name="heroes.css" crc="447942767" ref="heroes"/>
+    <file name="origins.css" crc="4284787687" ref="origins"/>
+    <file name="contact.css" crc="484488636" ref="contact"/>
+    <file name="resources.css" crc="4107655704" ref="resources"/>
+    <file name="about-krystal-kara.css" crc="243845044" ref="about-krystal-kara"/>
+    <file name="blog.css" crc="3981166391" ref="blog"/>
+    <file name="index.css" crc="4023304394" ref="index"/>
+    <file name="about-matthew-manning.css" crc="357629364" ref="about-matthew-manning"/>
+  </folder>
+  <folder name="assets">
+    <file name="be-super-proposal.pdf" crc="303042224" seo="true" mt="1472164504000"/>
+    <file name="be-super-harassment-policy-2016.pdf" crc="503611706" seo="true" mt="1473620475000"/>
+    <file name="be-super-website.png" crc="4002204017" seo="true" mt="1473737545000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="169078940" ref="index:team:contact:blog:education:origins:about-krystal-kara:importance:heroes:resources:about-matthew-manning"/>
+    <file name="museutils.js" crc="3851988764" ref="index:team:contact:blog:education:origins:about-krystal-kara:importance:heroes:resources:about-matthew-manning"/>
+    <file name="whatinput.js" crc="86476730" ref="index:team:contact:blog:education:origins:about-krystal-kara:importance:heroes:resources:about-matthew-manning"/>
+    <file name="museconfig.js" crc="4242129463" ref="index:team:contact:blog:education:origins:about-krystal-kara:importance:heroes:resources:about-matthew-manning"/>
+    <file name="jquery.watch.js" crc="3842844514" ref="index:team:contact:blog:education:origins:about-krystal-kara:importance:heroes:resources:about-matthew-manning"/>
+    <file name="webpro.js" crc="4067903014" ref="index:team:contact:blog:education:origins:importance:heroes:resources"/>
+    <file name="musewpslideshow.js" crc="4265225696" ref="index:team:blog:education:origins:importance:heroes:resources"/>
+    <file name="jquery.museoverlay.js" crc="4075157096" ref="index:team:blog:education:origins:importance:heroes:resources"/>
+    <file name="touchswipe.js" crc="474750357" ref="index:team:blog:education:origins:importance:heroes:resources"/>
+    <file name="jquery.musemenu.js" crc="4150485998" ref="index:team:contact:blog:education:origins:about-krystal-kara:importance:heroes:resources:about-matthew-manning"/>
+    <file name="pie.js" crc="3831537696" ref="index:team:about-krystal-kara:importance:about-matthew-manning"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="271560940" ref="index:team:contact:blog:education:origins:importance:heroes:resources"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:team:contact:blog:education:origins:about-krystal-kara:importance:heroes:resources:about-matthew-manning"/>
+    <file name="require.js" crc="4108833657" ref="index:team:contact:blog:education:origins:about-krystal-kara:importance:heroes:resources:about-matthew-manning"/>
+    <file name="form_check.php" crc="121412709" ref="contact"/>
+    <file name="form_throttle.php" crc="4268640971" ref="contact"/>
+    <file name="form_process.php" crc="444429785" ref="contact"/>
+    <file name="form-u1225.php" crc="3808794254" ref="contact"/>
+  </folder>
+  <folder name="images">
+    <file name="u1853.png" crc="4096073280" ref="index"/>
+    <file name="u1853_2x.png" crc="76287244" ref="index"/>
+    <file name="u1853-r.png" crc="27869763" ref="index"/>
+    <file name="u1853-r_2x.png" crc="194776305" ref="index"/>
+    <file name="u8326.png" crc="4096073280" ref="index"/>
+    <file name="u8326_2x.png" crc="76287244" ref="index"/>
+    <file name="u8326-r.png" crc="27869763" ref="index"/>
+    <file name="u8326-r_2x.png" crc="194776305" ref="index"/>
+    <file name="u1898.png" crc="4096073280" ref="index"/>
+    <file name="u1898_2x.png" crc="76287244" ref="index"/>
+    <file name="u1898-r.png" crc="27869763" ref="index"/>
+    <file name="u1898-r_2x.png" crc="194776305" ref="index"/>
+    <file name="u1894.png" crc="4096073280" ref="index"/>
+    <file name="u1894_2x.png" crc="76287244" ref="index"/>
+    <file name="u1894-r.png" crc="27869763" ref="index"/>
+    <file name="u1894-r_2x.png" crc="194776305" ref="index"/>
+    <file name="logo-besuper-light.svg" crc="16434833" seo="true" ref="index:team:contact:blog:education:origins:importance:heroes:resources"/>
+    <file name="logo-besuper-light_poster_.png" crc="131777096" ref="index"/>
+    <file name="homepage-fourpanel.png" crc="3823610535" ref="index"/>
+    <file name="homepage-fourpanel_2x.png" crc="346478471" ref="index"/>
+    <file name="headshot-krystal-kara-u1922-fr.png" crc="4134976504" ref="index:team"/>
+    <file name="headshot-krystal-kara-u1922-fr_2x.png" crc="107958462" ref="index:team"/>
+    <file name="homepage-fourpanel-left.png" crc="354936792" ref="index"/>
+    <file name="homepage-fourpanel-left_2x.png" crc="23268674" ref="index"/>
+    <file name="tab.svg" crc="4237993555" ref="index"/>
+    <file name="tab_poster_u5514.png" crc="3814494868" ref="index"/>
+    <file name="hex-dark.svg" crc="3995049104" ref="index"/>
+    <file name="hex-dark_poster_u10919.png" crc="4037609992" ref="index"/>
+    <file name="icon-arrow2-color-ieu1985-fr.png" crc="4072706953" ref="index"/>
+    <file name="icon-arrow2-color.png" crc="4072706953" ref="index"/>
+    <file name="icon-arrow2-color-ieu1985-fr2.png" crc="4082570515" ref="index"/>
+    <file name="icon-arrow2-color_2x.png" crc="4082570515" ref="index"/>
+    <file name="icon-arrow2-dark.png" crc="499136376" ref="index"/>
+    <file name="icon-arrow2-dark_2x.png" crc="472561649" ref="index"/>
+    <file name="tab-color.svg" crc="4200867707" ref="index"/>
+    <file name="tab-color_poster_u11845.png" crc="157121092" ref="index"/>
+    <file name="hex-light.svg" crc="4172231476" ref="index:team:blog:education:importance:heroes:resources"/>
+    <file name="hex-light_poster_u10927.png" crc="4133763995" ref="index:team:blog:education:importance:heroes:resources"/>
+    <file name="icon-arrow2-light.png" crc="3817228484" ref="index"/>
+    <file name="icon-arrow2-light_2x.png" crc="3839389615" ref="index"/>
+    <file name="icon-network.svg" crc="3901095305" seo="true" ref="index:team:blog:education:importance:heroes:resources"/>
+    <file name="icon-network_poster_.png" crc="484885074" ref="index"/>
+    <file name="icon-social-facebook.svg" crc="133834545" ref="index:team:contact:blog:education:importance:heroes:resources"/>
+    <file name="icon-social-facebook_poster_u11224.png" crc="4227783163" ref="index:team:contact:blog:education:importance:heroes:resources"/>
+    <file name="icon-social-twitter.svg" crc="3801626847" ref="index:team:contact:blog:education:importance:heroes:resources"/>
+    <file name="icon-social-twitter_poster_u11256.png" crc="3889264012" ref="index:team:contact:blog:education:importance:heroes:resources"/>
+    <file name="icon-social-instagram.svg" crc="4161111422" ref="index:team:contact:blog:education:importance:heroes:resources"/>
+    <file name="icon-social-instagram_poster_u11232.png" crc="264227754" ref="index:team:contact:blog:education:importance:heroes:resources"/>
+    <file name="icon-social-tumblr.svg" crc="516070709" ref="index:team:contact:blog:education:importance:heroes:resources"/>
+    <file name="icon-social-tumblr_poster_u12070.png" crc="4294477706" ref="index:team:contact:blog:education:importance:heroes:resources"/>
+    <file name="block.svg" crc="4124259881" ref="index:team:origins"/>
+    <file name="block_poster_u10885.png" crc="4095612835" ref="index:team:origins"/>
+    <file name="arrow-block.svg" crc="4262019863" ref="index"/>
+    <file name="arrow-block_poster_u10877.png" crc="4131097878" ref="index"/>
+    <file name="circle-half-left.png" crc="131529968" ref="index:team"/>
+    <file name="circle-half-left_2x.png" crc="516485518" ref="index:team"/>
+    <file name="cirlce-half-right.png" crc="454187409" ref="index:team"/>
+    <file name="cirlce-half-right_2x.png" crc="4166870386" ref="index:team"/>
+    <file name="block-reverse.svg" crc="73268926" ref="index"/>
+    <file name="block-reverse_poster_u10893.png" crc="3783627317" ref="index"/>
+    <file name="u2524.png" crc="4013942816" ref="team"/>
+    <file name="u2524_2x.png" crc="4096332259" ref="team"/>
+    <file name="u2524-r.png" crc="4096073280" ref="team"/>
+    <file name="u2524-r_2x.png" crc="76287244" ref="team"/>
+    <file name="background-grid.png" crc="87407182" ref="team:contact:blog:education:importance:heroes:resources"/>
+    <file name="background-grid_2x.png" crc="349792089" ref="team:contact:blog:education:importance:heroes:resources"/>
+    <file name="icon-social-linkedin.svg" crc="4072199840" ref="team"/>
+    <file name="icon-social-linkedin_poster_u12062.png" crc="161477815" ref="team"/>
+    <file name="headshot-matthew-manning-u2578-fr.png" crc="4089293719" ref="team"/>
+    <file name="headshot-matthew-manning-u2578-fr_2x.png" crc="504238282" ref="team"/>
+    <file name="background-pixel.png" crc="124650358" ref="contact"/>
+    <file name="background-pixel_2x.png" crc="3911926333" ref="contact"/>
+    <file name="u1233-17.png" crc="27417273" ref="contact"/>
+    <file name="u1233-17_2x.png" crc="3996493284" ref="contact"/>
+    <file name="u1233-17-r.png" crc="3819987257" ref="contact"/>
+    <file name="u1233-17-r_2x.png" crc="201516414" ref="contact"/>
+    <file name="u1233-17-m.png" crc="3819987257" ref="contact"/>
+    <file name="u1233-17-m_2x.png" crc="201516414" ref="contact"/>
+    <file name="u1233-17-fs.png" crc="27417273" ref="contact"/>
+    <file name="u1233-17-fs_2x.png" crc="3996493284" ref="contact"/>
+    <file name="icon-chat.svg" crc="318562201" seo="true" ref="contact"/>
+    <file name="icon-chat_poster_.png" crc="3758214179" ref="contact"/>
+    <file name="icon-email.svg" crc="3983741792" seo="true" ref="contact"/>
+    <file name="icon-email_poster_.png" crc="3869273836" ref="contact"/>
+    <file name="be-super-cover.jpg" crc="257059471" ref="contact"/>
+    <file name="be-super-cover_2x.jpg" crc="4195349895" ref="contact"/>
+    <file name="thumbnail-education-importance.png" crc="64932156" ref="education"/>
+    <file name="thumbnail-education-importance_2x.png" crc="365509285" ref="education"/>
+    <file name="thumbnail-education-heroes.png" crc="4110824111" ref="education"/>
+    <file name="thumbnail-education-heroes_2x.png" crc="4147586914" ref="education"/>
+    <file name="thumbnail-education-resources.png" crc="437715832" ref="education"/>
+    <file name="thumbnail-education-resources_2x.png" crc="4233359927" ref="education"/>
+    <file name="arrow-left.svg" crc="3907519036" ref="origins"/>
+    <file name="arrow-left_poster_u10853.png" crc="153124754" ref="origins"/>
+    <file name="a-master-dark-favicon.ico" crc="4251471574" ref="about-krystal-kara"/>
+    <file name="logo-besuper-dark.svg" crc="202927299" seo="true" ref="about-krystal-kara:about-matthew-manning"/>
+    <file name="logo-besuper-dark_poster_.png" crc="4152599170" ref="about-krystal-kara"/>
+    <file name="headshot-krystal-kara-ieu11080-fr.png" crc="4143523349" ref="about-krystal-kara"/>
+    <file name="headshot-krystal-kara.png" crc="4223307490" ref="about-krystal-kara"/>
+    <file name="headshot-matthew-manning-real-ieu9246-fr.png" crc="228554367" ref="importance"/>
+    <file name="headshot-matthew-manning-real.png" crc="4200914954" ref="importance"/>
+    <file name="headshot-matthew-manning.png" crc="3838114428" ref="about-matthew-manning"/>
+    <file name="headshot-matthew-manning_2x.png" crc="210894401" ref="about-matthew-manning"/>
+  </folder>
+  <file name="index.html" crc="339720250" seo="true" mt="1473818394768" redirect="true"/>
+  <file name="team.html" crc="467141080" seo="true" mt="1473818394768" redirect="true"/>
+  <file name="contact.html" crc="80184614" seo="true" mt="1473818394768" redirect="true"/>
+  <file name="blog.html" crc="447892548" seo="true" mt="1473818394768" redirect="true"/>
+  <file name="education.html" crc="4075209441" seo="true" mt="1473818394768" redirect="true"/>
+  <file name="origins.html" crc="3934052272" seo="true" mt="1473818394768" redirect="true"/>
+  <file name="about-krystal-kara.html" crc="217152092" seo="true" mt="1473818384366" redirect="true"/>
+  <file name="importance.html" crc="2282764" seo="true" mt="1473818394768" redirect="true"/>
+  <file name="heroes.html" crc="213791883" seo="true" mt="1473818394768" redirect="true"/>
+  <file name="resources.html" crc="78842729" seo="true" mt="1473818394768" redirect="true"/>
+  <file name="about-matthew-manning.html" crc="517347067" seo="true" mt="1473818384366" redirect="true"/>
+</manifest>

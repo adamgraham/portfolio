@@ -1,0 +1,210 @@
+<manifest alg="2" build="2015.2.1.352" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" ftp_hostname="ftp://107.180.56.174" ftp_rootfolder="/public_html/websites/ashantisjones" exportTarget="FTP" domain="www.ashantisjones.com" resolutions="1x" timestamp="1479359159513">
+  <folder name="css">
+    <file name="site_global.css" crc="387729705"/>
+    <file name="master_master.css" crc="372115194" ref="support-tomorrows-rising-stars:the-theatre-school-at-depaul-university:arthritis-foundation:fest:fundraising:boldface-co:events:index:depaul-university:portfolio:these-shining-lives:theatre:demonthon:about:cor-theatre"/>
+    <file name="master_portfolio-events-master.css" crc="3864754206" ref="fest:boldface-co:depaul-university"/>
+    <file name="master_portfoli-fundraising-master.css" crc="3867096260" ref="support-tomorrows-rising-stars:arthritis-foundation:demonthon"/>
+    <file name="master_portfolio-master.css" crc="4263129907" ref="fundraising:events:portfolio:theatre"/>
+    <file name="master_portfolio-theatre-master.css" crc="90408486" ref="the-theatre-school-at-depaul-university:these-shining-lives:cor-theatre"/>
+    <file name="support-tomorrows-rising-stars.css" crc="164717389" ref="support-tomorrows-rising-stars"/>
+    <file name="the-theatre-school-at-depaul-university.css" crc="4130525563" ref="the-theatre-school-at-depaul-university"/>
+    <file name="arthritis-foundation.css" crc="242497364" ref="arthritis-foundation"/>
+    <file name="fest.css" crc="208421575" ref="fest"/>
+    <file name="fundraising.css" crc="4290158161" ref="fundraising"/>
+    <file name="boldface-co.css" crc="4212404082" ref="boldface-co"/>
+    <file name="events.css" crc="280792501" ref="events"/>
+    <file name="index.css" crc="231292328" ref="index"/>
+    <file name="depaul-university.css" crc="178663428" ref="depaul-university"/>
+    <file name="portfolio.css" crc="4202117810" ref="portfolio"/>
+    <file name="these-shining-lives.css" crc="202125473" ref="these-shining-lives"/>
+    <file name="theatre.css" crc="206612394" ref="theatre"/>
+    <file name="demonthon.css" crc="249765734" ref="demonthon"/>
+    <file name="about.css" crc="3990165876" ref="about"/>
+    <file name="cor-theatre.css" crc="5581307" ref="cor-theatre"/>
+    <file name="master_a-master.css" crc="4041470358" ref="support-tomorrows-rising-stars:the-theatre-school-at-depaul-university:arthritis-foundation:fest:fundraising:boldface-co:events:index:depaul-university:portfolio:these-shining-lives:theatre:demonthon:about:cor-theatre"/>
+  </folder>
+  <folder name="assets">
+    <file name="ashantis-jones-portfolio.png" crc="4290140515" seo="true" mt="1458427866000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="169078940" ref="about:index:portfolio:theatre:fundraising:events:these-shining-lives:the-theatre-school-at-depaul-university:cor-theatre:demonthon:arthritis-foundation:support-tomorrows-rising-stars:fest:boldface-co:depaul-university"/>
+    <file name="museutils.js" crc="3851988764" ref="about:index:portfolio:theatre:fundraising:events:these-shining-lives:the-theatre-school-at-depaul-university:cor-theatre:demonthon:arthritis-foundation:support-tomorrows-rising-stars:fest:boldface-co:depaul-university"/>
+    <file name="whatinput.js" crc="86476730" ref="about:index:portfolio:theatre:fundraising:events:these-shining-lives:the-theatre-school-at-depaul-university:cor-theatre:demonthon:arthritis-foundation:support-tomorrows-rising-stars:fest:boldface-co:depaul-university"/>
+    <file name="museconfig.js" crc="4242129463" ref="about:index:portfolio:theatre:fundraising:events:these-shining-lives:the-theatre-school-at-depaul-university:cor-theatre:demonthon:arthritis-foundation:support-tomorrows-rising-stars:fest:boldface-co:depaul-university"/>
+    <file name="webpro.js" crc="4067903014" ref="about:index:portfolio:theatre:fundraising:events:these-shining-lives:the-theatre-school-at-depaul-university:cor-theatre:demonthon:arthritis-foundation:support-tomorrows-rising-stars:fest:boldface-co:depaul-university"/>
+    <file name="musewpslideshow.js" crc="4265225696" ref="about:index"/>
+    <file name="jquery.museoverlay.js" crc="4075157096" ref="about:index"/>
+    <file name="touchswipe.js" crc="474750357" ref="about:index"/>
+    <file name="pie.js" crc="3831537696" ref="about:portfolio:these-shining-lives:the-theatre-school-at-depaul-university:cor-theatre:demonthon:arthritis-foundation:support-tomorrows-rising-stars:fest:boldface-co:depaul-university"/>
+    <file name="jquery.watch.js" crc="3842844514" ref="about:index:portfolio:theatre:fundraising:events:these-shining-lives:the-theatre-school-at-depaul-university:cor-theatre:demonthon:arthritis-foundation:support-tomorrows-rising-stars:fest:boldface-co:depaul-university"/>
+    <file name="musewpdisclosure.js" crc="338211507" ref="about:index:portfolio:theatre:fundraising:events:these-shining-lives:the-theatre-school-at-depaul-university:cor-theatre:demonthon:arthritis-foundation:support-tomorrows-rising-stars:fest:boldface-co:depaul-university"/>
+    <file name="jquery.scrolleffects.js" crc="511146689" ref="about:index:portfolio:theatre:fundraising:events:these-shining-lives:the-theatre-school-at-depaul-university:cor-theatre:demonthon:arthritis-foundation:support-tomorrows-rising-stars:fest:boldface-co:depaul-university"/>
+    <file name="require.js" crc="4108833657" ref="about:index:portfolio:theatre:fundraising:events:these-shining-lives:the-theatre-school-at-depaul-university:cor-theatre:demonthon:arthritis-foundation:support-tomorrows-rising-stars:fest:boldface-co:depaul-university"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="271560940" ref="index:portfolio:theatre:fundraising:events:these-shining-lives:demonthon:fest"/>
+  </folder>
+  <folder name="images">
+    <file name="favicon.ico" crc="4048463467" ref="about"/>
+    <file name="blank.gif" crc="4208392903" ref="about:index"/>
+    <file name="loading.gif" crc="3815509949" ref="about:index"/>
+    <file name="text-expand.svg" crc="285145619" ref="about"/>
+    <file name="text-expand_poster_u11022.png" crc="462759603" ref="about"/>
+    <file name="text-expand-rollover.svg" crc="311058709" ref="about"/>
+    <file name="text-expand-rollover_poster_u11030.png" crc="246272957" ref="about"/>
+    <file name="text-hide.svg" crc="4015694626" ref="about"/>
+    <file name="text-hide_poster_u11038.png" crc="4067169544" ref="about"/>
+    <file name="icon-linkedin.svg" crc="4043934253" ref="about"/>
+    <file name="icon-linkedin_poster_u10913.png" crc="3968140078" ref="about"/>
+    <file name="icon-linkedin-rollover.svg" crc="367432016" ref="about"/>
+    <file name="icon-linkedin-rollover_poster_u10921.png" crc="58312098" ref="about"/>
+    <file name="icon-twitter.svg" crc="17190999" ref="about"/>
+    <file name="icon-twitter_poster_u10961.png" crc="4190012774" ref="about"/>
+    <file name="icon-twitter-rollover.svg" crc="143888393" ref="about"/>
+    <file name="icon-twitter-rollover_poster_u10969.png" crc="4159378779" ref="about"/>
+    <file name="icon-instagram.svg" crc="44690995" ref="about"/>
+    <file name="icon-instagram_poster_u10929.png" crc="3857131236" ref="about"/>
+    <file name="icon-instagram-rollover.svg" crc="318520974" ref="about"/>
+    <file name="icon-instagram-rollover_poster_u10937.png" crc="4095687975" ref="about"/>
+    <file name="icon-pinterest.svg" crc="19283196" ref="about"/>
+    <file name="icon-pinterest_poster_u10945.png" crc="3927813854" ref="about"/>
+    <file name="icon-pinterest-rollover.svg" crc="3877847651" ref="about"/>
+    <file name="icon-pinterest-rollover_poster_u10953.png" crc="4221351547" ref="about"/>
+    <file name="logo-home.svg" crc="487638710" ref="index"/>
+    <file name="logo-home_poster_u10977.png" crc="4279626260" ref="index"/>
+    <file name="shape-wedge-bottom.svg" crc="121981588" ref="index"/>
+    <file name="shape-wedge-bottom_poster_u11070.png" crc="95629465" ref="index"/>
+    <file name="shape-wedge-top.svg" crc="4103493234" ref="index"/>
+    <file name="shape-wedge-top_poster_u11062.png" crc="3837736364" ref="index"/>
+    <file name="icon-flourish.svg" crc="3779141873" ref="index:portfolio:theatre:fundraising:events"/>
+    <file name="icon-flourish_poster_u11054.png" crc="4206256448" ref="index:portfolio:theatre:fundraising:events"/>
+    <file name="icon-demonthon.png" crc="3767126883" ref="index"/>
+    <file name="thumbnail-demonthon-u7920-fr.png" crc="368831997" ref="index"/>
+    <file name="icon-bold-face-co.png" crc="3783636294" ref="index"/>
+    <file name="thumbnail-boldface.jpg" crc="4273962259" ref="index:portfolio:events"/>
+    <file name="icon-arthritis-foundation.png" crc="4142292303" ref="index"/>
+    <file name="thumbnail-arthritis-foundation.jpg" crc="257257816" ref="index:portfolio:fundraising"/>
+    <file name="icon-arrow.gif" crc="4088786620" ref="index"/>
+    <file name="icon-arrow-rollover.gif" crc="4166398521" ref="index"/>
+    <file name="thumbnail-fest.jpg" crc="481336363" ref="portfolio:events"/>
+    <file name="thumbnail-depaul-university.jpg" crc="3856094868" ref="portfolio:events"/>
+    <file name="thumbnail-demonthon.png" crc="4252433317" ref="portfolio:fundraising"/>
+    <file name="thumbnail-support-tomorrows-rising-stars.jpg" crc="514523876" ref="portfolio"/>
+    <file name="thumbnail-these-shining-lives.jpg" crc="3758560682" ref="portfolio:theatre"/>
+    <file name="thumbnail-cor-theatre.jpg" crc="4013387879" ref="portfolio:theatre"/>
+    <file name="thumbnail-the-theatre-school.jpg" crc="3817967946" ref="portfolio:theatre"/>
+    <file name="thumbnail-support-tomorrows-rising-stars-u10141-fr.jpg" crc="461188912" ref="fundraising"/>
+    <file name="photo-these-shining-lives-01-ieu11520-fr.png" crc="465475987" ref="these-shining-lives"/>
+    <file name="photo-these-shining-lives-01.jpg" crc="211771749" ref="these-shining-lives"/>
+    <file name="photo-the-theatre-school-01.jpg" crc="474543747" ref="the-theatre-school-at-depaul-university"/>
+    <file name="photo-cor-theatre-01-ieu11573-fr.png" crc="4135793285" ref="cor-theatre"/>
+    <file name="photo-cor-theatre-01.jpg" crc="295009320" ref="cor-theatre"/>
+    <file name="photo-demonthon-02.png" crc="356690875" ref="demonthon"/>
+    <file name="photo-arthritis-foundation-01-ieu11716-fr.png" crc="117588950" ref="arthritis-foundation"/>
+    <file name="photo-arthritis-foundation-01.jpg" crc="221996229" ref="arthritis-foundation"/>
+    <file name="photo-support-tomorrows-rising-stars-01-ieu11730-fr.png" crc="488485215" ref="support-tomorrows-rising-stars"/>
+    <file name="photo-support-tomorrows-rising-stars-01.jpg" crc="127059768" ref="support-tomorrows-rising-stars"/>
+    <file name="photo-fest-01-ieu11898-fr.png" crc="178319581" ref="fest"/>
+    <file name="photo-fest-01.jpg" crc="4212124835" ref="fest"/>
+    <file name="photo-bold-face-01.jpg" crc="3919494493" ref="boldface-co"/>
+    <file name="photo-depaul-university-01-ieu11970-fr.png" crc="22681267" ref="depaul-university"/>
+    <file name="photo-depaul-university-01.jpg" crc="4259209121" ref="depaul-university"/>
+    <file name="abs_jpeg-3.jpg" crc="283102661" seo="true" ref="about"/>
+    <file name="abs_jpeg-76.jpg" crc="509299723" ref="about"/>
+    <file name="abs_jpeg-31.jpg" crc="477843016" seo="true" ref="index"/>
+    <file name="abs_jpeg-20_blur.jpg" crc="10578088" seo="true" ref="index"/>
+    <file name="abs_jpeg-17_blur-u10037-3-fr.png" crc="4226830621" ref="portfolio:these-shining-lives:demonthon:fest"/>
+  </folder>
+  <file name="about.html" crc="58793360" seo="true" mt="1479357084730" redirect="true"/>
+  <file name="index.html" crc="134992234" seo="true" mt="1479356877167" redirect="true"/>
+  <file name="portfolio.html" crc="346503747" seo="true" mt="1479359135342" redirect="true"/>
+  <file name="theatre.html" crc="355125262" seo="true" mt="1479359135342" redirect="true"/>
+  <file name="fundraising.html" crc="518805185" seo="true" mt="1479359135342" redirect="true"/>
+  <file name="events.html" crc="4188506616" seo="true" mt="1479359135342" redirect="true"/>
+  <file name="these-shining-lives.html" crc="4086216708" seo="true" mt="1479359135344" redirect="true"/>
+  <file name="the-theatre-school-at-depaul-university.html" crc="161347009" seo="true" mt="1479359135344" redirect="true"/>
+  <file name="cor-theatre.html" crc="108107822" seo="true" mt="1479359135344" redirect="true"/>
+  <file name="demonthon.html" crc="376692230" seo="true" mt="1479359135346" redirect="true"/>
+  <file name="arthritis-foundation.html" crc="4202703125" seo="true" mt="1479359135346" redirect="true"/>
+  <file name="support-tomorrows-rising-stars.html" crc="3965495143" seo="true" mt="1479359135346" redirect="true"/>
+  <file name="fest.html" crc="4119152419" seo="true" mt="1479359135348" redirect="true"/>
+  <file name="boldface-co.html" crc="3792407425" seo="true" mt="1479359135348" redirect="true"/>
+  <file name="depaul-university.html" crc="151730131" seo="true" mt="1479359135348" redirect="true"/>
+  <site>
+    <asset filename="ashantis-jones-portfolio.png" muse_href="upload:U12366"/>
+  </site>
+  <renditions>
+    <rendition device="desktop">
+      <page name="About" filename="about.html" muse_href="page:U459" master="U65">
+        <breakpoint uid="U10288" maxwidth="1160" minwidth="0" squishy="false"/>
+        <anchor name="Top" html_id="top" muse_href="anchor:U454:U2435" includeInBPs="U10288"/>
+      </page>
+      <masterPage name="A-Master" master="U8135" uid="U65">
+        <breakpoint uid="U10296" maxwidth="1160" minwidth="0" squishy="false"/>
+      </masterPage>
+      <masterPage name="Master" master="U61" uid="U8135">
+        <breakpoint uid="U10287" maxwidth="1160" minwidth="0" squishy="false"/>
+      </masterPage>
+      <masterPage name="None" master="null" uid="U61">
+        <breakpoint uid="U10289" maxwidth="1160" minwidth="0" squishy="false"/>
+      </masterPage>
+      <page name="Home" filename="index.html" muse_href="page:U1155" master="U65">
+        <breakpoint uid="U10290" maxwidth="1160" minwidth="0" squishy="false"/>
+        <anchor name="top" html_id="top" muse_href="anchor:U1140:U8029" includeInBPs="U10290"/>
+      </page>
+      <page name="Portfolio" filename="portfolio.html" muse_href="page:U2791" master="U10027">
+        <breakpoint uid="U10293" maxwidth="1160" minwidth="0" squishy="false"/>
+        <anchor name="Top" html_id="top" muse_href="anchor:U2772:U6299" includeInBPs="U10293"/>
+      </page>
+      <masterPage name="Portfolio-Master" master="U65" uid="U10027">
+        <breakpoint uid="U10286" maxwidth="1160" minwidth="0" squishy="false"/>
+      </masterPage>
+      <page name="Theatre" filename="theatre.html" muse_href="page:U9864" master="U10027">
+        <breakpoint uid="U10295" maxwidth="1160" minwidth="0" squishy="false"/>
+        <anchor name="Top" html_id="top" muse_href="anchor:U9784:U9786" includeInBPs="U10295"/>
+      </page>
+      <page name="Fundraising" filename="fundraising.html" muse_href="page:U9945" master="U10027">
+        <breakpoint uid="U10292" maxwidth="1160" minwidth="0" squishy="false"/>
+        <anchor name="Top" html_id="top" muse_href="anchor:U9865:U9944" includeInBPs="U10292"/>
+      </page>
+      <page name="Events" filename="events.html" muse_href="page:U10026" master="U10027">
+        <breakpoint uid="U10294" maxwidth="1160" minwidth="0" squishy="false"/>
+        <anchor name="Top" html_id="top" muse_href="anchor:U9946:U9951" includeInBPs="U10294"/>
+      </page>
+      <page name="These Shining Lives" filename="these-shining-lives.html" muse_href="page:U11538" master="U12032">
+        <breakpoint uid="U11525" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <masterPage name="Portfolio-Theatre-Master" master="U65" uid="U12032">
+        <breakpoint uid="U12035" maxwidth="1160" minwidth="0" squishy="false"/>
+      </masterPage>
+      <page name="The Theatre School at DePaul University" filename="the-theatre-school-at-depaul-university.html" muse_href="page:U11568" master="U12032">
+        <breakpoint uid="U11554" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="Cor Theatre" filename="cor-theatre.html" muse_href="page:U11598" master="U12032">
+        <breakpoint uid="U11584" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="DemonTHON" filename="demonthon.html" muse_href="page:U11660" master="U12082">
+        <breakpoint uid="U11637" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <masterPage name="Portfoli-Fundraising-Master" master="U65" uid="U12082">
+        <breakpoint uid="U12105" maxwidth="1160" minwidth="0" squishy="false"/>
+      </masterPage>
+      <page name="Arthritis Foundation" filename="arthritis-foundation.html" muse_href="page:U11720" master="U12082">
+        <breakpoint uid="U11701" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="Support Tomorrows Rising Stars" filename="support-tomorrows-rising-stars.html" muse_href="page:U11750" master="U12082">
+        <breakpoint uid="U11732" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="Fest" filename="fest.html" muse_href="page:U11918" master="U12132">
+        <breakpoint uid="U11904" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <masterPage name="Portfolio-Events-Master" master="U65" uid="U12132">
+        <breakpoint uid="U12139" maxwidth="1160" minwidth="0" squishy="false"/>
+      </masterPage>
+      <page name="Boldface Co" filename="boldface-co.html" muse_href="page:U11948" master="U12132">
+        <breakpoint uid="U11922" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+      <page name="DePaul University" filename="depaul-university.html" muse_href="page:U11978" master="U12132">
+        <breakpoint uid="U11954" maxwidth="1160" minwidth="0" squishy="false"/>
+      </page>
+    </rendition>
+  </renditions>
+</manifest>
