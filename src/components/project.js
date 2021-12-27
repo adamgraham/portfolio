@@ -49,16 +49,15 @@ const Project = ({ className, project }) => (
       <section>
         <ButtonGroup>
           {project.buttons.map((button) => (
-            <Button
-              external
-              icon={button.icon && 'left'}
-              iconName={button.icon}
-              key={button.name}
-              link={button.link}
-              size={Button.size.small}
-            >
-              {button.name}
-            </Button>
+            <Link external to={button.link} key={button.name} unstyled>
+              <Button
+                icon={button.icon && 'left'}
+                iconName={button.icon}
+                size={Button.size.small}
+              >
+                {button.name}
+              </Button>
+            </Link>
           ))}
         </ButtonGroup>
       </section>
