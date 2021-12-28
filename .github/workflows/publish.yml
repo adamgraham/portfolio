@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.REPO_ACCESS }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup
         uses: actions/setup-node@v2
@@ -23,18 +23,18 @@ jobs:
       - name: Install
         run: npm install
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build
         continue-on-error: false
         run: npm run-script build
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish
         if: github.event_name == 'push'
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.REPO_ACCESS }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: public
           publish_branch: public
