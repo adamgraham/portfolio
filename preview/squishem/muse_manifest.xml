@@ -1,0 +1,157 @@
+<manifest alg="2" build="2017.0.2.363" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.squishem.com" resolutions="1x" timestamp="1516427319550">
+  <folder name="css">
+    <file name="site_global.css" crc="3786552771"/>
+    <file name="master_a-master.css" crc="4000796301" ref="index"/>
+    <file name="index.css" crc="4013735652" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="4232573551" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="3849126041" ref="index"/>
+    <file name="jquery.watch.js" crc="3844535323" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="3880853905" ref="index"/>
+    <file name="webpro.js" crc="3770351119" ref="index"/>
+    <file name="musewpslideshow.js" crc="4244742588" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="432750910" ref="index"/>
+    <file name="touchswipe.js" crc="3912873526" ref="index"/>
+    <file name="require.js" crc="4234670167" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="favicon.ico" crc="61789678" ref="index"/>
+    <file name="squishem-rock-wall-dark.png" crc="353899026" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-environment-sky.jpg" crc="63237697" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-environment-sun-rays.png" crc="3941473475" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-environment-sun.png" crc="4095275868" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-environment-grass.png" crc="27537759" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-mole-golden.png" crc="4144617872" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-mole-good.png" crc="4237360430" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-rock-wall-light.png" crc="3905216108" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-text-screenshots.png" crc="3781265105" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-environment-cloud.png" crc="3960528477" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-environment-mountain-right.png" crc="4292303747" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-environment-mountain-left.png" crc="4281742346" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-environment-grass-outline.png" crc="416014600" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="zigurous-logo.png" crc="259320315" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-environment-grass-splotch.png" crc="4202929108" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-environment-grass-border.png" crc="7020030" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="badge-app-store.png" crc="490098077" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-mole-bad.png" crc="388365234" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-mole-reaper.png" crc="3981838782" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-hole-empty-01.png" crc="4146798321" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-hole-empty-02.png" crc="342408896" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-hole-empty-04.png" crc="4225472689" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-hole-empty-03.png" crc="4190494025" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-hole-empty-05.png" crc="99310804" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-text-750.png" crc="3908344948" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-title.png" crc="20402808" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-text-contact.png" crc="31004339" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="icon-zigurous.png" crc="4251585294" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="icon-twitter.png" crc="447249409" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="icon-facebook.png" crc="3936215851" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-icon-u1686.png" crc="144942119" ref="index"/>
+    <file name="squishem-screenshot-640x960-01-thumbnail-u2807.png" crc="264065211" ref="index"/>
+    <file name="squishem-screenshot-640x960-01-thumbnail-u2807-r.png" crc="4133557661" ref="index"/>
+    <file name="squishem-screenshot-640x960-02-thumbnail-u2838.png" crc="4179395119" ref="index"/>
+    <file name="squishem-screenshot-640x960-02-thumbnail-u2838-r.png" crc="3892091640" ref="index"/>
+    <file name="squishem-screenshot-640x960-03-thumbnail-u2840.png" crc="4147687268" ref="index"/>
+    <file name="squishem-screenshot-640x960-03-thumbnail-u2840-r.png" crc="452148421" ref="index"/>
+    <file name="squishem-screenshot-640x960-04-thumbnail-u2842.png" crc="3796768624" ref="index"/>
+    <file name="squishem-screenshot-640x960-04-thumbnail-u2842-r.png" crc="3867368940" ref="index"/>
+    <file name="squishem-screenshot-640x960-05-thumbnail-u2844.png" crc="392286922" ref="index"/>
+    <file name="squishem-screenshot-640x960-05-thumbnail-u2844-r.png" crc="4093544031" ref="index"/>
+    <file name="squishem-screenshot-640x960-01.jpg" crc="522757531" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-screenshot-640x960-02.jpg" crc="390771623" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-screenshot-640x960-03.jpg" crc="4249686152" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-screenshot-640x960-04.jpg" crc="333296058" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-screenshot-640x960-05.jpg" crc="3930398481" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-text-features.png" crc="165804101" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="squishem-environment-bushes.png" crc="4116242159" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="4215730345" seo="true" mt="1516427274377" redirect="true"/>
+</manifest>
