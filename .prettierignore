@@ -2,5 +2,7 @@ build/
 coverage/
 dist/
 node_modules/
+package.json
+.cache/
 .snapshots/
 *.min.js

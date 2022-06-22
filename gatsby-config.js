@@ -24,15 +24,8 @@ module.exports = {
         icon: 'static/logo512.png',
       },
     },
-    {
-      resolve: 'gatsby-plugin-html-attributes',
-      options: {
-        lang: 'en',
-      },
-    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
-    'gatsby-plugin-remove-trailing-slashes',
     'gatsby-plugin-portal',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
@@ -53,4 +46,5 @@ module.exports = {
       __key: 'images',
     },
   ],
+  trailingSlash: 'never',
 };
