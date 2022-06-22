@@ -12,7 +12,7 @@ const Home = () => {
           I am a game developer and software engineer based in Chicago, IL
           fueled by a passion for art and design. I founded an indie game studio
           called{' '}
-          <Link className="color-inherit" external to="https://zigurous.com/">
+          <Link external to="https://zigurous.com/">
             <b>Zigurous</b>
           </Link>{' '}
           where I make game assets and tutorials to help developers grow their
