@@ -7,7 +7,7 @@ export const query = graphql`
   query Tech {
     json: allTechJson {
       gallery: nodes {
-        id
+        id: jsonId
         category
         title
         description

@@ -4,9 +4,9 @@ import React from 'react';
 import { ProjectPage, ProjectProps, SlideProps } from '../../components';
 
 export const query = graphql`
-  query($id: String!) {
-    project: techJson(id: { eq: $id }) {
-      id
+  query ($id: String!) {
+    project: websitesJson(id: { eq: $id }) {
+      id: jsonId
       category
       title
       date
@@ -57,7 +57,7 @@ export const query = graphql`
         videos
       }
     }
-    json: allTechJson {
+    json: allWebsitesJson {
       gallery: nodes {
         id
         category
@@ -80,7 +80,7 @@ export const query = graphql`
   }
 `;
 
-const Tech = ({ data, location }) => {
+const Website = ({ data, location }) => {
   const { project } = data;
   const { gallery } = data.json;
   return (
@@ -88,7 +88,7 @@ const Tech = ({ data, location }) => {
   );
 };
 
-Tech.propTypes = {
+Website.propTypes = {
   data: PropTypes.shape({
     project: ProjectProps,
     json: PropTypes.shape({
@@ -98,4 +98,4 @@ Tech.propTypes = {
   location: PropTypes.object,
 };
 
-export default Tech;
+export default Website;

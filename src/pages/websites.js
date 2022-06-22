@@ -7,7 +7,7 @@ export const query = graphql`
   query Websites {
     json: allWebsitesJson {
       gallery: nodes {
-        id
+        id: jsonId
         category
         title
         description

@@ -4,9 +4,9 @@ import React from 'react';
 import { ProjectPage, ProjectProps, SlideProps } from '../../components';
 
 export const query = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     project: artJson(id: { eq: $id }) {
-      id
+      id: jsonId
       category
       title
       date

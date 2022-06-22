@@ -7,7 +7,7 @@ export const query = graphql`
   query Presentations {
     json: allPresentationsJson {
       gallery: nodes {
-        id
+        id: jsonId
         category
         title
         description
