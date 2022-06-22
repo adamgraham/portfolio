@@ -1,27 +1,26 @@
-:root {
-  --header-height: 0;
-  --footer-height: 80px;
-  --color-primary: #536dfe;
-  --color-primary-hover: #3d5afe;
-  --color-background: #101214;
-  --color-background-secondary: #181b1f;
-  --color-background-tertiary: #0c0d0f;
-  --color-foreground: rgba(255,255,255,0.87);
-  --color-foreground-secondary: rgba(255,255,255,0.54);
-  --color-foreground-tertiary: rgba(255,255,255,0.38);
-  --color-elevation-06p: rgba(255,255,255,0.06);
-  --color-elevation-08p: rgba(255,255,255,0.08);
-  --color-elevation-12p: rgba(255,255,255,0.12);
-  --color-elevation-16p: rgba(255,255,255,0.16);
-  --color-elevation-24p: rgba(255,255,255,0.24);
-}
-
 html {
+  color-scheme: dark;
   font-size: 1.125rem;
 }
 
 body {
+  background-color: #0d1117;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #101214;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion) {
+  html, body {
+    scroll-behavior: auto;
+  }
+}
+
+.btn, .btn--default {
+  --button-color-primary: var(--color-surface-6dp);
+  --button-color-primary-hover: var(--color-surface-24dp);
+  --button-color-secondary: var(--color-on-surface-high);
 }

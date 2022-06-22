@@ -1,10 +1,10 @@
-import { Link } from '@zigurous/react-components';
+import { Button, Link } from '@zigurous/react-components';
 import { Link as GatsbyLink } from 'gatsby';
 import React from 'react';
 
 const Home = () => {
   return (
-    <main className="cover">
+    <main className="cover" data-theme="dark">
       <article className="container-md">
         <b className="h5 padding-left-sm">Hello, my name is</b>
         <h1 className="margin-top-sm">Adam Graham</h1>
@@ -18,13 +18,8 @@ const Home = () => {
           where I make game assets and tutorials to help developers grow their
           skills and make games easier.
         </p>
-        <Link
-          className="btn btn--solid"
-          ElementType={GatsbyLink}
-          to="/games"
-          unstyled
-        >
-          View Gallery
+        <Link ElementType={GatsbyLink} to="/games" unstyled>
+          <Button size={Button.size.medium}>View Gallery</Button>
         </Link>
       </article>
     </main>

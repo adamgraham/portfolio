@@ -97,7 +97,6 @@ const Menu = ({
           <div>
             <SocialNavLinks
               className="margin-left-md margin-right-md"
-              foregroundColor="var(--color-foreground-secondary)"
               iconSize={20}
               iconInnerPadding={10}
               links={socialLinks}

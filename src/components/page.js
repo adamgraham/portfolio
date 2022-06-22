@@ -16,7 +16,7 @@ const Page = ({
   setSlideIndex,
   slideIndex,
 }) => (
-  <div className="app">
+  <div className="app" data-theme="dark">
     <Metadata {...metadata} />
     <main className={classNames('page', className)} id={id}>
       {children}

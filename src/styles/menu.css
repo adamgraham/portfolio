@@ -12,7 +12,7 @@
   width: 100%;
   height: 80px;
   transition: height 400ms;
-  background-color: var(--color-background-secondary);
+  background-color: var(--color-surface-2dp);
 }
 
 .app-menu--fullscreen .app-menu__container {
@@ -30,7 +30,6 @@
   width: 100%;
   height: 80px;
   padding: 24px 32px;
-  background-color: var(--color-background-tertiary);
 }
 
 .app-menu__header > div {
@@ -50,11 +49,6 @@
   margin-right: 16px;
 }
 
-.app-menu .navbar li {
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
 .app-menu .navbar li a {
   color: inherit;
   border: none;
@@ -72,6 +66,10 @@
   opacity: 1;
 }
 
+.app-menu .navbar li a.active:hover {
+  background-color: rgba(var(--rgb-on-background),var(--opacity-4dp));
+}
+
 .app-menu__body {
   position: relative;
   width: 100%;
@@ -79,7 +77,6 @@
   padding: 32px;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: var(--color-background-tertiary);
 }
 
 .app-menu__menu-view,

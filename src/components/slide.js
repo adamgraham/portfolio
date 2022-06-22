@@ -1,4 +1,4 @@
-import { Link, ProgressiveImage } from '@zigurous/react-components';
+import { Button, Link, ProgressiveImage } from '@zigurous/react-components';
 import classNames from 'classnames';
 import { Link as GatsbyLink } from 'gatsby';
 import PropTypes from 'prop-types';
@@ -32,13 +32,8 @@ const Slide = ({ className, slide }) => {
           <p className="text-foreground-secondary">
             {slide.description_short || slide.description}
           </p>
-          <Link
-            className="btn btn--solid btn--sm"
-            ElementType={GatsbyLink}
-            to={projectPath}
-            unstyled
-          >
-            More Details
+          <Link ElementType={GatsbyLink} to={projectPath} unstyled>
+            <Button size={Button.size.small}>More Details</Button>
           </Link>
         </div>
       </div>
