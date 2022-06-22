@@ -30,14 +30,14 @@ export const navLinks = [
 
 export const socialLinks = [
   {
-    key: 'twitter',
-    name: 'Twitter',
-    url: 'https://twitter.com/Zigurous',
-  },
-  {
     key: 'github',
     name: 'GitHub',
     url: 'https://github.com/adamgraham',
+  },
+  {
+    key: 'linkedIn',
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/adamzigurous',
   },
   {
     key: 'instagram',
@@ -45,9 +45,9 @@ export const socialLinks = [
     url: 'http://instagram.com/adam.zigurous',
   },
   {
-    key: 'linkedIn',
-    name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/adamzigurous',
+    key: 'twitter',
+    name: 'Twitter',
+    url: 'https://twitter.com/Zigurous',
   },
   {
     key: 'email',
