@@ -1,28 +1,5 @@
 [
   {
-    "id": "allium",
-    "category": "websites",
-    "title": "Allium",
-    "description_short": "Allium is a home-based floral design studio launched in 2013 by Kim Stanke. After years of working in both retail stores and special event design shops, Kim started her own business to flex her creative muscles.",
-    "description_long": [
-      "Allium is a home-based floral design studio launched in 2013 by Kim Stanke. After years of working in both retail stores and special event design shops, Kim started her own business to flex her creative muscles.",
-      "Adam designed a new website for Allium as an improvement to the old WordPress site. The goal of the new design was to better promote the business and its floral services."
-    ],
-    "image": "../images/banners/allium-painting.jpg",
-    "imageAltText": "Allium Painting",
-    "buttons": [
-      {
-        "name": "View Website",
-        "link": "http://alliumfloral.adamgraham.io/"
-      }
-    ],
-    "sections": [
-      {
-        "mainImage": "../images/screenshots/allium-screenshot-spread.jpg"
-      }
-    ]
-  },
-  {
     "id": "zigurous",
     "category": "websites",
     "title": "Zigurous",
@@ -73,12 +50,35 @@
     "buttons": [
       {
         "name": "View Website",
-        "link": "https://squishem.com/"
+        "link": "https://adamgraham.io/preview/squishem"
       }
     ],
     "sections": [
       {
         "mainImage": "../images/screenshots/squishem-website-screenshot-spread.jpg"
+      }
+    ]
+  },
+  {
+    "id": "allium",
+    "category": "websites",
+    "title": "Allium",
+    "description_short": "Allium is a home-based floral design studio launched in 2013 by Kim Stanke. After years of working in both retail stores and special event design shops, Kim started her own business to flex her creative muscles.",
+    "description_long": [
+      "Allium is a home-based floral design studio launched in 2013 by Kim Stanke. After years of working in both retail stores and special event design shops, Kim started her own business to flex her creative muscles.",
+      "Adam designed a new website for Allium as an improvement to the old WordPress site. The goal of the new design was to better promote the business and its floral services."
+    ],
+    "image": "../images/banners/allium-painting.jpg",
+    "imageAltText": "Allium Painting",
+    "buttons": [
+      {
+        "name": "View Website",
+        "link": "https://adamgraham.io/preview/alliumfloral"
+      }
+    ],
+    "sections": [
+      {
+        "mainImage": "../images/screenshots/allium-screenshot-spread.jpg"
       }
     ]
   },
@@ -96,7 +96,7 @@
     "buttons": [
       {
         "name": "View Website",
-        "link": "http://demonthon.adamgraham.io/"
+        "link": "https://adamgraham.io/preview/demonthon"
       }
     ],
     "sections": [
@@ -116,7 +116,7 @@
     "buttons": [
       {
         "name": "View Website",
-        "link": "http://ashantisjones.adamgraham.io/"
+        "link": "https://adamgraham.io/preview/ashantisjones"
       }
     ],
     "sections": [
@@ -136,7 +136,7 @@
     "buttons": [
       {
         "name": "View Website",
-        "link": "http://margaretbaughman.adamgraham.io/"
+        "link": "https://adamgraham.io/preview/margaretbaughman"
       }
     ],
     "sections": [
@@ -159,7 +159,7 @@
     "buttons": [
       {
         "name": "View Website",
-        "link": "http://taylorcochranmusic.adamgraham.io/"
+        "link": "https://adamgraham.io/preview/taylorcochranmusic"
       }
     ],
     "sections": [
@@ -179,7 +179,7 @@
     "buttons": [
       {
         "name": "View Website",
-        "link": "http://besuper.adamgraham.io/"
+        "link": "https://adamgraham.io/preview/besuper"
       }
     ],
     "sections": [
@@ -202,7 +202,7 @@
     "buttons": [
       {
         "name": "View Website",
-        "link": "http://letitbeard.adamgraham.io/"
+        "link": "https://adamgraham.io/preview/letitbeard"
       }
     ],
     "sections": [
