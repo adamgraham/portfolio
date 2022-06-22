@@ -1,39 +1,70 @@
+import { navigate } from 'gatsby';
 import PropTypes from 'prop-types';
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import Gallery from './gallery';
 import Page from './page';
 import { SlideProps } from './slide';
+import { GalleryContext } from '../context';
 import { titleCase } from '../formatting';
 import { getSessionIndex, setSessionIndex } from '../session';
 
 const GalleryPage = ({ category, gallery, location }) => {
   const [slideIndex, setSlideIndex] = useState(getSessionIndex(category));
-  const metadata = {
-    url: `https://adamgraham.io/${category}`,
-    title: `Adam Graham • ${titleCase(category)}`,
-  };
+  const currentSlide = gallery[slideIndex];
+
+  const changeSlide = useCallback(
+    (index) => {
+      const newIndex = Math.min(Math.max(index, 0), gallery.length - 1);
+      setSlideIndex(newIndex);
+    },
+    [gallery, setSlideIndex]
+  );
+
+  const nextSlide = useCallback(() => {
+    changeSlide(slideIndex + 1);
+  }, [changeSlide, slideIndex]);
+
+  const previousSlide = useCallback(() => {
+    changeSlide(slideIndex - 1);
+  }, [changeSlide, slideIndex]);
+
+  const navigateToSlide = useCallback((slide) => {
+    navigate(`/${slide.category}`);
+  }, []);
 
   useEffect(() => {
     setSessionIndex(category, slideIndex);
   }, [category, slideIndex]);
 
   return (
-    <Page
-      category={category}
-      gallery={gallery}
-      id={category}
-      location={location}
-      metadata={metadata}
-      setSlideIndex={setSlideIndex}
-      slideIndex={slideIndex}
+    <GalleryContext.Provider
+      value={{
+        category,
+        gallery,
+        slideIndex,
+        currentSlide,
+        changeSlide,
+        nextSlide,
+        previousSlide,
+        navigateToSlide,
+      }}
     >
-      <Gallery
-        category={category}
-        gallery={gallery}
-        setSlideIndex={setSlideIndex}
-        slideIndex={slideIndex}
-      />
-    </Page>
+      <Page
+        id={category}
+        location={location}
+        metadata={{
+          url: `https://adamgraham.io/${category}`,
+          title: `Adam Graham • ${titleCase(category)}`,
+        }}
+      >
+        <Gallery
+          category={category}
+          gallery={gallery}
+          setSlideIndex={setSlideIndex}
+          slideIndex={slideIndex}
+        />
+      </Page>
+    </GalleryContext.Provider>
   );
 };
 
