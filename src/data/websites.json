@@ -146,6 +146,26 @@
     ]
   },
   {
+    "id": "be-super",
+    "category": "websites",
+    "title": "Be Super",
+    "description": "Be Super strives to use comic book characters as educational tools to understand social justice issues. A movement calling for everyone to be the hero within. Adam designed Be Super's first website to help promote the cause.",
+    "description_short": "Be Super strives to use comic book characters as educational tools to understand social justice issues. A movement calling for everyone to be the hero within.",
+    "image": "../images/banners/be-super-painting.jpg",
+    "imageAltText": "Be Super Painting",
+    "buttons": [
+      {
+        "name": "View Website",
+        "link": "https://adamgraham.io/preview/besuper"
+      }
+    ],
+    "sections": [
+      {
+        "mainImage": "../images/screenshots/be-super-screenshot-spread.jpg"
+      }
+    ]
+  },
+  {
     "id": "taylor-cochran-music",
     "category": "websites",
     "title": "Taylor Cochran Music",
@@ -165,26 +185,6 @@
     "sections": [
       {
         "mainImage": "../images/screenshots/taylor-cochran-music-screenshot-spread.jpg"
-      }
-    ]
-  },
-  {
-    "id": "be-super",
-    "category": "websites",
-    "title": "Be Super",
-    "description": "Be Super strives to use comic book characters as educational tools to understand social justice issues. A movement calling for everyone to be the hero within. Adam designed Be Super's first website to help promote the cause.",
-    "description_short": "Be Super strives to use comic book characters as educational tools to understand social justice issues. A movement calling for everyone to be the hero within.",
-    "image": "../images/banners/be-super-painting.jpg",
-    "imageAltText": "Be Super Painting",
-    "buttons": [
-      {
-        "name": "View Website",
-        "link": "https://adamgraham.io/preview/besuper"
-      }
-    ],
-    "sections": [
-      {
-        "mainImage": "../images/screenshots/be-super-screenshot-spread.jpg"
       }
     ]
   },
