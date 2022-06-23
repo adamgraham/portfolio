@@ -34,6 +34,9 @@ const MenuGallery = ({ onSelect = () => {}, show }) => {
                     [`app-menu__thumbnail-image--border-${slide.imageBorder}`]:
                       slide.imageBorder,
                   })}
+                  imageProps={{
+                    loading: 'lazy',
+                  }}
                   width={slide.image.sharp.original.width}
                   height={slide.image.sharp.original.height}
                   src={slide.image.sharp.original.src}
