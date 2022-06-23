@@ -49,6 +49,10 @@
   margin-right: 16px;
 }
 
+.app-menu .navbar li {
+  padding: 0;
+}
+
 .app-menu .navbar li a {
   color: inherit;
   border: none;
