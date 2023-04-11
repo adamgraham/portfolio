@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_adamgraham_portfolio=self.webpackChunk_adamgraham_portfolio||[]).push([[643],{8323:function(a,e,t){t.r(e);var o=t(7294),l=t(9710);e.default=a=>{let{data:e,location:t}=a;const{gallery:r}=e.json;return o.createElement(l.aH,{category:"tech",gallery:r,location:t})}}}]);
+//# sourceMappingURL=component---src-pages-tech-js-2f508deeb38a2d7a3ec3.js.map

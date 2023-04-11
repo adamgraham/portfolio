@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_adamgraham_portfolio=self.webpackChunk_adamgraham_portfolio||[]).push([[347],{2678:function(a,o,e){e.r(o);var n=e(7294);o.default=()=>((0,n.useEffect)((()=>{"undefined"!=typeof window&&(window.open("https://github.com/adamgraham","_blank"),window.history.back())}),[]),null)}}]);
+//# sourceMappingURL=component---src-pages-software-js-6f0bf309fafba2bc9509.js.map

@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunk_adamgraham_portfolio=self.webpackChunk_adamgraham_portfolio||[]).push([[12],{8404:function(a,e,o){o.r(e);var r=o(7294),t=o(9710);e.default=function(a){var e=a.data,o=a.location,l=e.project,n=e.json.gallery;return r.createElement(t.mP,{gallery:n,location:o,project:l})}}}]);
-//# sourceMappingURL=component---src-pages-games-games-json-json-id-js-eec7bbfd7046c9721388.js.map
