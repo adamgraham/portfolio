@@ -15,8 +15,8 @@ const Home = () => {
           <Link external to="https://zigurous.com/">
             <b>Zigurous</b>
           </Link>{' '}
-          where I make game assets and tutorials to help developers grow their
-          skills and make games easier.
+          where I make Unity assets and tutorials to help developers make games
+          easier.
         </p>
         <Link ElementType={GatsbyLink} to="/games" unstyled>
           <Button size={Button.size.medium}>View Gallery</Button>
