@@ -1,8 +1,8 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
-import Menu from './menu';
-import Metadata from './metadata';
+import Menu from './Menu';
+import Metadata from './Metadata';
 
 const Page = ({ children, className, id, location, metadata }) => (
   <div className="app" data-theme="dark">

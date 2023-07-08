@@ -1,32 +1,15 @@
-import { navigate } from 'gatsby';
 import PropTypes from 'prop-types';
-import React, { useMemo, useState } from 'react';
-import Gallery from './gallery';
-import Page from './page';
-import { SlideProps } from './slide';
-import { GalleryContext } from '../context';
-import { titleCase } from '../formatting';
-import { getSessionIndex, setSessionIndex } from '../session';
-
-const getContext = (category, gallery, slideIndex, setSlideIndex) => ({
-  category,
-  gallery,
-  slideIndex,
-  currentSlide: gallery[slideIndex],
-  setSlideIndex: (index) => {
-    index = Math.min(Math.max(index, 0), gallery.length - 1);
-    setSessionIndex(category, index);
-    setSlideIndex(index);
-    navigate(`/${category}`);
-  },
-});
+import React, { useState } from 'react';
+import Gallery from './Gallery';
+import GalleryContext, { useContext } from './GalleryContext';
+import Page from './Page';
+import { SlideProps } from './Slide';
+import { titleCase } from '../utils/formatting';
+import { getSessionIndex } from '../utils/session';
 
 const GalleryPage = ({ category, gallery, location }) => {
   const [slideIndex, setSlideIndex] = useState(getSessionIndex(category));
-  const context = useMemo(
-    () => getContext(category, gallery, slideIndex, setSlideIndex),
-    [category, gallery, slideIndex]
-  );
+  const context = useContext(category, gallery, slideIndex, setSlideIndex);
   return (
     <GalleryContext.Provider value={context}>
       <Page

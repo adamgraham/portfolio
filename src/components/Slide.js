@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { Link as GatsbyLink } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { ImageProps } from './image';
+import { ImageProps } from '../types/image';
 import '../styles/slide.css';
 
 const Slide = ({ className, slide }) => {

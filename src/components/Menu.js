@@ -2,10 +2,10 @@ import { useModalOverlay } from '@zigurous/react-components';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React, { useCallback, useState } from 'react';
-import MenuBar from './menu-bar';
-import MenuGallery from './menu-gallery';
-import MenuList from './menu-list';
-import { MENU_TYPE_GALLERY, MENU_TYPE_LIST, MENU_TYPE_NONE } from './menu-type';
+import MenuBar from './MenuBar';
+import MenuGallery from './MenuGallery';
+import MenuList from './MenuList';
+import { MENU_TYPE_GALLERY, MENU_TYPE_LIST, MENU_TYPE_NONE } from '../types/menu'; // prettier-ignore
 import '../styles/menu.css';
 
 const Menu = ({ location }) => {

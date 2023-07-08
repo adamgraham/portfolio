@@ -2,11 +2,10 @@ import { useMediaQuery } from '@zigurous/react-components';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
-import Slide from './slide';
-import chevronLeftIcon from '../images/icons/chevron-left.svg';
-import chevronRightIcon from '../images/icons/chevron-right.svg';
+import GalleryContext from './GalleryContext';
+import Slide from './Slide';
+import icons from '../icons';
 import '../styles/gallery.css';
-import { GalleryContext } from '../context';
 
 const Gallery = ({ className }) => {
   const verticalLayout = useMediaQuery('(max-width: 1365px)');
@@ -26,7 +25,7 @@ const Gallery = ({ className }) => {
             disabled={slideIndex <= 0}
             onClick={() => setSlideIndex(slideIndex - 1)}
           >
-            {slideIndex > 0 && <img alt="" src={chevronLeftIcon} />}
+            {slideIndex > 0 && <img alt="" src={icons.chevronLeft} />}
           </button>
           <div className="gallery__slides">
             {currentSlide && <Slide slide={currentSlide} />}
@@ -38,7 +37,7 @@ const Gallery = ({ className }) => {
             onClick={() => setSlideIndex(slideIndex + 1)}
           >
             {slideIndex < gallery.length - 1 && (
-              <img alt="" src={chevronRightIcon} />
+              <img alt="" src={icons.chevronRight} />
             )}
           </button>
         </article>

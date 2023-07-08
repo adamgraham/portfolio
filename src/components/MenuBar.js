@@ -2,16 +2,11 @@ import { Link, NavBar, SocialNavLinks } from '@zigurous/react-components';
 import { Link as GatsbyLink } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { MENU_TYPE_GALLERY, MENU_TYPE_LIST, MENU_TYPE_NONE } from './menu-type';
-import chevronLeftIcon from '../images/icons/chevron-left.svg';
-import chevronRightIcon from '../images/icons/chevron-right.svg';
-import galleryOpenIcon from '../images/icons/fullscreen-exit.svg';
-import galleryIcon from '../images/icons/fullscreen.svg';
-import menuOpenIcon from '../images/icons/menu-open.svg';
-import menuIcon from '../images/icons/menu.svg';
-import { GalleryContext } from '../context';
-import { titleCase } from '../formatting';
+import GalleryContext from './GalleryContext';
+import icons from '../icons';
 import { navLinks, socialLinks } from '../links';
+import { MENU_TYPE_GALLERY, MENU_TYPE_LIST, MENU_TYPE_NONE } from '../types/menu'; // prettier-ignore
+import { titleCase } from '../utils/formatting';
 
 const MenuBar = ({ location, menuType, setMenuType }) => {
   const showMenu = menuType === MENU_TYPE_LIST;
@@ -44,7 +39,7 @@ const MenuBar = ({ location, menuType, setMenuType }) => {
                   disabled={slideIndex <= 0}
                   onClick={() => setSlideIndex(slideIndex - 1)}
                 >
-                  <img alt="" src={chevronLeftIcon} />
+                  <img alt="" src={icons.chevronLeft} />
                 </button>
                 <button
                   aria-label="Next Slide"
@@ -52,7 +47,7 @@ const MenuBar = ({ location, menuType, setMenuType }) => {
                   disabled={slideIndex >= gallery.length - 1}
                   onClick={() => setSlideIndex(slideIndex + 1)}
                 >
-                  <img alt="" src={chevronRightIcon} />
+                  <img alt="" src={icons.chevronRight} />
                 </button>
               </div>
             )}
@@ -78,7 +73,7 @@ const MenuBar = ({ location, menuType, setMenuType }) => {
             setMenuType(showGallery ? MENU_TYPE_NONE : MENU_TYPE_GALLERY)
           }
         >
-          <img alt="" src={showGallery ? galleryOpenIcon : galleryIcon} />
+          <img alt="" src={showGallery ? icons.galleryOpen : icons.gallery} />
         </button>
         <button
           aria-label={showMenu ? 'Close Menu' : 'Open Menu'}
@@ -87,7 +82,7 @@ const MenuBar = ({ location, menuType, setMenuType }) => {
             setMenuType(showMenu ? MENU_TYPE_NONE : MENU_TYPE_LIST)
           }
         >
-          <img alt="" src={showMenu ? menuOpenIcon : menuIcon} />
+          <img alt="" src={showMenu ? icons.menuOpen : icons.menu} />
         </button>
       </div>
     </header>

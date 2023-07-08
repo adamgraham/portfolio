@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { GalleryContext } from '../context';
+import GalleryContext from './GalleryContext';
 
 const MenuGallery = ({ onSelect, open }) => {
   return (

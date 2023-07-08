@@ -1,15 +1,8 @@
-import {
-  Button,
-  ButtonGroup,
-  EmbeddedYouTube,
-  ImageGallery,
-  Link,
-  ProgressiveImage,
-} from '@zigurous/react-components';
+import { Button, ButtonGroup, EmbeddedYouTube, ImageGallery, Link, ProgressiveImage } from '@zigurous/react-components'; // prettier-ignore
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { ImageProps } from './image';
+import { ImageProps } from '../types/image';
 import '../styles/project.css';
 
 const Project = ({ className, project }) => (

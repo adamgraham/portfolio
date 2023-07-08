@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import Page from './page';
-import Project, { ProjectProps } from './project';
-import { SlideProps } from './slide';
+import Page from './Page';
+import Project, { ProjectProps } from './Project';
+import { SlideProps } from './Slide';
 
 const ProjectPage = ({ gallery, location, project }) => {
   const metadata = {
