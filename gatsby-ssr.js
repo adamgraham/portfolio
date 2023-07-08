@@ -7,7 +7,7 @@ const HtmlAttributes = {
 const HeadComponents = [
   <link key="fonts.googleapis.com" rel="preconnect" href="https://fonts.googleapis.com"></link>, // prettier-ignore
   <link key="fonts.gstatic.com" rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"></link>, // prettier-ignore
-  <link key="poppins" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&38;display=swap" rel="stylesheet"></link>, // prettier-ignore
+  <link key="poppins" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&38;display=swap" rel="stylesheet"></link>, // prettier-ignore
   <link key="material-icons" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>, // prettier-ignore
 ];
 
