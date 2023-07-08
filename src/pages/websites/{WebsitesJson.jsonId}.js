@@ -84,7 +84,12 @@ const Website = ({ data, location }) => {
   const { project } = data;
   const { gallery } = data.json;
   return (
-    <ProjectPage gallery={gallery} location={location} project={project} />
+    <ProjectPage
+      category={project.category}
+      gallery={gallery}
+      location={location}
+      project={project}
+    />
   );
 };
 

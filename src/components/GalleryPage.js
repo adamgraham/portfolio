@@ -20,12 +20,7 @@ const GalleryPage = ({ category, gallery, location }) => {
           title: `Adam Graham • ${titleCase(category)}`,
         }}
       >
-        <Gallery
-          category={category}
-          gallery={gallery}
-          setSlideIndex={setSlideIndex}
-          slideIndex={slideIndex}
-        />
+        <Gallery />
       </Page>
     </GalleryContext.Provider>
   );
