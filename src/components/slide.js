@@ -28,6 +28,7 @@ const Slide = ({ className, slide }) => {
       </div>
       <div className="slide__text-wrapper">
         <div className="slide__text-container">
+          <p className="eyebrow">{slide.date}</p>
           <h1 className="h3">{slide.title}</h1>
           <p className="text-foreground-secondary">
             {slide.description_short || slide.description}
@@ -43,6 +44,7 @@ const Slide = ({ className, slide }) => {
 
 export const SlideProps = PropTypes.shape({
   category: PropTypes.string.isRequired,
+  date: PropTypes.string,
   description: PropTypes.string,
   description_short: PropTypes.string,
   id: PropTypes.string.isRequired,

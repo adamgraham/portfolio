@@ -18,11 +18,6 @@ const Project = ({ className, project }) => (
       <h1>{project.title}</h1>
     </section>
     <section>
-      {project.date && (
-        <p className="font-sm">
-          <em>{project.date}</em>
-        </p>
-      )}
       {project.description && (
         <p className="text-foreground-secondary">{project.description}</p>
       )}

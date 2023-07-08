@@ -2,11 +2,22 @@
   {
     "id": "zigurous",
     "category": "websites",
+    "date": "2012 - Present",
     "title": "Zigurous",
-    "description": "Zigurous is an indie game development studio. Adam has managed and designed the website since he founded the game studio in 2012. The website has been redesigned with a new theme for most of the projects we have worked on. Below you can see different examples and the progression of the website over time.",
-    "description_short": "Zigurous is an indie game development studio. Adam has managed and designed the website since he founded the game studio in 2012. The website is redesigned with a new theme to fit the project being worked on.",
+    "description": "Zigurous is an indie game development studio. Adam has managed the website since he founded the game studio in 2012 and has re-designed it year after year. Below you can see different examples and the progression of the website over time.",
+    "description_short": "Zigurous is an indie game development studio. Adam has managed the website since he founded the game studio in 2012 and has re-designed it year after year.",
     "image": "../images/banners/zigurous-painting.jpg",
     "imageAltText": "Zigurous Painting",
+    "details": [
+      {
+        "key": "TECH —",
+        "value": "React, Gatsby, Firebase"
+      },
+      {
+        "key": "DATE —",
+        "value": "2012 - Present"
+      }
+    ],
     "buttons": [
       {
         "name": "View Website",
@@ -15,7 +26,7 @@
     ],
     "sections": [
       {
-        "title": "2020 - Latest",
+        "title": "2021 - Latest",
         "mainImage": "../images/screenshots/zigurous-screenshot-latest-spread.jpg"
       },
       {
@@ -37,31 +48,9 @@
     ]
   },
   {
-    "id": "squishem",
-    "category": "websites",
-    "title": "Squish-em!",
-    "description_short": "Squish-em! is an arcade game with ever so squishy moles just asking for a tap on the head! It is a simple whack-a-mole re-creation designed for highscore-play.",
-    "description_long": [
-      "Squish-em! is an arcade game with ever so squishy moles just asking for a tap on the head! It is a simple whack-a-mole re-creation designed for highscore-play. Squish your way to the top of the leaderboards, earn achievements along the way, and brag to your friends once you beat their best score! Do you have what it takes to become the best squisher around?",
-      "The Squish-em! website is a one-page, artistic cover designed to promote the game and direct users to download the mobile app."
-    ],
-    "image": "../images/banners/squishem-website-painting.jpg",
-    "imageAltText": "Squish-em! Painting",
-    "buttons": [
-      {
-        "name": "View Website",
-        "link": "https://adamgraham.io/preview/squishem"
-      }
-    ],
-    "sections": [
-      {
-        "mainImage": "../images/screenshots/squishem-website-screenshot-spread.jpg"
-      }
-    ]
-  },
-  {
     "id": "allium",
     "category": "websites",
+    "date": "November 2015",
     "title": "Allium",
     "description_short": "Allium is a home-based floral design studio launched in 2013 by Kim Stanke. After years of working in both retail stores and special event design shops, Kim started her own business to flex her creative muscles.",
     "description_long": [
@@ -70,6 +59,16 @@
     ],
     "image": "../images/banners/allium-painting.jpg",
     "imageAltText": "Allium Painting",
+    "details": [
+      {
+        "key": "TECH —",
+        "value": "Adobe Muse, Adobe Photoshop"
+      },
+      {
+        "key": "DATE —",
+        "value": "November 2015"
+      }
+    ],
     "buttons": [
       {
         "name": "View Website",
@@ -83,36 +82,24 @@
     ]
   },
   {
-    "id": "demonthon",
-    "category": "websites",
-    "title": "DemonTHON",
-    "description_short": "DemonTHON is a year-long fundraising organization benefiting Ann & Robert H. Lurie Children's Hospital of Chicago that culminates in a 24-hour Dance Marathon.",
-    "description_long": [
-      "DemonTHON is a year-long fundraising organization benefiting Ann & Robert H. Lurie Children's Hospital of Chicago that culminates in a 24-hour Dance Marathon.",
-      "As the Director of Technology, Adam designed and managed the organization's website from June 2014 to May 2016. The site was awarded \"Best Website\" by Children's Miracle Network Hospitals for the 2014-15 Dance Marathon year."
-    ],
-    "image": "../images/banners/demonthon-painting.jpg",
-    "imageAltText": "DemonTHON Painting",
-    "buttons": [
-      {
-        "name": "View Website",
-        "link": "https://adamgraham.io/preview/demonthon"
-      }
-    ],
-    "sections": [
-      {
-        "mainImage": "../images/screenshots/demonthon-screenshot-spread.jpg"
-      }
-    ]
-  },
-  {
     "id": "ashantis-jones",
     "category": "websites",
+    "date": "June 2016",
     "title": "Ashantis Jones",
     "description": "Ashantis is a native Clevelander that entertains and creates memorable events through detail oriented design and calculated execution. Adam designed Ashantis's portfolio to assist in her job hunt as a graduate of the BFA Theatre Management at DePaul University looking for opportunities in the event management space.",
     "description_short": "Ashantis is a native Clevelander that entertains and creates memorable events through detail oriented design and calculated execution.",
     "image": "../images/banners/ashantis-jones-painting.jpg",
     "imageAltText": "Ashantis Jones Painting",
+    "details": [
+      {
+        "key": "TECH —",
+        "value": "Adobe Muse, Adobe Photoshop"
+      },
+      {
+        "key": "DATE —",
+        "value": "June 2016"
+      }
+    ],
     "buttons": [
       {
         "name": "View Website",
@@ -128,11 +115,22 @@
   {
     "id": "margaret-baughman",
     "category": "websites",
+    "date": "July 2016",
     "title": "Margaret Baughman",
     "description": "Director, choreographer, and empathetic human, Margaret Baughman is enchanted by a world of contradictions that allows her to shake up perspectives through theatre, advocacy, and impeccable organization. Adam designed Margaret's portfolio to help showcase her work.",
     "description_short": "Director, choreographer, and empathetic human, Margaret Baughman is enchanted by a world of contradictions that allows her to shake up perspectives through theatre, advocacy, and impeccable organization.",
     "image": "../images/banners/margaret-baughman-painting.jpg",
     "imageAltText": "Margaret Baughman Painting",
+    "details": [
+      {
+        "key": "TECH —",
+        "value": "Adobe Muse, Adobe Photoshop"
+      },
+      {
+        "key": "DATE —",
+        "value": "July 2016"
+      }
+    ],
     "buttons": [
       {
         "name": "View Website",
@@ -146,36 +144,27 @@
     ]
   },
   {
-    "id": "be-super",
-    "category": "websites",
-    "title": "Be Super",
-    "description": "Be Super strives to use comic book characters as educational tools to understand social justice issues. A movement calling for everyone to be the hero within. Adam designed Be Super's first website to help promote the cause.",
-    "description_short": "Be Super strives to use comic book characters as educational tools to understand social justice issues. A movement calling for everyone to be the hero within.",
-    "image": "../images/banners/be-super-painting.jpg",
-    "imageAltText": "Be Super Painting",
-    "buttons": [
-      {
-        "name": "View Website",
-        "link": "https://adamgraham.io/preview/besuper"
-      }
-    ],
-    "sections": [
-      {
-        "mainImage": "../images/screenshots/be-super-screenshot-spread.jpg"
-      }
-    ]
-  },
-  {
     "id": "taylor-cochran-music",
     "category": "websites",
+    "date": "December 2013",
     "title": "Taylor Cochran Music",
-    "description_short": "Taylor Cochran is a singer/songwriter from Nashville, Tennessee who pursued his songwriting career in early 2013 by gaining experience playing in local bars, venues, and with his church. Through his music, he aspires to send a message of joy, hope, and love.",
+    "description_short": "Taylor Cochran is a singer/songwriter from Nashville, Tennessee who started pursuing his songwriting career in early 2013. Through his music, he aspires to send a message of joy, hope, and love.",
     "description_long": [
       "Taylor Cochran is a singer/songwriter from Nashville, Tennessee who pursued his songwriting career in early 2013 by gaining experience playing in local bars, venues, and with his church. Through his music, he aspires to send a message of joy, hope, and love.",
       "Adam designed and managed Taylor’s website from late 2013 to mid 2014. The website was launched alongside the success of Taylor's debut EP Kickstarter campaign for which he also helped produce the promo video."
     ],
     "image": "../images/banners/taylor-cochran-music-painting.jpg",
     "imageAltText": "Taylor Cochran Music Painting",
+    "details": [
+      {
+        "key": "TECH —",
+        "value": "Adobe Muse, Adobe Photoshop"
+      },
+      {
+        "key": "DATE —",
+        "value": "December 2013"
+      }
+    ],
     "buttons": [
       {
         "name": "View Website",
@@ -189,16 +178,126 @@
     ]
   },
   {
+    "id": "demonthon",
+    "category": "websites",
+    "date": "June 2014",
+    "title": "DemonTHON",
+    "description_short": "DemonTHON is a year-long fundraising organization benefiting Ann & Robert H. Lurie Children's Hospital of Chicago that culminates in a 24-hour Dance Marathon.",
+    "description_long": [
+      "DemonTHON is a year-long fundraising organization benefiting Ann & Robert H. Lurie Children's Hospital of Chicago that culminates in a 24-hour Dance Marathon.",
+      "As the Director of Technology, Adam designed and managed the organization's website from June 2014 to May 2016. The site was awarded \"Best Website\" by Children's Miracle Network Hospitals for the 2014-15 Dance Marathon year."
+    ],
+    "image": "../images/banners/demonthon-painting.jpg",
+    "imageAltText": "DemonTHON Painting",
+    "details": [
+      {
+        "key": "TECH —",
+        "value": "Adobe Muse, Adobe Photoshop"
+      },
+      {
+        "key": "DATE —",
+        "value": "June 2014 - May 2016"
+      }
+    ],
+    "buttons": [
+      {
+        "name": "View Website",
+        "link": "https://adamgraham.io/preview/demonthon"
+      }
+    ],
+    "sections": [
+      {
+        "mainImage": "../images/screenshots/demonthon-screenshot-spread.jpg"
+      }
+    ]
+  },
+  {
+    "id": "be-super",
+    "category": "websites",
+    "date": "September 2016",
+    "title": "Be Super",
+    "description": "Be Super strives to use comic book characters as educational tools to understand social justice issues. A movement calling for everyone to be the hero within. Adam designed Be Super's first website to help promote the cause.",
+    "description_short": "Be Super strives to use comic book characters as educational tools to understand social justice issues. A movement calling for everyone to be the hero within.",
+    "image": "../images/banners/be-super-painting.jpg",
+    "imageAltText": "Be Super Painting",
+    "details": [
+      {
+        "key": "TECH —",
+        "value": "Adobe Muse, Adobe Photoshop"
+      },
+      {
+        "key": "DATE —",
+        "value": "September 2016"
+      }
+    ],
+    "buttons": [
+      {
+        "name": "View Website",
+        "link": "https://adamgraham.io/preview/besuper"
+      }
+    ],
+    "sections": [
+      {
+        "mainImage": "../images/screenshots/be-super-screenshot-spread.jpg"
+      }
+    ]
+  },
+  {
+    "id": "squishem",
+    "category": "websites",
+    "date": "April 2015",
+    "title": "Squish-em!",
+    "description_short": "Squish-em! is a simple whack-a-mole re-creation designed for mobile devices. The website is a one-page, artistic cover designed to promote the game and direct users to download the mobile app.",
+    "description_long": [
+      "Squish-em! is a simple whack-a-mole re-creation designed for mobile devices. Squish your way to the top of the leaderboards, earn achievements along the way, and brag to your friends when you beat their best score!",
+      "The Squish-em! website is a one-page, artistic cover designed to promote the game and direct users to download the mobile app."
+    ],
+    "image": "../images/banners/squishem-website-painting.jpg",
+    "imageAltText": "Squish-em! Painting",
+    "details": [
+      {
+        "key": "TECH —",
+        "value": "Adobe Muse, Adobe Photoshop, Adobe Flash"
+      },
+      {
+        "key": "DATE —",
+        "value": "April 2015"
+      }
+    ],
+    "buttons": [
+      {
+        "name": "View Website",
+        "link": "https://adamgraham.io/preview/squishem"
+      }
+    ],
+    "sections": [
+      {
+        "mainImage": "../images/screenshots/squishem-website-screenshot-spread.jpg"
+      }
+    ]
+  },
+  {
     "id": "let-it-beard",
     "category": "websites",
+    "date": "November 2014",
     "title": "Let It Beard",
-    "description_short": "Let It Beard is an animated short film that follows the misadventures of an enigmatic religious family known simply as \"The Cult\". The Captain and his bevy of devoted followers aim for truth, inner peace, and run various entrepreneurial endeavors on their path to transcendent enlightenment.",
+    "description_short": "Let It Beard is an animated short film that follows the misadventures of an enigmatic religious family known as \"The Cult\". The Captain and his devoted followers aim for truth, inner peace, and run various endeavors on their path to enlightenment.",
     "description_long": [
       "Let It Beard is an animated short film that follows the misadventures of an enigmatic religious family known simply as \"The Cult\". The Captain and his bevy of devoted followers aim for truth, inner peace, and run various entrepreneurial endeavors on their path to transcendent enlightenment.",
-      "The Let It Beard website is a simple one-page design to help promote the animated short film. A random full-screen background is displayed upon visit alongside various idle animations. Visit multiple times to see different designs."
+      "The Let It Beard website is a simple one-page design to help promote the animated short film. A random animated background is displayed upon each visit alongside various idle animations. Visit multiple times to see different designs. Requires Adobe Flash."
     ],
     "image": "../images/banners/let-it-beard-painting.jpg",
     "imageAltText": "Let It Beard Painting",
+    "details": [
+      {
+        "key": "TECH —",
+        "value": "Adobe Muse, Adobe Photoshop, Adobe Flash"
+      },
+      {
+        "key": "DATE —",
+        "value": "November 2014"
+      }
+    ],
     "buttons": [
       {
         "name": "View Website",

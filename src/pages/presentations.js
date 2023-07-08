@@ -9,6 +9,7 @@ export const query = graphql`
       gallery: nodes {
         id: jsonId
         category
+        date
         title
         description
         description_short
