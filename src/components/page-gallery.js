@@ -1,6 +1,6 @@
 import { navigate } from 'gatsby';
 import PropTypes from 'prop-types';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import Gallery from './gallery';
 import Page from './page';
 import { SlideProps } from './slide';
@@ -8,47 +8,27 @@ import { GalleryContext } from '../context';
 import { titleCase } from '../formatting';
 import { getSessionIndex, setSessionIndex } from '../session';
 
+const getContext = (category, gallery, slideIndex, setSlideIndex) => ({
+  category,
+  gallery,
+  slideIndex,
+  currentSlide: gallery[slideIndex],
+  setSlideIndex: (index) => {
+    index = Math.min(Math.max(index, 0), gallery.length - 1);
+    setSessionIndex(category, index);
+    setSlideIndex(index);
+    navigate(`/${category}`);
+  },
+});
+
 const GalleryPage = ({ category, gallery, location }) => {
   const [slideIndex, setSlideIndex] = useState(getSessionIndex(category));
-  const currentSlide = gallery[slideIndex];
-
-  const changeSlide = useCallback(
-    (index) => {
-      const newIndex = Math.min(Math.max(index, 0), gallery.length - 1);
-      setSlideIndex(newIndex);
-    },
-    [gallery, setSlideIndex]
+  const context = useMemo(
+    () => getContext(category, gallery, slideIndex, setSlideIndex),
+    [category, gallery, slideIndex]
   );
-
-  const nextSlide = useCallback(() => {
-    changeSlide(slideIndex + 1);
-  }, [changeSlide, slideIndex]);
-
-  const previousSlide = useCallback(() => {
-    changeSlide(slideIndex - 1);
-  }, [changeSlide, slideIndex]);
-
-  const navigateToSlide = useCallback((slide) => {
-    navigate(`/${slide.category}`);
-  }, []);
-
-  useEffect(() => {
-    setSessionIndex(category, slideIndex);
-  }, [category, slideIndex]);
-
   return (
-    <GalleryContext.Provider
-      value={{
-        category,
-        gallery,
-        slideIndex,
-        currentSlide,
-        changeSlide,
-        nextSlide,
-        previousSlide,
-        navigateToSlide,
-      }}
-    >
+    <GalleryContext.Provider value={context}>
       <Page
         id={category}
         location={location}

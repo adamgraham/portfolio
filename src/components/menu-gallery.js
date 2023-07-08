@@ -1,42 +1,41 @@
-import { ProgressiveImage } from '@zigurous/react-components';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { GalleryContext } from '../context';
 
-const MenuGallery = ({ onSelect = () => {}, show }) => {
+const MenuGallery = ({ onSelect, open }) => {
   return (
     <div
-      aria-hidden={!show}
+      aria-hidden={!open}
       className={classNames('app-menu__gallery-view', {
-        open: show,
+        open: open,
       })}
     >
       <GalleryContext.Consumer>
-        {({ gallery, changeSlide, navigateToSlide }) => (
+        {({ gallery, setSlideIndex }) => (
           <div className="app-menu__gallery">
             {gallery.map((slide, index) => (
               <button
-                aria-disabled={!show}
+                aria-disabled={!open}
                 aria-label={slide.title}
                 className="app-menu__thumbnail"
-                disabled={!show}
+                disabled={!open}
                 key={slide.id}
                 onClick={() => {
-                  changeSlide(index);
-                  navigateToSlide(slide);
-                  onSelect();
+                  setSlideIndex(index);
+                  onSelect(index);
                 }}
               >
-                <ProgressiveImage
+                <img
                   alt={slide.imageAltText || ''}
-                  className={classNames('app-menu__thumbnail-image', {
-                    [`app-menu__thumbnail-image--border-${slide.imageBorder}`]:
-                      slide.imageBorder,
-                  })}
-                  imageProps={{
-                    loading: 'lazy',
-                  }}
+                  className={classNames(
+                    'img-fluid',
+                    'app-menu__thumbnail-image',
+                    {
+                      [`app-menu__thumbnail-image--border-${slide.imageBorder}`]:
+                        slide.imageBorder,
+                    }
+                  )}
                   width={slide.image.sharp.original.width}
                   height={slide.image.sharp.original.height}
                   src={slide.image.sharp.original.src}
@@ -52,7 +51,7 @@ const MenuGallery = ({ onSelect = () => {}, show }) => {
 
 MenuGallery.propTypes = {
   onSelect: PropTypes.func,
-  show: PropTypes.bool,
+  open: PropTypes.bool,
 };
 
 export default MenuGallery;

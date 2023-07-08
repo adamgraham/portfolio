@@ -5,8 +5,5 @@ export const GalleryContext = createContext({
   gallery: [],
   slideIndex: 0,
   currentSlide: null,
-  changeSlide: () => {},
-  nextSlide: () => {},
-  previousSlide: () => {},
-  navigateToSlide: () => {},
+  setSlideIndex: () => {},
 });

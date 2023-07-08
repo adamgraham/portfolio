@@ -5,24 +5,24 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { navLinks } from '../links';
 
-const MenuList = ({ onLink = () => {}, show }) => {
+const MenuList = ({ onLink, open }) => {
   return (
     <div
-      aria-hidden={!show}
-      className={classNames('app-menu__menu-view', { open: show })}
+      aria-hidden={!open}
+      className={classNames('app-menu__menu-view', { open: open })}
     >
       <ul className="app-menu__nav-list">
         {navLinks.map((link) => (
           <li key={link.to}>
             <Link
               activeClassName=""
-              aria-disabled={!show}
+              aria-disabled={!open}
               aria-label={link.name}
-              disabled={!show}
+              disabled={!open}
               ElementType={link.ElementType || GatsbyLink}
               external={link.external}
               onClick={onLink}
-              tabIndex={show ? 0 : -1}
+              tabIndex={open ? 0 : -1}
               to={link.to}
               unstyled
             >
@@ -37,7 +37,7 @@ const MenuList = ({ onLink = () => {}, show }) => {
 
 MenuList.propTypes = {
   onLink: PropTypes.func,
-  show: PropTypes.bool,
+  open: PropTypes.bool,
 };
 
 export default MenuList;

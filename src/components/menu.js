@@ -5,32 +5,20 @@ import React, { useCallback, useState } from 'react';
 import MenuBar from './menu-bar';
 import MenuGallery from './menu-gallery';
 import MenuList from './menu-list';
+import { MENU_TYPE_GALLERY, MENU_TYPE_LIST, MENU_TYPE_NONE } from './menu-type';
 import '../styles/menu.css';
 
 const Menu = ({ location }) => {
-  const [showMenu, setShowMenu] = useState(false);
-  const [showGallery, setShowGallery] = useState(false);
+  const [menuType, setMenuType] = useState(MENU_TYPE_NONE);
+  const fullscreen = menuType !== MENU_TYPE_NONE;
+  const listOpen = menuType === MENU_TYPE_LIST;
+  const galleryOpen = menuType === MENU_TYPE_GALLERY;
 
-  const fullscreen = showMenu || showGallery;
+  const closeMenu = useCallback(() => {
+    setMenuType(MENU_TYPE_NONE);
+  }, []);
+
   useModalOverlay(fullscreen, true);
-
-  const onToggleGallery = useCallback((toggle) => {
-    setShowGallery(!toggle);
-    setShowMenu(false);
-  }, []);
-
-  const onToggleMenu = useCallback((toggle) => {
-    setShowMenu(!toggle);
-    setShowGallery(false);
-  }, []);
-
-  const onGallerySelect = useCallback(() => {
-    setShowGallery(false);
-  }, []);
-
-  const onMenuLink = useCallback(() => {
-    setShowMenu(false);
-  }, []);
 
   return (
     <div
@@ -39,14 +27,12 @@ const Menu = ({ location }) => {
       <div className="app-menu__container">
         <MenuBar
           location={location}
-          onToggleGallery={onToggleGallery}
-          onToggleMenu={onToggleMenu}
-          showGallery={showGallery}
-          showMenu={showMenu}
+          menuType={menuType}
+          setMenuType={setMenuType}
         />
-        <div aria-hidden={!fullscreen} className="app-menu__body">
-          <MenuList onLink={onMenuLink} show={showMenu} />
-          <MenuGallery onSelect={onGallerySelect} show={showGallery} />
+        <div className="app-menu__body">
+          <MenuList onLink={closeMenu} open={listOpen} />
+          <MenuGallery onSelect={closeMenu} open={galleryOpen} />
         </div>
       </div>
     </div>
