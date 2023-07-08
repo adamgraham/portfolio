@@ -3,7 +3,7 @@ module.exports = {
     title: 'Adam Graham',
     siteUrl: 'https://adamgraham.io',
     description:
-      'Adam Graham is a game developer and software engineer based in Chicago, IL fueled by a passion for art and design.',
+      'Adam Graham is a professional software engineer and game developer inspired by a passion for art, design, and engineering.',
   },
   plugins: [
     {
