@@ -137,10 +137,10 @@
     "category": "presentations",
     "title": "3D Application Development Overview",
     "date": "April 2016",
-    "description_short": "An introductory presentation to teach 3D application development concepts, ranging from art to technical. The presentation serves as a starting point from which creators can continue to grow their knowledge.",
+    "description_short": "A presentation to teach introductory concepts for 3D application development covering topics across art, design, and tech. The presentation serves as a starting point from which creators can continue to grow their knowledge.",
     "description_long": [
-      "An introductory presentation to teach 3D application development concepts, ranging from art to technical. It was designed to be a high-level presentation with quick definitions that give creators a taste of the information they might need to know when developing a 3D application.",
-      "The deck is grounded in the Unity engine to provide real, applicable examples of the concepts. Adam presented this deck to around 30 professionals who were interested in learning more"
+      "A presentation to teach introductory concepts for 3D application development covering topics across art, design, and tech. The presentation serves as a starting point from which creators can continue to grow their knowledge by providing high-level, easy-to-understand definitions that give a taste of the information they might need to know when developing a 3D application.",
+      "The deck is grounded in the Unity engine to provide real, applicable examples of the concepts. Adam presented this deck to around 30 software professionals who were interested in learning more."
     ],
     "image": "../images/banners/3d-application-development-overview-painting.jpg",
     "imageAltText": "3D Application Development Overview Painting",

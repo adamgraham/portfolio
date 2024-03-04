@@ -15,8 +15,8 @@ const Home = () => {
             <b>Zigurous</b>
           </Link>{' '}
           in 2021 and is currently working on his first major release alongside
-          other Unity projects. Adam's work is inspired by a passion for art,
-          design, and engineering.
+          other enterprise projects. Adam's work is inspired by a passion for
+          art, design, and engineering.
         </p>
         <Link ElementType={GatsbyLink} to="/games" unstyled>
           <Button size={Button.size.medium}>View Gallery</Button>

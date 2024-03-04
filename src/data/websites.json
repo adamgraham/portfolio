@@ -82,6 +82,71 @@
     ]
   },
   {
+    "id": "demonthon",
+    "category": "websites",
+    "date": "June 2014",
+    "title": "DemonTHON",
+    "description_short": "DemonTHON is a year-long fundraising organization benefiting Ann & Robert H. Lurie Children's Hospital of Chicago that culminates in a 24-hour Dance Marathon.",
+    "description_long": [
+      "DemonTHON is a year-long fundraising organization benefiting Ann & Robert H. Lurie Children's Hospital of Chicago that culminates in a 24-hour Dance Marathon.",
+      "As the Director of Technology, Adam designed and managed the organization's website from June 2014 to May 2016. The site was awarded \"Best Website\" by Children's Miracle Network Hospitals for the 2014-15 Dance Marathon year."
+    ],
+    "image": "../images/banners/demonthon-painting.jpg",
+    "imageAltText": "DemonTHON Painting",
+    "details": [
+      {
+        "key": "TECH —",
+        "value": "Adobe Muse, Adobe Photoshop"
+      },
+      {
+        "key": "DATE —",
+        "value": "June 2014 - May 2016"
+      }
+    ],
+    "buttons": [
+      {
+        "name": "View Website",
+        "link": "https://adamgraham.io/preview/demonthon"
+      }
+    ],
+    "sections": [
+      {
+        "mainImage": "../images/screenshots/demonthon-screenshot-spread.jpg"
+      }
+    ]
+  },
+  {
+    "id": "be-super",
+    "category": "websites",
+    "date": "September 2016",
+    "title": "Be Super",
+    "description": "Be Super strives to use comic book characters as educational tools to understand social justice issues. A movement calling for everyone to be the hero within. Adam designed Be Super's first website to help promote the cause.",
+    "description_short": "Be Super strives to use comic book characters as educational tools to understand social justice issues. A movement calling for everyone to be the hero within.",
+    "image": "../images/banners/be-super-painting.jpg",
+    "imageAltText": "Be Super Painting",
+    "details": [
+      {
+        "key": "TECH —",
+        "value": "Adobe Muse, Adobe Photoshop"
+      },
+      {
+        "key": "DATE —",
+        "value": "September 2016"
+      }
+    ],
+    "buttons": [
+      {
+        "name": "View Website",
+        "link": "https://adamgraham.io/preview/besuper"
+      }
+    ],
+    "sections": [
+      {
+        "mainImage": "../images/screenshots/be-super-screenshot-spread.jpg"
+      }
+    ]
+  },
+  {
     "id": "ashantis-jones",
     "category": "websites",
     "date": "June 2016",
@@ -174,71 +239,6 @@
     "sections": [
       {
         "mainImage": "../images/screenshots/taylor-cochran-music-screenshot-spread.jpg"
-      }
-    ]
-  },
-  {
-    "id": "demonthon",
-    "category": "websites",
-    "date": "June 2014",
-    "title": "DemonTHON",
-    "description_short": "DemonTHON is a year-long fundraising organization benefiting Ann & Robert H. Lurie Children's Hospital of Chicago that culminates in a 24-hour Dance Marathon.",
-    "description_long": [
-      "DemonTHON is a year-long fundraising organization benefiting Ann & Robert H. Lurie Children's Hospital of Chicago that culminates in a 24-hour Dance Marathon.",
-      "As the Director of Technology, Adam designed and managed the organization's website from June 2014 to May 2016. The site was awarded \"Best Website\" by Children's Miracle Network Hospitals for the 2014-15 Dance Marathon year."
-    ],
-    "image": "../images/banners/demonthon-painting.jpg",
-    "imageAltText": "DemonTHON Painting",
-    "details": [
-      {
-        "key": "TECH —",
-        "value": "Adobe Muse, Adobe Photoshop"
-      },
-      {
-        "key": "DATE —",
-        "value": "June 2014 - May 2016"
-      }
-    ],
-    "buttons": [
-      {
-        "name": "View Website",
-        "link": "https://adamgraham.io/preview/demonthon"
-      }
-    ],
-    "sections": [
-      {
-        "mainImage": "../images/screenshots/demonthon-screenshot-spread.jpg"
-      }
-    ]
-  },
-  {
-    "id": "be-super",
-    "category": "websites",
-    "date": "September 2016",
-    "title": "Be Super",
-    "description": "Be Super strives to use comic book characters as educational tools to understand social justice issues. A movement calling for everyone to be the hero within. Adam designed Be Super's first website to help promote the cause.",
-    "description_short": "Be Super strives to use comic book characters as educational tools to understand social justice issues. A movement calling for everyone to be the hero within.",
-    "image": "../images/banners/be-super-painting.jpg",
-    "imageAltText": "Be Super Painting",
-    "details": [
-      {
-        "key": "TECH —",
-        "value": "Adobe Muse, Adobe Photoshop"
-      },
-      {
-        "key": "DATE —",
-        "value": "September 2016"
-      }
-    ],
-    "buttons": [
-      {
-        "name": "View Website",
-        "link": "https://adamgraham.io/preview/besuper"
-      }
-    ],
-    "sections": [
-      {
-        "mainImage": "../images/screenshots/be-super-screenshot-spread.jpg"
       }
     ]
   },
