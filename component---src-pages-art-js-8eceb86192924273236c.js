@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_adamgraham_portfolio=self.webpackChunk_adamgraham_portfolio||[]).push([[120],{2874:function(a,t,e){e.r(t);var o=e(6540),r=e(8305);t.default=a=>{let{data:t,location:e}=a;const{gallery:l}=t.json;return o.createElement(r.oY,{category:"art",gallery:l,location:e})}}}]);
+//# sourceMappingURL=component---src-pages-art-js-8eceb86192924273236c.js.map
