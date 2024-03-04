@@ -30,9 +30,7 @@ const Slide = ({ className, slide }) => {
         <div className="slide__text-container">
           <p className="eyebrow">{slide.date}</p>
           <h1 className="h3">{slide.title}</h1>
-          <p className="text-foreground-secondary">
-            {slide.description_short || slide.description}
-          </p>
+          <p>{slide.description_short || slide.description}</p>
           <Link ElementType={GatsbyLink} to={projectPath} unstyled>
             <Button size={Button.size.small}>More Details</Button>
           </Link>

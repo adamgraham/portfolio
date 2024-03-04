@@ -8,7 +8,7 @@ const Home = () => {
       <article className="container-md">
         <b className="h5 padding-left-sm">Hello, my name is</b>
         <h1 className="margin-top-sm">Adam Graham</h1>
-        <p className="text-foreground-secondary font-lg margin-bottom-1em">
+        <p className="font-lg margin-bottom-1em">
           Adam is a professional software engineer and game developer with 10+
           years of experience. He founded the indie game studio{' '}
           <Link external to="https://zigurous.com/">

@@ -11,7 +11,7 @@
 .project em {
   font-style: normal;
   letter-spacing: -0.5px;
-  color: var(--color-on-surface-medium);
+  color: var(--color-foreground-muted);
 }
 
 .project img {

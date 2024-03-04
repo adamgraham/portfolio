@@ -11,14 +11,10 @@ const Project = ({ className, project }) => (
       <h1>{project.title}</h1>
     </section>
     <section>
-      {project.description && (
-        <p className="text-foreground-secondary">{project.description}</p>
-      )}
+      {project.description && <p>{project.description}</p>}
       {project.description_long &&
         project.description_long.map((description) => (
-          <p className="text-foreground-secondary" key={description}>
-            {description}
-          </p>
+          <p key={description}>{description}</p>
         ))}
     </section>
     {project.details && (
@@ -81,7 +77,7 @@ const Project = ({ className, project }) => (
           {section.paragraphs &&
             section.paragraphs.map((paragraph, paragraphIndex) => (
               <p
-                className="text-foreground-secondary font-sm"
+                className="font-sm"
                 key={`section-${index}-paragraph-${paragraphIndex}`}
               >
                 {paragraph}

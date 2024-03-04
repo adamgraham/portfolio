@@ -19,8 +19,13 @@ html, body {
   }
 }
 
-.btn, .btn--default {
-  --button-color-primary: var(--color-surface-6dp);
-  --button-color-primary-hover: var(--color-surface-24dp);
-  --button-color-secondary: var(--color-on-surface-high);
+[data-theme="dark"],
+[data-theme="dark"] * {
+  --color-foreground: #c9d1d9;
+  --color-foreground-muted: #8b949e;
+  --color-default: #262a30;
+  --color-default-emphasis: #31363c;
+  --color-default-subtle: #2d3137;
+  --color-on-default: #c9d1d9;
+  --rgb-default: 38, 42, 48;
 }

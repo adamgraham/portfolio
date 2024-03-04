@@ -24,7 +24,7 @@
 .slide__image {
   display: inline-flex;
   max-height: 100%;
-  border: 12px solid var(--color-surface-1dp);
+  border: 12px solid var(--color-surface-2);
   border-radius: 0.25rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 10%);
   background-color: var(--color-background);

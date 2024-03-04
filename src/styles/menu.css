@@ -14,7 +14,7 @@
   height: 100vh;
   transform: translateY(calc(100vh - 80px));
   transition: transform 400ms;
-  background-color: var(--color-surface-2dp);
+  background-color: var(--color-surface-2);
   pointer-events: all;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .app-menu .logo:hover {
-  color: white;
+  color: var(--color-white, white);
 }
 
 .app-menu .navbar {
@@ -79,7 +79,7 @@
 }
 
 .app-menu .navbar li a.active:hover {
-  background-color: rgba(var(--rgb-on-background),var(--opacity-4dp));
+  background-color: var(--color-default-subtle);
 }
 
 .app-menu__body {
@@ -141,7 +141,7 @@
 }
 
 .app-menu__nav-list a:hover {
-  color: white;
+  color: var(--color-white, white);
 }
 
 @media (max-width: 576px) {
