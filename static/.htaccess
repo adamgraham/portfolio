@@ -2,12 +2,12 @@ RewriteEngine on
 RewriteBase /
 
 # Redirect www to non www
-RewriteCond %{HTTP_HOST} ^www.adamgraham.io
-RewriteRule (.*) http://adamgraham.io/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.adamgraham.github.io
+RewriteRule (.*) http://adamgraham.github.io/$1 [R=301,L]
 
 # Redirect http to https
 RewriteCond %{HTTPS} off
-RewriteCond %{HTTP_HOST} ^adamgraham.io
+RewriteCond %{HTTP_HOST} ^adamgraham.github.io
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 #Header always set Content-Security-Policy "upgrade-insecure-requests;"
 

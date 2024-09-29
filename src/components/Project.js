@@ -70,7 +70,7 @@ const Project = ({ className, project }) => (
           )}
           {section.mainVideo && (
             <EmbeddedYouTube
-              origin="https://adamgraham.io"
+              origin="https://adamgraham.github.io"
               videoId={section.mainVideo}
             />
           )}
@@ -98,7 +98,7 @@ const Project = ({ className, project }) => (
               <EmbeddedYouTube
                 className="margin-bottom-lg"
                 key={video}
-                origin="https://adamgraham.io"
+                origin="https://adamgraham.github.io"
                 videoId={video}
               />
             ))}

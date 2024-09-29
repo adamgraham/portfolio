@@ -16,7 +16,7 @@ const GalleryPage = ({ category, gallery, location }) => {
         id={category}
         location={location}
         metadata={{
-          url: `https://adamgraham.io/${category}`,
+          url: `https://adamgraham.github.io/${category}`,
           title: `Adam Graham • ${titleCase(category)}`,
         }}
       >

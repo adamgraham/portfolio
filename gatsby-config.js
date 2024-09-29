@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Adam Graham',
-    siteUrl: 'https://adamgraham.io',
+    siteUrl: 'https://adamgraham.github.io',
     description:
       'Adam Graham is a professional software engineer and game developer inspired by a passion for art, design, and engineering.',
   },
