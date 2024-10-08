@@ -1,12 +1,13 @@
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { GalleryPage, SlideProps } from '../components';
+import { Gallery, Page, SlideProps } from '../components';
+import { baseUri } from '../links';
 
 export const query = graphql`
   query Presentations {
     json: allPresentationsJson {
-      gallery: nodes {
+      slides: nodes {
         id: jsonId
         category
         date
@@ -30,20 +31,26 @@ export const query = graphql`
 `;
 
 const Presentations = ({ data, location }) => {
-  const { gallery } = data.json;
+  const { slides } = data.json;
   return (
-    <GalleryPage
+    <Page
       category="presentations"
-      gallery={gallery}
+      slides={slides}
       location={location}
-    />
+      metadata={{
+        url: `${baseUri}/presentations`,
+        title: 'Adam Graham • Presentations',
+      }}
+    >
+      <Gallery slides={slides} />
+    </Page>
   );
 };
 
 Presentations.propTypes = {
   data: PropTypes.shape({
     json: PropTypes.shape({
-      gallery: PropTypes.arrayOf(SlideProps),
+      slides: PropTypes.arrayOf(SlideProps),
     }),
   }),
   location: PropTypes.object,

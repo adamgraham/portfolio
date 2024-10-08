@@ -1,7 +1,8 @@
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { ProjectPage, ProjectProps, SlideProps } from '../../components';
+import { Page, Project, ProjectProps, SlideProps } from '../../components';
+import { baseUri } from '../../links';
 
 export const query = graphql`
   query ($id: String!) {
@@ -58,7 +59,7 @@ export const query = graphql`
       }
     }
     json: allPresentationsJson {
-      gallery: nodes {
+      slides: nodes {
         id
         category
         title
@@ -82,14 +83,21 @@ export const query = graphql`
 
 const Presentation = ({ data, location }) => {
   const { project } = data;
-  const { gallery } = data.json;
+  const { slides } = data.json;
   return (
-    <ProjectPage
-      category={project.category}
-      gallery={gallery}
+    <Page
+      category="tech"
+      slides={slides}
       location={location}
-      project={project}
-    />
+      metadata={{
+        url: `${baseUri}/${project.category}/${project.id}`,
+        title: `Adam Graham • ${project.title}`,
+        description: project.description_short || project.description,
+        image: project.image && project.image.sharp.original.src,
+      }}
+    >
+      <Project project={project} />
+    </Page>
   );
 };
 
@@ -97,7 +105,7 @@ Presentation.propTypes = {
   data: PropTypes.shape({
     project: ProjectProps,
     json: PropTypes.shape({
-      gallery: PropTypes.arrayOf(SlideProps),
+      slides: PropTypes.arrayOf(SlideProps),
     }),
   }),
   location: PropTypes.object,

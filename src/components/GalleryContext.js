@@ -1,28 +1,25 @@
 import { navigate } from 'gatsby';
 import { createContext, useMemo } from 'react';
-import { setSessionIndex } from '../utils/session';
 
-export const useContext = (category, gallery, slideIndex, setSlideIndex) => {
-  return useMemo(
-    () => ({
+export const useContextState = (category, slides = [], slideIndex) => {
+  return useMemo(() => {
+    return {
       category,
-      gallery,
+      slides,
       slideIndex,
-      currentSlide: gallery[slideIndex],
+      currentSlide: slides[slideIndex],
       setSlideIndex: (index) => {
-        index = Math.min(Math.max(index, 0), gallery.length - 1);
-        setSessionIndex(category, index);
-        setSlideIndex(index);
-        navigate(`/${category}`);
+        if (index >= slides.length) index = 0;
+        if (index < 0) index = slides.length - 1;
+        navigate(`/${category}?index=${index}`);
       },
-    }),
-    [category, gallery, slideIndex]
-  );
+    };
+  }, [category, slides, slideIndex]);
 };
 
 const GalleryContext = createContext({
   category: '',
-  gallery: [],
+  slides: [],
   slideIndex: 0,
   currentSlide: null,
   setSlideIndex: () => {},

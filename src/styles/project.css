@@ -1,11 +1,25 @@
 .page > .project {
   padding-top: 32px;
-  padding-bottom: 208px;
+}
+
+.project h1.title {
+  font-weight: 700;
+  margin-bottom: .75rem;
 }
 
 .project section {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.project section > p {
+  margin-bottom: .5rem;
+}
+
+.project section > .embedded-video,
+.project section > .progressive-image > img {
+  border-radius: .5rem;
+  box-shadow: rgba(42, 51, 70, 0.2) 0px 0px 40px;
 }
 
 .project em {
@@ -23,9 +37,19 @@
   display: block;
 }
 
-.project .progressive-image,
-.project .embedded-video {
-  box-shadow: 0 0 2rem rgb(0, 0, 0, 5%);
+.project .image-gallery {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.project .image-gallery__thumbnails {
+  column-gap: 12px;
+  row-gap: 12px;
+}
+
+.project .image-gallery__thumbnails img {
+  border-radius: .25rem;
+  box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
 }
 
 @media (max-width: 767px) {

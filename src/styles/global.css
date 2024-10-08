@@ -1,15 +1,15 @@
 html {
-  color-scheme: dark;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
 body {
-  background-color: #0d1117;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
 html, body {
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: -0.025em;
   scroll-behavior: smooth;
 }
 
@@ -19,13 +19,83 @@ html, body {
   }
 }
 
-[data-theme="dark"],
-[data-theme="dark"] * {
-  --color-foreground: #c9d1d9;
-  --color-foreground-muted: #8b949e;
-  --color-default: #262a30;
-  --color-default-emphasis: #31363c;
-  --color-default-subtle: #2d3137;
-  --color-on-default: #c9d1d9;
-  --rgb-default: 38, 42, 48;
+.page#cover .btn .icon {
+  transform: translateY(1px);
+}
+
+.shadow-button {
+  color: var(--color-default);
+  background-color: var(--color-background);
+  box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.shadow-button:not(:disabled):hover,
+.shadow-button:not(:disabled):active,
+.shadow-button:not(:disabled).active {
+  background-color: var(--color-background);
+}
+
+[data-theme="dark"] .shadow-button,
+[data-theme="high-contrast"] .shadow-button {
+  background-color: var(--color-default-subtle);
+  box-shadow: none;
+}
+
+[data-theme="dark"] .shadow-button:not(:disabled):hover,
+[data-theme="dark"] .shadow-button:not(:disabled):active,
+[data-theme="dark"] .shadow-button:not(:disabled).active,
+[data-theme="high-contrast"] .shadow-button:not(:disabled):hover,
+[data-theme="high-contrast"] .shadow-button:not(:disabled):active,
+[data-theme="high-contrast"] .shadow-button:not(:disabled).active  {
+  background-color: var(--color-surface-9);
+}
+
+.ReactModal__Overlay {
+  z-index: 2000 !important;
+}
+
+.image-gallery__lightbox .ril__outer {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.image-gallery__lightbox .ril-image-current.ril__image {
+  border-radius: 1rem;
+}
+
+.image-gallery__lightbox .ril__navButtonPrev {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' %3E%3Cpath d='M14.71 6.71c-.39-.39-1.02-.39-1.41 0L8.71 11.3c-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L10.83 12l3.88-3.88c.39-.39.38-1.03 0-1.41z' fill='gray' /%3E%3C/svg%3E");
+}
+
+.image-gallery__lightbox .ril__navButtonNext {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' %3E%3Cpath d='M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z' fill='gray' /%3E%3C/svg%3E");
+}
+
+.image-gallery__lightbox .ril__closeButton {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 72 72' %3E%3Cpath d='M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z' fill='gray' %3E%3C/path%3E%3C/svg%3E");
+}
+
+.image-gallery__lightbox .ril__navButtons {
+  background-size: 48px;
+}
+
+.image-gallery__lightbox .ril__closeButton {
+  background-size: 32px;
+  width: 10vw;
+}
+
+.image-gallery__lightbox .ril__navButtons,
+.image-gallery__lightbox .ril__closeButton {
+  opacity: 1;
+}
+
+@media (hover: hover) {
+  .social-nav-links__item:hover {
+    transform: none;
+  }
+
+  .social-nav-links__list:hover .social-nav-links__item {
+    opacity: var(--opacity-disabled, 0.38);
+  }
 }

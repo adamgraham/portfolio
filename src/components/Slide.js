@@ -1,10 +1,10 @@
+import '../styles/slide.css';
 import { Button, Link, ProgressiveImage } from '@zigurous/react-components';
 import classNames from 'classnames';
 import { Link as GatsbyLink } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { ImageProps } from '../types/image';
-import '../styles/slide.css';
 
 const Slide = ({ className, slide }) => {
   const offline = typeof navigator !== 'undefined' && !navigator.onLine;
@@ -12,7 +12,12 @@ const Slide = ({ className, slide }) => {
   return (
     <div className={classNames('slide', className)}>
       <div className="slide__image-wrapper">
-        <Link ElementType={GatsbyLink} to={projectPath} unstyled>
+        <Link
+          className="display-inline-flex"
+          ElementType={GatsbyLink}
+          to={projectPath}
+          unstyled
+        >
           <ProgressiveImage
             alt={slide.imageAltText || ''}
             animated={false}
@@ -29,10 +34,23 @@ const Slide = ({ className, slide }) => {
       <div className="slide__text-wrapper">
         <div className="slide__text-container">
           <p className="eyebrow">{slide.date}</p>
-          <h1 className="h3">{slide.title}</h1>
-          <p>{slide.description_short || slide.description}</p>
-          <Link ElementType={GatsbyLink} to={projectPath} unstyled>
-            <Button size={Button.size.small}>More Details</Button>
+          <h1 className="title h2">{slide.title}</h1>
+          <p className="description opacity-90p">
+            {slide.description_short || slide.description}
+          </p>
+          <Link
+            ElementType={GatsbyLink}
+            to={projectPath}
+            style={{ marginLeft: '-4px' }}
+            unstyled
+          >
+            <Button
+              className="shadow-button"
+              size={Button.size.small}
+              shape={Button.shape.rounded}
+            >
+              More Details
+            </Button>
           </Link>
         </div>
       </div>

@@ -3,15 +3,9 @@ module.exports = {
     title: 'Adam Graham',
     siteUrl: 'https://adamgraham.github.io',
     description:
-      'Adam Graham is a professional software engineer and game developer inspired by a passion for art, design, and engineering.',
+      'Adam is a software engineer and game developer inspired by the blending of art, design, and engineering to create best in class user experiences.',
   },
   plugins: [
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'UA-61761892-1',
-      },
-    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -24,6 +18,7 @@ module.exports = {
         icon: 'static/logo512.png',
       },
     },
+    'gatsby-plugin-use-query-params',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-portal',

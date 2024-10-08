@@ -1,25 +1,50 @@
+import '../styles/project.css';
 import { Button, ButtonGroup, EmbeddedYouTube, ImageGallery, Link, ProgressiveImage } from '@zigurous/react-components'; // prettier-ignore
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { ImageProps } from '../types/image';
-import '../styles/project.css';
 
 const Project = ({ className, project }) => (
   <article className={classNames('project', 'container-md', className)}>
     <section>
-      <h1>{project.title}</h1>
-    </section>
-    <section>
-      {project.description && <p>{project.description}</p>}
+      <h1 className="title">{project.title}</h1>
+      {project.description && (
+        <p className="opacity-90p">{project.description}</p>
+      )}
       {project.description_long &&
         project.description_long.map((description) => (
-          <p key={description}>{description}</p>
+          <p className="opacity-90p" key={description}>
+            {description}
+          </p>
         ))}
+      {project.buttons && (
+        <ButtonGroup>
+          {project.buttons.map((button) => (
+            <Link
+              external
+              to={button.link}
+              key={button.name}
+              style={{ marginLeft: '-4px' }}
+              unstyled
+            >
+              <Button
+                className="shadow-button"
+                icon={button.icon && 'left'}
+                iconName={button.icon}
+                size={Button.size.small}
+                shape={Button.shape.rounded}
+              >
+                {button.name}
+              </Button>
+            </Link>
+          ))}
+        </ButtonGroup>
+      )}
     </section>
-    {project.details && (
+    {/* {project.details && (
       <section>
-        <p className="font-sm">
+        <p className="font-sm opacity-90p">
           {project.details.map((detail, index) => (
             <React.Fragment key={detail.key}>
               {index !== 0 && <br />}
@@ -28,29 +53,12 @@ const Project = ({ className, project }) => (
           ))}
         </p>
       </section>
-    )}
-    {project.buttons && (
-      <section>
-        <ButtonGroup>
-          {project.buttons.map((button) => (
-            <Link external to={button.link} key={button.name} unstyled>
-              <Button
-                icon={button.icon && 'left'}
-                iconName={button.icon}
-                size={Button.size.small}
-              >
-                {button.name}
-              </Button>
-            </Link>
-          ))}
-        </ButtonGroup>
-      </section>
-    )}
+    )} */}
     {project.sections &&
       project.sections.map((section, index) => (
         <section key={`section-${index}`}>
           {section.title && (
-            <p className="font-lg">
+            <h2 className="subtitle font-xl">
               {section.link ? (
                 <Link external href={section.link}>
                   <b>{section.title}</b>
@@ -58,7 +66,7 @@ const Project = ({ className, project }) => (
               ) : (
                 <b>{section.title}</b>
               )}
-            </p>
+            </h2>
           )}
           {section.mainImage && (
             <ProgressiveImage
@@ -90,7 +98,7 @@ const Project = ({ className, project }) => (
                 height: image.sharp.original.height,
                 src: image.sharp.original.src,
               }))}
-              minWidth={128}
+              minWidth={132}
             />
           )}
           {section.videos &&

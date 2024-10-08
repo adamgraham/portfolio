@@ -1,41 +1,174 @@
-import { useModalOverlay } from '@zigurous/react-components';
-import classNames from 'classnames';
-import PropTypes from 'prop-types';
-import React, { useCallback, useState } from 'react';
-import MenuBar from './MenuBar';
-import MenuGallery from './MenuGallery';
-import MenuList from './MenuList';
-import { MENU_TYPE_GALLERY, MENU_TYPE_LIST, MENU_TYPE_NONE } from '../types/menu'; // prettier-ignore
 import '../styles/menu.css';
+import { Link, useModalOverlay } from '@zigurous/react-components';
+import classNames from 'classnames';
+import { Link as GatsbyLink, graphql, navigate, useStaticQuery } from 'gatsby';
+import PropTypes from 'prop-types';
+import React, { useState } from 'react';
+import Header from './Header';
+import { navLinks } from '../links';
+
+const query = graphql`
+  query Menu {
+    games: allGamesJson {
+      nodes {
+        id: jsonId
+        category
+        title
+        image {
+          sharp: childImageSharp {
+            original {
+              src
+              width
+              height
+            }
+          }
+        }
+        imageAltText
+        imageBorder
+      }
+    }
+    art: allArtJson {
+      nodes {
+        id: jsonId
+        category
+        title
+        image {
+          sharp: childImageSharp {
+            original {
+              src
+              width
+              height
+            }
+          }
+        }
+        imageAltText
+        imageBorder
+      }
+    }
+    websites: allWebsitesJson {
+      nodes {
+        id: jsonId
+        category
+        title
+        image {
+          sharp: childImageSharp {
+            original {
+              src
+              width
+              height
+            }
+          }
+        }
+        imageAltText
+        imageBorder
+      }
+    }
+    tech: allTechJson {
+      nodes {
+        id: jsonId
+        category
+        title
+        image {
+          sharp: childImageSharp {
+            original {
+              src
+              width
+              height
+            }
+          }
+        }
+        imageAltText
+        imageBorder
+      }
+    }
+    presentations: allPresentationsJson {
+      nodes {
+        id: jsonId
+        category
+        title
+        image {
+          sharp: childImageSharp {
+            original {
+              src
+              width
+              height
+            }
+          }
+        }
+        imageAltText
+        imageBorder
+      }
+    }
+  }
+`;
 
 const Menu = ({ location }) => {
-  const [menuType, setMenuType] = useState(MENU_TYPE_NONE);
-  const fullscreen = menuType !== MENU_TYPE_NONE;
-  const listOpen = menuType === MENU_TYPE_LIST;
-  const galleryOpen = menuType === MENU_TYPE_GALLERY;
-
-  const closeMenu = useCallback(() => {
-    setMenuType(MENU_TYPE_NONE);
-  }, []);
-
-  useModalOverlay(fullscreen, true);
-
+  const [isOpen, setIsOpen] = useState(false);
+  const data = useStaticQuery(query);
+  useModalOverlay(isOpen, true);
   return (
-    <div
-      className={classNames('app-menu', { 'app-menu--fullscreen': fullscreen })}
-    >
-      <div className="app-menu__container">
-        <MenuBar
-          location={location}
-          menuType={menuType}
-          setMenuType={setMenuType}
-        />
-        <div className="app-menu__body">
-          <MenuList onLink={closeMenu} open={listOpen} />
-          <MenuGallery onSelect={closeMenu} open={galleryOpen} />
+    <React.Fragment>
+      <div
+        className={classNames('menu', {
+          open: isOpen,
+          closed: !isOpen,
+        })}
+      >
+        <div aria-hidden={!isOpen} className="menu__container container-fluid">
+          <ul>
+            {navLinks.map((link) => {
+              const gallery = data[link.key] || { nodes: [] };
+              return (
+                <li key={link.to}>
+                  <Link
+                    activeClassName=""
+                    aria-disabled={!isOpen}
+                    aria-label={link.name}
+                    disabled={!isOpen}
+                    ElementType={link.ElementType || GatsbyLink}
+                    external={link.external}
+                    onClick={() => setIsOpen(false)}
+                    tabIndex={isOpen ? 0 : -1}
+                    to={link.to}
+                    unstyled
+                  >
+                    {link.name}
+                  </Link>
+                  <div className="menu__gallery">
+                    {gallery.nodes.map((node, index) => (
+                      <button
+                        aria-disabled={!isOpen}
+                        aria-label={node.title}
+                        className="menu__gallery-thumbnail"
+                        disabled={!isOpen}
+                        key={node.id}
+                        onClick={() => {
+                          navigate(`/${node.category}/?index=${index}`);
+                          setIsOpen(false);
+                        }}
+                      >
+                        <img
+                          alt={node.imageAltText || ''}
+                          className="img-fluid"
+                          width={node.image.sharp.original.width}
+                          height={node.image.sharp.original.height}
+                          src={node.image.sharp.original.src}
+                        />
+                      </button>
+                    ))}
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
-    </div>
+      <Header
+        location={location}
+        isMenuOpen={isOpen}
+        toggleMenu={() => setIsOpen(!isOpen)}
+      />
+    </React.Fragment>
   );
 };
 

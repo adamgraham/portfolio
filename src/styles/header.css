@@ -1,0 +1,111 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: var(--header-height, 80px);
+  background-color: rgba(240, 242, 245, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+  z-index: var(--z-index-max, 1100);
+}
+
+[data-theme="dark"] .header {
+  background-color: rgba(25, 29, 35, 0.8);
+}
+
+[data-theme="high-contrast"] .header {
+  background-color: rgba(22, 24, 28, 0.8);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__container > div {
+  display: flex;
+  align-items: center;
+  flex: none;
+}
+
+.header .logo {
+  margin: 0;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: color 200ms;
+}
+
+.header .logo > svg {
+  background-color: var(--color-foreground);
+  border-radius: 6px;
+  padding: 2px;
+}
+
+[data-theme="dark"] .header .logo > svg,
+[data-theme="high-contrast"] .header .logo > svg {
+  background-color: var(--color-background);
+}
+
+.header .logo > svg > polygon {
+  fill: var(--color-white, white);
+}
+
+.header .navbar {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.header .navbar li {
+  padding: 0;
+}
+
+.header .navbar li a {
+  color: inherit;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  opacity: var(--opacity-inactive, 0.62);
+  transition: color 100ms, opacity 100ms;
+}
+
+.header .navbar li a > .icon {
+  color: inherit;
+  transition: color 100ms, opacity 100ms;
+}
+
+.header .navbar li a.active,
+.header .navbar li a:hover {
+  opacity: 1;
+}
+
+.header .navbar li a:hover,
+.header .navbar li a.active:hover {
+  background-color: var(--color-default-subtle);
+}
+
+.header__menu-button svg {
+  fill: var(--color-foreground);
+}
+
+@media (min-width: 576px) {
+  .header__container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (max-width: 424px) {
+  .header .social-nav-links {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .header .navbar {
+    display: none;
+  }
+}

@@ -25,7 +25,7 @@
     "sections": [
       {
         "title": "Beta",
-        "link": "https://drive.google.com/open?id=0BzUWUmwjB6l2ZW00Z3poTXE3UVU",
+        "link": "https://drive.google.com/file/d/1A28Dm-oLWkOgr3L49f46jjcyovBnfp-G/view?usp=drive_link",
         "mainVideo": "JtCg7oB67wY",
         "gallery": [
           "../images/screenshots/the-wandering-dark-screenshot-01.jpg",
@@ -39,7 +39,7 @@
       },
       {
         "title": "Alpha",
-        "link": "https://drive.google.com/open?id=0BzUWUmwjB6l2QUd2RTNOYnI3TWs",
+        "link": "https://drive.google.com/file/d/1smEETzdTMVHylPhxZzS2nHsCTbrBYddo/view?usp=drive_link",
         "mainVideo": "EF8ywk3Qq48",
         "gallery": [
           "../images/screenshots/project-dream-screenshot-01.jpg",
@@ -55,7 +55,7 @@
     "category": "games",
     "date": "November 2014",
     "title": "Boss Rush",
-    "description": "Boss Rush is a top-down, twin-stick shooter consisting of nothing but boss fights. Developed as a university project, the objective was to create a vertical slice of a complete game, thus it consists of one action-packed boss fight – the Spider Tank.",
+    "description": "Boss Rush is a top-down twin-stick shooter consisting of nothing but boss fights. Developed as a university project, the objective was to create a vertical slice of a complete game, thus it consists of one action-packed boss fight – the Spider Tank.",
     "image": "../images/banners/boss-rush-painting.jpg",
     "imageAltText": "Boss Rush Painting",
     "details": [
@@ -120,7 +120,7 @@
     "buttons": [
       {
         "name": "Download",
-        "link": "https://drive.google.com/open?id=0BzUWUmwjB6l2b2M2b00zR25xc28"
+        "link": "https://drive.google.com/file/d/1wfnwkmW56U3aYZ4cnrMFPZOIpwjYz-52/view?usp=drive_link"
       }
     ],
     "sections": [
@@ -241,7 +241,7 @@
     "buttons": [
       {
         "name": "Download",
-        "link": "https://drive.google.com/open?id=1RHmvqyU1B5gXo0hb18n7ahSxnKQeSTra"
+        "link": "https://drive.google.com/file/d/1VOryTrKiH_2HlJKeO_CmzNbVjCrU7wRr/view?usp=drive_link"
       },
       {
         "name": "Source Code",

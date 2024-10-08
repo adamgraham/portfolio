@@ -21,7 +21,7 @@
     "buttons": [
       {
         "name": "View Deck",
-        "link": "https://drive.google.com/open?id=1j_bFqhJ2f6z17afxccK0hWlX6mMVkFGj"
+        "link": "https://drive.google.com/file/d/1mHUDzD7EzfrRR03Z_1WNsduszsIUj4ny/view?usp=drive_link"
       }
     ],
     "sections": [
@@ -106,7 +106,7 @@
     "buttons": [
       {
         "name": "View Deck",
-        "link": "https://drive.google.com/open?id=0BzUWUmwjB6l2X0RCeERwRm9hejA"
+        "link": "https://drive.google.com/file/d/1nw_EMTZB47svcDjgCPaSAAPE84gNYqfK/view?usp=drive_link"
       }
     ],
     "sections": [
@@ -135,7 +135,7 @@
   {
     "id": "3d-application-development-overview",
     "category": "presentations",
-    "title": "3D Application Development Overview",
+    "title": "3D Application Development",
     "date": "April 2016",
     "description_short": "A presentation to teach introductory concepts for 3D application development covering topics across art, design, and tech. The presentation serves as a starting point from which creators can continue to grow their knowledge.",
     "description_long": [
@@ -143,7 +143,7 @@
       "The deck is grounded in the Unity engine to provide real, applicable examples of the concepts. Adam presented this deck to around 30 software professionals who were interested in learning more."
     ],
     "image": "../images/banners/3d-application-development-overview-painting.jpg",
-    "imageAltText": "3D Application Development Overview Painting",
+    "imageAltText": "3D Application Development Painting",
     "details": [
       {
         "key": "ROLE —",
@@ -161,7 +161,7 @@
     "buttons": [
       {
         "name": "View Deck",
-        "link": "https://drive.google.com/open?id=0BzUWUmwjB6l2MnYzWk00VzZWY1k"
+        "link": "https://drive.google.com/file/d/1r2DCuz7PckbaD0CH4NWlKIK1X5-po9MI/view?usp=drive_link"
       }
     ],
     "sections": [

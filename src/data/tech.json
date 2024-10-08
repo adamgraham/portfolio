@@ -47,9 +47,9 @@
     "category": "tech",
     "date": "September 2016",
     "title": "RockstAR",
-    "description_short": "RockstAR is an interactive AR experience demoed at Solstice FWD. By coupling the power of Microsoft's HoloLens, Philips Hue Lightbulbs, and a series of stage technologies, users are given the ability to customize a live rockband experience.",
+    "description_short": "RockstAR is an interactive AR experience demoed at Solstice FWD. By coupling the power of Microsoft's HoloLens, Philips Hue Lightbulbs, and a series of stage technologies, users are given the ability to customize a live rock band experience.",
     "description_long": [
-      "Augmented reality is making it possible to merge virtual objects into the physical world around us. To explore the possibilities, Adam and fellow Solstice engineers built RockstAR, an interactive AR experience demoed at Solstice FWD. By coupling the power of Microsoft's HoloLens, Philips Hue Lightbulbs, and a series of stage technologies, users are given the ability to customize a live rockband experience.",
+      "Augmented reality is making it possible to merge virtual objects into the physical world around us. To explore the possibilities, Adam and fellow Solstice engineers built RockstAR, an interactive AR experience demoed at Solstice FWD. By coupling the power of Microsoft's HoloLens, Philips Hue Lightbulbs, and a series of stage technologies, users are given the ability to customize a live rock band experience.",
       "You can choose your song and color theme preferences using digital menus. Once you're ready to go, the band plays your song as you set the stage for your audience and let the lights groove to the beat. You might look a little odd pointing to things no one else can see, but the joke's on them - you're the star of the show!"
     ],
     "image": "../images/banners/rockstar-painting.jpg",
