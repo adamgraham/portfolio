@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_adamgraham_portfolio=self.webpackChunk_adamgraham_portfolio||[]).push([[464],{2998:function(t,e,a){a.r(e);var n=a(6540),o=a(6690),s=a(1053);e.default=t=>{let{data:e,location:a}=t;const{slides:r}=e.json;return n.createElement(o.YW,{id:"presentations",title:"Presentations",location:a,metadata:{url:`${s.wW}/presentations`,title:"Adam Graham • Presentations"}},n.createElement(o.Z2,{category:"presentations",location:a,slides:r}))}}}]);
+//# sourceMappingURL=component---src-pages-presentations-js-ef338db105d67c97982b.js.map
