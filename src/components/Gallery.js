@@ -1,25 +1,57 @@
 import '../styles/gallery.css';
 import { useMediaQuery } from '@zigurous/react-components';
 import classNames from 'classnames';
+import { navigate } from 'gatsby';
 import PropTypes from 'prop-types';
-import React, { useContext } from 'react';
-import GalleryContext from './GalleryContext';
-import Slide from './Slide';
+import React, { useCallback, useEffect } from 'react';
+import Slide, { SlideProps } from './Slide';
+import { getSessionIndex, setSessionIndex } from '../utils/session';
 
-const Gallery = ({ className }) => {
-  const context = useContext(GalleryContext);
+const Gallery = ({ category, location, slides = [] }) => {
   const vertical = useMediaQuery('(max-width: 1365px)');
+
+  const urlParams = new URLSearchParams(location?.search);
+  const slideIndex =
+    (urlParams.has('index')
+      ? Number.parseInt(urlParams.get('index')) || 0
+      : getSessionIndex(category)) % slides.length;
+
+  const currentSlide =
+    slideIndex >= 0 && slideIndex < slides.length && slides[slideIndex];
+
+  const setSlideIndex = useCallback(
+    (index) => {
+      if (index >= slides.length) index = 0;
+      if (index < 0) index = slides.length - 1;
+      setSessionIndex(category, index);
+      navigate(`/${category}?index=${index}`, { replace: true });
+    },
+    [category, slides, slideIndex]
+  );
+
+  useEffect(() => {
+    if (!document) return;
+    const prev = () => setSlideIndex(slideIndex - 1);
+    const next = () => setSlideIndex(slideIndex + 1);
+    document.addEventListener('previous_slide', prev);
+    document.addEventListener('next_slide', next);
+    return () => {
+      document.removeEventListener('previous_slide', prev);
+      document.removeEventListener('next_slide', next);
+    };
+  }, [slideIndex]);
+
   return (
     <div
       className={classNames('gallery', {
         'gallery--vertical': vertical,
-        className,
       })}
+      id={category}
     >
       <button
         aria-label="Previous Slide"
         className="gallery__button previous"
-        onClick={() => context.setSlideIndex(context.slideIndex - 1)}
+        onClick={() => setSlideIndex(slideIndex - 1)}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -31,12 +63,12 @@ const Gallery = ({ className }) => {
         </svg>
       </button>
       <div className="gallery__slides">
-        {context.currentSlide && <Slide slide={context.currentSlide} />}
+        {currentSlide && <Slide slide={currentSlide} />}
       </div>
       <button
         aria-label="Next Slide"
         className="gallery__button next"
-        onClick={() => context.setSlideIndex(context.slideIndex + 1)}
+        onClick={() => setSlideIndex(slideIndex + 1)}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +84,9 @@ const Gallery = ({ className }) => {
 };
 
 Gallery.propTypes = {
-  className: PropTypes.string,
+  category: PropTypes.string,
+  location: PropTypes.object,
+  slides: PropTypes.arrayOf(SlideProps),
 };
 
 export default Gallery;

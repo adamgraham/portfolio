@@ -1,9 +1,10 @@
 import '../styles/slide.css';
-import { Button, Link, ProgressiveImage } from '@zigurous/react-components';
+import { Link, ProgressiveImage } from '@zigurous/react-components';
 import classNames from 'classnames';
 import { Link as GatsbyLink } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
+import ShadowButton from './ShadowButton';
 import { ImageProps } from '../types/image';
 
 const Slide = ({ className, slide }) => {
@@ -34,7 +35,7 @@ const Slide = ({ className, slide }) => {
       <div className="slide__text-wrapper">
         <div className="slide__text-container">
           <p className="eyebrow">{slide.date}</p>
-          <h1 className="title h2">{slide.title}</h1>
+          <h1 className="title">{slide.title}</h1>
           <p className="description opacity-90p">
             {slide.description_short || slide.description}
           </p>
@@ -44,13 +45,7 @@ const Slide = ({ className, slide }) => {
             style={{ marginLeft: '-4px' }}
             unstyled
           >
-            <Button
-              className="shadow-button"
-              size={Button.size.small}
-              shape={Button.shape.rounded}
-            >
-              More Details
-            </Button>
+            <ShadowButton>More Details</ShadowButton>
           </Link>
         </div>
       </div>

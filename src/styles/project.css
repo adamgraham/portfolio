@@ -1,10 +1,54 @@
-.page > .project {
-  padding-top: 32px;
+.project.container-md {
+  width: 100%;
+  max-width: 720px;
+  overflow-x: hidden;
 }
 
-.project h1.title {
+.project__title {
+  line-height: 1;
   font-weight: 700;
-  margin-bottom: .75rem;
+  text-wrap: balance;
+  margin-bottom: 0.5rem;
+}
+
+.project__subtitle {
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: -0.025em;
+  text-transform: capitalize;
+  margin-left: 4px;
+  margin-bottom: 0.75rem;
+  color: var(--color-foreground-muted, inherit);
+}
+
+.project__subtitle .separator {
+  margin: 0 0.5rem;
+  opacity: var(--opacity-inactive, 0.62);
+}
+
+.project__subtitle + .btn-group {
+  width: 100%;
+}
+
+.project__description {
+  margin-top: 1.5rem;
+}
+
+.project__badges {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project__badges .badge {
+  border: none;
+  background-color: var(--color-primary-subtle);
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.75em;
+  margin: 0;
 }
 
 .project section {
@@ -12,20 +56,19 @@
   margin-bottom: 2rem;
 }
 
-.project section > p {
-  margin-bottom: .5rem;
+.project section:first-child {
+  margin-top: 0;
+}
+
+.project section:last-child {
+  margin-bottom: 0;
 }
 
 .project section > .embedded-video,
-.project section > .progressive-image > img {
+.project section > .progressive-image > img,
+.project section > a > .progressive-image > img {
   border-radius: .5rem;
   box-shadow: rgba(42, 51, 70, 0.2) 0px 0px 40px;
-}
-
-.project em {
-  font-style: normal;
-  letter-spacing: -0.5px;
-  color: var(--color-foreground-muted);
 }
 
 .project img {
@@ -52,6 +95,23 @@
   box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
 }
 
+[data-theme="dark"] .project section > .embedded-video,
+[data-theme="dark"] .project section > .progressive-image > img,
+[data-theme="dark"] .project section > a > .progressive-image > img,
+[data-theme="dark"] .project .image-gallery__thumbnails img,
+[data-theme="high-contrast"] .project section > .embedded-video,
+[data-theme="high-contrast"] .project section > .progressive-image > img,
+[data-theme="high-contrast"] .project section > a > .progressive-image > img,
+[data-theme="high-contrast"] .project .image-gallery__thumbnails img {
+  box-shadow: none;
+}
+
+@media (max-width: 1024px) {
+  .project {
+    padding-bottom: 144px;
+  }
+}
+
 @media (max-width: 767px) {
   .project section {
     margin-top: 1rem;
@@ -59,8 +119,14 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .project {
-    padding-bottom: 144px;
+@media (max-width: 576px) {
+  .project__title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project__title {
+    font-size: 2.5rem;
   }
 }

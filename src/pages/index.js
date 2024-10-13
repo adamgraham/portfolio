@@ -1,21 +1,23 @@
-import { Button, ButtonGroup, Link } from '@zigurous/react-components';
+import { ButtonGroup, Link } from '@zigurous/react-components';
 import { Link as GatsbyLink } from 'gatsby';
 import React, { useRef } from 'react';
-import { Page } from '../components';
+import { Page, ShadowButton } from '../components';
 import { useElementSize } from '../hooks/useElementSize';
-import { baseUri, resume } from '../links';
+import { baseUri } from '../links';
 
-const Home = () => {
+const Home = ({ location }) => {
   const ref = useRef();
   const [_, scale] = useElementSize(ref);
   return (
     <Page
       id="cover"
+      hideDock
+      hideHeader
+      location={location}
       metadata={{
         url: baseUri,
         title: 'Adam Graham • Portfolio',
       }}
-      hideNavigation
     >
       <div className="cover">
         <div
@@ -24,8 +26,10 @@ const Home = () => {
           style={{ transform: `scale(${scale})` }}
         >
           <b className="h6 padding-left-sm">Hello! 👋 My name is</b>
-          <h1 style={{ fontWeight: 700 }}>Adam Graham</h1>
-          <p className="font-sm margin-bottom-1em opacity-90p">
+          <h1 className="margin-bottom-md" style={{ fontWeight: 700 }}>
+            Adam Graham
+          </h1>
+          <p className="font-sm margin-bottom-md opacity-90p">
             I'm a software engineer and game developer inspired by the blending
             of art, design, and engineering to create best in class user
             experiences. I love working on design centric projects across web
@@ -35,42 +39,19 @@ const Home = () => {
           <ButtonGroup>
             <Link
               ElementType={GatsbyLink}
-              to="/projects"
-              style={{ marginLeft: '-4px' }}
-              unstyled
-            >
-              <Button
-                className="shadow-button"
-                size={Button.size.small}
-                shape={Button.shape.rounded}
-              >
-                Projects
-              </Button>
-            </Link>
-            {/* <Link
-              ElementType={GatsbyLink}
               to="/games"
               style={{ marginLeft: '-4px' }}
               unstyled
             >
-              <Button
-                className="shadow-button"
-                size={Button.size.small}
-                shape={Button.shape.rounded}
-              >
-                Gallery
-              </Button>
-            </Link> */}
-            <Link external href={resume} unstyled>
-              <Button
-                className="shadow-button"
-                icon="right"
-                iconName="open_in_new"
-                size={Button.size.small}
-                shape={Button.shape.rounded}
-              >
-                Resume
-              </Button>
+              <ShadowButton>Gallery</ShadowButton>
+            </Link>
+            <Link
+              ElementType={GatsbyLink}
+              to="/projects"
+              style={{ marginLeft: '-4px' }}
+              unstyled
+            >
+              <ShadowButton>Projects</ShadowButton>
             </Link>
           </ButtonGroup>
         </div>

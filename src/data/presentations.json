@@ -3,25 +3,18 @@
     "id": "the-life-of-a-ux-engineer",
     "category": "presentations",
     "title": "The Life of a UX Engineer",
-    "date": "August 2020",
     "description": "What is a UX Engineer? This specialty role sits on a cross-functional design team and helps facilitate collaboration between designers and engineers. This presentation explores the relationship between designers and engineers and how a UX Engineer uses a particular skillset to solve UX problems. Adam presented this deck to around 20 professionals at one of Kin + Carta's monthly design meetups.",
     "description_short": "What is a UX Engineer? This specialty role sits on a cross-functional design team and helps facilitate collaboration between designers and engineers. This presentation explores the relationship between designers and engineers and how a UX Engineer uses a particular skillset to solve UX problems.",
+    "date": "August 2020",
+    "role": "Designer, Presenter",
+    "tech": ["React", "JavaScript", "HTML/CSS", "Adobe Illustrator", "Figma"],
     "image": "../images/banners/the-life-of-a-ux-engineer-painting.jpg",
     "imageAltText": "The Life of a UX Engineer Painting",
-    "details": [
-      {
-        "key": "ROLE —",
-        "value": "Designer, Presenter"
-      },
-      {
-        "key": "DATE —",
-        "value": "August 2020"
-      }
-    ],
     "buttons": [
       {
         "name": "View Deck",
-        "link": "https://drive.google.com/file/d/1mHUDzD7EzfrRR03Z_1WNsduszsIUj4ny/view?usp=drive_link"
+        "url": "https://drive.google.com/file/d/1mHUDzD7EzfrRR03Z_1WNsduszsIUj4ny/view?usp=drive_link",
+        "icon": "picture_as_pdf"
       }
     ],
     "sections": [
@@ -43,25 +36,13 @@
     "id": "an-animation-story",
     "category": "presentations",
     "title": "An Animation Story",
-    "date": "August 2017",
     "description": "A love story between a girl named Design and a boy named Animation. Adam created, narrated, and presented this story to a group of 20 developers at Solstice in order to talk about the importance of having a \"design-gineering\" mindset and the value of the relationship between designers and engineers.",
     "description_short": "A love story between a girl named Design and a boy named Animation. Adam created, narrated, and presented this story to a group of developers in order to talk about the importance of having a \"design-gineering\" mindset and the value of the relationship between designers and engineers.",
+    "date": "August 2017",
+    "role": "Designer, Animator, Narrator",
+    "tech": ["Unity", "C#"],
     "image": "../images/banners/an-animation-story-painting.jpg",
     "imageAltText": "An Animation Story Painting",
-    "details": [
-      {
-        "key": "ROLE —",
-        "value": "Designer, Animator, Narrator"
-      },
-      {
-        "key": "TECH —",
-        "value": "Unity 3D, C#"
-      },
-      {
-        "key": "DATE —",
-        "value": "August 2017"
-      }
-    ],
     "sections": [
       {
         "mainVideo": "uHQvPFud3-I"
@@ -81,32 +62,21 @@
     "id": "entering-the-new-reality",
     "category": "presentations",
     "title": "Entering the New Reality",
-    "date": "May 2016",
     "description_short": "A presentation exploring the technologies of VR, AR, and MR. What are the differences between these technologies? What industries will it disrupt and who will be building these applications? What problems will they solve? These are the questions to be answered.",
     "description_long": [
       "A presentation exploring the technologies of VR, AR, and MR. What are the differences between these technologies? What industries will it disrupt and who will be building these applications? What problems will they solve? These are the questions to be answered.",
       "Adam presented this deck alongside 3 other Solstice engineers during a monthly Solstice Mobile meetup. There were about 100 people that attended the event and listened to the presentation."
     ],
+    "date": "May 2016",
+    "role": "VR Engineer, Co-Presenter",
+    "tech": ["Unity", "Oculus Rift", "HTC Vive", "Microsoft HoloLens"],
     "image": "../images/banners/entering-the-new-reality-painting.jpg",
     "imageAltText": "Entering the New Reality Painting",
-    "details": [
-      {
-        "key": "ROLE —",
-        "value": "VR Engineer, Co-Presenter"
-      },
-      {
-        "key": "TECH —",
-        "value": "Oculus Rift, HTC Vive, Microsoft HoloLens"
-      },
-      {
-        "key": "DATE —",
-        "value": "May 2016"
-      }
-    ],
     "buttons": [
       {
         "name": "View Deck",
-        "link": "https://drive.google.com/file/d/1nw_EMTZB47svcDjgCPaSAAPE84gNYqfK/view?usp=drive_link"
+        "url": "https://drive.google.com/file/d/1nw_EMTZB47svcDjgCPaSAAPE84gNYqfK/view?usp=drive_link",
+        "icon": "picture_as_pdf"
       }
     ],
     "sections": [
@@ -136,32 +106,21 @@
     "id": "3d-application-development-overview",
     "category": "presentations",
     "title": "3D Application Development",
-    "date": "April 2016",
     "description_short": "A presentation to teach introductory concepts for 3D application development covering topics across art, design, and tech. The presentation serves as a starting point from which creators can continue to grow their knowledge.",
     "description_long": [
       "A presentation to teach introductory concepts for 3D application development covering topics across art, design, and tech. The presentation serves as a starting point from which creators can continue to grow their knowledge by providing high-level, easy-to-understand definitions that give a taste of the information they might need to know when developing a 3D application.",
       "The deck is grounded in the Unity engine to provide real, applicable examples of the concepts. Adam presented this deck to around 30 software professionals who were interested in learning more."
     ],
+    "date": "April 2016",
+    "role": "Designer, Presenter",
+    "tech": ["Unity", "C#", "Blender"],
     "image": "../images/banners/3d-application-development-overview-painting.jpg",
     "imageAltText": "3D Application Development Painting",
-    "details": [
-      {
-        "key": "ROLE —",
-        "value": "Designer, Presenter"
-      },
-      {
-        "key": "TECH —",
-        "value": "Unity 3D"
-      },
-      {
-        "key": "DATE —",
-        "value": "April 2016"
-      }
-    ],
     "buttons": [
       {
         "name": "View Deck",
-        "link": "https://drive.google.com/file/d/1r2DCuz7PckbaD0CH4NWlKIK1X5-po9MI/view?usp=drive_link"
+        "url": "https://drive.google.com/file/d/1r2DCuz7PckbaD0CH4NWlKIK1X5-po9MI/view?usp=drive_link",
+        "icon": "picture_as_pdf"
       }
     ],
     "sections": [

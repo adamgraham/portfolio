@@ -2,24 +2,19 @@
   {
     "id": "the-wandering-dark",
     "category": "games",
-    "date": "June 2015",
     "title": "The Wandering Dark",
     "description": "The Wandering Dark is an indie adventure game that takes you through a girl's dreams and nightmares. Explore her unique dream worlds, conquer her fears, and fight for survival as she matures and grows. Adam developed the game alongside Michael Louden for his senior capstone project before graduating from DePaul University.",
     "description_short": "The Wandering Dark is an indie adventure game that takes you through a girl's dreams and nightmares. Explore her unique dream worlds, conquer her fears, and fight for survival as she matures and grows.",
+    "date": "June 2015",
+    "role": "Lead Programmer, Co-Designer",
+    "tech": ["Unity", "C#"],
     "image": "../images/banners/the-wandering-dark-painting.jpg",
     "imageAltText": "The Wandering Dark Painting",
-    "details": [
+    "buttons": [
       {
-        "key": "ROLE —",
-        "value": "Lead Programmer, Co-Designer"
-      },
-      {
-        "key": "TECH —",
-        "value": "Unity, C#"
-      },
-      {
-        "key": "DATE —",
-        "value": "June 2015"
+        "name": "Download",
+        "url": "https://drive.google.com/file/d/1A28Dm-oLWkOgr3L49f46jjcyovBnfp-G/view?usp=drive_link",
+        "icon": "download"
       }
     ],
     "sections": [
@@ -53,33 +48,23 @@
   {
     "id": "boss-rush",
     "category": "games",
-    "date": "November 2014",
     "title": "Boss Rush",
     "description": "Boss Rush is a top-down twin-stick shooter consisting of nothing but boss fights. Developed as a university project, the objective was to create a vertical slice of a complete game, thus it consists of one action-packed boss fight – the Spider Tank.",
+    "date": "November 2014",
+    "role": "Gameplay & Systems Programmer",
+    "tech": ["Unity", "C#"],
     "image": "../images/banners/boss-rush-painting.jpg",
     "imageAltText": "Boss Rush Painting",
-    "details": [
-      {
-        "key": "ROLE —",
-        "value": "Gameplay & Systems Programmer"
-      },
-      {
-        "key": "TECH —",
-        "value": "Unity, C#"
-      },
-      {
-        "key": "DATE —",
-        "value": "November 2014"
-      }
-    ],
     "buttons": [
       {
         "name": "Download",
-        "link": "https://github.com/ModSquadWorkshop/BossRush/releases"
+        "url": "https://github.com/ModSquadWorkshop/BossRush/releases",
+        "icon": "download"
       },
       {
         "name": "Source Code",
-        "link": "https://github.com/adamgraham/boss-rush"
+        "url": "https://github.com/adamgraham/boss-rush",
+        "icon": "code"
       }
     ],
     "sections": [
@@ -98,29 +83,18 @@
   {
     "id": "alphas",
     "category": "games",
-    "date": "June 2013",
     "title": "Alphas",
     "description": "Alphas is a top-down twin-stick shooter developed as a university project. The game consists of five interlinked deadly arenas, several unique weapons, and a multitude of engaging enemies lead by the alpha boss. Can you survive the swarm?",
+    "date": "June 2013",
+    "role": "Team Lead, Lead Programmer & Designer",
+    "tech": ["XNA", "C#"],
     "image": "../images/banners/alphas-painting.jpg",
     "imageAltText": "Alphas Painting",
-    "details": [
-      {
-        "key": "ROLE —",
-        "value": "Team Lead, Lead Programmer & Designer"
-      },
-      {
-        "key": "TECH —",
-        "value": "XNA, C#"
-      },
-      {
-        "key": "DATE —",
-        "value": "June 2013"
-      }
-    ],
     "buttons": [
       {
         "name": "Download",
-        "link": "https://drive.google.com/file/d/1wfnwkmW56U3aYZ4cnrMFPZOIpwjYz-52/view?usp=drive_link"
+        "url": "https://drive.google.com/file/d/1wfnwkmW56U3aYZ4cnrMFPZOIpwjYz-52/view?usp=drive_link",
+        "icon": "download"
       }
     ],
     "sections": [
@@ -139,31 +113,22 @@
   {
     "id": "hackathon-for-wildlife",
     "category": "games",
-    "date": "November 2015",
     "title": "Hackathon for Wildlife",
     "description_short": "An empathetic and educational experience that teaches players about the dangers of poaching. By putting the player in the role of the elephant, it creates a deeper connection between the human and the animal.",
     "description_long": [
       "Developed in 24 hours during the Hackathon for Wildlife, the game is an empathetic and educational experience that teaches players about the dangers of poaching. By putting the player in the role of the elephant, it creates a deeper connection between the human and the animal.",
       "\"On November 14th and 15th over 60 people came together to explore and develop innovative ways to engage worldwide audiences with wild animals. The hackathon teams created amazing concepts through a combination of technologies that include GPS hardware, data, games, and social media to create a stronger, more vested connection between people and animals.\""
     ],
+    "date": "November 2015",
+    "role": "Lead Programmer & Designer",
+    "tech": ["Unity", "C#"],
     "image": "../images/banners/hackathon-for-wildlife-painting.jpg",
     "imageAltText": "Hackathon for Wildlife Painting",
-    "details": [
+    "buttons": [
       {
-        "key": "AWARDS —",
-        "value": "1st place \"Best Prototype\", 2nd place \"Most Innovative Use of Technology\""
-      },
-      {
-        "key": "ROLE —",
-        "value": "Team Lead, Lead Programmer & Designer"
-      },
-      {
-        "key": "TECH —",
-        "value": "Unity, C#"
-      },
-      {
-        "key": "DATE —",
-        "value": "November 2015"
+        "name": "Source Code",
+        "url": "https://github.com/adamgraham/hackathon-for-wildlife",
+        "icon": "code"
       }
     ],
     "sections": [
@@ -182,26 +147,14 @@
   {
     "id": "ferro",
     "category": "games",
-    "date": "April 2015",
     "title": "Ferro",
     "description": "Inspired by ferrofluids, Ferro is a virtual reality experience created by Michael Louden and Adam Graham. As a scientist who has discovered a potential gateway into another universe, your job is to channel it to the right frequency. Players use a midi keyboard as the primary input device to initiate the machines and tune the portal.",
     "description_short": "Ferro is a virtual reality experience inspired by ferrofluids. As a scientist who has discovered a potential gateway into another universe, your job is to channel it to the right frequency using a midi keyboard as the primary input device.",
+    "date": "April 2015",
+    "role": "I/O Programmer",
+    "tech": ["Unity", "C#", "Oculus Rift", "Midi Keyboard"],
     "image": "../images/banners/ferro-painting.jpg",
     "imageAltText": "Ferro Painting",
-    "details": [
-      {
-        "key": "ROLE —",
-        "value": "I/O Programmer"
-      },
-      {
-        "key": "TECH —",
-        "value": "Unity, C#, Oculus Rift, Midi Keyboard"
-      },
-      {
-        "key": "DATE —",
-        "value": "April 2015"
-      }
-    ],
     "sections": [
       {
         "title": "Media",
@@ -218,34 +171,24 @@
   {
     "id": "elegy",
     "category": "games",
-    "date": "March 2015",
     "title": "Elegy",
     "description": "Elegy is a deep game covering the five stages of grief as a parent deals with the loss of their child. The parent attends the funeral of their child and tries to rewind time to stop their child's death. The player engages in different scenes to figure out how they can stop the events from happening, but they must ultimately accept the death of their child.",
     "description_short": "Elegy is a deep game covering the five stages of grief as a parent deals with the loss of their child. While attending the funeral, they try to rewind time to stop the tragedy but they must ultimatley accept the death of their child.",
+    "date": "March 2015",
+    "role": "Lead Programmer, Designer",
+    "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/elegy-painting.jpg",
     "imageAltText": "Elegy Painting",
-    "details": [
-      {
-        "key": "ROLE —",
-        "value": "Lead Programmer, Designer"
-      },
-      {
-        "key": "TECH —",
-        "value": "Adobe Flash, ActionScript 3.0"
-      },
-      {
-        "key": "DATE —",
-        "value": "March 2015"
-      }
-    ],
     "buttons": [
       {
         "name": "Download",
-        "link": "https://drive.google.com/file/d/1VOryTrKiH_2HlJKeO_CmzNbVjCrU7wRr/view?usp=drive_link"
+        "url": "https://drive.google.com/file/d/1VOryTrKiH_2HlJKeO_CmzNbVjCrU7wRr/view?usp=drive_link",
+        "icon": "download"
       },
       {
         "name": "Source Code",
-        "link": "https://github.com/adamgraham/elegy"
+        "url": "https://github.com/adamgraham/elegy",
+        "icon": "code"
       }
     ],
     "sections": [
@@ -264,32 +207,14 @@
   {
     "id": "squish-em",
     "category": "games",
-    "date": "April 2015",
     "title": "Squish-em!",
     "description": "Squish-em! is a simple whack-a-mole re-creation designed for mobile devices. Squish your way to the top of the leaderboards, earn achievements along the way, and brag to your friends when you beat their best score! Do you have what it takes to become the best squisher around?",
     "description_short": "Squish-em! is a simple whack-a-mole re-creation designed for mobile devices. Squish your way to the top of the leaderboards, earn achievements along the way, and brag to your friends when you beat their best score!",
+    "date": "April 2015",
+    "role": "Lead Programmer, Producer, Designer",
+    "tech": ["Adobe Flash", "ActionScript 3.0", "iOS"],
     "image": "../images/banners/squishem-game-painting.jpg",
     "imageAltText": "Squish-em! Painting",
-    "details": [
-      {
-        "key": "ROLE —",
-        "value": "Lead Programmer, Producer, Designer"
-      },
-      {
-        "key": "TECH —",
-        "value": "Adobe Flash, ActionScript 3.0"
-      },
-      {
-        "key": "DATE —",
-        "value": "April 2015"
-      }
-    ],
-    "buttons": [
-      {
-        "name": "Play Game",
-        "link": "https://squishem.com/"
-      }
-    ],
     "sections": [
       {
         "title": "Media",
@@ -306,33 +231,18 @@
   {
     "id": "ancient-odyssey",
     "category": "games",
-    "date": "November 2013",
     "title": "Ancient Odyssey",
     "description": "Ancient Odyssey is an \"escape\" puzzle game for mobile devices. Each level is individually designed to make you think harder and harder. Can you survive the journey to the underworld by plundering all 30 levels?",
+    "date": "November 2013",
+    "role": "Lead Programmer, Producer, Designer",
+    "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/ancient-odyssey-painting.jpg",
     "imageAltText": "Ancient Odyssey Painting",
-    "details": [
-      {
-        "key": "ROLE —",
-        "value": "Lead Programmer, Producer, Designer"
-      },
-      {
-        "key": "TECH —",
-        "value": "Adobe Flash, ActionScript 3.0"
-      },
-      {
-        "key": "DATE —",
-        "value": "November 2013"
-      }
-    ],
     "buttons": [
       {
         "name": "Play Game",
-        "link": "https://www.newgrounds.com/portal/view/628001"
-      },
-      {
-        "name": "iOS Download",
-        "link": "https://apps.apple.com/app/pharaohs-escape/id702877946"
+        "url": "https://www.newgrounds.com/portal/view/628001",
+        "icon": "play_circle"
       }
     ],
     "sections": [
@@ -353,33 +263,18 @@
   {
     "id": "lunar-escape",
     "category": "games",
-    "date": "September 2013",
     "title": "Lunar Escape",
     "description": "Lunar Escape is an \"escape\" puzzle game for mobile devices. Each level is individually designed to make you think harder and harder. Do you have the logical skills needed to transcend all 30 levels?",
+    "date": "September 2013",
+    "role": "Lead Programmer, Producer, Designer, Artist",
+    "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/lunar-escape-painting.jpg",
     "imageAltText": "Lunar Escape Painting",
-    "details": [
-      {
-        "key": "ROLE —",
-        "value": "Lead Programmer, Producer, Designer, Artist"
-      },
-      {
-        "key": "TECH —",
-        "value": "Adobe Flash, ActionScript 3.0"
-      },
-      {
-        "key": "DATE —",
-        "value": "September 2013"
-      }
-    ],
     "buttons": [
       {
         "name": "Play Game",
-        "link": "https://www.newgrounds.com/portal/view/625640"
-      },
-      {
-        "name": "iOS Download",
-        "link": "https://apps.apple.com/app/escape-to-space/id681843951"
+        "url": "https://www.newgrounds.com/portal/view/625640",
+        "icon": "play_circle"
       }
     ],
     "sections": [
@@ -400,29 +295,18 @@
   {
     "id": "the-rise",
     "category": "games",
-    "date": "July 2013",
     "title": "The Rise",
     "description": "The Rise is an \"escape\" puzzle game for mobile devices. Each level is individually designed to make you think harder and harder. Put your logical skills to the test, rise to the top, and conquer all 30 levels.",
+    "date": "July 2013",
+    "role": "Lead Programmer, Producer, Designer",
+    "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/the-rise-painting.jpg",
     "imageAltText": "The Rise Painting",
-    "details": [
-      {
-        "key": "ROLE —",
-        "value": "Lead Programmer, Producer, Designer"
-      },
-      {
-        "key": "TECH —",
-        "value": "Adobe Flash, ActionScript 3.0"
-      },
-      {
-        "key": "DATE —",
-        "value": "July 2013"
-      }
-    ],
     "buttons": [
       {
         "name": "Play Game",
-        "link": "https://www.newgrounds.com/portal/view/622585"
+        "url": "https://www.newgrounds.com/portal/view/622585",
+        "icon": "play_circle"
       }
     ],
     "sections": [
@@ -443,29 +327,18 @@
   {
     "id": "escape-the-estate",
     "category": "games",
-    "date": "August 2013",
     "title": "Escape the Estate",
     "description": "Escape the Estate is a point-and-click adventure game. Your life is on the line! Kane is at it again, and this time he is angry! Do you have what it takes to prevent his cruel intentions? Put your puzzle-solving skills to the test in the sequel to Escape the Basement!",
+    "date": "August 2013",
+    "role": "Lead Programmer, Producer, Designer, Artist",
+    "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/escape-the-estate-painting.jpg",
     "imageAltText": "Escape the Estate Painting",
-    "details": [
-      {
-        "key": "ROLE —",
-        "value": "Lead Programmer, Producer, Designer, Artist"
-      },
-      {
-        "key": "TECH —",
-        "value": "Adobe Flash, ActionScript 3.0"
-      },
-      {
-        "key": "DATE —",
-        "value": "August 2013"
-      }
-    ],
     "buttons": [
       {
         "name": "Play Game",
-        "link": "https://www.newgrounds.com/portal/view/622915"
+        "url": "https://www.newgrounds.com/portal/view/622915",
+        "icon": "play_circle"
       }
     ],
     "sections": [
@@ -487,29 +360,18 @@
   {
     "id": "escape-the-basement",
     "category": "games",
-    "date": "August 2012",
     "title": "Escape the Basement",
     "description": "Escape the Basement is a point-and-click adventure game. You of all people were chosen to die. A cruel man named Kane has locked you in his basement with no thought of letting you free. Can you outwit his evil plan and escape?",
+    "date": "August 2012",
+    "role": "Lead Programmer, Producer, Designer",
+    "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/escape-the-basement-painting.jpg",
     "imageAltText": "Escape the Basement Painting",
-    "details": [
-      {
-        "key": "ROLE —",
-        "value": "Lead Programmer, Producer, Designer"
-      },
-      {
-        "key": "TECH —",
-        "value": "Adobe Flash, ActionScript 3.0"
-      },
-      {
-        "key": "DATE —",
-        "value": "August 2012"
-      }
-    ],
     "buttons": [
       {
         "name": "Play Game",
-        "link": "https://www.newgrounds.com/portal/view/601869"
+        "url": "https://www.newgrounds.com/portal/view/601869",
+        "icon": "play_circle"
       }
     ],
     "sections": [

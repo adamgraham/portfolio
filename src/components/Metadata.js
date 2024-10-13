@@ -20,19 +20,16 @@ const Metadata = (props) => {
   const metadata = { ...siteMetadata, ...props };
   return (
     <Helmet>
-      {/* General tags */}
       <title>{metadata.title}</title>
       <meta name="description" content={metadata.description} />
       {metadata.image && <meta name="image" content={metadata.image} />}
 
-      {/* Open Graph tags */}
       {metadata.url && <meta property="og:url" content={metadata.url} />}
       <meta property="og:type" content="website" />
       <meta property="og:title" content={metadata.title} />
       <meta property="og:description" content={metadata.description} />
       {metadata.image && <meta property="og:image" content={metadata.image} />}
 
-      {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content="@zigurous" />
       <meta name="twitter:title" content={metadata.title} />

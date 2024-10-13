@@ -4,12 +4,12 @@ html {
 
 body {
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 html, body {
   font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.0375em;
   scroll-behavior: smooth;
 }
 
@@ -19,45 +19,32 @@ html, body {
   }
 }
 
-.page#cover .btn .icon {
+.page {
+  overflow-x: hidden;
+}
+
+.page > article {
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+}
+
+.page#cover > .cover {
+  height: auto;
+  overflow-y: auto;
+  min-height: 100vh;
+}
+
+.page#cover .introduction .btn .icon {
   transform: translateY(1px);
-}
-
-.shadow-button {
-  color: var(--color-default);
-  background-color: var(--color-background);
-  box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.shadow-button:not(:disabled):hover,
-.shadow-button:not(:disabled):active,
-.shadow-button:not(:disabled).active {
-  background-color: var(--color-background);
-}
-
-[data-theme="dark"] .shadow-button,
-[data-theme="high-contrast"] .shadow-button {
-  background-color: var(--color-default-subtle);
-  box-shadow: none;
-}
-
-[data-theme="dark"] .shadow-button:not(:disabled):hover,
-[data-theme="dark"] .shadow-button:not(:disabled):active,
-[data-theme="dark"] .shadow-button:not(:disabled).active,
-[data-theme="high-contrast"] .shadow-button:not(:disabled):hover,
-[data-theme="high-contrast"] .shadow-button:not(:disabled):active,
-[data-theme="high-contrast"] .shadow-button:not(:disabled).active  {
-  background-color: var(--color-surface-9);
 }
 
 .ReactModal__Overlay {
   z-index: 2000 !important;
 }
 
-.image-gallery__lightbox .ril__outer {
-  background-color: rgba(255, 255, 255, 0.9);
+.embedded-video::before {
+  background-color: var(--color-surface-1);
 }
 
 .image-gallery__lightbox .ril-image-current.ril__image {

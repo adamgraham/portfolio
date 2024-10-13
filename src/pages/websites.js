@@ -34,15 +34,15 @@ const Websites = ({ data, location }) => {
   const { slides } = data.json;
   return (
     <Page
-      category="websites"
-      slides={slides}
+      id="websites"
+      title="Websites"
       location={location}
       metadata={{
         url: `${baseUri}/websites`,
         title: 'Adam Graham • Websites',
       }}
     >
-      <Gallery slides={slides} />
+      <Gallery category="websites" location={location} slides={slides} />
     </Page>
   );
 };

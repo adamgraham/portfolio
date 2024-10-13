@@ -1,4 +1,4 @@
-.menu {
+.menu-gallery {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -10,40 +10,24 @@
   overflow-y: auto;
 }
 
-.menu.open {
+.menu-gallery.open {
   pointer-events: all;
   visibility: visible;
 }
 
-.menu.closed {
+.menu-gallery.closed {
   pointer-events: none;
   visibility: hidden;
 }
 
-.menu__container {
+.menu-gallery__container {
   position: relative;
   top: var(--header-height, 80px);
   padding-top: 2rem;
   padding-bottom: 4rem;
 }
 
-.menu__gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 0.5rem;
-  row-gap: 0.5rem;
-}
-
-.menu__gallery-thumbnail {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: max-content;
-  border-radius: 0.25rem;
-  overflow: hidden;
-}
-
-.menu ul {
+.menu-gallery__list {
   position: relative;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -51,64 +35,84 @@
   margin-inline-end: 0;
   padding-inline-start: 0;
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 2rem;
   line-height: 1.25;
   text-align: left;
   list-style: none;
   white-space: nowrap;
 }
 
-.menu ul > li {
+.menu-gallery__section > a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 0.25em;
+  color: inherit;
+}
+
+.menu-gallery__section > a .icon {
+  font-weight: 600;
+}
+
+.menu-gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
   margin-bottom: 2rem;
 }
 
-.menu ul > li > a {
-  display: block;
-  width: 100%;
-  color: inherit;
-  font-weight: 700;
-  margin-bottom: 1rem;
+.menu-gallery__thumbnail {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: max-content;
+  background-color: var(--color-surface-1);
+  border-radius: 0.25rem;
+  overflow: hidden;
 }
 
 @media (min-width: 576px) {
-  .menu__container {
+  .menu-gallery__container {
     padding-left: 32px;
     padding-right: 32px;
   }
 
-  .menu ul {
-    font-size: 2rem;
+  .menu-gallery__list {
+    font-size: 2.5rem;
   }
 
-  .menu__gallery {
+  .menu-gallery__grid {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 0.75rem;
     row-gap: 0.75rem;
   }
 
-  .menu__gallery-thumbnail {
+  .menu-gallery__thumbnail {
     border-radius: 0.4rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .menu ul {
-    font-size: 2.5rem;
+  .menu-gallery__list {
+    font-size: 3rem;
   }
 
-  .menu__gallery {
+  .menu-gallery__grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (min-width: 1366px) {
-  .menu__gallery {
+  .menu-gallery__grid {
     grid-template-columns: repeat(5, 1fr);
   }
 }
 
 @media (min-width: 1440px) {
-  .menu__gallery {
+  .menu-gallery__grid {
     grid-template-columns: repeat(6, 1fr);
   }
 }

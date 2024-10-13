@@ -37,6 +37,10 @@
   fill: var(--color-foreground);
 }
 
+.gallery--vertical .gallery__slides {
+  margin-bottom: 8rem;
+}
+
 .gallery--vertical .slide {
   flex-direction: column;
   align-items: flex-start;

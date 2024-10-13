@@ -1,5 +1,5 @@
 import '../styles/project.css';
-import { Button, ButtonGroup, EmbeddedYouTube, ImageGallery, Link, ProgressiveImage } from '@zigurous/react-components'; // prettier-ignore
+import { Badge, EmbeddedYouTube, ImageGallery, Link, ProgressiveImage } from '@zigurous/react-components'; // prettier-ignore
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -8,52 +8,33 @@ import { ImageProps } from '../types/image';
 const Project = ({ className, project }) => (
   <article className={classNames('project', 'container-md', className)}>
     <section>
-      <h1 className="title">{project.title}</h1>
-      {project.description && (
-        <p className="opacity-90p">{project.description}</p>
-      )}
-      {project.description_long &&
-        project.description_long.map((description) => (
-          <p className="opacity-90p" key={description}>
-            {description}
-          </p>
-        ))}
-      {project.buttons && (
-        <ButtonGroup>
-          {project.buttons.map((button) => (
-            <Link
-              external
-              to={button.link}
-              key={button.name}
-              style={{ marginLeft: '-4px' }}
-              unstyled
-            >
-              <Button
-                className="shadow-button"
-                icon={button.icon && 'left'}
-                iconName={button.icon}
-                size={Button.size.small}
-                shape={Button.shape.rounded}
-              >
-                {button.name}
-              </Button>
-            </Link>
+      <h1 className="display-4 project__title">{project.title}</h1>
+      <div className="project__subtitle">
+        {project.date}
+        <span className="separator">|</span>
+        {project.role}
+      </div>
+      {project.tech && (
+        <div className="project__badges">
+          {project.tech.map((tech) => (
+            <Badge pill key={tech}>
+              {tech}
+            </Badge>
           ))}
-        </ButtonGroup>
+        </div>
       )}
+      <div className="project__description">
+        {project.description && (
+          <p className="opacity-90p">{project.description}</p>
+        )}
+        {project.description_long &&
+          project.description_long.map((description) => (
+            <p className="opacity-90p" key={description}>
+              {description}
+            </p>
+          ))}
+      </div>
     </section>
-    {/* {project.details && (
-      <section>
-        <p className="font-sm opacity-90p">
-          {project.details.map((detail, index) => (
-            <React.Fragment key={detail.key}>
-              {index !== 0 && <br />}
-              <em>{detail.key}</em> {detail.value}
-            </React.Fragment>
-          ))}
-        </p>
-      </section>
-    )} */}
     {project.sections &&
       project.sections.map((section, index) => (
         <section key={`section-${index}`}>
@@ -68,14 +49,24 @@ const Project = ({ className, project }) => (
               )}
             </h2>
           )}
-          {section.mainImage && (
-            <ProgressiveImage
-              alt={`${project.title} Screenshot`}
-              width={section.mainImage.sharp.original.width}
-              height={section.mainImage.sharp.original.height}
-              src={section.mainImage.sharp.original.src}
-            />
-          )}
+          {section.mainImage &&
+            (section.mainImageLink ? (
+              <Link external to={section.mainImageLink} unstyled>
+                <ProgressiveImage
+                  alt={`${project.title} Screenshot`}
+                  width={section.mainImage.sharp.original.width}
+                  height={section.mainImage.sharp.original.height}
+                  src={section.mainImage.sharp.original.src}
+                />
+              </Link>
+            ) : (
+              <ProgressiveImage
+                alt={`${project.title} Screenshot`}
+                width={section.mainImage.sharp.original.width}
+                height={section.mainImage.sharp.original.height}
+                src={section.mainImage.sharp.original.src}
+              />
+            ))}
           {section.mainVideo && (
             <EmbeddedYouTube
               origin="https://adamgraham.github.io"
@@ -119,8 +110,8 @@ export const ProjectProps = PropTypes.shape({
   buttons: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
-      link: PropTypes.string.isRequired,
-      icon: PropTypes.string,
+      url: PropTypes.string.isRequired,
+      icon: PropTypes.string.isRequired,
     })
   ),
   category: PropTypes.string.isRequired,
@@ -128,25 +119,22 @@ export const ProjectProps = PropTypes.shape({
   description: PropTypes.string,
   description_short: PropTypes.string,
   description_long: PropTypes.arrayOf(PropTypes.string),
-  details: PropTypes.arrayOf(
-    PropTypes.shape({
-      key: PropTypes.string.isRequired,
-      value: PropTypes.string.isRequired,
-    })
-  ),
   id: PropTypes.string.isRequired,
   image: ImageProps.isRequired,
+  role: PropTypes.string,
   sections: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
       link: PropTypes.string,
       mainImage: ImageProps,
+      mainImageLink: PropTypes.string,
       mainVideo: PropTypes.string,
       paragraphs: PropTypes.arrayOf(PropTypes.string),
       gallery: PropTypes.arrayOf(ImageProps),
       videos: PropTypes.arrayOf(PropTypes.string),
     })
   ),
+  tech: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
 });
 

@@ -6,7 +6,7 @@ export const linkedIn = 'https://www.linkedin.com/in/adamzigurous';
 export const instagram = 'http://instagram.com/adam.zigurous';
 export const twitter = 'https://twitter.com/zigurous';
 
-export const navLinks = [
+export const headerLinks = [
   {
     key: 'games',
     name: 'Games',
@@ -19,12 +19,12 @@ export const navLinks = [
   },
   {
     key: 'art',
-    name: 'Visual Art',
+    name: 'Interactive Art',
     to: '/art',
   },
   {
     key: 'tech',
-    name: 'Emerging Tech',
+    name: 'Tech Showcases',
     to: '/tech',
   },
   {
@@ -32,13 +32,27 @@ export const navLinks = [
     name: 'Presentations',
     to: '/presentations',
   },
-  // {
-  //   name: 'Software',
-  //   to: github,
-  //   rightIcon: 'open_in_new',
-  //   ElementType: 'a',
-  //   external: true,
-  // },
+];
+
+export const dockLinks = [
+  {
+    key: 'home',
+    name: 'Home',
+    icon: 'home',
+    to: '/',
+  },
+  {
+    key: 'gallery',
+    name: 'Gallery',
+    icon: 'collections',
+    to: '/games',
+  },
+  {
+    key: 'projects',
+    name: 'Projects',
+    icon: 'menu',
+    to: '/projects',
+  },
 ];
 
 export const socialLinks = [
@@ -53,18 +67,15 @@ export const socialLinks = [
     url: linkedIn,
   },
   {
-    key: 'instagram',
-    name: 'Instagram',
-    url: instagram,
+    key: 'resume',
+    name: 'Resume',
+    icon: 'description',
+    url: resume,
   },
-  // {
-  //   key: 'twitter',
-  //   name: 'Twitter',
-  //   url: twitter,
-  // },
   {
     key: 'email',
     name: 'Email',
+    icon: 'mail',
     url: email,
   },
 ];

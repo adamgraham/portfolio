@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Page, Project, ProjectProps, SlideProps } from '../../components';
+import { Page, Project, ProjectProps } from '../../components';
 import { baseUri } from '../../links';
 
 export const query = graphql`
@@ -10,10 +10,12 @@ export const query = graphql`
       id: jsonId
       category
       title
-      date
       description
       description_short
       description_long
+      date
+      role
+      tech
       image {
         sharp: childImageSharp {
           original {
@@ -23,13 +25,9 @@ export const query = graphql`
           }
         }
       }
-      details {
-        key
-        value
-      }
       buttons {
         name
-        link
+        url
         icon
       }
       sections {
@@ -44,6 +42,7 @@ export const query = graphql`
             }
           }
         }
+        mainImageLink
         mainVideo
         paragraphs
         gallery {
@@ -58,36 +57,15 @@ export const query = graphql`
         videos
       }
     }
-    json: allWebsitesJson {
-      slides: nodes {
-        id
-        category
-        title
-        description
-        description_short
-        image {
-          sharp: childImageSharp {
-            original {
-              src
-              width
-              height
-            }
-          }
-        }
-        imageAltText
-        imageBorder
-      }
-    }
   }
 `;
 
 const Website = ({ data, location }) => {
   const { project } = data;
-  const { slides } = data.json;
   return (
     <Page
-      category="websites"
-      slides={slides}
+      title="Websites"
+      dockLinks={project.buttons}
       location={location}
       metadata={{
         url: `${baseUri}/${project.category}/${project.id}`,
@@ -102,12 +80,7 @@ const Website = ({ data, location }) => {
 };
 
 Website.propTypes = {
-  data: PropTypes.shape({
-    project: ProjectProps,
-    json: PropTypes.shape({
-      slides: PropTypes.arrayOf(SlideProps),
-    }),
-  }),
+  data: PropTypes.shape({ project: ProjectProps }),
   location: PropTypes.object,
 };
 
