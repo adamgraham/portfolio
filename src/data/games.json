@@ -12,8 +12,8 @@
     "imageAltText": "The Wandering Dark Painting",
     "buttons": [
       {
+        "to": "https://drive.google.com/file/d/1A28Dm-oLWkOgr3L49f46jjcyovBnfp-G/view?usp=drive_link",
         "name": "Download",
-        "url": "https://drive.google.com/file/d/1A28Dm-oLWkOgr3L49f46jjcyovBnfp-G/view?usp=drive_link",
         "icon": "download"
       }
     ],
@@ -57,13 +57,13 @@
     "imageAltText": "Boss Rush Painting",
     "buttons": [
       {
+        "to": "https://github.com/ModSquadWorkshop/BossRush/releases",
         "name": "Download",
-        "url": "https://github.com/ModSquadWorkshop/BossRush/releases",
         "icon": "download"
       },
       {
+        "to": "https://github.com/adamgraham/boss-rush",
         "name": "Source Code",
-        "url": "https://github.com/adamgraham/boss-rush",
         "icon": "code"
       }
     ],
@@ -92,8 +92,8 @@
     "imageAltText": "Alphas Painting",
     "buttons": [
       {
+        "to": "https://drive.google.com/file/d/1wfnwkmW56U3aYZ4cnrMFPZOIpwjYz-52/view?usp=drive_link",
         "name": "Download",
-        "url": "https://drive.google.com/file/d/1wfnwkmW56U3aYZ4cnrMFPZOIpwjYz-52/view?usp=drive_link",
         "icon": "download"
       }
     ],
@@ -126,8 +126,8 @@
     "imageAltText": "Hackathon for Wildlife Painting",
     "buttons": [
       {
+        "to": "https://github.com/adamgraham/hackathon-for-wildlife",
         "name": "Source Code",
-        "url": "https://github.com/adamgraham/hackathon-for-wildlife",
         "icon": "code"
       }
     ],
@@ -181,13 +181,13 @@
     "imageAltText": "Elegy Painting",
     "buttons": [
       {
+        "to": "https://drive.google.com/file/d/1VOryTrKiH_2HlJKeO_CmzNbVjCrU7wRr/view?usp=drive_link",
         "name": "Download",
-        "url": "https://drive.google.com/file/d/1VOryTrKiH_2HlJKeO_CmzNbVjCrU7wRr/view?usp=drive_link",
         "icon": "download"
       },
       {
+        "to": "https://github.com/adamgraham/elegy",
         "name": "Source Code",
-        "url": "https://github.com/adamgraham/elegy",
         "icon": "code"
       }
     ],
@@ -240,8 +240,8 @@
     "imageAltText": "Ancient Odyssey Painting",
     "buttons": [
       {
+        "to": "https://www.newgrounds.com/portal/view/628001",
         "name": "Play Game",
-        "url": "https://www.newgrounds.com/portal/view/628001",
         "icon": "play_circle"
       }
     ],
@@ -272,8 +272,8 @@
     "imageAltText": "Lunar Escape Painting",
     "buttons": [
       {
+        "to": "https://www.newgrounds.com/portal/view/625640",
         "name": "Play Game",
-        "url": "https://www.newgrounds.com/portal/view/625640",
         "icon": "play_circle"
       }
     ],
@@ -304,8 +304,8 @@
     "imageAltText": "The Rise Painting",
     "buttons": [
       {
+        "to": "https://www.newgrounds.com/portal/view/622585",
         "name": "Play Game",
-        "url": "https://www.newgrounds.com/portal/view/622585",
         "icon": "play_circle"
       }
     ],
@@ -336,8 +336,8 @@
     "imageAltText": "Escape the Estate Painting",
     "buttons": [
       {
+        "to": "https://www.newgrounds.com/portal/view/622915",
         "name": "Play Game",
-        "url": "https://www.newgrounds.com/portal/view/622915",
         "icon": "play_circle"
       }
     ],
@@ -369,8 +369,8 @@
     "imageAltText": "Escape the Basement Painting",
     "buttons": [
       {
+        "to": "https://www.newgrounds.com/portal/view/601869",
         "name": "Play Game",
-        "url": "https://www.newgrounds.com/portal/view/601869",
         "icon": "play_circle"
       }
     ],

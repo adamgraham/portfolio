@@ -41,7 +41,7 @@
 .projects-list__category {
   margin-top: 0;
   margin-bottom: 2rem;
-  transition: margin 400ms, opacity 400ms, visibility 400ms;
+  transition: margin 400ms, opacity 200ms, visibility 400ms;
 }
 
 .projects-list__category--empty {
@@ -92,7 +92,7 @@
   width: 100%;
   height: 48px;
   border-radius: 16px;
-  transition: height 400ms, opacity 400ms, visibility 400ms;
+  transition: height 400ms, opacity 200ms, visibility 400ms;
 }
 
 .projects-list__item:hover {

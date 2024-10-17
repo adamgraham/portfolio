@@ -1,11 +1,11 @@
 {
   "name": "@adamgraham/portfolio",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "homepage": "https://adamgraham.github.io",
   "private": true,
   "dependencies": {
-    "@zigurous/css-styles": "^2.2.0",
-    "@zigurous/react-components": "^2.2.0",
+    "@zigurous/css-styles": "^3.0.0",
+    "@zigurous/react-components": "^3.0.0",
     "classnames": "^2.3.1",
     "gatsby": "^4.17.0",
     "gatsby-plugin-google-analytics": "^4.17.0",
@@ -21,13 +21,17 @@
     "gatsby-transformer-json": "^4.17.0",
     "gatsby-transformer-sharp": "^4.17.0",
     "gh-pages": "^4.0.0",
-    "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
     "use-query-params": "^2.2.1"
   },
   "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.25.7",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.1.0",
+    "@types/react-dom": "^18.1.0",
+    "@types/react-helmet": "^6.1.11",
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
@@ -51,6 +55,7 @@
     "precommit": "eslint src --fix --quiet",
     "predeploy": "gatsby build",
     "serve": "gatsby serve",
-    "start": "gatsby develop"
+    "start": "gatsby develop",
+    "typecheck": "tsc --noEmit"
   }
 }

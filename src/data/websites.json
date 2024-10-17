@@ -12,8 +12,8 @@
     "imageAltText": "Zigurous Painting",
     "buttons": [
       {
+        "to": "https://zigurous.com/",
         "name": "Visit Website",
-        "url": "https://zigurous.com/",
         "icon": "preview"
       }
     ],
@@ -54,13 +54,13 @@
     "imageAltText": "Colorly Painting",
     "buttons": [
       {
+        "to": "https://adamgraham.github.io/colorly/tints-and-shades",
         "name": "Visit Website",
-        "url": "https://adamgraham.github.io/colorly/tints-and-shades",
         "icon": "preview"
       },
       {
+        "to": "https://github.com/adamgraham/colorly",
         "name": "Source Code",
-        "url": "https://github.com/adamgraham/colorly",
         "icon": "code"
       }
     ],
@@ -88,13 +88,13 @@
     "imageAltText": "Polykai Painting",
     "buttons": [
       {
+        "to": "https://adamgraham.github.io/polykai-website/",
         "name": "Visit Website",
-        "url": "https://adamgraham.github.io/polykai-website/",
         "icon": "preview"
       },
       {
+        "to": "https://github.com/adamgraham/polykai",
         "name": "Source Code",
-        "url": "https://github.com/adamgraham/polykai",
         "icon": "code"
       }
     ],
@@ -121,8 +121,8 @@
     "imageAltText": "Allium Painting",
     "buttons": [
       {
+        "to": "https://adamgraham.github.io/preview/allium",
         "name": "Visit Website",
-        "url": "https://adamgraham.github.io/preview/allium",
         "icon": "preview"
       }
     ],
@@ -149,8 +149,8 @@
     "imageAltText": "DemonTHON Painting",
     "buttons": [
       {
+        "to": "https://adamgraham.github.io/preview/demonthon",
         "name": "Visit Website",
-        "url": "https://adamgraham.github.io/preview/demonthon",
         "icon": "preview"
       }
     ],
@@ -174,8 +174,8 @@
     "imageAltText": "Be Super Painting",
     "buttons": [
       {
+        "to": "https://adamgraham.github.io/preview/besuper",
         "name": "Visit Website",
-        "url": "https://adamgraham.github.io/preview/besuper",
         "icon": "preview"
       }
     ],
@@ -199,8 +199,8 @@
     "imageAltText": "Ashantis Jones Painting",
     "buttons": [
       {
+        "to": "https://adamgraham.github.io/preview/ashantisjones",
         "name": "Visit Website",
-        "url": "https://adamgraham.github.io/preview/ashantisjones",
         "icon": "preview"
       }
     ],
@@ -224,8 +224,8 @@
     "imageAltText": "Margaret Baughman Painting",
     "buttons": [
       {
+        "to": "https://adamgraham.github.io/preview/margaretbaughman",
         "name": "Visit Website",
-        "url": "https://adamgraham.github.io/preview/margaretbaughman",
         "icon": "preview"
       }
     ],
@@ -252,8 +252,8 @@
     "imageAltText": "Taylor Cochran Music Painting",
     "buttons": [
       {
+        "to": "https://adamgraham.github.io/preview/taylorcochranmusic",
         "name": "Visit Website",
-        "url": "https://adamgraham.github.io/preview/taylorcochranmusic",
         "icon": "preview"
       }
     ],
@@ -280,8 +280,8 @@
     "imageAltText": "Squish-em! Painting",
     "buttons": [
       {
+        "to": "https://adamgraham.github.io/preview/squishem",
         "name": "Visit Website",
-        "url": "https://adamgraham.github.io/preview/squishem",
         "icon": "preview"
       }
     ],
@@ -308,8 +308,8 @@
     "imageAltText": "Let It Beard Painting",
     "buttons": [
       {
+        "to": "https://adamgraham.github.io/preview/letitbeard",
         "name": "Visit Website",
-        "url": "https://adamgraham.github.io/preview/letitbeard",
         "icon": "preview"
       }
     ],

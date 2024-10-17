@@ -1,5 +1,4 @@
 import '@zigurous/css-styles/dist/index.css';
-import '@zigurous/react-components/dist/index.css';
 import './src/styles/global.css';
 
 const updateFavicon = (isDark) => {

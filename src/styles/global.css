@@ -19,10 +19,6 @@ html, body {
   }
 }
 
-.page {
-  overflow-x: hidden;
-}
-
 .page > article {
   position: relative;
   padding-top: 3rem;

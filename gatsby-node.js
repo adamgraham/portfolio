@@ -11,6 +11,15 @@ exports.onCreateWebpackConfig = ({ actions }) => {
   });
 };
 
+exports.onCreateBabelConfig = ({ actions }) => {
+  actions.setBabelPlugin({
+    name: '@babel/plugin-transform-react-jsx',
+    options: {
+      runtime: 'automatic',
+    },
+  });
+};
+
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
   const typeDefs = `
@@ -26,7 +35,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       tech: [String]
       image: File! @fileByRelativePath
       imageAltText: String
-      imageBorder: String
+      imageBorder: Boolean
       buttons: [ProjectButton]
       sections: [ProjectSection]
     }
@@ -42,7 +51,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       tech: [String]
       image: File! @fileByRelativePath
       imageAltText: String
-      imageBorder: String
+      imageBorder: Boolean
       buttons: [ProjectButton]
       sections: [ProjectSection]
     }
@@ -58,7 +67,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       tech: [String]
       image: File! @fileByRelativePath
       imageAltText: String
-      imageBorder: String
+      imageBorder: Boolean
       buttons: [ProjectButton]
       sections: [ProjectSection]
     }
@@ -74,7 +83,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       tech: [String]
       image: File! @fileByRelativePath
       imageAltText: String
-      imageBorder: String
+      imageBorder: Boolean
       buttons: [ProjectButton]
       sections: [ProjectSection]
     }
@@ -90,7 +99,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       tech: [String]
       image: File! @fileByRelativePath
       imageAltText: String
-      imageBorder: String
+      imageBorder: Boolean
       buttons: [ProjectButton]
       sections: [ProjectSection]
     }
@@ -107,8 +116,8 @@ exports.createSchemaCustomization = ({ actions }) => {
       tags: [String]
     }
     type ProjectButton {
+      to: String!
       name: String!
-      url: String!
       icon: String
     }
     type ProjectSection {

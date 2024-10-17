@@ -12,8 +12,8 @@
     "imageAltText": "The Life of a UX Engineer Painting",
     "buttons": [
       {
+        "to": "https://drive.google.com/file/d/1mHUDzD7EzfrRR03Z_1WNsduszsIUj4ny/view?usp=drive_link",
         "name": "View Deck",
-        "url": "https://drive.google.com/file/d/1mHUDzD7EzfrRR03Z_1WNsduszsIUj4ny/view?usp=drive_link",
         "icon": "picture_as_pdf"
       }
     ],
@@ -74,8 +74,8 @@
     "imageAltText": "Entering the New Reality Painting",
     "buttons": [
       {
+        "to": "https://drive.google.com/file/d/1nw_EMTZB47svcDjgCPaSAAPE84gNYqfK/view?usp=drive_link",
         "name": "View Deck",
-        "url": "https://drive.google.com/file/d/1nw_EMTZB47svcDjgCPaSAAPE84gNYqfK/view?usp=drive_link",
         "icon": "picture_as_pdf"
       }
     ],
@@ -118,8 +118,8 @@
     "imageAltText": "3D Application Development Painting",
     "buttons": [
       {
+        "to": "https://drive.google.com/file/d/1r2DCuz7PckbaD0CH4NWlKIK1X5-po9MI/view?usp=drive_link",
         "name": "View Deck",
-        "url": "https://drive.google.com/file/d/1r2DCuz7PckbaD0CH4NWlKIK1X5-po9MI/view?usp=drive_link",
         "icon": "picture_as_pdf"
       }
     ],

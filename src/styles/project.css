@@ -1,7 +1,6 @@
 .project.container-md {
   width: 100%;
   max-width: 720px;
-  overflow-x: hidden;
 }
 
 .project__title {

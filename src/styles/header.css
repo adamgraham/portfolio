@@ -9,6 +9,7 @@
   background-color: rgba(240, 242, 245, 0.8);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border);
+  overflow-x: hidden;
   z-index: var(--z-index-max, 1100);
 }
 
@@ -41,6 +42,7 @@
   border: none;
   font-size: 0.875rem;
   font-weight: 600;
+  letter-spacing: -0.025em;
   white-space: nowrap;
   opacity: var(--opacity-inactive, 0.62);
   transition: color 200ms, background-color 200ms, opacity 200ms, transform 200ms;
@@ -86,7 +88,7 @@
   }
 }
 
-@media (max-width: 819px) {
+@media (max-width: 852px) {
   .header .navbar {
     display: none;
   }
