@@ -13,7 +13,7 @@ export interface PageProps {
   hideDock?: boolean;
   hideHeader?: boolean;
   id?: string;
-  location?: Location;
+  location?: Location | null;
   metadata?: MetadataProps;
   title?: string;
 }
@@ -25,7 +25,7 @@ export default function Page({
   hideDock = false,
   hideHeader = false,
   id,
-  location,
+  location = typeof window !== 'undefined' ? window.location : null,
   metadata,
   title,
 }: PageProps) {

@@ -7,11 +7,14 @@ import MenuGallery from './MenuGallery';
 import { headerLinks } from '../links';
 
 export interface HeaderProps {
-  location?: Location;
+  location?: Location | null;
   pageTitle?: string;
 }
 
-export default function Header({ location, pageTitle }: HeaderProps) {
+export default function Header({
+  location = typeof window !== 'undefined' ? window.location : null,
+  pageTitle,
+}: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>

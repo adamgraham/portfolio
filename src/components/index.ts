@@ -1,5 +1,7 @@
 export { default as Dock } from './Dock';
+export { default as DockItem } from './DockItem';
 export { default as Gallery } from './Gallery';
+export { default as Grid3D } from './Grid3D';
 export { default as Header } from './Header';
 export { default as Logo } from './Logo';
 export { default as MenuGallery } from './MenuGallery';
@@ -8,3 +10,4 @@ export { default as Page } from './Page';
 export { default as Project } from './Project';
 export { default as ShadowButton } from './ShadowButton';
 export { default as Slide } from './Slide';
+export { default as Vignette } from './Vignette';

@@ -1,0 +1,49 @@
+.grid-3d {
+  display: grid;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(30, 1fr);
+  transform:
+    translate(-50%, -50%)
+    rotate(-30deg)
+    skew(30deg)
+    scaleY(cos(30deg));
+  transform-style: preserve-3d;
+  opacity: 0.87;
+}
+
+.grid-3d__cell {
+  position: relative;
+  display: grid;
+  width: 80px;
+  height: 80px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  border: 1px solid var(--color-surface-2);
+}
+
+.grid-3d__cell:hover {
+  background-color: var(--color-surface-2);
+}
+
+/* .grid-3d__cell--1 {
+  border-bottom: 1px solid var(--color-surface-2);
+  border-right: 1px solid var(--color-surface-2);
+}
+
+.grid-3d__cell--2 {
+  border-bottom: 1px solid var(--color-surface-2);
+  border-left: 1px solid var(--color-surface-2);
+}
+
+.grid-3d__cell--3 {
+  border-top: 1px solid var(--color-surface-2);
+  border-right: 1px solid var(--color-surface-2);
+}
+
+.grid-3d__cell--4 {
+  border-top: 1px solid var(--color-surface-2);
+  border-left: 1px solid var(--color-surface-2);
+} */

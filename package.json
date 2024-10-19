@@ -3,6 +3,17 @@
   "version": "2.0.0",
   "homepage": "https://adamgraham.github.io",
   "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "deploy": "gh-pages -d public -b public -m \"Publish build to GitHub pages\"",
+    "develop": "gatsby develop",
+    "precommit": "eslint src --fix --quiet",
+    "predeploy": "gatsby build",
+    "serve": "gatsby serve",
+    "start": "gatsby develop",
+    "typecheck": "tsc --noEmit"
+  },
   "dependencies": {
     "@zigurous/css-styles": "^3.0.0",
     "@zigurous/react-components": "^3.0.0",
@@ -31,7 +42,7 @@
     "@types/node": "^20.11.0",
     "@types/react": "^18.1.0",
     "@types/react-dom": "^18.1.0",
-    "@types/react-helmet": "^6.1.11",
+    "@types/react-helmet": "^6.1.0",
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
@@ -46,16 +57,5 @@
   "resolutions": {
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
-  },
-  "scripts": {
-    "build": "gatsby build",
-    "clean": "gatsby clean",
-    "deploy": "gh-pages -d public -b public -m \"Publish build to GitHub pages\"",
-    "develop": "gatsby develop",
-    "precommit": "eslint src --fix --quiet",
-    "predeploy": "gatsby build",
-    "serve": "gatsby serve",
-    "start": "gatsby develop",
-    "typecheck": "tsc --noEmit"
   }
 }

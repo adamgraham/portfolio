@@ -7,7 +7,7 @@
     "description_short": "Zigurous is an indie game development studio. Adam has designed and managed the website since he founded the game studio in 2012. The website has gone through several design iterations over the years.",
     "date": "January 2021",
     "role": "Web Designer, Developer, Maintainer",
-    "tech": ["React", "Gatsby", "JavaScript", "HTML/CSS", "Firebase"],
+    "tech": ["React", "Gatsby", "TypeScript", "HTML/CSS", "Firebase"],
     "image": "../images/banners/zigurous-painting.jpg",
     "imageAltText": "Zigurous Painting",
     "buttons": [

@@ -25,14 +25,8 @@ html, body {
   padding-bottom: 8rem;
 }
 
-.page#cover > .cover {
-  height: auto;
-  overflow-y: auto;
-  min-height: 100vh;
-}
-
-.page#cover .introduction .btn .icon {
-  transform: translateY(1px);
+.page#cover {
+  overflow: hidden;
 }
 
 .ReactModal__Overlay {
@@ -81,4 +75,23 @@ html, body {
   .social-nav-links__list:hover .social-nav-links__item {
     opacity: var(--opacity-disabled, 0.38);
   }
+}
+
+.card-3d {
+  position: relative;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.card-3d > * {
+  pointer-events: all;
+}
+
+.overlay-text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2vh 2vw;
 }
