@@ -6,8 +6,6 @@ import type { LinkType } from '../types';
 const settings = {
   minSize: 44,
   maxSize: 64,
-  minFontSize: 20,
-  maxFontSize: 30,
   distance: 150,
   smoothTime: 50,
 };
