@@ -11,7 +11,7 @@
     skew(30deg)
     scaleY(cos(30deg));
   transform-style: preserve-3d;
-  opacity: 0.87;
+  opacity: 0.75;
 }
 
 .grid-3d__cell {
@@ -27,23 +27,3 @@
 .grid-3d__cell:hover {
   background-color: var(--color-surface-2);
 }
-
-/* .grid-3d__cell--1 {
-  border-bottom: 1px solid var(--color-surface-2);
-  border-right: 1px solid var(--color-surface-2);
-}
-
-.grid-3d__cell--2 {
-  border-bottom: 1px solid var(--color-surface-2);
-  border-left: 1px solid var(--color-surface-2);
-}
-
-.grid-3d__cell--3 {
-  border-top: 1px solid var(--color-surface-2);
-  border-right: 1px solid var(--color-surface-2);
-}
-
-.grid-3d__cell--4 {
-  border-top: 1px solid var(--color-surface-2);
-  border-left: 1px solid var(--color-surface-2);
-} */
