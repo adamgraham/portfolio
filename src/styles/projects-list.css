@@ -32,10 +32,16 @@
   font-size: 0.875em;
 }
 
-.projects-list__filters .badge:hover,
 .projects-list__filters .badge--selected {
   background-color: var(--color-primary);
   color: var(--color-on-primary);
+}
+
+@media (hover: hover) {
+  .projects-list__filters .badge:hover {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+  }
 }
 
 .projects-list__category {
