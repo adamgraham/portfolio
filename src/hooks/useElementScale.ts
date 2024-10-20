@@ -8,7 +8,7 @@ export function useElementScale(
   const [scale, setScale] = useState<number>(1);
 
   useLayoutEffect(() => {
-    setScale(clamp((window.innerWidth * 0.8) / size.width, 1, 1.309));
+    setScale(clamp((window.innerWidth * 0.8) / size.width, 1, 1.4));
   }, [size]);
 
   return scale;
