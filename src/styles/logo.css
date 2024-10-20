@@ -24,9 +24,11 @@
   transition: border-radius 600ms ease-in-out, transform 400ms ease-out;
 }
 
-.ag-logo:hover .ag-logo__background {
-  border-radius: 50%;
-  transform: rotateZ(90deg) scale(1.05);
+@media (hover: hover) {
+  .ag-logo:hover .ag-logo__background {
+    border-radius: 50%;
+    transform: rotateZ(90deg) scale(1.05);
+  }
 }
 
 .ag-logo--rounded .ag-logo__background {
