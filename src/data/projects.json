@@ -76,17 +76,17 @@
     "title": "Libraries & Frameworks",
     "projects": [
       {
-        "title": "Palette",
-        "description": "Swift command line tool to parse and generate color palettes",
-        "date": "2019",
-        "externalLink": "https://github.com/adamgraham/palette",
-        "tags": ["iOS"]
-      },
-      {
         "title": "Colorly",
         "description": "iOS framework with hundreds of functions to manipulate colors",
         "date": "2019",
         "externalLink": "https://github.com/adamgraham/colorly-ios",
+        "tags": ["iOS"]
+      },
+      {
+        "title": "Palette",
+        "description": "Swift command line tool to parse and generate color palettes",
+        "date": "2019",
+        "externalLink": "https://github.com/adamgraham/palette",
         "tags": ["iOS"]
       },
       {
@@ -237,6 +237,20 @@
   {
     "title": "Websites",
     "projects": [
+      {
+        "title": "Portfolio",
+        "description": "Wait, you're looking at it right now!",
+        "date": "2024",
+        "link": "/",
+        "tags": ["React"]
+      },
+      {
+        "title": "Solar System",
+        "description": "An interactive 3D solar system model created with Three.js",
+        "date": "2023",
+        "externalLink": "https://github.com/adamgraham/threejs-solar-system",
+        "tags": ["React", "3D"]
+      },
       {
         "title": "Zigurous",
         "description": "Game studio website showcasing assets, tutorials, and games",
