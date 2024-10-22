@@ -3,8 +3,8 @@
     "id": "zigurous",
     "category": "websites",
     "title": "Zigurous",
-    "description": "Zigurous is an indie game development studio. Adam has designed and managed the website since he founded the game studio in 2012. Below you can see different examples and the progression of the website over time.",
-    "description_short": "Zigurous is an indie game development studio. Adam has designed and managed the website since he founded the game studio in 2012. The website has gone through several design iterations over the years.",
+    "description": "Zigurous is an indie game development studio. Adam has designed and managed the website since he founded the game studio in 2012 and continously iterates on the design year after year. Below you can see different examples and progression of the website over time.",
+    "description_short": "Zigurous is an indie game development studio. Adam has designed and managed the website since he founded the game studio in 2012 and continously iterates on the design year after year.",
     "date": "January 2021",
     "role": "Web Designer, Developer, Maintainer",
     "tech": ["React", "Gatsby", "TypeScript", "HTML/CSS", "Firebase"],
@@ -268,9 +268,9 @@
     "id": "squish-em",
     "category": "websites",
     "title": "Squish-em!",
-    "description_short": "Squish-em! is a simple whack-a-mole re-creation designed for mobile devices. The website is a one-page, artistic cover designed to promote the game and direct users to download the mobile app.",
+    "description_short": "Squish-em! is a simple whack-a-mole arcade game designed for mobile devices. The website is a one-page, artistic cover designed to promote the game and direct users to download the mobile app.",
     "description_long": [
-      "Squish-em! is a simple whack-a-mole re-creation designed for mobile devices. Squish your way to the top of the leaderboards, earn achievements along the way, and brag to your friends when you beat their best score!",
+      "Squish-em! is a simple whack-a-mole arcade game designed for mobile devices. Squish your way to the top of the leaderboards, earn achievements along the way, and brag to your friends when you beat their best score!",
       "The Squish-em! website is a one-page, artistic cover designed to promote the game and direct users to download the mobile app."
     ],
     "date": "April 2015",
