@@ -13,12 +13,12 @@
     "imageBorder": false,
     "buttons": [
       {
-        "to": "https://drive.google.com/file/d/1WG-eI8QvhrFCTdRJlGesNV7vs7nddq6L/view?usp=drive_link",
+        "href": "https://drive.google.com/file/d/1WG-eI8QvhrFCTdRJlGesNV7vs7nddq6L/view?usp=drive_link",
         "name": "Download",
         "icon": "download"
       },
       {
-        "to": "https://github.com/adamgraham/canvas",
+        "href": "https://github.com/adamgraham/canvas",
         "name": "Source Code",
         "icon": "code"
       }
@@ -40,7 +40,7 @@
     "id": "blackhole",
     "category": "art",
     "title": "Blackhole",
-    "description": "Blackhole is a free-form, avant-garde game that enables players to control particles in unique ways. Individuals explore their own creative design within the art piece, loosely making their own objectives and discovering new ways of controlling this \"creative chaos\" - a new type of game genre.",
+    "description": "Blackhole is a free-form, avant-garde game that enables players to control particles in unique ways. Individuals explore their own creative design within the art piece, loosely making their own objectives and discovering new ways of controlling this \"creative chaos\".",
     "description_short": "Blackhole is a free-form, avant-garde game that enables players to control particles in unique ways. Individuals explore their own creative design within the art piece, loosely making their own objectives and discovering new ways of controlling this \"creative chaos\".",
     "date": "January 2015",
     "role": "Solo Project",
@@ -49,12 +49,12 @@
     "imageAltText": "Blackhole Painting",
     "buttons": [
       {
-        "to": "https://drive.google.com/file/d/14FD_603deu6C40w49c3u3vpvZOD9sDkA/view?usp=drive_link",
+        "href": "https://drive.google.com/file/d/14FD_603deu6C40w49c3u3vpvZOD9sDkA/view?usp=drive_link",
         "name": "Download",
         "icon": "download"
       },
       {
-        "to": "https://github.com/adamgraham/blackhole",
+        "href": "https://github.com/adamgraham/blackhole",
         "name": "Source Code",
         "icon": "code"
       }
@@ -86,12 +86,12 @@
     "imageAltText": "Mixed Painting",
     "buttons": [
       {
-        "to": "https://drive.google.com/file/d/1Sr5wxTQrm2jqemSOTLa0xlzYCEKysixm/view?usp=drive_link",
+        "href": "https://drive.google.com/file/d/1Sr5wxTQrm2jqemSOTLa0xlzYCEKysixm/view?usp=drive_link",
         "name": "Download",
         "icon": "download"
       },
       {
-        "to": "https://github.com/adamgraham/mixed",
+        "href": "https://github.com/adamgraham/mixed",
         "name": "Source Code",
         "icon": "code"
       }
@@ -121,12 +121,12 @@
     "imageAltText": "Hexahedroniks Painting",
     "buttons": [
       {
-        "to": "https://drive.google.com/drive/folders/1uJo0g6eBtnyHLSCCmUatIQl80VX0UY_9?usp=drive_link",
+        "href": "https://drive.google.com/drive/folders/1uJo0g6eBtnyHLSCCmUatIQl80VX0UY_9?usp=drive_link",
         "name": "Download",
         "icon": "download"
       },
       {
-        "to": "https://github.com/adamgraham/hexahedroniks",
+        "href": "https://github.com/adamgraham/hexahedroniks",
         "name": "Source Code",
         "icon": "code"
       }

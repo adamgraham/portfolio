@@ -7,10 +7,6 @@ export interface Grid3DProps {
 }
 
 export default function Grid3D({ width = 30, height = 30 }: Grid3DProps) {
-  const cells = [];
-  for (let i = 0; i < width * height; i++) {
-    cells.push(<div className="grid-3d__cell" key={i} />);
-  }
   return (
     <div
       aria-hidden="true"
@@ -20,7 +16,9 @@ export default function Grid3D({ width = 30, height = 30 }: Grid3DProps) {
         gridTemplateRows: `repeat(${height}, 1fr)`,
       }}
     >
-      {cells.map(cell => cell)}
+      {new Array(width * height).fill(0).map((cell, i) => (
+        <div className="grid-3d__cell" key={i} />
+      ))}
     </div>
   );
 }

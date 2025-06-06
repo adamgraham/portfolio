@@ -1,4 +1,4 @@
-import { LinkType } from './types/link';
+import { type LinkType, type LinkTypeWithIcon } from '@zigurous/forge-react';
 
 export const baseUri = 'https://adamgraham.github.io';
 export const email = 'mailto:adam@zigurous.com';
@@ -11,75 +11,79 @@ export const twitter = 'https://twitter.com/zigurous';
 export const headerLinks: LinkType[] = [
   {
     id: 'games',
-    to: '/games',
+    href: '/games',
     name: 'Games',
   },
   {
     id: 'websites',
-    to: '/websites',
+    href: '/websites',
     name: 'Websites',
   },
   {
     id: 'art',
-    to: '/art',
+    href: '/art',
     name: 'Interactive Art',
   },
   {
     id: 'tech',
-    to: '/tech',
+    href: '/tech',
     name: 'Tech Showcases',
   },
   {
     id: 'presentations',
-    to: '/presentations',
+    href: '/presentations',
     name: 'Presentations',
   },
 ];
 
-export const dockLinks: LinkType[] = [
+export const dockLinks: LinkTypeWithIcon[] = [
   {
     id: 'home',
-    to: '/',
+    href: '/',
     name: 'Home',
     icon: 'home',
   },
   {
     id: 'gallery',
-    to: '/gallery',
+    href: '/gallery',
     name: 'Gallery',
     icon: 'collections',
   },
   {
     id: 'projects',
-    to: '/projects',
+    href: '/projects',
     name: 'Projects',
     icon: 'menu',
   },
 ];
 
-export const socialLinks: LinkType[] = [
+export const socialLinks: SocialLinkType[] = [
   {
     id: 'github',
-    to: github,
+    href: github,
     name: 'GitHub',
     socialIcon: 'github',
   },
   {
     id: 'linkedIn',
-    to: linkedIn,
+    href: linkedIn,
     name: 'LinkedIn',
     socialIcon: 'linkedIn',
   },
   {
     id: 'resume',
-    to: resume,
+    href: resume,
     name: 'Resume',
     icon: 'description',
   },
   {
     id: 'email',
-    to: email,
+    href: email,
     name: 'Email',
     icon: 'mail',
   },
 ];
+
+export type SocialLinkType = {
+  socialIcon?: string;
+} & LinkTypeWithIcon;

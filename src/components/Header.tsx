@@ -1,5 +1,5 @@
 import '../styles/header.css';
-import { Button, NavBar } from '@zigurous/react-components';
+import { AppHeader, Button, NavBar } from '@zigurous/forge-react';
 import { Link as GatsbyLink, navigate } from 'gatsby';
 import React, { useState } from 'react';
 import Logo from './Logo';
@@ -7,44 +7,52 @@ import MenuGallery from './MenuGallery';
 import { headerLinks } from '../links';
 
 export interface HeaderProps {
-  location?: Location | null;
+  location: Location;
   pageTitle?: string;
 }
 
-export default function Header({
-  location = typeof window !== 'undefined' ? window.location : null,
-  pageTitle,
-}: HeaderProps) {
+export default function Header({ location, pageTitle }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
-      <header className="header">
-        <div className="header__container container-fluid">
-          <Logo size={44} />
-          <NavBar
-            links={headerLinks}
-            LinkElementType={GatsbyLink}
-            location={location}
-          />
-          {pageTitle && (
-            <Button
-              className="header__title-button"
-              onClick={() => {
-                const link = headerLinks.find(link => link.name === pageTitle);
-                if (link) {
-                  navigate(link.to);
-                } else {
-                  setIsMenuOpen(true);
-                }
-              }}
-              style="unstyled"
-            >
-              {pageTitle}
-            </Button>
-          )}
+      <AppHeader
+        bordered
+        fluid
+        sticky
+        left={<Logo size={44} />}
+        center={
+          <>
+            <NavBar
+              links={headerLinks}
+              LinkElementType={GatsbyLink}
+              location={location}
+              spacing="xxs"
+            />
+            {pageTitle && (
+              <Button
+                className="app-header__title-button"
+                onClick={() => {
+                  const link = headerLinks.find(
+                    link => link.name === pageTitle,
+                  );
+                  if (link) {
+                    navigate(link.href);
+                  } else {
+                    setIsMenuOpen(true);
+                  }
+                }}
+                size="lg"
+                variant="unstyled"
+              >
+                {pageTitle}
+              </Button>
+            )}
+          </>
+        }
+        right={
           <button
-            aria-label={isMenuOpen ? 'Close Gallery Menu' : 'Open Gallery Menu'}
-            className="header__menu-button"
+            aria-label={isMenuOpen ? 'Close Menu' : 'Open Menu'}
+            className="app-header__menu-button"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
@@ -67,8 +75,8 @@ export default function Header({
               </svg>
             )}
           </button>
-        </div>
-      </header>
+        }
+      />
       <MenuGallery
         open={isMenuOpen}
         onRequestClose={() => setIsMenuOpen(false)}

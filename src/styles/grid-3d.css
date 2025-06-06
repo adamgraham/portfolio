@@ -24,6 +24,8 @@
   border: 1px solid var(--color-surface-2);
 }
 
-.grid-3d__cell:hover {
-  background-color: var(--color-surface-2);
+@media (hover: hover) {
+  .grid-3d__cell:hover {
+    background-color: var(--color-surface-2);
+  }
 }

@@ -6,47 +6,13 @@
   overflow-x: hidden;
 }
 
-.projects-list__header {
-  margin-bottom: 2.5rem;
-}
-
-.projects-list__header > h1 {
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.projects-list__filters {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 8px;
-}
-
-.projects-list__filters .badge {
-  border: none;
-  background-color: var(--color-primary-subtle);
-  color: var(--color-primary);
-  font-weight: 600;
-  font-size: 0.875em;
-}
-
-.projects-list__filters .badge--selected {
-  background-color: var(--color-primary);
-  color: var(--color-on-primary);
-}
-
-@media (hover: hover) {
-  .projects-list__filters .badge:hover {
-    background-color: var(--color-primary);
-    color: var(--color-on-primary);
-  }
-}
-
+.projects-list__header,
 .projects-list__category {
   margin-top: 0;
   margin-bottom: 2rem;
+}
+
+.projects-list__category {
   transition: margin 400ms, opacity 200ms, visibility 400ms;
 }
 
@@ -63,10 +29,7 @@
 }
 
 .projects-list__category > h2 {
-  height: 24px;
-  font-weight: 700;
-  margin-bottom: 0;
-  padding-left: 2px;
+  height: 30px;
   transition: height 400ms;
 }
 
@@ -117,23 +80,12 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 12px;
+  padding: var(--spacing-md);
 }
 
 .projects-list__text {
   flex-grow: 0;
   flex-shrink: 0;
-  min-height: 24px;
-}
-
-.projects-list__title {
-  font-weight: 600;
-  margin-right: 8px;
-}
-
-.projects-list__description {
-  display: none;
-  color: var(--color-foreground-subtle);
 }
 
 .projects-list__line {
@@ -144,7 +96,10 @@
 .projects-list__date {
   flex-grow: 0;
   flex-shrink: 0;
-  color: var(--color-foreground-subtle);
+}
+
+.projects-list__description {
+  display: none;
 }
 
 @media (min-width: 700px) {

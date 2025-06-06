@@ -1,5 +1,5 @@
 import '../styles/gallery.css';
-import { useMediaQuery } from '@zigurous/react-components';
+import { useMediaQuery } from '@zigurous/forge-react';
 import classNames from 'classnames';
 import { navigate } from 'gatsby';
 import React, { useCallback, useEffect } from 'react';

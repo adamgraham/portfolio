@@ -1,11 +1,11 @@
+import { type LinkType } from '@zigurous/forge-react';
 import type { Image } from './image';
-import type { LinkType } from './link';
 
-export type ProjectJson = {
+export interface ProjectJson {
   nodes: ProjectData[];
-};
+}
 
-export type ProjectData = {
+export interface ProjectData {
   buttons?: LinkType[];
   category: string;
   date?: string;
@@ -20,9 +20,9 @@ export type ProjectData = {
   sections?: ProjectSection[];
   tech?: string[];
   title: string;
-};
+}
 
-export type ProjectSection = {
+export interface ProjectSection {
   title?: string;
   link?: string;
   mainImage?: Image;
@@ -31,4 +31,8 @@ export type ProjectSection = {
   paragraphs?: string[];
   gallery?: Image[];
   videos?: string[];
-};
+}
+
+export interface ProjectQueryData {
+  project: ProjectData;
+}

@@ -1,8 +1,8 @@
-import { Badge, Link } from '@zigurous/react-components';
+import { Badge, Link, Stack, Text } from '@zigurous/forge-react';
 import classNames from 'classnames';
-import { graphql, Link as GatsbyLink, navigate } from 'gatsby';
+import { graphql, Link as GatsbyLink, navigate, type HeadFC } from 'gatsby';
 import React, { useMemo } from 'react';
-import { Page } from '../components';
+import { Metadata, Page } from '../components';
 import { baseUri } from '../links';
 import '../styles/projects-list.css';
 
@@ -55,20 +55,18 @@ export default function Projects({ data, location }: ProjectsProps) {
   }, [data, filter]);
 
   return (
-    <Page
-      id="projects"
-      location={location}
-      metadata={{
-        url: baseUri,
-        title: 'Adam Graham • Projects',
-      }}
-    >
+    <Page id="projects" location={location}>
       <article className="projects-list container-lg">
         <section className="projects-list__header">
-          <h1 className="display-4">Projects</h1>
-          <div className="projects-list__filters">
+          <Text as="h1" marginBottom="lg" type="display">
+            Projects
+          </Text>
+          <Stack align="center" spacing="sm" wrap>
             {filters.map(tag => (
-              <button
+              <Badge
+                color="primary"
+                interactive
+                key={tag}
                 onClick={() => {
                   if (filter === tag) {
                     navigate(`${location.pathname}${location.hash}`, {
@@ -81,17 +79,14 @@ export default function Projects({ data, location }: ProjectsProps) {
                     );
                   }
                 }}
-                key={tag}
+                selected={filter === tag}
+                size="md"
+                variant="tint"
               >
-                <Badge
-                  className={classNames({ 'badge--selected': filter === tag })}
-                  pill
-                >
-                  {tag}
-                </Badge>
-              </button>
+                {tag}
+              </Badge>
             ))}
-          </div>
+          </Stack>
         </section>
         {filteredCategories.map(category => (
           <section
@@ -100,7 +95,9 @@ export default function Projects({ data, location }: ProjectsProps) {
             })}
             key={category.title}
           >
-            <h2 className="h6">{category.title}</h2>
+            <Text as="h2" type="title-sm" weight="700">
+              {category.title}
+            </Text>
             <ul>
               {category.projects.map(project => (
                 <li
@@ -112,21 +109,37 @@ export default function Projects({ data, location }: ProjectsProps) {
                   <Link
                     as={project.link ? GatsbyLink : 'a'}
                     external={Boolean(project.externalLink && !project.link)}
+                    href={project.link || project.externalLink}
                     key={project.title}
                     target="_blank"
-                    to={project.link || project.externalLink}
                     unstyled
                   >
                     <div className="projects-list__text">
-                      <span className="projects-list__title">
+                      <Text
+                        as="span"
+                        className="projects-list__title mr-sm"
+                        type="body-sm"
+                        weight="600"
+                      >
                         {project.title}
-                      </span>
-                      <span className="projects-list__description">
+                      </Text>
+                      <Text
+                        as="span"
+                        className="projects-list__description"
+                        color="muted"
+                        type="body-sm"
+                      >
                         {project.description}
-                      </span>
+                      </Text>
                     </div>
                     <hr className="projects-list__line" />
-                    <div className="projects-list__date">{project.date}</div>
+                    <Text
+                      className="projects-list__date"
+                      color="muted"
+                      type="body-sm"
+                    >
+                      {project.date}
+                    </Text>
                   </Link>
                 </li>
               ))}
@@ -137,6 +150,17 @@ export default function Projects({ data, location }: ProjectsProps) {
     </Page>
   );
 }
+
+export const Head: HeadFC = () => {
+  return (
+    <Metadata
+      page={{
+        url: baseUri,
+        title: 'Adam Graham • Projects',
+      }}
+    />
+  );
+};
 
 export const query = graphql`
   query Projects {

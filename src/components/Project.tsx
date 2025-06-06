@@ -1,5 +1,5 @@
 import '../styles/project.css';
-import { Badge, EmbeddedYouTube, ImageGallery, Link, ProgressiveImage } from '@zigurous/react-components'; // prettier-ignore
+import { Badge, clamp, EmbeddedYouTube, ImageGallery, Link, ProgressiveImage, Stack, Text } from '@zigurous/forge-react'; // prettier-ignore
 import React from 'react';
 import type { ProjectData } from '../types';
 
@@ -11,30 +11,47 @@ export default function Project({ project }: ProjectProps) {
   return (
     <article className="project container-md">
       <section>
-        <h1 className="display-4 project__title">{project.title}</h1>
-        <div className="project__subtitle">
+        <Text
+          as="h1"
+          className="project__title"
+          marginBottom="sm"
+          type="display"
+          weight="700"
+        >
+          {project.title}
+        </Text>
+        <Text
+          className="project__subtitle ml-xxs"
+          color="muted"
+          marginBottom="md"
+          size="sm"
+          transform="capitalize"
+          weight="600"
+        >
           {project.date}
-          <span className="separator">|</span>
+          <span className="separator mx-sm opacity-muted">|</span>
           {project.role}
-        </div>
+        </Text>
         {project.tech && (
-          <div className="project__badges">
+          <Stack className="project__badges" spacing="sm" wrap>
             {project.tech.map(tech => (
-              <Badge pill key={tech}>
+              <Badge color="primary" key={tech} variant="tint">
                 {tech}
               </Badge>
             ))}
-          </div>
+          </Stack>
         )}
-        <div className="project__description">
+        <div className="project__description text-pretty mt-xl mb-lg">
           {project.description && (
-            <p className="opacity-90p">{project.description}</p>
+            <Text className="opacity-90" type="body">
+              {project.description}
+            </Text>
           )}
           {project.description_long &&
             project.description_long.map(description => (
-              <p className="opacity-90p" key={description}>
+              <Text className="opacity-90 mt-lg" key={description} type="body">
                 {description}
-              </p>
+              </Text>
             ))}
         </div>
       </section>
@@ -42,7 +59,12 @@ export default function Project({ project }: ProjectProps) {
         project.sections.map((section, index) => (
           <section key={`section-${index}`}>
             {section.title && (
-              <h2 className="subtitle font-xl">
+              <Text
+                as="h2"
+                className="subtitle"
+                marginBottom="sm"
+                type="title-sm"
+              >
                 {section.link ? (
                   <Link external href={section.link}>
                     <b>{section.title}</b>
@@ -50,11 +72,11 @@ export default function Project({ project }: ProjectProps) {
                 ) : (
                   <b>{section.title}</b>
                 )}
-              </h2>
+              </Text>
             )}
             {section.mainImage &&
               (section.mainImageLink ? (
-                <Link external to={section.mainImageLink} unstyled>
+                <Link external href={section.mainImageLink} unstyled>
                   <ProgressiveImage
                     alt={`${project.title} Screenshot`}
                     width={section.mainImage.sharp.original.width}
@@ -78,27 +100,34 @@ export default function Project({ project }: ProjectProps) {
             )}
             {section.paragraphs &&
               section.paragraphs.map((paragraph, paragraphIndex) => (
-                <p
-                  className="font-sm"
+                <Text
+                  color="subtle"
                   key={`section-${index}-paragraph-${paragraphIndex}`}
+                  marginBottom="lg"
+                  type="body-sm"
                 >
                   {paragraph}
-                </p>
+                </Text>
               ))}
             {section.gallery && (
               <ImageGallery
+                rounded
                 images={section.gallery.map(image => ({
-                  width: image.sharp.original.width,
-                  height: image.sharp.original.height,
+                  className: 'inline-block',
+                  width: clamp(image.sharp.original.width || 0, 0, 1280),
+                  height: clamp(image.sharp.original.height || 0, 0, 720),
                   src: image.sharp.original.src,
                 }))}
+                lightboxProps={{
+                  loop: true,
+                }}
                 minWidth={132}
               />
             )}
             {section.videos &&
               section.videos.map(video => (
                 <EmbeddedYouTube
-                  className="margin-bottom-lg"
+                  className="mb-lg"
                   key={video}
                   origin="https://adamgraham.github.io"
                   videoId={video}

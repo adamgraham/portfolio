@@ -1,6 +1,6 @@
-import { graphql } from 'gatsby';
+import { graphql, type HeadFC } from 'gatsby';
 import React from 'react';
-import { Gallery, Page } from '../components';
+import { Gallery, Metadata, Page } from '../components';
 import { baseUri } from '../links';
 import type { SlideData } from '../types';
 
@@ -15,15 +15,7 @@ interface PresentationsProps {
 
 export default function Presentations({ data, location }: PresentationsProps) {
   return (
-    <Page
-      id="presentations"
-      title="Presentations"
-      location={location}
-      metadata={{
-        url: `${baseUri}/presentations`,
-        title: 'Adam Graham • Presentations',
-      }}
-    >
+    <Page id="presentations" title="Presentations" location={location}>
       <Gallery
         category="presentations"
         location={location}
@@ -32,6 +24,17 @@ export default function Presentations({ data, location }: PresentationsProps) {
     </Page>
   );
 }
+
+export const Head: HeadFC = () => {
+  return (
+    <Metadata
+      page={{
+        url: `${baseUri}/presentations`,
+        title: 'Adam Graham • Presentations',
+      }}
+    />
+  );
+};
 
 export const query = graphql`
   query Presentations {

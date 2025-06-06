@@ -1,6 +1,6 @@
 import type { Image } from './image';
 
-export type SlideData = {
+export interface SlideData {
   category: string;
   date?: string;
   description?: string;
@@ -10,4 +10,4 @@ export type SlideData = {
   imageAltText?: string;
   imageBorder?: boolean;
   title: string;
-};
+}

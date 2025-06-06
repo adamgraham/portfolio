@@ -1,4 +1,4 @@
-import { useMediaQuery } from '@zigurous/react-components';
+import { useMediaQuery } from '@zigurous/forge-react';
 import { useEffect } from 'react';
 
 const defaultSettings = {
@@ -41,54 +41,49 @@ export function use3dHoverEffect(
 
     const handleMove = (e: MouseEvent) => {
       if (transitioning) return;
-      const card = targetRef.current!;
-      const cardWidth = card.offsetWidth;
-      const cardHeight = card.offsetHeight;
-      const centerX = card.offsetLeft + cardWidth / 2;
-      const centerY = card.offsetTop + cardHeight / 2;
-      const mouseX = e.clientX - centerX;
-      const mouseY = e.clientY - centerY;
-      const rotateXUncapped = +1 * ((settings.max * mouseY) / (cardHeight / 2));
-      const rotateYUncapped = -1 * ((settings.max * mouseX) / (cardWidth / 2));
-      const rotateX =
-        rotateXUncapped < -settings.max
-          ? -settings.max
-          : rotateXUncapped > settings.max
-          ? settings.max
-          : rotateXUncapped;
-      const rotateY =
-        rotateYUncapped < -settings.max
-          ? -settings.max
-          : rotateYUncapped > settings.max
-          ? settings.max
-          : rotateYUncapped;
-      if (targetRef.current) {
-        targetRef.current.style.transform = `
-          perspective(${
-            settings.perspective
-          }px) rotateX(${-rotateX}deg) rotateY(${-rotateY}deg)
-          scale3d(${settings.scale}, ${settings.scale}, ${settings.scale})
-        `;
+      const card = targetRef.current;
+      if (card) {
+        const cardWidth = card.offsetWidth;
+        const cardHeight = card.offsetHeight;
+        const centerX = card.offsetLeft + cardWidth / 2;
+        const centerY = card.offsetTop + cardHeight / 2;
+        const mouseX = e.clientX - centerX;
+        const mouseY = e.clientY - centerY;
+        const rotateXUncapped =
+          +1 * ((settings.max * mouseY) / (cardHeight / 2));
+        const rotateYUncapped =
+          -1 * ((settings.max * mouseX) / (cardWidth / 2));
+        const rotateX =
+          rotateXUncapped < -settings.max
+            ? -settings.max
+            : rotateXUncapped > settings.max
+              ? settings.max
+              : rotateXUncapped;
+        const rotateY =
+          rotateYUncapped < -settings.max
+            ? -settings.max
+            : rotateYUncapped > settings.max
+              ? settings.max
+              : rotateYUncapped;
+        if (targetRef.current) {
+          targetRef.current.style.transform = `
+            perspective(${
+              settings.perspective
+            }px) rotateX(${-rotateX}deg) rotateY(${-rotateY}deg)
+            scale3d(${settings.scale}, ${settings.scale}, ${settings.scale})
+          `;
+        }
       }
     };
-
-    // const handleLeave = (e: MouseEvent) => {
-    //   if (targetRef.current) {
-    //     targetRef.current.style.transition = `transform ${settings.speed}ms ${settings.easing}`;
-    //     targetRef.current.style.transform = `perspective(${settings.perspective}px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
-    //   }
-    // };
 
     if (canHover) {
       document.addEventListener('mouseenter', handleEnter);
       document.addEventListener('mousemove', handleMove);
-      // document.addEventListener('mouseleave', handleLeave);
     }
 
     return () => {
       document.removeEventListener('mouseenter', handleEnter);
       document.removeEventListener('mousemove', handleMove);
-      // document.removeEventListener('mouseleave', handleLeave);
 
       if (targetRef.current) {
         targetRef.current.style.transition = `transform ${settings.speed}ms ${settings.easing}`;

@@ -1,7 +1,7 @@
-import { distance, Icon, inverseLerp, lerp, Link, SocialIcon, useSmoothDamp } from '@zigurous/react-components'; // prettier-ignore
+import { distance, Icon, inverseLerp, lerp, Link, useSmoothDamp } from '@zigurous/forge-react'; // prettier-ignore
 import { Link as GatsbyLink } from 'gatsby';
 import React, { useEffect, useRef } from 'react';
-import type { LinkType } from '../types';
+import { type SocialLinkType } from '../links';
 
 const settings = {
   minSize: 44,
@@ -13,7 +13,7 @@ const settings = {
 export interface DockItemProps {
   asButton?: boolean;
   external?: boolean;
-  link: LinkType;
+  link: SocialLinkType;
   mouseState: { x: number; y: number; entered: boolean };
   onClick?: () => void;
 }
@@ -41,7 +41,7 @@ export default function DockItem({
     } else {
       targetSizeRef.current = settings.minSize;
     }
-  }, [ref, mouseState]);
+  }, [mouseState]);
 
   return (
     <div
@@ -57,12 +57,13 @@ export default function DockItem({
     >
       {asButton ? (
         <button onClick={onClick}>
-          {link.icon && <Icon name={link.icon} size="inherit" />}
+          {link.icon && <Icon icon={link.icon} size="inherit" />}
           {link.socialIcon && (
-            <SocialIcon
+            <Icon
               icon={link.socialIcon}
-              innerPadding={0}
+              padding={0}
               size={iconSize - 2}
+              type="social"
             />
           )}
         </button>
@@ -70,15 +71,16 @@ export default function DockItem({
         <Link
           as={external ? 'a' : GatsbyLink}
           external={external}
-          to={link.to}
+          href={link.href}
           unstyled
         >
-          {link.icon && <Icon name={link.icon} size="inherit" />}
+          {link.icon && <Icon icon={link.icon} size="inherit" />}
           {link.socialIcon && (
-            <SocialIcon
+            <Icon
               icon={link.socialIcon}
-              innerPadding={0}
+              padding={0}
               size={iconSize - 2}
+              type="social"
             />
           )}
         </Link>

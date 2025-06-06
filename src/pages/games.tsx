@@ -1,6 +1,6 @@
-import { graphql } from 'gatsby';
+import { graphql, type HeadFC } from 'gatsby';
 import React from 'react';
-import { Gallery, Page } from '../components';
+import { Gallery, Metadata, Page } from '../components';
 import { baseUri } from '../links';
 import type { SlideData } from '../types';
 
@@ -15,19 +15,22 @@ interface GamesProps {
 
 export default function Games({ data, location }: GamesProps) {
   return (
-    <Page
-      id="games"
-      title="Games"
-      location={location}
-      metadata={{
-        url: `${baseUri}/games`,
-        title: 'Adam Graham • Games',
-      }}
-    >
+    <Page id="games" title="Games" location={location}>
       <Gallery category="games" location={location} slides={data.json.slides} />
     </Page>
   );
 }
+
+export const Head: HeadFC = () => {
+  return (
+    <Metadata
+      page={{
+        url: `${baseUri}/games`,
+        title: 'Adam Graham • Games',
+      }}
+    />
+  );
+};
 
 export const query = graphql`
   query Games {

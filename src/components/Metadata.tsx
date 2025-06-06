@@ -1,20 +1,20 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import { Helmet } from 'react-helmet';
 import React from 'react';
 
 export interface MetadataProps {
-  description?: string;
-  image?: string;
-  title?: string;
-  url?: string;
+  page?: {
+    description?: string;
+    image?: string;
+    title?: string;
+    url?: string;
+  };
 }
 
-export default function Metadata(props: MetadataProps) {
-  const queryData = useStaticQuery(query);
-  const { metadata: siteMetadata } = queryData.site;
-  const metadata = { ...siteMetadata, ...props };
+export default function Metadata({ page }: MetadataProps) {
+  const queryData = useStaticQuery<MetadataQueryData>(query);
+  const metadata = { ...queryData.site.metadata, ...page };
   return (
-    <Helmet>
+    <>
       <title>{metadata.title}</title>
       <meta name="description" content={metadata.description} />
       {metadata.image && <meta name="image" content={metadata.image} />}
@@ -30,8 +30,17 @@ export default function Metadata(props: MetadataProps) {
       <meta name="twitter:title" content={metadata.title} />
       <meta name="twitter:description" content={metadata.description} />
       {metadata.image && <meta name="twitter:image" content={metadata.image} />}
-    </Helmet>
+    </>
   );
+}
+
+interface MetadataQueryData {
+  site: {
+    metadata: {
+      title: string;
+      description: string;
+    };
+  };
 }
 
 const query = graphql`

@@ -1,10 +1,8 @@
-import { useTheme } from '@zigurous/react-components';
+import { type LinkType, useTheme } from '@zigurous/forge-react';
 import classNames from 'classnames';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Dock from './Dock';
 import Header from './Header';
-import Metadata, { MetadataProps } from './Metadata';
-import type { LinkType } from '../types/link';
 
 export interface PageProps {
   children?: React.ReactNode;
@@ -13,8 +11,7 @@ export interface PageProps {
   hideDock?: boolean;
   hideHeader?: boolean;
   id?: string;
-  location?: Location | null;
-  metadata?: MetadataProps;
+  location: Location;
   title?: string;
 }
 
@@ -25,14 +22,17 @@ export default function Page({
   hideDock = false,
   hideHeader = false,
   id,
-  location = typeof window !== 'undefined' ? window.location : null,
-  metadata,
+  location,
   title,
 }: PageProps) {
   const [theme, _, toggleTheme] = useTheme('light');
+
+  useEffect(() => {
+    document.body.setAttribute('data-theme', theme);
+  }, [theme]);
+
   return (
-    <div className="app" data-theme={theme}>
-      <Metadata {...metadata} />
+    <div className="app">
       {!hideHeader && <Header location={location} pageTitle={title} />}
       <main className={classNames('page', className)} id={id}>
         {children}

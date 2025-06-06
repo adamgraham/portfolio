@@ -1,6 +1,6 @@
-import { graphql } from 'gatsby';
+import { graphql, type HeadFC } from 'gatsby';
 import React from 'react';
-import { Gallery, Page } from '../components';
+import { Gallery, Metadata, Page } from '../components';
 import { baseUri } from '../links';
 import type { SlideData } from '../types';
 
@@ -15,19 +15,22 @@ interface ArtProps {
 
 export default function Art({ data, location }: ArtProps) {
   return (
-    <Page
-      id="art"
-      title="Interactive Art"
-      location={location}
-      metadata={{
-        url: `${baseUri}/art`,
-        title: 'Adam Graham • Interactive Art',
-      }}
-    >
+    <Page id="art" title="Interactive Art" location={location}>
       <Gallery category="art" location={location} slides={data.json.slides} />
     </Page>
   );
 }
+
+export const Head: HeadFC = () => {
+  return (
+    <Metadata
+      page={{
+        url: `${baseUri}/art`,
+        title: 'Adam Graham • Interactive Art',
+      }}
+    />
+  );
+};
 
 export const query = graphql`
   query Art {

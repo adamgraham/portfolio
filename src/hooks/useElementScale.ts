@@ -1,4 +1,4 @@
-import { clamp, useElementSize } from '@zigurous/react-components';
+import { clamp, useElementSize } from '@zigurous/forge-react';
 import { useLayoutEffect, useState } from 'react';
 
 export function useElementScale(

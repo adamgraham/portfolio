@@ -1,34 +1,35 @@
-import { graphql } from 'gatsby';
+import { graphql, type HeadProps } from 'gatsby';
 import React from 'react';
-import { Page, Project } from '../../components';
+import { Metadata, Page, Project } from '../../components';
 import { baseUri } from '../../links';
-import type { ProjectData } from '../../types';
+import type { ProjectQueryData } from '../../types';
 
 interface PresentationProps {
-  data: {
-    project: ProjectData;
-  };
+  data: ProjectQueryData;
   location: Location;
 }
 
 export default function Presentation({ data, location }: PresentationProps) {
   const { project } = data;
   return (
-    <Page
-      title="Presentations"
-      dockLinks={project.buttons}
-      location={location}
-      metadata={{
-        url: `${baseUri}/${project.category}/${project.id}`,
-        title: `Adam Graham • ${project.title}`,
-        description: project.description_short || project.description,
-        image: project.image && project.image.sharp.original.src,
-      }}
-    >
+    <Page title="Presentations" dockLinks={project.buttons} location={location}>
       <Project project={project} />
     </Page>
   );
 }
+
+export const Head = ({ data }: HeadProps<ProjectQueryData>) => {
+  return (
+    <Metadata
+      page={{
+        url: `${baseUri}/${data.project.category}/${data.project.id}`,
+        title: `Adam Graham • ${data.project.title}`,
+        description: data.project.description_short || data.project.description,
+        image: data.project.image && data.project.image.sharp.original.src,
+      }}
+    />
+  );
+};
 
 export const query = graphql`
   query ($id: String!) {
@@ -52,7 +53,7 @@ export const query = graphql`
         }
       }
       buttons {
-        to
+        href
         name
         icon
       }

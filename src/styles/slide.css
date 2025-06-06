@@ -48,27 +48,3 @@
 .slide__text-container {
   width: 100%;
 }
-
-.slide__text-container > .eyebrow {
-  letter-spacing: -0.025em;
-  text-transform: capitalize;
-  margin-left: 2px;
-  margin-bottom: 0;
-}
-
-.slide__text-container > .title {
-  font-weight: 700;
-  margin-bottom: .5rem;
-}
-
-@media (max-width: 1365px) {
-  .slide__image {
-    border-width: 9px;
-  }
-}
-
-@media (max-width: 767px) {
-  .slide__image {
-    border-width: 6px;
-  }
-}

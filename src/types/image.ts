@@ -1,4 +1,4 @@
-export type Image = {
+export interface Image {
   sharp: {
     original: {
       src: string;
@@ -6,4 +6,4 @@ export type Image = {
       height?: number;
     };
   };
-};
+}

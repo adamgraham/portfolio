@@ -1,5 +1,5 @@
 import '../styles/logo.css';
-import { Link } from '@zigurous/react-components';
+import { Link } from '@zigurous/forge-react';
 import classNames from 'classnames';
 import { Link as GatsbyLink } from 'gatsby';
 import React from 'react';

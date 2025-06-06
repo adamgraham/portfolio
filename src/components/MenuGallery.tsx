@@ -1,6 +1,5 @@
 import '../styles/menu-gallery.css';
-import { Button, Link, Thumbnail, useModalOverlay } from '@zigurous/react-components'; // prettier-ignore
-import classNames from 'classnames';
+import { Button, Link, Overlay, Text, Thumbnail } from '@zigurous/forge-react'; // prettier-ignore
 import { Link as GatsbyLink, graphql, StaticQuery } from 'gatsby';
 import React from 'react';
 import { headerLinks } from '../links';
@@ -23,18 +22,14 @@ export default function MenuGallery({
   open = false,
   onRequestClose = () => {},
 }: MenuGalleryProps) {
-  useModalOverlay(open, true);
   return (
-    <div
-      className={classNames('menu-gallery', {
-        open: open,
-        closed: !open,
-      })}
+    <Overlay
+      className="menu-gallery"
+      closeOnScrimClick={false}
+      open={open}
+      onRequestClose={onRequestClose}
     >
-      <div
-        aria-hidden={!open}
-        className="menu-gallery__container container-fluid"
-      >
+      <div aria-hidden={!open} className="container-fluid">
         <ul className="menu-gallery__list">
           {open && (
             <StaticQuery
@@ -45,29 +40,32 @@ export default function MenuGallery({
                     link.id as keyof typeof data
                   ] || { nodes: [] };
                   return (
-                    <li className="menu-gallery__section" key={link.to}>
+                    <li className="menu-gallery__section" key={link.href}>
                       <Link
                         activeClassName=""
                         aria-disabled={!open}
                         aria-label={link.name}
                         as={GatsbyLink}
+                        className="display font-700 inline-flex align-center"
                         onClick={onRequestClose}
+                        style={{ marginBottom: '0.25em' }}
                         tabIndex={open ? 0 : -1}
-                        to={link.to}
+                        to={link.href}
                         unstyled
                       >
                         <span>{link.name}</span>
                         <Button
-                          className="margin-top-md margin-left-lg active"
+                          className="ml-lg font-600 active"
                           icon="east"
                           iconAlignment="only"
-                          style="text"
+                          size="sm"
+                          variant="text"
                         />
                       </Link>
                       <div className="menu-gallery__grid">
                         {gallery.nodes.map((item, index) => (
                           <Thumbnail
-                            animated={false}
+                            animated
                             aria-disabled={!open}
                             aria-label={item.title}
                             as={GatsbyLink}
@@ -95,7 +93,7 @@ export default function MenuGallery({
           )}
         </ul>
       </div>
-    </div>
+    </Overlay>
   );
 }
 

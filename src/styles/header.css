@@ -1,99 +1,56 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: var(--header-height, 80px);
+.app-header {
   background-color: rgba(240, 242, 245, 0.8);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--color-border);
   overflow-x: hidden;
-  z-index: var(--z-index-max, 1100);
 }
 
-[data-theme="dark"] .header {
+[data-theme="dark"] .app-header {
   background-color: rgba(25, 29, 35, 0.8);
 }
 
-[data-theme="high-contrast"] .header {
+[data-theme="high-contrast"] .app-header {
   background-color: rgba(22, 24, 28, 0.8);
 }
 
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header .navbar {
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-.header .navbar li {
+.app-header__center {
   padding: 0;
-  margin: 0 3px;
 }
 
-.header .navbar li a {
-  color: inherit;
-  border: none;
+.app-header .navbar li a {
   font-size: 0.875rem;
   font-weight: 600;
-  letter-spacing: -0.025em;
-  white-space: nowrap;
-  opacity: var(--opacity-inactive, 0.62);
-  transition: color 200ms, background-color 200ms, opacity 200ms, transform 200ms;
+  letter-spacing: -.025em;
+  padding: .625rem;
+  height: 2rem;
+  transition: background-color 200ms, transform 200ms;
 }
 
-.header .navbar li a:hover,
-.header .navbar li a.active {
-  opacity: 1;
-  background-color: var(--color-default-subtle);
+.app-header .navbar li a:not(:hover):not(:active):not(.active) {
+  color: rgb(from var(--color-foreground) r g b / var(--opacity-subtle));
 }
 
-.header__title-button {
+.app-header__title-button {
   display: none;
-  color: inherit;
-  border: none;
-  padding: 12px;
-  margin-top: 2px;
-  font-size: 1.125rem;
   font-weight: 700;
-  letter-spacing: -0.025em;
-  white-space: nowrap;
-  transition: background-color .2s, transform .2s;
 }
 
-.header__title-button .icon-wrapper .icon {
-  font-size: 21px;
-}
-
-.header__menu-button svg {
+.app-header__menu-button svg {
   fill: var(--color-foreground);
 }
 
 @media (min-width: 576px) {
-  .header__container {
+  .app-header > .container-fluid {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
 
-@media (max-width: 424px) {
-  .header .social-nav-links {
-    display: none;
-  }
-}
-
 @media (max-width: 852px) {
-  .header .navbar {
+  .app-header .navbar {
     display: none;
   }
 
-  .header__title-button {
+  .app-header__title-button {
     display: block;
   }
 }

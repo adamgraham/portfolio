@@ -1,5 +1,5 @@
 import '../styles/slide.css';
-import { Link, ProgressiveImage } from '@zigurous/react-components';
+import { Link, ProgressiveImage, Text } from '@zigurous/forge-react';
 import classNames from 'classnames';
 import { Link as GatsbyLink } from 'gatsby';
 import React from 'react';
@@ -16,12 +16,7 @@ export default function Slide({ slide }: SlideProps) {
   return (
     <div className="slide">
       <div className="slide__image-wrapper">
-        <Link
-          as={GatsbyLink}
-          className="display-inline-flex"
-          to={projectPath}
-          unstyled
-        >
+        <Link as={GatsbyLink} className="inline-flex" to={projectPath} unstyled>
           <ProgressiveImage
             alt={slide.imageAltText || ''}
             animated={false}
@@ -38,12 +33,20 @@ export default function Slide({ slide }: SlideProps) {
         </Link>
       </div>
       <div className="slide__text-wrapper">
-        <div className="slide__text-container">
-          <p className="eyebrow">{slide.date}</p>
-          <h1 className="title">{slide.title}</h1>
-          <p className="description opacity-90p">
+        <div className="slide__text-container w-full">
+          <Text className="ml-xxxs" transform="capitalize" type="eyebrow">
+            {slide.date}
+          </Text>
+          <Text as="h1" marginBottom="sm" type="title-lg" weight="700">
+            {slide.title}
+          </Text>
+          <Text
+            className="description text-pretty opacity-90"
+            marginBottom="lg"
+            type="body"
+          >
             {slide.description_short || slide.description}
-          </p>
+          </Text>
           <Link
             as={GatsbyLink}
             style={{ marginLeft: '-4px' }}

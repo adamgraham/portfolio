@@ -1,13 +1,12 @@
 import '../styles/dock.css';
-import { Theme, useMediaQuery } from '@zigurous/react-components'; // prettier-ignore
-import React, { useEffect, useRef, useState } from 'react';
+import { type LinkType, type ThemeToken, useMediaQuery } from '@zigurous/forge-react'; // prettier-ignore
+import React, { useState } from 'react';
 import DockItem from './DockItem';
 import { dockLinks, socialLinks } from '../links';
-import type { LinkType } from '../types';
 
 export interface DockProps {
-  theme: Theme;
-  toggleTheme: () => void;
+  theme: ThemeToken;
+  toggleTheme: Function;
   secondaryLinks?: LinkType[];
 }
 
@@ -16,35 +15,22 @@ export default function Dock({
   toggleTheme,
   secondaryLinks,
 }: DockProps) {
-  const ref = useRef<HTMLDivElement>(null);
   const canHover = useMediaQuery('(hover: hover)');
   const [mouseState, setMouseState] = useState({ x: 0, y: 0, entered: false });
-
-  useEffect(() => {
-    if (!ref.current) return;
-
-    const mouseleave = (e: MouseEvent) => {
-      setMouseState({ x: e.clientX, y: e.clientY, entered: false });
-    };
-    const mousemove = (e: MouseEvent) => {
-      setMouseState({ x: e.clientX, y: e.clientY, entered: true });
-    };
-
-    if (canHover) {
-      ref.current.addEventListener('mousemove', mousemove);
-      ref.current.addEventListener('mouseleave', mouseleave);
-    }
-
-    return () => {
-      if (ref.current) {
-        ref.current.removeEventListener('mousemove', mousemove);
-        ref.current.removeEventListener('mouseleave', mouseleave);
-      }
-    };
-  }, [ref, canHover]);
-
   return (
-    <div className="dock" ref={ref}>
+    <div
+      className="dock"
+      onMouseMove={e => {
+        if (canHover) {
+          setMouseState({ x: e.clientX, y: e.clientY, entered: true });
+        }
+      }}
+      onMouseLeave={e => {
+        if (canHover) {
+          setMouseState({ x: e.clientX, y: e.clientY, entered: false });
+        }
+      }}
+    >
       <div className="dock__container" id="primary">
         <div className="dock__section" id="navigation">
           {dockLinks.map(link => (
@@ -65,7 +51,7 @@ export default function Dock({
           <DockItem
             asButton
             link={{
-              to: '',
+              href: '',
               id: 'previous',
               name: 'Previous',
               icon: 'chevron_left',
@@ -80,7 +66,7 @@ export default function Dock({
           <DockItem
             asButton
             link={{
-              to: '',
+              href: '',
               id: 'next',
               name: 'Next',
               icon: 'chevron_right',
@@ -97,13 +83,13 @@ export default function Dock({
           <DockItem
             asButton
             link={{
-              to: '',
+              href: '',
               id: 'theme',
               name: theme === 'dark' ? 'Light Mode' : 'Dark Mode',
               icon: theme === 'dark' ? 'light_mode' : 'dark_mode',
             }}
             mouseState={mouseState}
-            onClick={toggleTheme}
+            onClick={() => toggleTheme()}
           />
         </div>
       </div>

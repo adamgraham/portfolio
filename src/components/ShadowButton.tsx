@@ -1,5 +1,5 @@
 import '../styles/shadow-button.css';
-import { Button, ButtonProps } from '@zigurous/react-components';
+import { Button, ButtonProps } from '@zigurous/forge-react';
 import classNames from 'classnames';
 import React from 'react';
 
@@ -16,8 +16,8 @@ export default function ShadowButton({
   return (
     <Button
       className={classNames('shadow-button', className)}
+      shape="pill"
       size="sm"
-      shape="rounded"
       {...rest}
     >
       {children}
