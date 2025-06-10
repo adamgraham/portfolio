@@ -78,6 +78,7 @@ export default function Header({ location, pageTitle }: HeaderProps) {
         }
       />
       <MenuGallery
+        location={location}
         open={isMenuOpen}
         onRequestClose={() => setIsMenuOpen(false)}
       />

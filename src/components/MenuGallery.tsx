@@ -1,8 +1,7 @@
 import '../styles/menu-gallery.css';
-import { Button, Link, Overlay, Text, Thumbnail } from '@zigurous/forge-react'; // prettier-ignore
+import { Overlay, Text, useBreakpoint } from '@zigurous/forge-react';
 import { Link as GatsbyLink, graphql, StaticQuery } from 'gatsby';
 import React from 'react';
-import { headerLinks } from '../links';
 import type { ProjectJson } from '../types';
 
 export interface MenuData {
@@ -14,14 +13,18 @@ export interface MenuData {
 }
 
 export interface MenuGalleryProps {
+  location: Location;
   open: boolean;
   onRequestClose: () => void;
 }
 
 export default function MenuGallery({
+  location,
   open = false,
-  onRequestClose = () => {},
+  onRequestClose,
 }: MenuGalleryProps) {
+  const md = useBreakpoint('md');
+  const lg = useBreakpoint('lg');
   return (
     <Overlay
       className="menu-gallery"
@@ -29,70 +32,68 @@ export default function MenuGallery({
       open={open}
       onRequestClose={onRequestClose}
     >
-      <div aria-hidden={!open} className="container-fluid">
-        <ul className="menu-gallery__list">
-          {open && (
-            <StaticQuery
-              query={query}
-              render={(data: MenuData) =>
-                headerLinks.map(link => {
-                  const gallery: ProjectJson = data[
-                    link.id as keyof typeof data
-                  ] || { nodes: [] };
-                  return (
-                    <li className="menu-gallery__section" key={link.href}>
-                      <Link
-                        activeClassName=""
-                        aria-disabled={!open}
-                        aria-label={link.name}
-                        as={GatsbyLink}
-                        className="display font-700 inline-flex align-center"
-                        onClick={onRequestClose}
-                        style={{ marginBottom: '0.25em' }}
-                        tabIndex={open ? 0 : -1}
-                        to={link.href}
-                        unstyled
+      {open && (
+        <StaticQuery
+          query={query}
+          render={(data: MenuData) => {
+            const items = [
+              ...data.games.nodes,
+              ...data.websites.nodes,
+              ...data.art.nodes,
+              ...data.tech.nodes,
+              ...data.presentations.nodes,
+            ].sort((a, b) => {
+              const x = location?.pathname.includes(a.category) ? -1 : 0;
+              const y = location?.pathname.includes(b.category) ? -1 : 0;
+              return x - y;
+            });
+            const numCols = lg ? 3 : md ? 2 : 1;
+            const cols = new Array(numCols)
+              .fill(0)
+              .map((_, colIndex) =>
+                items.filter((_, index) => index % numCols === colIndex),
+              );
+            return (
+              <div className="menu-gallery__container">
+                {cols.map((col, index) => (
+                  <div
+                    className="menu-gallery__col"
+                    key={`col-${index}`}
+                    style={{ width: `calc(100% / ${numCols})` }}
+                  >
+                    {col.map(item => (
+                      <GatsbyLink
+                        className="menu-gallery__thumbnail"
+                        key={`${item.category}-${item.id}`}
+                        to={`/${item.category}/${item.id}`}
                       >
-                        <span>{link.name}</span>
-                        <Button
-                          className="ml-lg font-600 active"
-                          icon="east"
-                          iconAlignment="only"
-                          size="sm"
-                          variant="text"
+                        <img
+                          alt={item.imageAltText || ''}
+                          width={item.image.sharp.original.width}
+                          height={item.image.sharp.original.height}
+                          src={item.image.sharp.original.src}
                         />
-                      </Link>
-                      <div className="menu-gallery__grid">
-                        {gallery.nodes.map((item, index) => (
-                          <Thumbnail
-                            animated
-                            aria-disabled={!open}
-                            aria-label={item.title}
-                            as={GatsbyLink}
-                            className="menu-gallery__thumbnail"
-                            image={{
-                              src: item.image.sharp.original.src,
-                              alt: item.imageAltText || '',
-                              width: item.image.sharp.original.width,
-                              height: item.image.sharp.original.height,
-                              className: 'img-fluid',
-                            }}
-                            index={index}
-                            key={item.id}
-                            onClick={onRequestClose}
-                            shadow={false}
-                            to={`/${item.category}/?index=${index}`}
-                          />
-                        ))}
-                      </div>
-                    </li>
-                  );
-                })
-              }
-            />
-          )}
-        </ul>
-      </div>
+                        <div className="menu-gallery__caption">
+                          <Text size="sm" type="caption" weight="500">
+                            {item.title}
+                          </Text>
+                          <Text
+                            className="opacity-muted"
+                            size="xs"
+                            type="caption"
+                          >
+                            {item.category}
+                          </Text>
+                        </div>
+                      </GatsbyLink>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            );
+          }}
+        />
+      )}
     </Overlay>
   );
 }
@@ -114,7 +115,6 @@ const query = graphql`
           }
         }
         imageAltText
-        imageBorder
       }
     }
     websites: allWebsitesJson {
@@ -132,7 +132,6 @@ const query = graphql`
           }
         }
         imageAltText
-        imageBorder
       }
     }
     art: allArtJson {
@@ -150,7 +149,6 @@ const query = graphql`
           }
         }
         imageAltText
-        imageBorder
       }
     }
     tech: allTechJson {
@@ -168,7 +166,6 @@ const query = graphql`
           }
         }
         imageAltText
-        imageBorder
       }
     }
     presentations: allPresentationsJson {
@@ -186,7 +183,6 @@ const query = graphql`
           }
         }
         imageAltText
-        imageBorder
       }
     }
   }

@@ -10,62 +10,53 @@
   opacity: 1;
 }
 
-.menu-gallery > .overlay__dialog > .container-fluid {
-  position: relative;
-  top: var(--header-height, 80px);
-  padding-top: 2rem;
-  padding-bottom: 4rem;
+.menu-gallery__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: var(--header-height) 0 calc(var(--header-height) * 1.5) 0;
 }
 
-.menu-gallery__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 0.5rem;
-  row-gap: 0.5rem;
-  margin-bottom: 4rem;
+.menu-gallery__col:first-child {
+  margin-left: var(--spacing-xxs);
+}
+
+.menu-gallery__col:last-child {
+  margin-right: var(--spacing-xxs);
 }
 
 .menu-gallery__thumbnail {
+  display: block;
   position: relative;
-  display: flex;
-  align-items: center;
-  height: max-content;
-  background-color: var(--color-surface-1);
-  border-radius: var(--radius-sm);
+  margin: var(--spacing-sm) var(--spacing-xxs);
+  border-radius: var(--radius-md);
+  background-color: var(--color-background);
   overflow: hidden;
 }
 
-@media (min-width: 576px) {
-  .menu-gallery > .overlay__dialog > .container-fluid {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
-  .menu-gallery__grid {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 0.75rem;
-    row-gap: 0.75rem;
-  }
-
-  .menu-gallery__thumbnail {
-    border-radius: 0.4rem;
-  }
+.menu-gallery__thumbnail::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, transparent 0%, transparent 66%, rgba(0, 0, 0, var(--opacity-scrim)) 100%);
 }
 
-@media (min-width: 1024px) {
-  .menu-gallery__grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
+.menu-gallery__thumbnail > img {
+  width: 100%;
 }
 
-@media (min-width: 1366px) {
-  .menu-gallery__grid {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
-@media (min-width: 1440px) {
-  .menu-gallery__grid {
-    grid-template-columns: repeat(6, 1fr);
-  }
+.menu-gallery__caption {
+  display: flex;
+  flex-direction: column-reverse;
+  position: absolute;
+  gap: var(--spacing-xxxs);
+  bottom: var(--spacing-md);
+  left: var(--spacing-md);
+  right: var(--spacing-md);
+  color: var(--color-white);
+  z-index: 1;
 }
