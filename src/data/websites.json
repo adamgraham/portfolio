@@ -1,5 +1,39 @@
 [
   {
+    "id": "osrs-region-analyzer",
+    "category": "websites",
+    "title": "OSRS Region Analyzer",
+    "description": "A detailed web app for analyzing region data in the game Old School RuneScape, including bosses, skilling activities, item resources, best-in-slot gear, questlines, and more.",
+    "description_short": "A detailed web app for analyzing region data in the game Old School RuneScape, including bosses, skilling activities, item resources, best-in-slot gear, questlines, and more.",
+    "date": "June 2025",
+    "role": "Web Designer, Developer",
+    "tech": ["React", "Gatsby", "TypeScript", "HTML/CSS"],
+    "image": "../images/banners/osrs-region-analyzer-painting.jpg",
+    "imageAltText": "OSRS Region Analyzer Painting",
+    "customLink": {
+      "href": "https://osrs.zigurous.com/region-analyzer",
+      "name": "Visit Website",
+      "icon": "open_in_new"
+    },
+    "buttons": [
+      {
+        "href": "https://osrs.zigurous.com/region-analyzer",
+        "name": "Visit Website",
+        "icon": "preview"
+      }
+    ],
+    "sections": [
+      {
+        "mainImage": "../images/screenshots/osrs-region-analyzer-screenshot-01.png",
+        "mainImageLink": "https://osrs.zigurous.com/region-analyzer"
+      },
+      {
+        "mainImage": "../images/screenshots/osrs-region-analyzer-screenshot-02.png",
+        "mainImageLink": "https://osrs.zigurous.com/region-analyzer"
+      }
+    ]
+  },
+  {
     "id": "zigurous",
     "category": "websites",
     "title": "Zigurous",
