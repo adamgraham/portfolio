@@ -34,6 +34,11 @@ export const headerLinks: LinkType[] = [
     href: '/presentations',
     name: 'Presentations',
   },
+  {
+    id: 'tutorials',
+    href: '/tutorials',
+    name: 'Tutorials',
+  },
 ];
 
 export const dockLinks: LinkTypeWithIcon[] = [

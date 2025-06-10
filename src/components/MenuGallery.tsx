@@ -10,6 +10,7 @@ export interface MenuData {
   art: ProjectJson;
   tech: ProjectJson;
   presentations: ProjectJson;
+  tutorials: ProjectJson;
 }
 
 export interface MenuGalleryProps {
@@ -42,6 +43,7 @@ export default function MenuGallery({
               ...data.art.nodes,
               ...data.tech.nodes,
               ...data.presentations.nodes,
+              ...data.tutorials.nodes,
             ].sort((a, b) => {
               const x = location?.pathname.includes(a.category) ? -1 : 0;
               const y = location?.pathname.includes(b.category) ? -1 : 0;
@@ -165,6 +167,22 @@ const query = graphql`
       }
     }
     presentations: allPresentationsJson {
+      nodes {
+        id: jsonId
+        category
+        title
+        image {
+          sharp: childImageSharp {
+            original {
+              src
+              width
+              height
+            }
+          }
+        }
+      }
+    }
+    tutorials: allTutorialsJson {
       nodes {
         id: jsonId
         category

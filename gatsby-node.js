@@ -71,6 +71,21 @@ exports.createSchemaCustomization = ({ actions }) => {
       dockLinks: [Link]
       sections: [ProjectSection]
     }
+    type TutorialsJson implements Node {
+      id: String!
+      category: String!
+      title: String!
+      description: String
+      description_short: String
+      description_long: [String]
+      date: String
+      role: String
+      tech: [String]
+      image: File! @fileByRelativePath
+      customLink: Link
+      dockLinks: [Link]
+      sections: [ProjectSection]
+    }
     type WebsitesJson implements Node {
       id: String!
       category: String!

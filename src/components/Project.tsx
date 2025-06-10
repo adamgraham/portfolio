@@ -29,8 +29,12 @@ export default function Project({ project }: ProjectProps) {
           weight="600"
         >
           {project.date}
-          <span className="separator mx-sm opacity-muted">|</span>
-          {project.role}
+          {project.role && (
+            <>
+              <span className="separator mx-sm opacity-muted">|</span>
+              {project.role}
+            </>
+          )}
         </Text>
         {project.tech && (
           <Stack className="project__badges" spacing="sm" wrap>
