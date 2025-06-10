@@ -1,5 +1,5 @@
 import '../styles/slide.css';
-import { Link, ProgressiveImage, Text } from '@zigurous/forge-react';
+import { Link, ProgressiveImage, socialIcons, Text } from '@zigurous/forge-react'; // prettier-ignore
 import classNames from 'classnames';
 import { Link as GatsbyLink } from 'gatsby';
 import React from 'react';
@@ -56,6 +56,13 @@ export default function Slide({ slide }: SlideProps) {
           >
             <ShadowButton
               icon={slide.customLink?.icon}
+              iconProps={{
+                type:
+                  typeof slide.customLink?.icon === 'string' &&
+                  slide.customLink?.icon in socialIcons
+                    ? 'social'
+                    : 'material',
+              }}
               iconAlignment={slide.customLink?.iconAlignment || 'trailing'}
             >
               {slide.customLink?.name || 'More Details'}

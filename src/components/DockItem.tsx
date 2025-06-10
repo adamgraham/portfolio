@@ -1,4 +1,4 @@
-import { distance, Icon, inverseLerp, lerp, Link, useSmoothDamp } from '@zigurous/forge-react'; // prettier-ignore
+import { distance, Icon, inverseLerp, lerp, Link, socialIcons, useSmoothDamp } from '@zigurous/forge-react'; // prettier-ignore
 import { Link as GatsbyLink } from 'gatsby';
 import React, { useEffect, useRef } from 'react';
 import { type SocialLinkType } from '../links';
@@ -74,7 +74,17 @@ export default function DockItem({
           href={link.href}
           unstyled
         >
-          {link.icon && <Icon icon={link.icon} size="inherit" />}
+          {link.icon && (
+            <Icon
+              icon={link.icon}
+              size="inherit"
+              type={
+                typeof link.icon === 'string' && link.icon in socialIcons
+                  ? 'social'
+                  : 'material'
+              }
+            />
+          )}
           {link.socialIcon && (
             <Icon
               icon={link.socialIcon}

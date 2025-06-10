@@ -17,12 +17,12 @@
       {
         "href": "https://osrs.zigurous.com/region-analyzer",
         "name": "Visit Website",
-        "icon": "preview"
+        "icon": "open_in_new"
       },
       {
         "href": "https://github.com/zigurous/osrs-region-analyzer",
         "name": "Source Code",
-        "icon": "code"
+        "icon": "github"
       }
     ],
     "sections": [
@@ -55,7 +55,7 @@
       {
         "href": "https://zigurous.com/",
         "name": "Visit Website",
-        "icon": "preview"
+        "icon": "open_in_new"
       }
     ],
     "sections": [
@@ -101,12 +101,12 @@
       {
         "href": "https://adamgraham.github.io/colorly/tints-and-shades",
         "name": "Visit Website",
-        "icon": "preview"
+        "icon": "open_in_new"
       },
       {
         "href": "https://github.com/adamgraham/colorly/",
         "name": "Source Code",
-        "icon": "code"
+        "icon": "github"
       }
     ],
     "sections": [
@@ -139,12 +139,12 @@
       {
         "href": "https://adamgraham.github.io/polykai-website/",
         "name": "Visit Website",
-        "icon": "preview"
+        "icon": "open_in_new"
       },
       {
         "href": "https://github.com/adamgraham/polykai",
         "name": "Source Code",
-        "icon": "code"
+        "icon": "github"
       }
     ],
     "sections": [
@@ -171,7 +171,7 @@
       {
         "href": "https://adamgraham.github.io/preview/allium",
         "name": "Visit Website",
-        "icon": "preview"
+        "icon": "open_in_new"
       }
     ],
     "sections": [
@@ -198,7 +198,7 @@
       {
         "href": "https://adamgraham.github.io/preview/demonthon",
         "name": "Visit Website",
-        "icon": "preview"
+        "icon": "open_in_new"
       }
     ],
     "sections": [
@@ -222,7 +222,7 @@
       {
         "href": "https://adamgraham.github.io/preview/besuper",
         "name": "Visit Website",
-        "icon": "preview"
+        "icon": "open_in_new"
       }
     ],
     "sections": [
@@ -246,7 +246,7 @@
       {
         "href": "https://adamgraham.github.io/preview/ashantisjones",
         "name": "Visit Website",
-        "icon": "preview"
+        "icon": "open_in_new"
       }
     ],
     "sections": [
@@ -270,7 +270,7 @@
       {
         "href": "https://adamgraham.github.io/preview/margaretbaughman",
         "name": "Visit Website",
-        "icon": "preview"
+        "icon": "open_in_new"
       }
     ],
     "sections": [
@@ -297,7 +297,7 @@
       {
         "href": "https://adamgraham.github.io/preview/taylorcochranmusic",
         "name": "Visit Website",
-        "icon": "preview"
+        "icon": "open_in_new"
       }
     ],
     "sections": [
@@ -324,7 +324,7 @@
       {
         "href": "https://adamgraham.github.io/preview/squishem",
         "name": "Visit Website",
-        "icon": "preview"
+        "icon": "open_in_new"
       }
     ],
     "sections": [
@@ -351,7 +351,7 @@
       {
         "href": "https://adamgraham.github.io/preview/letitbeard",
         "name": "Visit Website",
-        "icon": "preview"
+        "icon": "open_in_new"
       }
     ],
     "sections": [

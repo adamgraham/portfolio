@@ -19,7 +19,7 @@
       {
         "href": "https://github.com/adamgraham/canvas",
         "name": "Source Code",
-        "icon": "code"
+        "icon": "github"
       }
     ],
     "sections": [
@@ -54,7 +54,7 @@
       {
         "href": "https://github.com/adamgraham/blackhole",
         "name": "Source Code",
-        "icon": "code"
+        "icon": "github"
       }
     ],
     "sections": [
@@ -90,7 +90,7 @@
       {
         "href": "https://github.com/adamgraham/mixed",
         "name": "Source Code",
-        "icon": "code"
+        "icon": "github"
       }
     ],
     "sections": [
@@ -124,7 +124,7 @@
       {
         "href": "https://github.com/adamgraham/hexahedroniks",
         "name": "Source Code",
-        "icon": "code"
+        "icon": "github"
       }
     ],
     "sections": [
