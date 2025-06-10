@@ -18,6 +18,11 @@
         "href": "https://osrs.zigurous.com/region-analyzer",
         "name": "Visit Website",
         "icon": "preview"
+      },
+      {
+        "href": "https://github.com/zigurous/osrs-region-analyzer",
+        "name": "Source Code",
+        "icon": "code"
       }
     ],
     "sections": [
