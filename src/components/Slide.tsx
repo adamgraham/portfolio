@@ -48,12 +48,18 @@ export default function Slide({ slide }: SlideProps) {
             {slide.description_short || slide.description}
           </Text>
           <Link
-            as={GatsbyLink}
+            as={slide.customLink ? 'a' : GatsbyLink}
+            external={Boolean(slide.customLink)}
             style={{ marginLeft: '-4px' }}
-            to={projectPath}
+            href={slide.customLink?.href || projectPath}
             unstyled
           >
-            <ShadowButton>More Details</ShadowButton>
+            <ShadowButton
+              icon={slide.customLink?.icon}
+              iconAlignment="trailing"
+            >
+              {slide.customLink?.name || 'More Details'}
+            </ShadowButton>
           </Link>
         </div>
       </div>

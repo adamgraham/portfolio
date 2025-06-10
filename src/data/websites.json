@@ -44,6 +44,11 @@
     "tech": ["React", "Gatsby", "TypeScript", "HTML/CSS", "Firebase"],
     "image": "../images/banners/zigurous-painting.jpg",
     "imageAltText": "Zigurous Painting",
+    "customLink": {
+      "href": "https://zigurous.com/",
+      "name": "Visit Website",
+      "icon": "open_in_new"
+    },
     "buttons": [
       {
         "href": "https://zigurous.com/",
@@ -86,6 +91,11 @@
     "tech": ["React", "Redux", "JavaScript", "HTML/CSS"],
     "image": "../images/banners/colorly-painting.jpg",
     "imageAltText": "Colorly Painting",
+    "customLink": {
+      "href": "https://adamgraham.github.io/colorly/",
+      "name": "Visit Website",
+      "icon": "open_in_new"
+    },
     "buttons": [
       {
         "href": "https://adamgraham.github.io/colorly/tints-and-shades",
@@ -93,7 +103,7 @@
         "icon": "preview"
       },
       {
-        "href": "https://github.com/adamgraham/colorly",
+        "href": "https://github.com/adamgraham/colorly/",
         "name": "Source Code",
         "icon": "code"
       }
@@ -120,6 +130,11 @@
     "tech": ["React", "JavaScript", "HTML/CSS", "VSIX"],
     "image": "../images/banners/polykai-painting.jpg",
     "imageAltText": "Polykai Painting",
+    "customLink": {
+      "href": "https://adamgraham.github.io/polykai-website/",
+      "name": "Visit Website",
+      "icon": "open_in_new"
+    },
     "buttons": [
       {
         "href": "https://adamgraham.github.io/polykai-website/",

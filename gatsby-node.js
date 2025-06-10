@@ -27,7 +27,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       image: File! @fileByRelativePath
       imageAltText: String
       imageBorder: Boolean
-      buttons: [ProjectButton]
+      buttons: [Link]
       sections: [ProjectSection]
     }
     type GamesJson implements Node {
@@ -43,7 +43,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       image: File! @fileByRelativePath
       imageAltText: String
       imageBorder: Boolean
-      buttons: [ProjectButton]
+      buttons: [Link]
       sections: [ProjectSection]
     }
     type PresentationsJson implements Node {
@@ -59,7 +59,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       image: File! @fileByRelativePath
       imageAltText: String
       imageBorder: Boolean
-      buttons: [ProjectButton]
+      buttons: [Link]
       sections: [ProjectSection]
     }
     type TechJson implements Node {
@@ -75,7 +75,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       image: File! @fileByRelativePath
       imageAltText: String
       imageBorder: Boolean
-      buttons: [ProjectButton]
+      buttons: [Link]
       sections: [ProjectSection]
     }
     type WebsitesJson implements Node {
@@ -91,7 +91,8 @@ exports.createSchemaCustomization = ({ actions }) => {
       image: File! @fileByRelativePath
       imageAltText: String
       imageBorder: Boolean
-      buttons: [ProjectButton]
+      customLink: Link
+      buttons: [Link]
       sections: [ProjectSection]
     }
     type ProjectsJson implements Node {
@@ -106,11 +107,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       externalLink: String
       tags: [String]
     }
-    type ProjectButton {
-      href: String!
-      name: String!
-      icon: String
-    }
     type ProjectSection {
       title: String
       link: String
@@ -120,6 +116,15 @@ exports.createSchemaCustomization = ({ actions }) => {
       paragraphs: [String]
       gallery: [File] @fileByRelativePath
       videos: [String]
+    }
+    type Link {
+      id: String
+      name: String!
+      href: String!
+      icon: String
+      iconAlignment: String
+      color: String
+      external: Boolean
     }
   `;
   createTypes(typeDefs);

@@ -1,4 +1,4 @@
-import { type LinkType } from '@zigurous/forge-react';
+import { type LinkTypeWithIcon } from '@zigurous/forge-react';
 import type { Image } from './image';
 
 export interface ProjectJson {
@@ -6,7 +6,7 @@ export interface ProjectJson {
 }
 
 export interface ProjectData {
-  buttons?: LinkType[];
+  buttons?: LinkTypeWithIcon[];
   category: string;
   date?: string;
   description?: string;

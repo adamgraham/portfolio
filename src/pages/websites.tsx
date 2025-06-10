@@ -57,6 +57,11 @@ export const query = graphql`
         }
         imageAltText
         imageBorder
+        customLink {
+          name
+          href
+          icon
+        }
       }
     }
   }

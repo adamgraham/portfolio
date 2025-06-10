@@ -25,7 +25,6 @@ export default function Gallery({
     (urlParams.has('index')
       ? Number.parseInt(urlParams.get('index')!) || 0
       : getSessionIndex(category)) % slides.length;
-
   const currentSlide =
     slideIndex >= 0 && slideIndex < slides.length ? slides[slideIndex] : null;
 
