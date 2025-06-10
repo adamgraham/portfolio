@@ -1,25 +1,27 @@
-import { Badge, Link, Stack, Text } from '@zigurous/forge-react';
-import classNames from 'classnames';
-import { graphql, Link as GatsbyLink, navigate, type HeadFC } from 'gatsby';
-import React, { useMemo } from 'react';
-import { Metadata, Page } from '../components';
+import { Icon, Link, Stack, Text } from '@zigurous/forge-react';
+import { graphql, type HeadFC, Link as GatsbyLink } from 'gatsby';
+import React from 'react';
+import { Metadata, Page, ShadowButton } from '../components';
 import { baseUri } from '../links';
+import logos from '../logos';
 import '../styles/projects-list.css';
 
 interface ProjectsCategory {
   title: string;
-  projects: ProjectsProject[];
-  empty?: boolean;
+  columns?: number;
+  projects: Project[];
 }
 
-interface ProjectsProject {
+interface Project {
   title: string;
   description: string;
   date: string;
   link: string;
-  externalLink: string;
+  externalLink?: string;
+  ctaIcon?: string;
+  ctaLabel?: string;
+  color?: string;
   tags: string[];
-  hidden?: boolean;
 }
 
 interface ProjectsProps {
@@ -34,118 +36,119 @@ interface ProjectsProps {
 const filters = ['React', 'iOS', 'Unity', 'VR/AR', '3D', '2D'];
 
 export default function Projects({ data, location }: ProjectsProps) {
-  const filter = useMemo<string | null>(() => {
-    const urlParams = new URLSearchParams(location?.search);
-    return urlParams.has('filter') ? urlParams.get('filter') : null;
-  }, [location]);
-
-  const filteredCategories = useMemo<ProjectsCategory[]>(() => {
-    if (!filter) return data.json.categories;
-    return data.json.categories.map(category => {
-      const projects = category.projects.map(project => ({
-        ...project,
-        hidden: !project.tags.includes(filter),
-      }));
-      return {
-        title: category.title,
-        projects,
-        empty: projects.every(project => project.hidden),
-      };
-    });
-  }, [data, filter]);
-
+  const urlParams = new URLSearchParams(location?.search);
+  const filter = urlParams.has('filter') ? urlParams.get('filter') : null;
   return (
     <Page id="projects" location={location}>
-      <article className="projects-list container-lg">
-        <section className="projects-list__header">
-          <Text as="h1" marginBottom="lg" type="display">
-            Projects
-          </Text>
-          <Stack align="center" spacing="sm" wrap>
-            {filters.map(tag => (
-              <Badge
-                color="primary"
-                interactive
-                key={tag}
-                onClick={() => {
-                  if (filter === tag) {
-                    navigate(`${location.pathname}${location.hash}`, {
-                      replace: true,
-                    });
-                  } else {
-                    navigate(
-                      `${location.pathname}${location.hash}?filter=${tag}`,
-                      { replace: true },
-                    );
-                  }
-                }}
-                selected={filter === tag}
-                size="md"
-                variant="tint"
+      <article className="projects-list container-xl">
+        {data.json.categories
+          .filter(
+            category =>
+              !filter ||
+              category.projects.some(project => project.tags.includes(filter)),
+          )
+          .map((category, index, array) => (
+            <section key={category.title}>
+              <Text
+                as="h2"
+                className="mt-xl mb-xxl ml-xxxs"
+                type="title"
+                weight="700"
               >
-                {tag}
-              </Badge>
-            ))}
-          </Stack>
-        </section>
-        {filteredCategories.map(category => (
-          <section
-            className={classNames('projects-list__category', {
-              'projects-list__category--empty': category.empty,
-            })}
-            key={category.title}
-          >
-            <Text as="h2" type="title-sm" weight="700">
-              {category.title}
-            </Text>
-            <ul>
-              {category.projects.map(project => (
-                <li
-                  className={classNames('projects-list__item', {
-                    'projects-list__item--hidden': project.hidden,
-                  })}
-                  key={project.title}
-                >
-                  <Link
-                    as={project.link ? GatsbyLink : 'a'}
-                    external={Boolean(project.externalLink && !project.link)}
-                    href={project.link || project.externalLink}
-                    key={project.title}
-                    target="_blank"
-                    unstyled
-                  >
-                    <div className="projects-list__text">
-                      <Text
-                        as="span"
-                        className="projects-list__title mr-sm"
-                        type="body-sm"
-                        weight="600"
-                      >
-                        {project.title}
-                      </Text>
-                      <Text
-                        as="span"
-                        className="projects-list__description"
-                        color="muted"
-                        type="body-sm"
-                      >
-                        {project.description}
-                      </Text>
-                    </div>
-                    <hr className="projects-list__line" />
-                    <Text
-                      className="projects-list__date"
-                      color="muted"
-                      type="body-sm"
+                {category.title}
+              </Text>
+              <ul
+                className="projects-list__list"
+                style={{
+                  gridTemplateColumns: category.columns
+                    ? `repeat(${category.columns}, 1fr)`
+                    : undefined,
+                }}
+              >
+                {category.projects
+                  .filter(project => !filter || project.tags.includes(filter))
+                  .map(project => (
+                    <li
+                      className="projects-list__item"
+                      key={project.title}
+                      style={{
+                        backgroundImage: project.color
+                          ? `linear-gradient(to top, transparent, ${project.color})`
+                          : undefined,
+                      }}
                     >
-                      {project.date}
-                    </Text>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))}
+                      <Link
+                        as={project.externalLink ? 'a' : GatsbyLink}
+                        external={Boolean(project.externalLink)}
+                        href={project.externalLink || project.link}
+                        target="_blank"
+                        unstyled
+                      >
+                        <div className="mb-xxxl">
+                          <Text
+                            className="line-tight"
+                            color="subtle"
+                            marginBottom="sm"
+                            type="body-lg"
+                            weight="700"
+                          >
+                            {project.title}
+                          </Text>
+                          <Text
+                            className="text-pretty"
+                            color="muted"
+                            marginBottom="sm"
+                            type="body-sm"
+                          >
+                            {project.description}
+                          </Text>
+                        </div>
+                        <Stack
+                          className="w-full"
+                          justify="between"
+                          align="center"
+                        >
+                          {(project.link || project.externalLink) && (
+                            <ShadowButton
+                              className="px-xl"
+                              icon={
+                                project.ctaIcon ||
+                                (project.externalLink
+                                  ? 'open_in_new'
+                                  : undefined)
+                              }
+                              iconAlignment={
+                                !project.ctaIcon && !project.externalLink
+                                  ? 'trailing'
+                                  : 'leading'
+                              }
+                              iconProps={{
+                                type: project.ctaIcon ? 'social' : 'material',
+                              }}
+                            >
+                              {project.ctaLabel || 'Details'}
+                            </ShadowButton>
+                          )}
+                          <Stack
+                            align="center"
+                            justify="end"
+                            spacing="xxs"
+                            wrap
+                          >
+                            {project.tags.map(tag => (
+                              <Icon icon={logos[tag]} key={tag} size="18px" />
+                            ))}
+                          </Stack>
+                        </Stack>
+                      </Link>
+                    </li>
+                  ))}
+              </ul>
+              {index !== array.length - 1 && (
+                <hr className="my-2xxl opacity-disabled" />
+              )}
+            </section>
+          ))}
       </article>
     </Page>
   );
@@ -167,12 +170,16 @@ export const query = graphql`
     json: allProjectsJson {
       categories: nodes {
         title
+        columns
         projects {
           title
           description
           date
           link
           externalLink
+          ctaIcon
+          ctaLabel
+          color
           tags
         }
       }

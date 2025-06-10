@@ -3,46 +3,53 @@
     "title": "Client Work",
     "projects": [
       {
-        "title": "3D Farming World",
-        "description": "Fully simulated 3D world to visualize farming data",
-        "date": "2024",
-        "externalLink": "https://www.linkedin.com/in/adamzigurous",
-        "tags": ["Unity", "React", "3D", "VR/AR"]
+        "title": "Discover Mobile",
+        "description": "A native iOS app with over 1 million daily active users.",
+        "date": "2018",
+        "externalLink": "https://apps.apple.com/us/app/discover-mobile/id338010821",
+        "ctaLabel": "App Store",
+        "tags": ["iOS", "Swift"]
       },
       {
-        "title": "Wealth Management App",
-        "description": "Native iPad app + React web app to manage wealth portfolios",
+        "title": "NT Wealth Management",
+        "description": "A native iPad app and React web app to manage wealth portfolios.",
         "date": "2021",
-        "externalLink": "https://www.linkedin.com/in/adamzigurous",
-        "tags": ["React", "iOS"]
+        "externalLink": "https://www.northerntrust.com/",
+        "ctaLabel": "Website",
+        "tags": ["iOS", "Swift", "React", "JavaScript"]
       },
       {
-        "title": "Bale Mobile App",
-        "description": "Native iOS app to help farmers improve efficiency when baling hay",
-        "date": "2019",
-        "externalLink": "https://www.linkedin.com/in/adamzigurous",
-        "tags": ["iOS"]
+        "title": "3D Farming World",
+        "description": "A fully simulated 3D world to analyze farming data and operations.",
+        "date": "2024",
+        "externalLink": "https://www.deere.com/en/",
+        "ctaLabel": "Website",
+        "tags": ["Unity", "React", "TypeScript"]
       },
       {
         "title": "Predictive Yield",
-        "description": "React web app to visualize predictive yield and moisture data",
+        "description": "A React web app to visualize predictive yield and moisture data of farm crops.",
         "date": "2019",
-        "externalLink": "https://www.linkedin.com/in/adamzigurous",
-        "tags": ["React"]
+        "externalLink": "https://www.deere.com/en/",
+        "ctaLabel": "Website",
+        "tags": ["React", "JavaScript", "D3"]
       },
       {
-        "title": "Banking / Credit Card App",
-        "description": "Native iOS app with over 1 million daily active users",
-        "date": "2018",
-        "externalLink": "https://www.linkedin.com/in/adamzigurous",
-        "tags": ["iOS", "React Native"]
-      },
-      {
-        "title": "Cinematic VR App",
-        "description": "Mobile VR app that puts the user in the front-seat of a self-driving car",
+        "title": "Bosch Automated Driving",
+        "description": "A mobile VR app that puts the user in the front seat of a self-driving car.",
         "date": "2017",
-        "externalLink": "https://www.linkedin.com/in/adamzigurous",
-        "tags": ["Unity", "iOS", "VR/AR"]
+        "externalLink": "https://www.youtube.com/watch?v=DhE9J_XbeK4",
+        "ctaIcon": "youtube",
+        "ctaLabel": "YouTube",
+        "tags": ["Unity", "iOS", "VR"]
+      },
+      {
+        "title": "Bale Mobile",
+        "description": "A native iOS app to help farmers improve efficiency while baling hay.",
+        "date": "2019",
+        "externalLink": "https://apps.apple.com/us/app/john-deere-connect-mobile/id958749681",
+        "ctaLabel": "App Store",
+        "tags": ["iOS", "Swift"]
       }
     ]
   },
@@ -51,24 +58,24 @@
     "projects": [
       {
         "title": "Blockchain Gardens",
-        "description": "Real-time 3D visualization of a private Ethereum blockchain instance",
+        "description": "A real-time 3D visualization of a private Ethereum blockchain instance.",
         "date": "2018",
         "link": "/tech/blockchain-gardens",
-        "tags": ["Unity", "Blockchain", "3D"]
+        "tags": ["Unity", "Ethereum"]
       },
       {
         "title": "RockstAR",
-        "description": "Interactive AR experience of a live rock concert using Microsoft HoloLens",
+        "description": "An interactive AR experience of a live rock concert using Microsoft HoloLens.",
         "date": "2016",
         "link": "/tech/rockstar",
-        "tags": ["Unity", "VR/AR", "3D"]
+        "tags": ["Unity", "AR"]
       },
       {
         "title": "Vender VR",
-        "description": "VR experience synced with an IoT vending machine to dispense real products",
+        "description": "A VR experience synchronized to an IoT vending machine that dispenses real products.",
         "date": "2015",
         "link": "/tech/vender-vr",
-        "tags": ["Unity", "VR/AR", "3D"]
+        "tags": ["Unity", "VR"]
       }
     ]
   },
@@ -76,72 +83,85 @@
     "title": "Libraries & Frameworks",
     "projects": [
       {
-        "title": "Colorly",
-        "description": "iOS framework with hundreds of functions to manipulate colors",
-        "date": "2019",
-        "externalLink": "https://github.com/adamgraham/colorly-ios",
-        "tags": ["iOS"]
+        "title": "UnityScape",
+        "description": "Data structures and behaviors for simulating RuneScape combat encounters in Unity.",
+        "date": "2025",
+        "externalLink": "https://www.youtube.com/watch?v=-oXrdhL2PLo",
+        "ctaIcon": "youtube",
+        "ctaLabel": "YouTube",
+        "tags": ["Unity"]
       },
       {
-        "title": "Palette",
-        "description": "Swift command line tool to parse and generate color palettes",
-        "date": "2019",
-        "externalLink": "https://github.com/adamgraham/palette",
-        "tags": ["iOS"]
+        "title": "Forge React",
+        "description": "The official React component library of the Forge design system created by Adam.",
+        "date": "2025",
+        "externalLink": "https://github.com/zigurous/forge-react",
+        "ctaIcon": "github",
+        "ctaLabel": "GitHub",
+        "tags": ["React", "TypeScript"]
       },
       {
-        "title": "Polykai",
-        "description": "Dark color scheme for code editors inspired by the Monokai theme",
-        "date": "2019",
-        "externalLink": "https://github.com/adamgraham/polykai",
-        "tags": []
+        "title": "Forge CSS",
+        "description": "The official CSS library of the Forge design system created by Adam.",
+        "date": "2025",
+        "externalLink": "https://github.com/zigurous/forge-css",
+        "ctaIcon": "github",
+        "ctaLabel": "GitHub",
+        "tags": ["CSS"]
+      },
+      {
+        "title": "Color Pro",
+        "description": "A utility library and editor toolkit for working with colors in Unity projects",
+        "date": "2022",
+        "externalLink": "https://assetstore.unity.com/packages/tools/utilities/color-pro-204039?aid=1100lkmnE",
+        "ctaIcon": "unity",
+        "ctaLabel": "Asset Store",
+        "tags": ["Unity"]
       },
       {
         "title": "STween",
-        "description": "iOS animation framework for creating complex tweening animations",
+        "description": "An iOS framework for creating complex tweening animations.",
         "date": "2016",
         "externalLink": "https://github.com/adamgraham/STween",
-        "tags": ["iOS"]
+        "ctaIcon": "github",
+        "ctaLabel": "GitHub",
+        "tags": ["iOS", "Swift"]
+      },
+      {
+        "title": "Colorly",
+        "description": "An iOS framework with hundreds of functions to manipulate colors.",
+        "date": "2019",
+        "externalLink": "https://github.com/adamgraham/colorly-ios",
+        "ctaIcon": "github",
+        "ctaLabel": "GitHub",
+        "tags": ["iOS", "Swift"]
       },
       {
         "title": "Chronos",
-        "description": "iOS utility framework to create different types of timers",
+        "description": "An iOS utility framework to create different types of timers.",
         "date": "2016",
         "externalLink": "https://github.com/adamgraham/chronos",
-        "tags": ["iOS"]
-      }
-    ]
-  },
-  {
-    "title": "Presentations",
-    "projects": [
-      {
-        "title": "The Life of a UX Engineer",
-        "description": "Bridging the gap between design and engineering",
-        "date": "2020",
-        "link": "/presentations/the-life-of-a-ux-engineer",
-        "tags": ["React"]
+        "ctaIcon": "github",
+        "ctaLabel": "GitHub",
+        "tags": ["iOS", "Swift"]
       },
       {
-        "title": "An Animation Story",
-        "description": "A 3D animated story about designers and engineers",
-        "date": "2017",
-        "link": "/presentations/an-animation-story",
-        "tags": ["Unity", "3D"]
+        "title": "Palette",
+        "description": "A Swift command line tool to parse and generate color palettes.",
+        "date": "2019",
+        "externalLink": "https://github.com/adamgraham/palette",
+        "ctaIcon": "github",
+        "ctaLabel": "GitHub",
+        "tags": ["iOS", "Swift"]
       },
       {
-        "title": "Entering the New Reality",
-        "description": "Presentation and meet-up exploring VR, AR, and MR",
-        "date": "2016",
-        "link": "/presentations/entering-the-new-reality",
-        "tags": ["VR/AR", "3D"]
-      },
-      {
-        "title": "3D Application Development",
-        "description": "Introductory concepts for 3D application development",
-        "date": "2016",
-        "link": "/presentations/3d-application-development-overview",
-        "tags": ["Unity", "3D"]
+        "title": "Polykai",
+        "description": "A dark color scheme for code editors inspired by the popular Monokai theme.",
+        "date": "2019",
+        "externalLink": "https://github.com/adamgraham/polykai",
+        "ctaIcon": "github",
+        "ctaLabel": "GitHub",
+        "tags": []
       }
     ]
   },
@@ -149,88 +169,88 @@
     "title": "Games",
     "projects": [
       {
-        "title": "Hackathon for Wildlife",
-        "description": "Empathetic game that teaches about the dangers of poaching",
-        "date": "2015",
-        "link": "/games/hackathon-for-wildlife",
-        "tags": ["Unity", "3D"]
-      },
-      {
         "title": "The Wandering Dark",
-        "description": "Indie adventure game that explores a girl's dreams and nightmares",
+        "description": "An indie adventure game that explores a girl's dreams and nightmares.",
         "date": "2015",
         "link": "/games/the-wandering-dark",
-        "tags": ["Unity", "3D"]
-      },
-      {
-        "title": "Squish-em!",
-        "description": "Whack-a-mole arcade game published on the App Store",
-        "date": "2015",
-        "link": "/games/squish-em",
-        "tags": ["Flash", "iOS", "2D"]
-      },
-      {
-        "title": "Ferro",
-        "description": "Virtual reality experience inspired by ferrofluids",
-        "date": "2015",
-        "link": "/games/ferro",
-        "tags": ["Unity", "3D"]
-      },
-      {
-        "title": "Elegy",
-        "description": "Deep game covering stages of grief as a parent deals with the loss of their child",
-        "date": "2015",
-        "link": "/games/elegy",
-        "tags": ["Flash", "2D"]
+        "tags": ["Unity"]
       },
       {
         "title": "Boss Rush",
-        "description": "Top-down twin-stick shooter consisting of nothing but boss fights",
+        "description": "A top-down twin-stick shooter consisting of nothing but boss fights.",
         "date": "2014",
         "link": "/games/boss-rush",
-        "tags": ["Unity", "3D"]
+        "tags": ["Unity"]
       },
       {
         "title": "Alphas",
-        "description": "Top-down twin-stick shooter consisting of five interlinked deadly arenas",
+        "description": "A top-down twin-stick shooter consisting of five interlinked deadly arenas.",
         "date": "2013",
         "link": "/games/alphas",
-        "tags": ["XNA", "3D"]
+        "tags": ["C#"]
+      },
+      {
+        "title": "Hackathon for Wildlife",
+        "description": "An empathetic game that teaches about the dangers of poaching.",
+        "date": "2015",
+        "link": "/games/hackathon-for-wildlife",
+        "tags": ["Unity"]
+      },
+      {
+        "title": "Ferro",
+        "description": "A virtual reality experience inspired by ferrofluids.",
+        "date": "2015",
+        "link": "/games/ferro",
+        "tags": ["Unity"]
+      },
+      {
+        "title": "Elegy",
+        "description": "A deep game covering stages of grief as a parent deals with the loss of their child.",
+        "date": "2015",
+        "link": "/games/elegy",
+        "tags": ["Flash"]
+      },
+      {
+        "title": "Squish-em!",
+        "description": "A whack-a-mole arcade game published on the App Store.",
+        "date": "2015",
+        "link": "/games/squish-em",
+        "tags": ["Flash"]
       },
       {
         "title": "Ancient Odyssey",
-        "description": "Puzzle escape room game for iOS and Android",
+        "description": "A puzzle escape room game for iOS and Android.",
         "date": "2013",
         "link": "/games/ancient-odyssey",
-        "tags": ["Flash", "iOS", "2D"]
+        "tags": ["Flash"]
       },
       {
         "title": "Lunar Escape",
-        "description": "Puzzle escape room game for iOS and Android",
+        "description": "A puzzle escape room game for iOS and Android.",
         "date": "2013",
         "link": "/games/lunar-escape",
-        "tags": ["Flash", "iOS", "2D"]
+        "tags": ["Flash"]
       },
       {
         "title": "The Rise",
-        "description": "Puzzle escape room game for iOS and Android",
+        "description": "A puzzle escape room game for iOS and Android.",
         "date": "2013",
         "link": "/games/the-rise",
-        "tags": ["Flash", "iOS", "2D"]
+        "tags": ["Flash"]
       },
       {
         "title": "Escape the Estate",
-        "description": "Point-and-click adventure game for the web",
+        "description": "A point-and-click adventure game for the web.",
         "date": "2013",
         "link": "/games/escape-the-estate",
-        "tags": ["Flash", "2D"]
+        "tags": ["Flash"]
       },
       {
         "title": "Escape the Basement",
-        "description": "Point-and-click adventure game for the web",
+        "description": "A point-and-click adventure game for the web.",
         "date": "2012",
         "link": "/games/escape-the-basement",
-        "tags": ["Flash", "2D"]
+        "tags": ["Flash"]
       }
     ]
   },
@@ -238,139 +258,184 @@
     "title": "Websites",
     "projects": [
       {
-        "title": "Portfolio",
-        "description": "Wait, you're looking at it right now!",
-        "date": "2024",
-        "link": "/",
-        "tags": ["React"]
-      },
-      {
-        "title": "Solar System",
-        "description": "An interactive 3D solar system model created with Three.js",
-        "date": "2023",
-        "externalLink": "https://github.com/adamgraham/threejs-solar-system",
-        "tags": ["React", "3D"]
-      },
-      {
         "title": "Zigurous",
-        "description": "Game studio website showcasing assets, tutorials, and games",
+        "description": "An indie game development studio founded by Adam Graham.",
         "date": "2021",
         "link": "/websites/zigurous",
         "externalLink": "https://zigurous.com/",
-        "tags": ["React", "Unity"]
+        "ctaLabel": "Website",
+        "tags": ["React", "TypeScript"]
+      },
+      {
+        "title": "OSRS Region Analyzer",
+        "description": "Old School RuneScape region analyzer for the web.",
+        "date": "2021",
+        "link": "/websites/osrs-region-analyzer",
+        "externalLink": "https://osrs.zigurous.com/region-analyzer",
+        "ctaLabel": "Website",
+        "tags": ["React", "TypeScript"]
       },
       {
         "title": "Colorly",
-        "description": "Versatile collection of color tools for designers and developers",
+        "description": "Versatile collection of color tools for designers and developers.",
         "date": "2020",
         "link": "/websites/colorly",
         "externalLink": "https://adamgraham.github.io/colorly",
-        "tags": ["React"]
+        "ctaLabel": "Website",
+        "tags": ["React", "JavaScript"]
       },
       {
         "title": "Polykai",
-        "description": "Dark color scheme for code editors inspired by the Monokai theme",
+        "description": "Dark color scheme for code editors inspired by the popular Monokai theme.",
         "date": "2019",
         "link": "/websites/polykai",
         "externalLink": "https://adamgraham.github.io/polykai-website/",
-        "tags": ["React"]
+        "ctaLabel": "Website",
+        "tags": ["React", "JavaScript"]
       },
       {
         "title": "Be Super",
-        "description": "Social justice movement calling for everyone to be the hero within",
+        "description": "Social justice movement calling for everyone to be the hero within.",
         "date": "2016",
         "link": "/websites/be-super",
-        "externalLink": "https://adamgraham.github.io/preview/besuper",
-        "tags": ["Muse"]
+        "externalLink": "https://adamgraham.github.io/websites/be-super",
+        "ctaLabel": "Preview",
+        "tags": ["Muse", "Photoshop"]
       },
       {
         "title": "Margaret Baughman",
-        "description": "Theatre director, choreographer, and empathetic human",
+        "description": "Theatre director, choreographer, and empathetic human.",
         "date": "2016",
         "link": "/websites/margaret-baughman",
-        "externalLink": "https://adamgraham.github.io/preview/margaretbaughman",
-        "tags": ["Muse"]
+        "externalLink": "https://adamgraham.github.io/websites/margaret-baughman",
+        "ctaLabel": "Preview",
+        "tags": ["Muse", "Photoshop"]
       },
       {
         "title": "Ashantis Jones",
-        "description": "Event planner creating memorable events through detailed design",
+        "description": "Event planner creating memorable events through detailed design.",
         "date": "2016",
         "link": "/websites/ashantis-jones",
-        "externalLink": "https://adamgraham.github.io/preview/ashantisjones",
-        "tags": ["Muse"]
+        "externalLink": "https://adamgraham.github.io/websites/ashantis-jones",
+        "ctaLabel": "Preview",
+        "tags": ["Muse", "Photoshop"]
       },
       {
         "title": "Allium",
-        "description": "Home-based floral design studio - fresh faced floral design",
+        "description": "Home-based floral design studio - fresh faced floral design.",
         "date": "2015",
         "link": "/websites/allium",
-        "externalLink": "https://adamgraham.github.io/preview/allium",
-        "tags": ["Muse"]
+        "externalLink": "https://adamgraham.github.io/websites/allium",
+        "ctaLabel": "Preview",
+        "tags": ["Muse", "Photoshop"]
       },
       {
         "title": "Squish-em!",
-        "description": "One-page artistic cover designed to promote the mobile game",
+        "description": "One-page artistic cover designed to promote the mobile game.",
         "date": "2015",
         "link": "/websites/squish-em",
-        "externalLink": "https://adamgraham.github.io/preview/squishem",
-        "tags": ["Muse"]
+        "externalLink": "https://adamgraham.github.io/websites/squish-em",
+        "ctaLabel": "Preview",
+        "tags": ["Flash", "Muse", "Photoshop"]
       },
       {
         "title": "Let It Beard",
-        "description": "Animated short film that follows the misadventures of an enigmatic cult",
+        "description": "An animated short film that follows the misadventures of an enigmatic cult.",
         "date": "2014",
         "link": "/websites/let-it-beard",
-        "externalLink": "https://adamgraham.github.io/preview/letitbeard",
-        "tags": ["Muse", "Flash"]
+        "externalLink": "https://adamgraham.github.io/websites/let-it-beard",
+        "ctaLabel": "Preview",
+        "tags": ["Flash", "Muse", "Photoshop"]
       },
       {
         "title": "DemonTHON",
-        "description": "Year-long fundraising org culminating in a 24-hour Dance Marathon",
+        "description": "Year-long fundraising organization culminating in a 24-hour Dance Marathon.",
         "date": "2014",
         "link": "/websites/demonthon",
-        "externalLink": "https://adamgraham.github.io/preview/demonthon",
-        "tags": ["Muse"]
+        "externalLink": "https://adamgraham.github.io/websites/demonthon",
+        "ctaLabel": "Preview",
+        "tags": ["Muse", "Photoshop"]
       },
       {
         "title": "Taylor Cochran Music",
-        "description": "Singer/songwriter from Nashville pursuing his songwriting career",
+        "description": "Singer/songwriter from Nashville pursuing his songwriting career.",
         "date": "2013",
         "link": "/websites/taylor-cochran-music",
-        "externalLink": "https://adamgraham.github.io/preview/taylorcochranmusic",
-        "tags": ["Muse"]
+        "externalLink": "https://adamgraham.github.io/websites/taylor-cochran-music",
+        "ctaLabel": "Preview",
+        "tags": ["Muse", "Photoshop"]
       }
     ]
   },
   {
     "title": "Interactive Art",
+    "columns": 2,
     "projects": [
       {
         "title": "Hexahedroniks",
-        "description": "Virtual reality puzzle-like toy inspired by Rubik cubes",
+        "description": "A virtual reality puzzle-like toy inspired by Rubik cubes.",
         "date": "2015",
         "link": "/art/hexahedroniks",
-        "tags": ["Unity", "VR/AR", "3D"]
+        "tags": ["Unity", "VR"]
       },
       {
         "title": "Canvas",
-        "description": "Never-ending interactive painting | Learn to let go and design with the flow",
+        "description": "A never-ending interactive painting. Learn to let go and design with the flow.",
         "date": "2015",
         "link": "/art/canvas",
-        "tags": ["Flash", "2D"]
+        "tags": ["Flash"]
       },
       {
         "title": "Mixed",
-        "description": "Interactive avant-garde experiment about diversity and interracial relationships",
+        "description": "An interactive digital experiment about diversity and interracial relationships.",
         "date": "2015",
         "link": "/art/mixed",
-        "tags": ["Flash", "2D"]
+        "tags": ["Flash"]
       },
       {
         "title": "Blackhole",
-        "description": "Free-form avant-garde game to control particles in unique ways",
+        "description": "A free-form avant-garde game to control particles in unique ways.",
         "date": "2015",
         "link": "/art/blackhole",
-        "tags": ["Flash", "2D"]
+        "tags": ["Flash"]
+      }
+    ]
+  },
+  {
+    "title": "Presentations",
+    "columns": 2,
+    "projects": [
+      {
+        "title": "The Life of a UX Engineer",
+        "description": "Bridging the gap between design and engineering.",
+        "date": "2020",
+        "link": "/presentations/the-life-of-a-ux-engineer",
+        "ctaLabel": "View",
+        "tags": ["Figma", "Illustrator"]
+      },
+      {
+        "title": "An Animation Story",
+        "description": "A 3D animated story about designers and engineers.",
+        "date": "2017",
+        "link": "/presentations/an-animation-story",
+        "ctaLabel": "View",
+        "tags": ["Unity"]
+      },
+      {
+        "title": "Entering the New Reality",
+        "description": "A presentation and meet-up exploring VR, AR, and MR.",
+        "date": "2016",
+        "link": "/presentations/entering-the-new-reality",
+        "ctaLabel": "View",
+        "tags": ["VR", "AR"]
+      },
+      {
+        "title": "3D Application Development",
+        "description": "Introductory concepts for 3D application development.",
+        "date": "2016",
+        "link": "/presentations/3d-application-development-overview",
+        "ctaLabel": "View",
+        "tags": ["Unity", "Blender"]
       }
     ]
   }

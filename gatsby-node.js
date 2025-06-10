@@ -103,6 +103,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
     type ProjectsJson implements Node {
       title: String!
+      columns: Int
       projects: [ProjectsItem]
     }
     type ProjectsItem {
@@ -111,6 +112,9 @@ exports.createSchemaCustomization = ({ actions }) => {
       date: String
       link: String
       externalLink: String
+      ctaIcon: String
+      ctaLabel: String
+      color: String
       tags: [String]
     }
     type ProjectSection {
