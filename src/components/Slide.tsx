@@ -57,6 +57,7 @@ export default function Slide({ slide }: SlideProps) {
             <ShadowButton
               icon={slide.customLink?.icon}
               iconProps={{
+                color: slide.customLink?.icon === 'youtube' ? 'red' : undefined,
                 type:
                   typeof slide.customLink?.icon === 'string' &&
                   slide.customLink?.icon in socialIcons
