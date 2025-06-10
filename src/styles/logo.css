@@ -19,7 +19,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--color-default);
+  background-color: #171d26;
   border-radius: 6px;
   transition: border-radius 600ms ease-in-out, transform 400ms ease-out;
 }
