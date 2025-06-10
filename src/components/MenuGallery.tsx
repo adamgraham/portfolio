@@ -71,6 +71,7 @@ export default function MenuGallery({
                       >
                         <img
                           alt={`${item.title} Painting`}
+                          className="animate-fade-in"
                           width={item.image.sharp.original.width}
                           height={item.image.sharp.original.height}
                           src={item.image.sharp.original.src}
