@@ -8,7 +8,7 @@
     "date": "August 2020",
     "role": "Designer, Presenter",
     "tech": ["React", "JavaScript", "HTML/CSS", "Adobe Illustrator", "Figma"],
-    "image": "../images/banners/the-life-of-a-ux-engineer-painting.jpg",
+    "image": "../images/paintings/the-life-of-a-ux-engineer-painting.jpg",
     "dockLinks": [
       {
         "href": "https://drive.google.com/file/d/1mHUDzD7EzfrRR03Z_1WNsduszsIUj4ny/view?usp=drive_link",
@@ -40,7 +40,7 @@
     "date": "August 2017",
     "role": "Designer, Animator, Narrator",
     "tech": ["Unity", "C#"],
-    "image": "../images/banners/an-animation-story-painting.jpg",
+    "image": "../images/paintings/an-animation-story-painting.jpg",
     "sections": [
       {
         "mainVideo": "uHQvPFud3-I"
@@ -68,7 +68,7 @@
     "date": "May 2016",
     "role": "VR Engineer, Co-Presenter",
     "tech": ["Unity", "Oculus Rift", "HTC Vive", "Microsoft HoloLens"],
-    "image": "../images/banners/entering-the-new-reality-painting.jpg",
+    "image": "../images/paintings/entering-the-new-reality-painting.jpg",
     "dockLinks": [
       {
         "href": "https://drive.google.com/file/d/1nw_EMTZB47svcDjgCPaSAAPE84gNYqfK/view?usp=drive_link",
@@ -111,7 +111,7 @@
     "date": "April 2016",
     "role": "Designer, Presenter",
     "tech": ["Unity", "C#", "Blender"],
-    "image": "../images/banners/3d-application-development-overview-painting.jpg",
+    "image": "../images/paintings/3d-application-development-overview-painting.jpg",
     "dockLinks": [
       {
         "href": "https://drive.google.com/file/d/1r2DCuz7PckbaD0CH4NWlKIK1X5-po9MI/view?usp=drive_link",

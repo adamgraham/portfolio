@@ -7,7 +7,7 @@
     "date": "June 2025",
     "role": "Web Designer, Developer",
     "tech": ["React", "Gatsby", "TypeScript", "HTML/CSS"],
-    "image": "../images/banners/osrs-region-analyzer-painting.jpg",
+    "image": "../images/paintings/osrs-region-analyzer-painting.jpg",
     "customLink": {
       "href": "https://osrs.zigurous.com/region-analyzer",
       "name": "Visit Website",
@@ -45,7 +45,7 @@
     "date": "January 2021",
     "role": "Web Designer, Developer, Maintainer",
     "tech": ["React", "Gatsby", "TypeScript", "HTML/CSS", "Firebase"],
-    "image": "../images/banners/zigurous-painting.jpg",
+    "image": "../images/paintings/zigurous-painting.jpg",
     "customLink": {
       "href": "https://zigurous.com/",
       "name": "Visit Website",
@@ -91,7 +91,7 @@
     "date": "October 2020",
     "role": "Web Designer, Developer",
     "tech": ["React", "Redux", "JavaScript", "HTML/CSS"],
-    "image": "../images/banners/colorly-painting.jpg",
+    "image": "../images/paintings/colorly-painting.jpg",
     "customLink": {
       "href": "https://adamgraham.github.io/colorly/",
       "name": "Visit Website",
@@ -129,7 +129,7 @@
     "date": "July 2019",
     "role": "Web Designer, Developer",
     "tech": ["React", "JavaScript", "HTML/CSS", "VSIX"],
-    "image": "../images/banners/polykai-painting.jpg",
+    "image": "../images/paintings/polykai-painting.jpg",
     "customLink": {
       "href": "https://adamgraham.github.io/polykai-website/",
       "name": "Visit Website",
@@ -166,7 +166,7 @@
     "date": "November 2015",
     "role": "Web Designer",
     "tech": ["Adobe Muse", "Adobe Photoshop"],
-    "image": "../images/banners/allium-painting.jpg",
+    "image": "../images/paintings/allium-painting.jpg",
     "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/allium",
@@ -193,7 +193,7 @@
     "date": "June 2014",
     "role": "Director of Technology",
     "tech": ["Adobe Muse", "Adobe Photoshop"],
-    "image": "../images/banners/demonthon-painting.jpg",
+    "image": "../images/paintings/demonthon-painting.jpg",
     "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/demonthon",
@@ -217,7 +217,7 @@
     "date": "September 2016",
     "role": "Web Designer",
     "tech": ["Adobe Muse", "Adobe Photoshop"],
-    "image": "../images/banners/be-super-painting.jpg",
+    "image": "../images/paintings/be-super-painting.jpg",
     "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/besuper",
@@ -241,7 +241,7 @@
     "date": "June 2016",
     "role": "Web Designer",
     "tech": ["Adobe Muse", "Adobe Photoshop"],
-    "image": "../images/banners/ashantis-jones-painting.jpg",
+    "image": "../images/paintings/ashantis-jones-painting.jpg",
     "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/ashantisjones",
@@ -265,7 +265,7 @@
     "date": "July 2016",
     "role": "Web Designer",
     "tech": ["Adobe Muse", "Adobe Photoshop"],
-    "image": "../images/banners/margaret-baughman-painting.jpg",
+    "image": "../images/paintings/margaret-baughman-painting.jpg",
     "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/margaretbaughman",
@@ -292,7 +292,7 @@
     "date": "December 2013",
     "role": "Web Designer",
     "tech": ["Adobe Muse", "Adobe Photoshop"],
-    "image": "../images/banners/taylor-cochran-music-painting.jpg",
+    "image": "../images/paintings/taylor-cochran-music-painting.jpg",
     "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/taylorcochranmusic",
@@ -319,7 +319,7 @@
     "date": "April 2015",
     "role": "Web Designer",
     "tech": ["Adobe Muse", "Adobe Photoshop", "Adobe Flash"],
-    "image": "../images/banners/squishem-website-painting.jpg",
+    "image": "../images/paintings/squishem-website-painting.jpg",
     "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/squishem",
@@ -346,7 +346,7 @@
     "date": "November 2014",
     "role": "Web Designer",
     "tech": ["Adobe Muse", "Adobe Photoshop", "Adobe Flash"],
-    "image": "../images/banners/let-it-beard-painting.jpg",
+    "image": "../images/paintings/let-it-beard-painting.jpg",
     "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/letitbeard",
