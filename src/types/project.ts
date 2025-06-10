@@ -6,20 +6,20 @@ export interface ProjectJson {
 }
 
 export interface ProjectData {
-  buttons?: LinkTypeWithIcon[];
+  id: string;
   category: string;
-  date?: string;
+  title: string;
   description?: string;
   description_short?: string;
   description_long?: string[];
-  id: string;
+  date?: string;
+  role?: string;
+  tech?: string[];
   image: Image;
   imageAltText?: string;
   imageBorder?: boolean;
-  role?: string;
+  dockLinks?: LinkTypeWithIcon[];
   sections?: ProjectSection[];
-  tech?: string[];
-  title: string;
 }
 
 export interface ProjectSection {

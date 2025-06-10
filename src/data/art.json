@@ -11,7 +11,7 @@
     "image": "../images/banners/canvas-painting.png",
     "imageAltText": "Canvas Painting",
     "imageBorder": false,
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://drive.google.com/file/d/1WG-eI8QvhrFCTdRJlGesNV7vs7nddq6L/view?usp=drive_link",
         "name": "Download",
@@ -47,7 +47,7 @@
     "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/blackhole-painting.jpg",
     "imageAltText": "Blackhole Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://drive.google.com/file/d/14FD_603deu6C40w49c3u3vpvZOD9sDkA/view?usp=drive_link",
         "name": "Download",
@@ -84,7 +84,7 @@
     "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/mixed-painting.jpg",
     "imageAltText": "Mixed Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://drive.google.com/file/d/1Sr5wxTQrm2jqemSOTLa0xlzYCEKysixm/view?usp=drive_link",
         "name": "Download",
@@ -119,7 +119,7 @@
     "tech": ["Unity", "C#", "Oculus Rift"],
     "image": "../images/banners/hexahedroniks-painting.jpg",
     "imageAltText": "Hexahedroniks Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://drive.google.com/drive/folders/1uJo0g6eBtnyHLSCCmUatIQl80VX0UY_9?usp=drive_link",
         "name": "Download",

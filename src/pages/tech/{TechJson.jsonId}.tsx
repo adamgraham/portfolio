@@ -14,7 +14,7 @@ export default function Tech({ data, location }: TechProps) {
   return (
     <Page
       title="Tech Showcases"
-      dockLinks={project.buttons}
+      dockLinks={project.dockLinks}
       location={location}
     >
       <Project project={project} />
@@ -56,7 +56,7 @@ export const query = graphql`
           }
         }
       }
-      buttons {
+      dockLinks {
         href
         name
         icon

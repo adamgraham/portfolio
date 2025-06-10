@@ -27,7 +27,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       image: File! @fileByRelativePath
       imageAltText: String
       imageBorder: Boolean
-      buttons: [Link]
+      dockLinks: [Link]
       sections: [ProjectSection]
     }
     type GamesJson implements Node {
@@ -43,7 +43,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       image: File! @fileByRelativePath
       imageAltText: String
       imageBorder: Boolean
-      buttons: [Link]
+      dockLinks: [Link]
       sections: [ProjectSection]
     }
     type PresentationsJson implements Node {
@@ -59,7 +59,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       image: File! @fileByRelativePath
       imageAltText: String
       imageBorder: Boolean
-      buttons: [Link]
+      dockLinks: [Link]
       sections: [ProjectSection]
     }
     type TechJson implements Node {
@@ -75,7 +75,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       image: File! @fileByRelativePath
       imageAltText: String
       imageBorder: Boolean
-      buttons: [Link]
+      dockLinks: [Link]
       sections: [ProjectSection]
     }
     type WebsitesJson implements Node {
@@ -92,7 +92,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       imageAltText: String
       imageBorder: Boolean
       customLink: Link
-      buttons: [Link]
+      dockLinks: [Link]
       sections: [ProjectSection]
     }
     type ProjectsJson implements Node {

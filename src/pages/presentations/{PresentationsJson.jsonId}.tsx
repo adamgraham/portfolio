@@ -12,7 +12,11 @@ interface PresentationProps {
 export default function Presentation({ data, location }: PresentationProps) {
   const { project } = data;
   return (
-    <Page title="Presentations" dockLinks={project.buttons} location={location}>
+    <Page
+      title="Presentations"
+      dockLinks={project.dockLinks}
+      location={location}
+    >
       <Project project={project} />
     </Page>
   );
@@ -52,7 +56,7 @@ export const query = graphql`
           }
         }
       }
-      buttons {
+      dockLinks {
         href
         name
         icon

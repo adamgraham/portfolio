@@ -4,7 +4,6 @@
     "category": "websites",
     "title": "OSRS Region Analyzer",
     "description": "A detailed web app for analyzing region data in the game Old School RuneScape, including bosses, skilling activities, item resources, best-in-slot gear, questlines, and more.",
-    "description_short": "A detailed web app for analyzing region data in the game Old School RuneScape, including bosses, skilling activities, item resources, best-in-slot gear, questlines, and more.",
     "date": "June 2025",
     "role": "Web Designer, Developer",
     "tech": ["React", "Gatsby", "TypeScript", "HTML/CSS"],
@@ -15,7 +14,7 @@
       "name": "Visit Website",
       "icon": "open_in_new"
     },
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://osrs.zigurous.com/region-analyzer",
         "name": "Visit Website",
@@ -49,7 +48,7 @@
       "name": "Visit Website",
       "icon": "open_in_new"
     },
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://zigurous.com/",
         "name": "Visit Website",
@@ -96,7 +95,7 @@
       "name": "Visit Website",
       "icon": "open_in_new"
     },
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://adamgraham.github.io/colorly/tints-and-shades",
         "name": "Visit Website",
@@ -135,7 +134,7 @@
       "name": "Visit Website",
       "icon": "open_in_new"
     },
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://adamgraham.github.io/polykai-website/",
         "name": "Visit Website",
@@ -168,7 +167,7 @@
     "tech": ["Adobe Muse", "Adobe Photoshop"],
     "image": "../images/banners/allium-painting.jpg",
     "imageAltText": "Allium Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/allium",
         "name": "Visit Website",
@@ -196,7 +195,7 @@
     "tech": ["Adobe Muse", "Adobe Photoshop"],
     "image": "../images/banners/demonthon-painting.jpg",
     "imageAltText": "DemonTHON Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/demonthon",
         "name": "Visit Website",
@@ -221,7 +220,7 @@
     "tech": ["Adobe Muse", "Adobe Photoshop"],
     "image": "../images/banners/be-super-painting.jpg",
     "imageAltText": "Be Super Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/besuper",
         "name": "Visit Website",
@@ -246,7 +245,7 @@
     "tech": ["Adobe Muse", "Adobe Photoshop"],
     "image": "../images/banners/ashantis-jones-painting.jpg",
     "imageAltText": "Ashantis Jones Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/ashantisjones",
         "name": "Visit Website",
@@ -271,7 +270,7 @@
     "tech": ["Adobe Muse", "Adobe Photoshop"],
     "image": "../images/banners/margaret-baughman-painting.jpg",
     "imageAltText": "Margaret Baughman Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/margaretbaughman",
         "name": "Visit Website",
@@ -299,7 +298,7 @@
     "tech": ["Adobe Muse", "Adobe Photoshop"],
     "image": "../images/banners/taylor-cochran-music-painting.jpg",
     "imageAltText": "Taylor Cochran Music Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/taylorcochranmusic",
         "name": "Visit Website",
@@ -327,7 +326,7 @@
     "tech": ["Adobe Muse", "Adobe Photoshop", "Adobe Flash"],
     "image": "../images/banners/squishem-website-painting.jpg",
     "imageAltText": "Squish-em! Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/squishem",
         "name": "Visit Website",
@@ -355,7 +354,7 @@
     "tech": ["Adobe Muse", "Adobe Photoshop", "Adobe Flash"],
     "image": "../images/banners/let-it-beard-painting.jpg",
     "imageAltText": "Let It Beard Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/letitbeard",
         "name": "Visit Website",

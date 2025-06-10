@@ -12,7 +12,7 @@ interface GameProps {
 export default function Game({ data, location }: GameProps) {
   const { project } = data;
   return (
-    <Page title="Games" dockLinks={project.buttons} location={location}>
+    <Page title="Games" dockLinks={project.dockLinks} location={location}>
       <Project project={project} />
     </Page>
   );
@@ -52,7 +52,7 @@ export const query = graphql`
           }
         }
       }
-      buttons {
+      dockLinks {
         href
         name
         icon

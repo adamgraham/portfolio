@@ -12,7 +12,7 @@ interface WebsiteProps {
 export default function Website({ data, location }: WebsiteProps) {
   const { project } = data;
   return (
-    <Page title="Websites" dockLinks={project.buttons} location={location}>
+    <Page title="Websites" dockLinks={project.dockLinks} location={location}>
       <Project project={project} />
     </Page>
   );
@@ -52,7 +52,7 @@ export const query = graphql`
           }
         }
       }
-      buttons {
+      dockLinks {
         href
         name
         icon

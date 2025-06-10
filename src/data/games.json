@@ -10,7 +10,7 @@
     "tech": ["Unity", "C#"],
     "image": "../images/banners/the-wandering-dark-painting.jpg",
     "imageAltText": "The Wandering Dark Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://drive.google.com/file/d/1A28Dm-oLWkOgr3L49f46jjcyovBnfp-G/view?usp=drive_link",
         "name": "Download",
@@ -55,7 +55,7 @@
     "tech": ["Unity", "C#"],
     "image": "../images/banners/boss-rush-painting.jpg",
     "imageAltText": "Boss Rush Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://github.com/ModSquadWorkshop/BossRush/releases",
         "name": "Download",
@@ -90,7 +90,7 @@
     "tech": ["XNA", "C#"],
     "image": "../images/banners/alphas-painting.jpg",
     "imageAltText": "Alphas Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://drive.google.com/file/d/1wfnwkmW56U3aYZ4cnrMFPZOIpwjYz-52/view?usp=drive_link",
         "name": "Download",
@@ -124,7 +124,7 @@
     "tech": ["Unity", "C#"],
     "image": "../images/banners/hackathon-for-wildlife-painting.jpg",
     "imageAltText": "Hackathon for Wildlife Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://github.com/adamgraham/hackathon-for-wildlife",
         "name": "Source Code",
@@ -179,7 +179,7 @@
     "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/elegy-painting.jpg",
     "imageAltText": "Elegy Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://drive.google.com/file/d/1VOryTrKiH_2HlJKeO_CmzNbVjCrU7wRr/view?usp=drive_link",
         "name": "Download",
@@ -238,7 +238,7 @@
     "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/ancient-odyssey-painting.jpg",
     "imageAltText": "Ancient Odyssey Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://www.newgrounds.com/portal/view/628001",
         "name": "Play Game",
@@ -270,7 +270,7 @@
     "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/lunar-escape-painting.jpg",
     "imageAltText": "Lunar Escape Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://www.newgrounds.com/portal/view/625640",
         "name": "Play Game",
@@ -302,7 +302,7 @@
     "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/the-rise-painting.jpg",
     "imageAltText": "The Rise Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://www.newgrounds.com/portal/view/622585",
         "name": "Play Game",
@@ -334,7 +334,7 @@
     "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/escape-the-estate-painting.jpg",
     "imageAltText": "Escape the Estate Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://www.newgrounds.com/portal/view/622915",
         "name": "Play Game",
@@ -367,7 +367,7 @@
     "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/escape-the-basement-painting.jpg",
     "imageAltText": "Escape the Basement Painting",
-    "buttons": [
+    "dockLinks": [
       {
         "href": "https://www.newgrounds.com/portal/view/601869",
         "name": "Play Game",
