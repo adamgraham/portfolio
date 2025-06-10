@@ -25,7 +25,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       role: String
       tech: [String]
       image: File! @fileByRelativePath
-      imageAltText: String
       imageBorder: Boolean
       dockLinks: [Link]
       sections: [ProjectSection]
@@ -41,8 +40,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       role: String
       tech: [String]
       image: File! @fileByRelativePath
-      imageAltText: String
-      imageBorder: Boolean
       dockLinks: [Link]
       sections: [ProjectSection]
     }
@@ -57,8 +54,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       role: String
       tech: [String]
       image: File! @fileByRelativePath
-      imageAltText: String
-      imageBorder: Boolean
       dockLinks: [Link]
       sections: [ProjectSection]
     }
@@ -73,8 +68,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       role: String
       tech: [String]
       image: File! @fileByRelativePath
-      imageAltText: String
-      imageBorder: Boolean
       dockLinks: [Link]
       sections: [ProjectSection]
     }
@@ -89,8 +82,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       role: String
       tech: [String]
       image: File! @fileByRelativePath
-      imageAltText: String
-      imageBorder: Boolean
       customLink: Link
       dockLinks: [Link]
       sections: [ProjectSection]

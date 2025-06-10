@@ -68,7 +68,7 @@ export default function MenuGallery({
                         to={`/${item.category}/${item.id}`}
                       >
                         <img
-                          alt={item.imageAltText || ''}
+                          alt={`${item.title} Painting`}
                           width={item.image.sharp.original.width}
                           height={item.image.sharp.original.height}
                           src={item.image.sharp.original.src}
@@ -114,7 +114,6 @@ const query = graphql`
             }
           }
         }
-        imageAltText
       }
     }
     websites: allWebsitesJson {
@@ -131,7 +130,6 @@ const query = graphql`
             }
           }
         }
-        imageAltText
       }
     }
     art: allArtJson {
@@ -148,7 +146,6 @@ const query = graphql`
             }
           }
         }
-        imageAltText
       }
     }
     tech: allTechJson {
@@ -165,7 +162,6 @@ const query = graphql`
             }
           }
         }
-        imageAltText
       }
     }
     presentations: allPresentationsJson {
@@ -182,7 +178,6 @@ const query = graphql`
             }
           }
         }
-        imageAltText
       }
     }
   }

@@ -8,7 +8,6 @@
     "role": "Web Designer, Developer",
     "tech": ["React", "Gatsby", "TypeScript", "HTML/CSS"],
     "image": "../images/banners/osrs-region-analyzer-painting.jpg",
-    "imageAltText": "OSRS Region Analyzer Painting",
     "customLink": {
       "href": "https://osrs.zigurous.com/region-analyzer",
       "name": "Visit Website",
@@ -42,7 +41,6 @@
     "role": "Web Designer, Developer, Maintainer",
     "tech": ["React", "Gatsby", "TypeScript", "HTML/CSS", "Firebase"],
     "image": "../images/banners/zigurous-painting.jpg",
-    "imageAltText": "Zigurous Painting",
     "customLink": {
       "href": "https://zigurous.com/",
       "name": "Visit Website",
@@ -89,7 +87,6 @@
     "role": "Web Designer, Developer",
     "tech": ["React", "Redux", "JavaScript", "HTML/CSS"],
     "image": "../images/banners/colorly-painting.jpg",
-    "imageAltText": "Colorly Painting",
     "customLink": {
       "href": "https://adamgraham.github.io/colorly/",
       "name": "Visit Website",
@@ -128,7 +125,6 @@
     "role": "Web Designer, Developer",
     "tech": ["React", "JavaScript", "HTML/CSS", "VSIX"],
     "image": "../images/banners/polykai-painting.jpg",
-    "imageAltText": "Polykai Painting",
     "customLink": {
       "href": "https://adamgraham.github.io/polykai-website/",
       "name": "Visit Website",
@@ -166,7 +162,6 @@
     "role": "Web Designer",
     "tech": ["Adobe Muse", "Adobe Photoshop"],
     "image": "../images/banners/allium-painting.jpg",
-    "imageAltText": "Allium Painting",
     "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/allium",
@@ -194,7 +189,6 @@
     "role": "Director of Technology",
     "tech": ["Adobe Muse", "Adobe Photoshop"],
     "image": "../images/banners/demonthon-painting.jpg",
-    "imageAltText": "DemonTHON Painting",
     "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/demonthon",
@@ -219,7 +213,6 @@
     "role": "Web Designer",
     "tech": ["Adobe Muse", "Adobe Photoshop"],
     "image": "../images/banners/be-super-painting.jpg",
-    "imageAltText": "Be Super Painting",
     "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/besuper",
@@ -244,7 +237,6 @@
     "role": "Web Designer",
     "tech": ["Adobe Muse", "Adobe Photoshop"],
     "image": "../images/banners/ashantis-jones-painting.jpg",
-    "imageAltText": "Ashantis Jones Painting",
     "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/ashantisjones",
@@ -269,7 +261,6 @@
     "role": "Web Designer",
     "tech": ["Adobe Muse", "Adobe Photoshop"],
     "image": "../images/banners/margaret-baughman-painting.jpg",
-    "imageAltText": "Margaret Baughman Painting",
     "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/margaretbaughman",
@@ -297,7 +288,6 @@
     "role": "Web Designer",
     "tech": ["Adobe Muse", "Adobe Photoshop"],
     "image": "../images/banners/taylor-cochran-music-painting.jpg",
-    "imageAltText": "Taylor Cochran Music Painting",
     "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/taylorcochranmusic",
@@ -325,7 +315,6 @@
     "role": "Web Designer",
     "tech": ["Adobe Muse", "Adobe Photoshop", "Adobe Flash"],
     "image": "../images/banners/squishem-website-painting.jpg",
-    "imageAltText": "Squish-em! Painting",
     "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/squishem",
@@ -353,7 +342,6 @@
     "role": "Web Designer",
     "tech": ["Adobe Muse", "Adobe Photoshop", "Adobe Flash"],
     "image": "../images/banners/let-it-beard-painting.jpg",
-    "imageAltText": "Let It Beard Painting",
     "dockLinks": [
       {
         "href": "https://adamgraham.github.io/preview/letitbeard",

@@ -9,7 +9,6 @@
     "role": "Lead Programmer, Co-Designer",
     "tech": ["Unity", "C#"],
     "image": "../images/banners/the-wandering-dark-painting.jpg",
-    "imageAltText": "The Wandering Dark Painting",
     "dockLinks": [
       {
         "href": "https://drive.google.com/file/d/1A28Dm-oLWkOgr3L49f46jjcyovBnfp-G/view?usp=drive_link",
@@ -54,7 +53,6 @@
     "role": "Gameplay & Systems Programmer",
     "tech": ["Unity", "C#"],
     "image": "../images/banners/boss-rush-painting.jpg",
-    "imageAltText": "Boss Rush Painting",
     "dockLinks": [
       {
         "href": "https://github.com/ModSquadWorkshop/BossRush/releases",
@@ -89,7 +87,6 @@
     "role": "Team Lead, Lead Programmer & Designer",
     "tech": ["XNA", "C#"],
     "image": "../images/banners/alphas-painting.jpg",
-    "imageAltText": "Alphas Painting",
     "dockLinks": [
       {
         "href": "https://drive.google.com/file/d/1wfnwkmW56U3aYZ4cnrMFPZOIpwjYz-52/view?usp=drive_link",
@@ -123,7 +120,6 @@
     "role": "Lead Programmer & Designer",
     "tech": ["Unity", "C#"],
     "image": "../images/banners/hackathon-for-wildlife-painting.jpg",
-    "imageAltText": "Hackathon for Wildlife Painting",
     "dockLinks": [
       {
         "href": "https://github.com/adamgraham/hackathon-for-wildlife",
@@ -154,7 +150,6 @@
     "role": "I/O Programmer",
     "tech": ["Unity", "C#", "Oculus Rift", "Midi Keyboard"],
     "image": "../images/banners/ferro-painting.jpg",
-    "imageAltText": "Ferro Painting",
     "sections": [
       {
         "title": "Media",
@@ -178,7 +173,6 @@
     "role": "Lead Programmer, Designer",
     "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/elegy-painting.jpg",
-    "imageAltText": "Elegy Painting",
     "dockLinks": [
       {
         "href": "https://drive.google.com/file/d/1VOryTrKiH_2HlJKeO_CmzNbVjCrU7wRr/view?usp=drive_link",
@@ -214,7 +208,6 @@
     "role": "Lead Programmer, Producer, Designer",
     "tech": ["Adobe Flash", "ActionScript 3.0", "iOS"],
     "image": "../images/banners/squishem-game-painting.jpg",
-    "imageAltText": "Squish-em! Painting",
     "sections": [
       {
         "title": "Media",
@@ -237,7 +230,6 @@
     "role": "Lead Programmer, Producer, Designer",
     "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/ancient-odyssey-painting.jpg",
-    "imageAltText": "Ancient Odyssey Painting",
     "dockLinks": [
       {
         "href": "https://www.newgrounds.com/portal/view/628001",
@@ -269,7 +261,6 @@
     "role": "Lead Programmer, Producer, Designer, Artist",
     "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/lunar-escape-painting.jpg",
-    "imageAltText": "Lunar Escape Painting",
     "dockLinks": [
       {
         "href": "https://www.newgrounds.com/portal/view/625640",
@@ -301,7 +292,6 @@
     "role": "Lead Programmer, Producer, Designer",
     "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/the-rise-painting.jpg",
-    "imageAltText": "The Rise Painting",
     "dockLinks": [
       {
         "href": "https://www.newgrounds.com/portal/view/622585",
@@ -333,7 +323,6 @@
     "role": "Lead Programmer, Producer, Designer, Artist",
     "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/escape-the-estate-painting.jpg",
-    "imageAltText": "Escape the Estate Painting",
     "dockLinks": [
       {
         "href": "https://www.newgrounds.com/portal/view/622915",
@@ -366,7 +355,6 @@
     "role": "Lead Programmer, Producer, Designer",
     "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/escape-the-basement-painting.jpg",
-    "imageAltText": "Escape the Basement Painting",
     "dockLinks": [
       {
         "href": "https://www.newgrounds.com/portal/view/601869",

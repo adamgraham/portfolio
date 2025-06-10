@@ -18,16 +18,16 @@ export default function Slide({ slide }: SlideProps) {
       <div className="slide__image-wrapper">
         <Link as={GatsbyLink} className="inline-flex" to={projectPath} unstyled>
           <ProgressiveImage
-            alt={slide.imageAltText || ''}
+            alt={`${slide.title} Painting`}
             animated={false}
             className={classNames('slide__image', {
               'slide__image--no-border':
                 typeof slide.imageBorder === 'boolean' &&
                 slide.imageBorder === false,
             })}
-            width={slide.image.sharp.original.width}
-            height={slide.image.sharp.original.height}
-            src={slide.image.sharp.original.src}
+            width={slide.image?.sharp.original.width}
+            height={slide.image?.sharp.original.height}
+            src={slide.image?.sharp.original.src}
             showLoadingSpinner={!offline}
           />
         </Link>
@@ -56,7 +56,7 @@ export default function Slide({ slide }: SlideProps) {
           >
             <ShadowButton
               icon={slide.customLink?.icon}
-              iconAlignment="trailing"
+              iconAlignment={slide.customLink?.iconAlignment || 'trailing'}
             >
               {slide.customLink?.name || 'More Details'}
             </ShadowButton>

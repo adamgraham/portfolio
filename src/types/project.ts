@@ -16,7 +16,6 @@ export interface ProjectData {
   role?: string;
   tech?: string[];
   image: Image;
-  imageAltText?: string;
   imageBorder?: boolean;
   dockLinks?: LinkTypeWithIcon[];
   sections?: ProjectSection[];

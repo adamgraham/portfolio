@@ -9,7 +9,6 @@
     "role": "Designer, Presenter",
     "tech": ["React", "JavaScript", "HTML/CSS", "Adobe Illustrator", "Figma"],
     "image": "../images/banners/the-life-of-a-ux-engineer-painting.jpg",
-    "imageAltText": "The Life of a UX Engineer Painting",
     "dockLinks": [
       {
         "href": "https://drive.google.com/file/d/1mHUDzD7EzfrRR03Z_1WNsduszsIUj4ny/view?usp=drive_link",
@@ -42,7 +41,6 @@
     "role": "Designer, Animator, Narrator",
     "tech": ["Unity", "C#"],
     "image": "../images/banners/an-animation-story-painting.jpg",
-    "imageAltText": "An Animation Story Painting",
     "sections": [
       {
         "mainVideo": "uHQvPFud3-I"
@@ -71,7 +69,6 @@
     "role": "VR Engineer, Co-Presenter",
     "tech": ["Unity", "Oculus Rift", "HTC Vive", "Microsoft HoloLens"],
     "image": "../images/banners/entering-the-new-reality-painting.jpg",
-    "imageAltText": "Entering the New Reality Painting",
     "dockLinks": [
       {
         "href": "https://drive.google.com/file/d/1nw_EMTZB47svcDjgCPaSAAPE84gNYqfK/view?usp=drive_link",
@@ -115,7 +112,6 @@
     "role": "Designer, Presenter",
     "tech": ["Unity", "C#", "Blender"],
     "image": "../images/banners/3d-application-development-overview-painting.jpg",
-    "imageAltText": "3D Application Development Painting",
     "dockLinks": [
       {
         "href": "https://drive.google.com/file/d/1r2DCuz7PckbaD0CH4NWlKIK1X5-po9MI/view?usp=drive_link",

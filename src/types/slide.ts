@@ -2,14 +2,13 @@ import { type LinkTypeWithIcon } from '@zigurous/forge-react';
 import type { Image } from './image';
 
 export interface SlideData {
+  id: string;
   category: string;
-  customLink?: LinkTypeWithIcon;
-  date?: string;
+  title: string;
   description?: string;
   description_short?: string;
-  id: string;
+  date?: string;
   image: Image;
-  imageAltText?: string;
   imageBorder?: boolean;
-  title: string;
+  customLink?: LinkTypeWithIcon;
 }

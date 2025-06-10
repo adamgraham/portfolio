@@ -51,8 +51,6 @@ export const query = graphql`
             }
           }
         }
-        imageAltText
-        imageBorder
       }
     }
   }

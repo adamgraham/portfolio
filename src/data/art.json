@@ -9,7 +9,6 @@
     "role": "Solo Project",
     "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/canvas-painting.png",
-    "imageAltText": "Canvas Painting",
     "imageBorder": false,
     "dockLinks": [
       {
@@ -46,7 +45,6 @@
     "role": "Solo Project",
     "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/blackhole-painting.jpg",
-    "imageAltText": "Blackhole Painting",
     "dockLinks": [
       {
         "href": "https://drive.google.com/file/d/14FD_603deu6C40w49c3u3vpvZOD9sDkA/view?usp=drive_link",
@@ -83,7 +81,6 @@
     "role": "Solo Project",
     "tech": ["Adobe Flash", "ActionScript 3.0"],
     "image": "../images/banners/mixed-painting.jpg",
-    "imageAltText": "Mixed Painting",
     "dockLinks": [
       {
         "href": "https://drive.google.com/file/d/1Sr5wxTQrm2jqemSOTLa0xlzYCEKysixm/view?usp=drive_link",
@@ -118,7 +115,6 @@
     "role": "Solo Project",
     "tech": ["Unity", "C#", "Oculus Rift"],
     "image": "../images/banners/hexahedroniks-painting.jpg",
-    "imageAltText": "Hexahedroniks Painting",
     "dockLinks": [
       {
         "href": "https://drive.google.com/drive/folders/1uJo0g6eBtnyHLSCCmUatIQl80VX0UY_9?usp=drive_link",

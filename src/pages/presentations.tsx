@@ -42,10 +42,10 @@ export const query = graphql`
       slides: nodes {
         id: jsonId
         category
-        date
         title
         description
         description_short
+        date
         image {
           sharp: childImageSharp {
             original {
@@ -55,8 +55,6 @@ export const query = graphql`
             }
           }
         }
-        imageAltText
-        imageBorder
       }
     }
   }

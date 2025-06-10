@@ -12,7 +12,6 @@
     "role": "Front-end Developer, 3D Designer",
     "tech": ["Unity", "C#", "Ethereum", "Firebase", "RFID", "AWS", "PCF"],
     "image": "../images/banners/blockchain-gardens-painting.jpg",
-    "imageAltText": "Blockchain Gardens Painting",
     "sections": [
       {
         "title": "Media",
@@ -43,7 +42,6 @@
     "role": "Front-end Developer, Experience Designer",
     "tech": ["Unity", "C#", "HoloLens", "Raspberry Pi + Node.js", "Phillips Hue Lights", "IoT Devices", "iPad"],
     "image": "../images/banners/rockstar-painting.jpg",
-    "imageAltText": "RockstAR Painting",
     "sections": [
       {
         "title": "Media",
@@ -73,7 +71,6 @@
     "role": "Unity Developer",
     "tech": ["Unity", "C#", "Oculus Rift", "Leap Motion", "Raspberry Pi", "Hybris Platform"],
     "image": "../images/banners/vender-vr-painting.jpg",
-    "imageAltText": "Vender VR Painting",
     "sections": [
       {
         "title": "Media",
