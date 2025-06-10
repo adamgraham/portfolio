@@ -11,7 +11,6 @@ interface TutorialProps {
 
 export default function Tutorial({ data, location }: TutorialProps) {
   const { project } = data;
-  console.log(data);
   return (
     <Page title="Tutorials" dockLinks={project.dockLinks} location={location}>
       <Project project={project} />
