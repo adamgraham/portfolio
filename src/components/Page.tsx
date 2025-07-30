@@ -29,10 +29,12 @@ export default function Page({
   const print = useMediaQuery('print', false);
 
   useEffect(() => {
-    if (print) {
-      document.body.setAttribute('data-theme', 'light');
-    } else {
-      document.body.setAttribute('data-theme', theme);
+    if (typeof document !== 'undefined') {
+      if (print) {
+        document.body.setAttribute('data-theme', 'light');
+      } else {
+        document.body.setAttribute('data-theme', theme);
+      }
     }
   }, [theme, print]);
 

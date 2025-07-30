@@ -36,15 +36,16 @@ export default function Gallery({
   );
 
   useEffect(() => {
-    if (!document) return;
-    const prev = () => setSlideIndex(slideIndex - 1);
-    const next = () => setSlideIndex(slideIndex + 1);
-    document.addEventListener('previous_slide', prev);
-    document.addEventListener('next_slide', next);
-    return () => {
-      document.removeEventListener('previous_slide', prev);
-      document.removeEventListener('next_slide', next);
-    };
+    if (typeof document !== 'undefined') {
+      const prev = () => setSlideIndex(slideIndex - 1);
+      const next = () => setSlideIndex(slideIndex + 1);
+      document.addEventListener('previous_slide', prev);
+      document.addEventListener('next_slide', next);
+      return () => {
+        document.removeEventListener('previous_slide', prev);
+        document.removeEventListener('next_slide', next);
+      };
+    }
   }, [slideIndex]);
 
   return (

@@ -18,6 +18,7 @@ export function use3dHoverEffect(
   useEffect(() => {
     if (!targetRef.current) return;
     if (typeof window === 'undefined') return;
+    if (typeof document === 'undefined') return;
 
     let timeoutId: NodeJS.Timeout;
     let transitioning = false;

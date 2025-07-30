@@ -58,9 +58,10 @@ export default function Dock({
             }}
             mouseState={mouseState}
             onClick={() => {
-              if (!document) return;
-              const e = new Event('previous_slide');
-              document.dispatchEvent(e);
+              if (typeof document !== 'undefined') {
+                const e = new Event('previous_slide');
+                document.dispatchEvent(e);
+              }
             }}
           />
           <DockItem
@@ -73,9 +74,10 @@ export default function Dock({
             }}
             mouseState={mouseState}
             onClick={() => {
-              if (!document) return;
-              const e = new Event('next_slide');
-              document.dispatchEvent(e);
+              if (typeof document !== 'undefined') {
+                const e = new Event('next_slide');
+                document.dispatchEvent(e);
+              }
             }}
           />
         </div>
