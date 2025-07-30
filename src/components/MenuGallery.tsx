@@ -67,7 +67,8 @@ export default function MenuGallery({
                       <GatsbyLink
                         className="menu-gallery__thumbnail"
                         key={`${item.category}-${item.id}`}
-                        to={`/${item.category}/${item.id}`}
+                        to={`/${item.category}?id=${item.id}`}
+                        onClick={onRequestClose}
                       >
                         <img
                           alt={`${item.title} Painting`}

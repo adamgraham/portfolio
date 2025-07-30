@@ -21,10 +21,7 @@ export default function Gallery({
   const vertical = useMediaQuery('(max-width: 1365px)');
 
   const urlParams = new URLSearchParams(location?.search);
-  const slideIndex =
-    (urlParams.has('index')
-      ? Number.parseInt(urlParams.get('index')!) || 0
-      : getSessionIndex(category)) % slides.length;
+  const slideIndex = getSlideIndex(slides, category, urlParams);
   const currentSlide =
     slideIndex >= 0 && slideIndex < slides.length ? slides[slideIndex] : null;
 
@@ -90,4 +87,20 @@ export default function Gallery({
       </button>
     </div>
   );
+}
+
+function getSlideIndex(
+  slides: SlideData[],
+  category: string,
+  urlParams: URLSearchParams,
+): number {
+  if (urlParams.has('index')) {
+    return (Number.parseInt(urlParams.get('index')!) || 0) % slides.length;
+  } else if (urlParams.has('id')) {
+    const index = slides.findIndex(slide => slide.id === urlParams.get('id'));
+    if (index == -1) return 0;
+    return index;
+  } else {
+    return getSessionIndex(category) % slides.length;
+  }
 }
