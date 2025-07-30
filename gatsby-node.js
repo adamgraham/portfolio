@@ -101,22 +101,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       dockLinks: [Link]
       sections: [ProjectSection]
     }
-    type ProjectsJson implements Node {
-      title: String!
-      columns: Int
-      projects: [ProjectsItem]
-    }
-    type ProjectsItem {
-      title: String
-      description: String
-      date: String
-      link: String
-      externalLink: String
-      ctaIcon: String
-      ctaLabel: String
-      color: String
-      tags: [String]
-    }
     type ProjectSection {
       title: String
       link: String
