@@ -23,7 +23,7 @@ const HeadComponents = [
   />,
   <link
     key="forge-css"
-    href="https://cdn.zigurous.com/forge-css@1.2.0/dist/index.min.css"
+    href="https://cdn.zigurous.com/forge-css@1.2.2/dist/index.min.css"
     rel="stylesheet"
   />,
 ];

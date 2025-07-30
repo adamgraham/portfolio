@@ -43,10 +43,10 @@ export default function Home({ location }: HomeProps) {
           </Text>
           <Stack align="center" justify="center" spacing="lg">
             <Link as={GatsbyLink} to="/gallery" unstyled>
-              <ShadowButton>Gallery</ShadowButton>
+              <ShadowButton>Portfolio</ShadowButton>
             </Link>
-            <Link as={GatsbyLink} to="/projects" unstyled>
-              <ShadowButton>Projects</ShadowButton>
+            <Link as={GatsbyLink} to="/resume" unstyled>
+              <ShadowButton>Resume</ShadowButton>
             </Link>
           </Stack>
         </div>

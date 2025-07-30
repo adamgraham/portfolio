@@ -2,20 +2,10 @@
   --header-height: 80px;
 }
 
-html {
-  font-size: larger;
-}
-
 html, body {
   font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
   letter-spacing: -0.0375em;
   scroll-behavior: smooth;
-}
-
-@media (prefers-reduced-motion) {
-  html, body {
-    scroll-behavior: auto;
-  }
 }
 
 .page > article {
@@ -42,11 +32,6 @@ html, body {
   pointer-events: all;
 }
 
-.display {
-  font-weight: 700;
-  line-height: 1;
-}
-
 .badge {
   font-weight: 600;
 }
@@ -60,5 +45,11 @@ html, body {
 @media (max-width: 425px) {
   .display {
     font-size: 2rem;
+  }
+}
+
+@media screen {
+  html {
+    font-size: larger;
   }
 }

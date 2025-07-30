@@ -57,6 +57,51 @@ exports.createSchemaCustomization = ({ actions }) => {
       dockLinks: [Link]
       sections: [ProjectSection]
     }
+    type ResumeJson implements Node {
+      name: String!
+      title: String!
+      summary: String!
+      contact: [ResumeContact!]!
+      education: [ResumeEducation!]!
+      experience: [ResumeExperience!]!
+      skills: [ResumeSkills!]!
+      projects: [ResumeProject!]!
+    }
+    type ResumeContact {
+      id: String!
+      icon: String!
+      text: String!
+      link: String
+    }
+    type ResumeEducation {
+      school: String!
+      degree: String!
+      notes: [String!]
+    }
+    type ResumeExperience {
+      date: String!
+      company: String!
+      position: String!
+      summary: String!
+      link: String
+      linkText: String
+      notes: [ResumeExperienceNote!]
+      more: [ResumeExperienceNote!]
+    }
+    type ResumeExperienceNote {
+      title: String!
+      description: String!
+    }
+    type ResumeProject {
+      name: String!
+      description: String!
+      link: String!
+      tech: [String!]
+    }
+    type ResumeSkills {
+      title: String!
+      items: [String!]!
+    }
     type TechJson implements Node {
       id: String!
       category: String!

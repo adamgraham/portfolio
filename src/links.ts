@@ -2,7 +2,6 @@ import { type LinkType, type LinkTypeWithIcon } from '@zigurous/forge-react';
 
 export const baseUri = 'https://adamgraham.github.io';
 export const email = 'mailto:adam@zigurous.com';
-export const resume = 'https://docs.google.com/document/d/1qLHBV7Ry11O-pd0XC3HvALBIKJ8YDBmSafP0Z5c4dww/edit?usp=drive_link'; // prettier-ignore
 export const github = 'https://github.com/adamgraham';
 export const linkedIn = 'https://www.linkedin.com/in/adamzigurous';
 export const instagram = 'http://instagram.com/adam.zigurous';
@@ -55,10 +54,10 @@ export const dockLinks: LinkTypeWithIcon[] = [
     icon: 'collections',
   },
   {
-    id: 'projects',
-    href: '/projects',
-    name: 'Projects',
-    icon: 'menu',
+    id: 'resume',
+    href: '/resume',
+    name: 'Resume',
+    icon: 'description',
   },
 ];
 
@@ -76,10 +75,10 @@ export const socialLinks: SocialLinkType[] = [
     socialIcon: 'linkedIn',
   },
   {
-    id: 'resume',
-    href: resume,
-    name: 'Resume',
-    icon: 'description',
+    id: 'twitter',
+    href: twitter,
+    name: 'Twitter',
+    icon: 'twitter',
   },
   {
     id: 'email',

@@ -1,4 +1,4 @@
-import { type LinkType, useTheme } from '@zigurous/forge-react';
+import { type LinkType, useMediaQuery, useTheme } from '@zigurous/forge-react';
 import classNames from 'classnames';
 import React, { useEffect } from 'react';
 import Dock from './Dock';
@@ -26,10 +26,15 @@ export default function Page({
   title,
 }: PageProps) {
   const [theme, _, toggleTheme] = useTheme('light');
+  const print = useMediaQuery('print', false);
 
   useEffect(() => {
-    document.body.setAttribute('data-theme', theme);
-  }, [theme]);
+    if (print) {
+      document.body.setAttribute('data-theme', 'light');
+    } else {
+      document.body.setAttribute('data-theme', theme);
+    }
+  }, [theme, print]);
 
   return (
     <div className="app">
@@ -37,7 +42,7 @@ export default function Page({
       <main className={classNames('page', className)} id={id}>
         {children}
       </main>
-      {!hideDock && (
+      {!hideDock && !print && (
         <Dock
           theme={theme}
           toggleTheme={toggleTheme}
