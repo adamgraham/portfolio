@@ -153,7 +153,7 @@
       },
       {
         "name": "Unity Packages",
-        "description": "A collection of over a dozen open source libraries for developers to use in their Unity projects.",
+        "description": "A collection of a dozen+ open source libraries for developers to use in their Unity projects.",
         "link": "https://docs.zigurous.com/",
         "tech": ["Unity", "C#"]
       },

@@ -1,8 +1,10 @@
-import { type LinkType, useMediaQuery, useTheme } from '@zigurous/forge-react';
+import { type LinkType, useIsMounted, useMediaQuery, useTheme } from '@zigurous/forge-react'; // prettier-ignore
 import classNames from 'classnames';
 import React, { useEffect } from 'react';
 import Dock from './Dock';
 import Header from './Header';
+
+const defaultTheme = 'light';
 
 export interface PageProps {
   children?: React.ReactNode;
@@ -25,8 +27,9 @@ export default function Page({
   location,
   title,
 }: PageProps) {
-  const [theme, _, toggleTheme] = useTheme('light');
+  const mounted = useIsMounted();
   const print = useMediaQuery('print', false);
+  const [theme, _, toggleTheme] = useTheme(defaultTheme);
 
   useEffect(() => {
     if (typeof document !== 'undefined') {
@@ -46,7 +49,7 @@ export default function Page({
       </main>
       {!hideDock && !print && (
         <Dock
-          theme={theme}
+          theme={mounted ? theme : defaultTheme}
           toggleTheme={toggleTheme}
           secondaryLinks={dockLinks}
         />

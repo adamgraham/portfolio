@@ -74,6 +74,12 @@ body[data-theme="dark"] .page#resume p#tech {
   color: rgb(from var(--color-foreground) r g b / var(--opacity-disabled));
 }
 
+@media screen and (min-width: 768px) {
+  .page#resume section#projects ul > li {
+    width: calc(50% - (var(--spacing-lg) / 2) - 1px);
+  }
+}
+
 @media print {
   .page#resume > div.container {
     padding: 0;
@@ -92,6 +98,10 @@ body[data-theme="dark"] .page#resume p#tech {
 
   .page#resume section:last-child {
     margin-bottom: 0;
+  }
+
+  .page#resume section#projects ul > li {
+    width: calc(50% - (var(--spacing-lg) / 2) - 1px);
   }
 
   .page#resume .lg\:col-8 {

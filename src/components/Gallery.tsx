@@ -1,5 +1,5 @@
 import '../styles/gallery.css';
-import { useMediaQuery } from '@zigurous/forge-react';
+import { useIsMounted, useMediaQuery } from '@zigurous/forge-react';
 import classNames from 'classnames';
 import { navigate } from 'gatsby';
 import React, { useCallback, useEffect } from 'react';
@@ -18,10 +18,11 @@ export default function Gallery({
   location,
   slides = [],
 }: GalleryProps) {
+  const mounted = useIsMounted();
   const vertical = useMediaQuery('(max-width: 1365px)');
 
-  const urlParams = new URLSearchParams(location?.search);
-  const slideIndex = getSlideIndex(slides, category, urlParams);
+  const urlParams = new URLSearchParams(location.search);
+  const slideIndex = mounted ? getSlideIndex(slides, category, urlParams) : 0;
   const currentSlide =
     slideIndex >= 0 && slideIndex < slides.length ? slides[slideIndex] : null;
 

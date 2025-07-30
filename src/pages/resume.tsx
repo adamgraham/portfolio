@@ -1,4 +1,4 @@
-import { Badge, Col, Icon, Link, Row, Stack, Text, useBreakpoint, useMediaQuery } from '@zigurous/forge-react'; // prettier-ignore
+import { Badge, Col, Icon, Link, Row, Stack, Text } from '@zigurous/forge-react'; // prettier-ignore
 import { graphql, type HeadFC } from 'gatsby';
 import React, { useState } from 'react';
 import { Metadata, Page } from '../components';
@@ -272,53 +272,24 @@ function ResumeSkills({ skills }: { skills: ResumeSkills[] }) {
 }
 
 function ResumeProjects({ projects }: { projects: ResumeProject[] }) {
-  const lg = useBreakpoint('lg', false);
-  const print = useMediaQuery('print', false);
   return (
     <ResumeSection icon="apps" id="projects" title="Projects">
-      {lg || print ? (
-        <Row>
-          <Col size="12" lg="6">
-            <ul>
-              {projects
-                .filter((_, index) => index % 2 === 0)
-                .map(project => (
-                  <ResumeProject key={project.name} project={project} />
-                ))}
-            </ul>
-          </Col>
-          <Col size="12" lg="6">
-            <ul>
-              {projects
-                .filter((_, index) => index % 2 === 1)
-                .map(project => (
-                  <ResumeProject key={project.name} project={project} />
-                ))}
-            </ul>
-          </Col>
-        </Row>
-      ) : (
-        <Row>
-          <Col>
-            <ul>
-              {projects.map(project => (
-                <ResumeProject key={project.name} project={project} />
-              ))}
-            </ul>
-          </Col>
-        </Row>
-      )}
+      <Row>
+        <Col>
+          <ul className="flex flex-wrap" style={{ gap: 'var(--spacing-lg)' }}>
+            {projects.map(project => (
+              <ResumeProject key={project.name} project={project} />
+            ))}
+          </ul>
+        </Col>
+      </Row>
     </ResumeSection>
   );
 }
 
 function ResumeProject({ project }: { project: ResumeProject }) {
   return (
-    <li
-      className="mb-lg"
-      id={project.name.toLowerCase().replace(' ', '-')}
-      key={project.name}
-    >
+    <li id={project.name.toLowerCase().replace(' ', '-')} key={project.name}>
       <Stack align="center">
         <Text
           id="name"
