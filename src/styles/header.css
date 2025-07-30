@@ -45,7 +45,7 @@
   }
 }
 
-@media (max-width: 852px) {
+@media (max-width: 992px) {
   .app-header .navbar {
     display: none;
   }

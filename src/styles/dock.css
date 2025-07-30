@@ -128,7 +128,8 @@
   .page#websites + .dock .dock__section#gallery,
   .page#art + .dock .dock__section#gallery,
   .page#tech + .dock .dock__section#gallery,
-  .page#presentations + .dock .dock__section#gallery {
+  .page#presentations + .dock .dock__section#gallery,
+  .page#tutorials + .dock .dock__section#gallery {
     display: flex;
   }
 }

@@ -23,7 +23,7 @@ export default function Project({ project }: ProjectProps) {
         <Text
           className="project__subtitle ml-xxs"
           color="muted"
-          marginBottom="md"
+          marginBottom="lg"
           size="sm"
           transform="capitalize"
           weight="600"
@@ -37,7 +37,7 @@ export default function Project({ project }: ProjectProps) {
           )}
         </Text>
         {project.tech && (
-          <Stack className="project__badges" spacing="sm" wrap>
+          <Stack className="project__badges mb-xl" spacing="sm" wrap>
             {project.tech.map(tech => (
               <Badge color="primary" key={tech} variant="tint">
                 {tech}
@@ -45,7 +45,7 @@ export default function Project({ project }: ProjectProps) {
             ))}
           </Stack>
         )}
-        <div className="project__description text-pretty mt-xl mb-lg">
+        <div className="project__description text-pretty">
           {project.description && (
             <Text className="opacity-90" type="body">
               {project.description}
@@ -53,7 +53,12 @@ export default function Project({ project }: ProjectProps) {
           )}
           {project.description_long &&
             project.description_long.map(description => (
-              <Text className="opacity-90 mt-lg" key={description} type="body">
+              <Text
+                className="opacity-90"
+                marginBottom="lg"
+                key={description}
+                type="body"
+              >
                 {description}
               </Text>
             ))}
@@ -63,12 +68,7 @@ export default function Project({ project }: ProjectProps) {
         project.sections.map((section, index) => (
           <section key={`section-${index}`}>
             {section.title && (
-              <Text
-                as="h2"
-                className="subtitle"
-                marginBottom="sm"
-                type="title-sm"
-              >
+              <Text as="h2" marginBottom="sm" type="title-sm">
                 {section.link ? (
                   <Link external href={section.link}>
                     <b>{section.title}</b>

@@ -1,4 +1,4 @@
-import { Badge, Col, Icon, Link, Row, Stack, Text } from '@zigurous/forge-react'; // prettier-ignore
+import { Badge, Col, Icon, Link, Row, Stack, Text, useBreakpoint, useMediaQuery } from '@zigurous/forge-react'; // prettier-ignore
 import { graphql, type HeadFC } from 'gatsby';
 import React, { useState } from 'react';
 import { Metadata, Page } from '../components';
@@ -16,8 +16,8 @@ export default function Resume({ data, location }: ResumeProps) {
   return (
     <Page id="resume" hideHeader location={location}>
       <div className="container">
-        <header className="row">
-          <Col size="8">
+        <header className="row mb-lg">
+          <Col className="mb-xl" size="12" lg="8">
             <Text as="h1" id="name" marginBottom="sm" type="display">
               {resume.name}
             </Text>
@@ -31,17 +31,25 @@ export default function Resume({ data, location }: ResumeProps) {
             >
               {resume.title}
             </Text>
-            <Text id="summary" color="subtle" type="body">
+            <Text
+              id="summary"
+              className="text-balance"
+              color="subtle"
+              type="body"
+            >
               {resume.summary}
             </Text>
           </Col>
           <Col
-            className="flex flex-col justify-end mb-xxxs"
-            size="4"
+            id="contact"
+            className="flex flex-col justify-end mb-xl"
             style={{ gap: 'var(--spacing-sm)' }}
+            size="12"
+            lg="4"
           >
             {resume.contact.map(contact => (
               <Text
+                id={contact.id}
                 key={contact.id}
                 className="inline-flex align-center"
                 color="subtle"
@@ -69,10 +77,10 @@ export default function Resume({ data, location }: ResumeProps) {
           </Col>
         </header>
         <Row>
-          <Col size="8">
+          <Col size="12" lg="8">
             <ResumeExperience experience={resume.experience} />
           </Col>
-          <Col size="4">
+          <Col size="12" lg="4">
             <ResumeEducation education={resume.education} />
             <ResumeSkills skills={resume.skills} />
           </Col>
@@ -131,7 +139,13 @@ function ResumeEducation({ education }: { education: ResumeEducation[] }) {
             {edu.degree}
           </Text>
           {edu.notes?.map(note => (
-            <Text color="muted" type="body-sm" key={note}>
+            <Text
+              className="line-tight"
+              color="muted"
+              marginBottom="xxxs"
+              type="body-sm"
+              key={note}
+            >
               {note}
             </Text>
           ))}
@@ -175,7 +189,7 @@ function ResumeExperience({ experience }: { experience: ResumeExperience[] }) {
             <Text
               id="summary"
               color="subtle"
-              marginBottom={job.notes ? 'lg' : undefined}
+              marginBottom={job.notes ? 'md' : undefined}
               marginTop="xs"
               type="body"
             >
@@ -237,7 +251,7 @@ function ResumeExperience({ experience }: { experience: ResumeExperience[] }) {
 
 function ResumeSkills({ skills }: { skills: ResumeSkills[] }) {
   return (
-    <ResumeSection id="skills" title="Skills">
+    <ResumeSection icon="psychology" id="skills" title="Skills">
       {skills.map(list => (
         <div className="mb-xl" key={list.title}>
           <Text color="subtle" marginBottom="sm" type="body-lg" weight="600">
@@ -257,39 +271,58 @@ function ResumeSkills({ skills }: { skills: ResumeSkills[] }) {
 }
 
 function ResumeProjects({ projects }: { projects: ResumeProject[] }) {
+  const lg = useBreakpoint('lg', false);
+  const print = useMediaQuery('print', false);
   return (
     <ResumeSection icon="apps" id="projects" title="Projects">
-      <Row>
-        <Col size="6">
-          <ul>
-            {projects
-              .filter((_, index) => index % 2 === 0)
-              .map(project => (
+      {lg || print ? (
+        <Row>
+          <Col size="12" lg="6">
+            <ul>
+              {projects
+                .filter((_, index) => index % 2 === 0)
+                .map(project => (
+                  <ResumeProject key={project.name} project={project} />
+                ))}
+            </ul>
+          </Col>
+          <Col size="12" lg="6">
+            <ul>
+              {projects
+                .filter((_, index) => index % 2 === 1)
+                .map(project => (
+                  <ResumeProject key={project.name} project={project} />
+                ))}
+            </ul>
+          </Col>
+        </Row>
+      ) : (
+        <Row>
+          <Col>
+            <ul>
+              {projects.map(project => (
                 <ResumeProject key={project.name} project={project} />
               ))}
-          </ul>
-        </Col>
-        <Col size="6">
-          <ul>
-            {projects
-              .filter((_, index) => index % 2 === 1)
-              .map(project => (
-                <ResumeProject key={project.name} project={project} />
-              ))}
-          </ul>
-        </Col>
-      </Row>
+            </ul>
+          </Col>
+        </Row>
+      )}
     </ResumeSection>
   );
 }
 
 function ResumeProject({ project }: { project: ResumeProject }) {
   return (
-    <li className="mb-lg" key={project.name}>
+    <li
+      className="mb-lg"
+      id={project.name.toLowerCase().replace(' ', '-')}
+      key={project.name}
+    >
       <Stack align="center">
         <Text
           id="name"
-          className="flex align-center"
+          className="line-tight"
+          marginBottom="xxxs"
           type="body-lg"
           weight="600"
         >
