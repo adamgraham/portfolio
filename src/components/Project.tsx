@@ -16,7 +16,7 @@ export default function Project({ project }: ProjectProps) {
           className="project__title"
           marginBottom="sm"
           type="display"
-          weight="700"
+          weight="800"
         >
           {project.title}
         </Text>

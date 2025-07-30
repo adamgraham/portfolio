@@ -27,7 +27,7 @@ export default function Home({ location }: HomeProps) {
           <Text color="default" marginBottom="xxs" type="subtitle">
             Hello! 👋 My name is
           </Text>
-          <Text as="h1" marginBottom="md" type="display">
+          <Text as="h1" marginBottom="md" type="display" weight="800">
             Adam Graham
           </Text>
           <Text

@@ -18,17 +18,16 @@ export default function Resume({ data, location }: ResumeProps) {
       <div className="container">
         <header className="row mb-lg">
           <Col className="mb-xl" size="12" lg="8">
-            <Text as="h1" id="name" marginBottom="sm" type="display">
+            <Text
+              as="h1"
+              id="name"
+              marginBottom="sm"
+              type="display"
+              weight="800"
+            >
               {resume.name}
             </Text>
-            <Text
-              id="title"
-              color="subtle"
-              marginBottom="lg"
-              style={{ fontSize: '1.5rem' }}
-              type="subtitle"
-              weight="500"
-            >
+            <Text id="title" marginBottom="lg" type="subtitle">
               {resume.title}
             </Text>
             <Text
@@ -130,9 +129,9 @@ function ResumeEducation({ education }: { education: ResumeEducation[] }) {
           </Text>
           <Text
             id="degree"
-            className="line-snug"
+            className="line-tight"
             color="subtle"
-            marginBottom="xxs"
+            marginBottom="xs"
             size="md"
             weight="500"
           >
@@ -167,9 +166,8 @@ function ResumeExperience({ experience }: { experience: ResumeExperience[] }) {
             <Text
               id="position"
               className="flex align-center"
-              marginBottom="xxxs"
-              type="body-lg"
-              weight="600"
+              marginBottom="xxs"
+              type="title-sm"
             >
               {job.position}{' '}
               <Text as="span" className="ml-xs" color="subtle" size="lg">
@@ -183,13 +181,12 @@ function ResumeExperience({ experience }: { experience: ResumeExperience[] }) {
                 )}
               </Text>
             </Text>
-            <Text id="date" color="muted" size="xs" type="caption" weight="600">
+            <Text id="date" color="muted" size="sm" type="caption" weight="600">
               {job.date}
             </Text>
             <Text
-              id="summary"
               color="subtle"
-              marginBottom={job.notes ? 'md' : undefined}
+              marginBottom={job.notes ? 'lg' : undefined}
               marginTop="xs"
               type="body"
             >
@@ -203,7 +200,7 @@ function ResumeExperience({ experience }: { experience: ResumeExperience[] }) {
                     <Text bold color="subtle" type="body">
                       {item.title}
                     </Text>
-                    <Text color="muted" type="body-sm">
+                    <Text id="description" color="subtle" type="body-sm">
                       {item.description}
                     </Text>
                   </li>
@@ -223,10 +220,14 @@ function ResumeExperience({ experience }: { experience: ResumeExperience[] }) {
                         {job.more.map(item => (
                           <li className="relative mb-sm" key={item.title}>
                             <div aria-hidden className="timeline-dot-small" />
-                            <Text bold type="body">
+                            <Text bold color="subtle" type="body">
                               {item.title}
                             </Text>
-                            <Text color="muted" type="body-sm">
+                            <Text
+                              id="description"
+                              color="subtle"
+                              type="body-sm"
+                            >
                               {item.description}
                             </Text>
                           </li>
@@ -322,11 +323,12 @@ function ResumeProject({ project }: { project: ResumeProject }) {
         <Text
           id="name"
           className="line-tight"
+          color="primary"
           marginBottom="xxxs"
           type="body-lg"
           weight="600"
         >
-          <Link href={project.link} external>
+          <Link href={project.link} external unstyled>
             {project.name}
           </Link>
         </Text>
@@ -337,7 +339,7 @@ function ResumeProject({ project }: { project: ResumeProject }) {
             color="muted"
             size="xs"
             type="caption"
-            weight="500"
+            weight="600"
           >
             {project.tech.map((tech, index) => (
               <span key={tech}>

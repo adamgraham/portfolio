@@ -29,14 +29,15 @@
   border-right: 3px solid var(--color-border);
   margin: 0 var(--spacing-xs);
   margin-top: 4px;
-  width: 4px;
+  padding-left: 4px;
+  width: 0;
   height: 100%;
 }
 
 .page#resume .timeline-dot {
   position: absolute;
-  top: 4px;
-  left: calc(var(--spacing-xs) - 12px + 2px);
+  top: 3px;
+  left: calc(var(--spacing-xs) - 8px + 1.5px);
   width: 24px;
   height: 24px;
   background-color: var(--color-border);
@@ -47,10 +48,9 @@
 }
 
 .page#resume .timeline-dot-small {
-  display: none;
   position: absolute;
   top: 7px;
-  left: calc(var(--spacing-xxl) * -1 + var(--spacing-xs) - 6px + 2px);
+  left: calc(var(--spacing-xxl) * -1 + var(--spacing-xs) - 2px + 1.5px);
   width: 12px;
   height: 12px;
   background-color: var(--color-border);
@@ -107,5 +107,17 @@ body[data-theme="dark"] .page#resume p#tech {
   .page#resume .lg\:col-4 {
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
+  }
+
+  .page#resume .timeline-line {
+    border-right-width: 2px;
+  }
+
+  .page#resume .timeline-dot {
+    left: calc(var(--spacing-xs) - 8px + 1px);
+  }
+
+  .page#resume .timeline-dot-small {
+    left: calc(var(--spacing-xxl) * -1 + var(--spacing-xs) - 2px + 1px);
   }
 }

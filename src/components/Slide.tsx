@@ -34,10 +34,15 @@ export default function Slide({ slide }: SlideProps) {
       </div>
       <div className="slide__text-wrapper">
         <div className="slide__text-container w-full">
-          <Text className="ml-xxxs" transform="capitalize" type="eyebrow">
+          <Text
+            className="ml-xxxs"
+            transform="capitalize"
+            type="eyebrow"
+            weight="700"
+          >
             {slide.date}
           </Text>
-          <Text as="h1" marginBottom="sm" type="title-lg" weight="700">
+          <Text as="h1" marginBottom="sm" type="title-lg" weight="800">
             {slide.title}
           </Text>
           <Text
