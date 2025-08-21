@@ -1,15 +1,13 @@
-import { graphql, type HeadProps } from 'gatsby';
+import { graphql, type PageProps, type HeadProps } from 'gatsby';
 import React from 'react';
 import { Metadata, Page, Project } from '../../components';
 import { baseUri } from '../../links';
 import type { ProjectQueryData } from '../../types';
 
-interface WebsiteProps {
-  data: ProjectQueryData;
-  location: Location;
-}
-
-export default function Website({ data, location }: WebsiteProps) {
+export default function Website({
+  data,
+  location,
+}: PageProps<ProjectQueryData>) {
   const { project } = data;
   return (
     <Page title="Websites" dockLinks={project.dockLinks} location={location}>

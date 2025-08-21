@@ -1,15 +1,10 @@
-import { graphql, type HeadProps } from 'gatsby';
+import { graphql, type PageProps, type HeadProps } from 'gatsby';
 import React from 'react';
 import { Metadata, Page, Project } from '../../components';
 import { baseUri } from '../../links';
 import type { ProjectQueryData } from '../../types';
 
-interface TechProps {
-  data: ProjectQueryData;
-  location: Location;
-}
-
-export default function Tech({ data, location }: TechProps) {
+export default function Tech({ data, location }: PageProps<ProjectQueryData>) {
   const { project } = data;
   return (
     <Page

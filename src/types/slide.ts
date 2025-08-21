@@ -12,3 +12,9 @@ export interface SlideData {
   imageBorder?: boolean;
   customLink?: LinkTypeWithIcon;
 }
+
+export interface SlidesQueryData {
+  json: {
+    slides: SlideData[];
+  };
+}

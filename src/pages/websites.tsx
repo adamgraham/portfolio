@@ -1,19 +1,13 @@
-import { graphql, type HeadFC } from 'gatsby';
+import { graphql, type PageProps, type HeadFC } from 'gatsby';
 import React from 'react';
 import { Gallery, Metadata, Page } from '../components';
 import { baseUri } from '../links';
-import type { SlideData } from '../types';
+import type { SlidesQueryData } from '../types';
 
-interface WebsitesProps {
-  data: {
-    json: {
-      slides: SlideData[];
-    };
-  };
-  location: Location;
-}
-
-export default function Websites({ data, location }: WebsitesProps) {
+export default function Websites({
+  data,
+  location,
+}: PageProps<SlidesQueryData>) {
   return (
     <Page id="websites" title="Websites" location={location}>
       <Gallery
