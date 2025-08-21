@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunk_adamgraham_portfolio=self.webpackChunk_adamgraham_portfolio||[]).push([[781],{2905:function(t,e,a){a.r(e),a.d(e,{default:function(){return l}});var s=a(1885),i=a(3815),o=a(4848);function l(t){let{data:e,location:a}=t;return(0,o.jsx)(s.YW,{id:"websites",title:"Websites",location:a,metadata:{url:`${i.wW}/websites`,title:"Adam Graham • Websites"},children:(0,o.jsx)(s.Z2,{category:"websites",location:a,slides:e.json.slides})})}}}]);
-//# sourceMappingURL=component---src-pages-websites-tsx-9b48b666ace10a338012.js.map
