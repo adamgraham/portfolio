@@ -1,13 +1,13 @@
 import { Link, Stack, Text } from '@zigurous/forge-react';
 import { Link as GatsbyLink, type HeadFC } from 'gatsby';
-import React, { useRef } from 'react';
+import React from 'react';
 import Grid3D from '../components/Grid3D';
 import Metadata from '../components/Metadata';
 import Page from '../components/Page';
 import ShadowButton from '../components/ShadowButton';
 import Vignette from '../components/Vignette';
-import { useElementScale } from '../hooks/useElementScale';
 import { use3dHoverEffect } from '../hooks/use3dHoverEffect';
+import { useElementScale } from '../hooks/useElementScale';
 import { baseUri } from '../links';
 
 interface HomeProps {
@@ -15,10 +15,8 @@ interface HomeProps {
 }
 
 export default function Home({ location }: HomeProps) {
-  const ref = useRef<HTMLDivElement>(null);
-  const cardRef = useRef<HTMLDivElement>(null);
-  const scale = useElementScale(ref);
-  use3dHoverEffect(cardRef);
+  const cardRef = use3dHoverEffect();
+  const [scale, contentRef] = useElementScale();
   return (
     <Page id="cover" hideDock hideHeader location={location}>
       <Grid3D />
@@ -26,8 +24,8 @@ export default function Home({ location }: HomeProps) {
       <div className="cover card-3d" ref={cardRef}>
         <div
           className="introduction container-md flex flex-col align-center text-center p-0"
-          ref={ref}
-          style={{ transform: `scale(${scale})` }}
+          ref={contentRef}
+          style={{ transform: `scale(${scale || 1})` }}
         >
           <Text color="default" marginBottom="xxs" type="subtitle">
             Hello! 👋 My name is

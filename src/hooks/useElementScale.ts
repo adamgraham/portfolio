@@ -1,17 +1,31 @@
-import { clamp, useElementSize, useIsomorphicLayoutEffect } from '@zigurous/forge-react'; // prettier-ignore
-import { useState } from 'react';
+import { clamp, useIsomorphicLayoutEffect, useMemoizedRef } from '@zigurous/forge-react'; // prettier-ignore
+import { useCallback, useEffect, useState } from 'react';
 
-export function useElementScale(
-  targetRef: React.RefObject<HTMLElement>,
-): number {
-  const size = useElementSize(targetRef);
-  const [scale, setScale] = useState<number>(1);
+export function useElementScale<T extends HTMLElement>(): [
+  number | undefined,
+  React.RefCallback<T>,
+] {
+  const [element, ref] = useMemoizedRef<T>();
+  const [scale, setScale] = useState<number>();
+
+  const handleResize = useCallback(() => {
+    if (typeof window !== 'undefined' && element) {
+      setScale(clamp((window.innerWidth * 0.8) / element.offsetWidth, 1, 1.4));
+    } else {
+      setScale(undefined);
+    }
+  }, [element]);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  }, [handleResize]);
 
   useIsomorphicLayoutEffect(() => {
-    if (typeof window !== 'undefined') {
-      setScale(clamp((window.innerWidth * 0.8) / size.width, 1, 1.4));
-    }
-  }, [size]);
+    handleResize();
+  }, [handleResize]);
 
-  return scale;
+  return [scale, ref];
 }

@@ -1,4 +1,4 @@
-import { useMediaQuery } from '@zigurous/forge-react';
+import { useMediaQuery, useMemoizedRef } from '@zigurous/forge-react';
 import { useEffect } from 'react';
 
 const defaultSettings = {
@@ -9,14 +9,14 @@ const defaultSettings = {
   easing: 'ease-in-out',
 };
 
-export function use3dHoverEffect(
-  targetRef: React.RefObject<HTMLElement>,
+export function use3dHoverEffect<T extends HTMLElement>(
   settings: typeof defaultSettings = defaultSettings,
-) {
+): React.RefCallback<T> {
+  const [element, ref] = useMemoizedRef<T>();
   const canHover = useMediaQuery('(hover: hover)');
 
   useEffect(() => {
-    if (!targetRef.current) return;
+    if (!element) return;
     if (typeof window === 'undefined') return;
     if (typeof document === 'undefined') return;
 
@@ -27,14 +27,14 @@ export function use3dHoverEffect(
       handleMove(e);
       clearTimeout(timeoutId);
 
-      if (targetRef.current) {
-        targetRef.current.style.transition = `transform ${settings.speed}ms ${settings.easing}`;
+      if (element) {
+        element.style.transition = `transform ${settings.speed}ms ${settings.easing}`;
       }
 
       transitioning = true;
       timeoutId = setTimeout(() => {
-        if (targetRef.current) {
-          targetRef.current.style.transition = '';
+        if (element) {
+          element.style.transition = '';
         }
         transitioning = false;
       }, settings.speed);
@@ -42,12 +42,11 @@ export function use3dHoverEffect(
 
     const handleMove = (e: MouseEvent) => {
       if (transitioning) return;
-      const card = targetRef.current;
-      if (card) {
-        const cardWidth = card.offsetWidth;
-        const cardHeight = card.offsetHeight;
-        const centerX = card.offsetLeft + cardWidth / 2;
-        const centerY = card.offsetTop + cardHeight / 2;
+      if (element) {
+        const cardWidth = element.offsetWidth;
+        const cardHeight = element.offsetHeight;
+        const centerX = element.offsetLeft + cardWidth / 2;
+        const centerY = element.offsetTop + cardHeight / 2;
         const mouseX = e.clientX - centerX;
         const mouseY = e.clientY - centerY;
         const rotateXUncapped =
@@ -66,14 +65,12 @@ export function use3dHoverEffect(
             : rotateYUncapped > settings.max
               ? settings.max
               : rotateYUncapped;
-        if (targetRef.current) {
-          targetRef.current.style.transform = `
+        element.style.transform = `
             perspective(${
               settings.perspective
             }px) rotateX(${-rotateX}deg) rotateY(${-rotateY}deg)
             scale3d(${settings.scale}, ${settings.scale}, ${settings.scale})
           `;
-        }
       }
     };
 
@@ -86,10 +83,12 @@ export function use3dHoverEffect(
       document.removeEventListener('mouseenter', handleEnter);
       document.removeEventListener('mousemove', handleMove);
 
-      if (targetRef.current) {
-        targetRef.current.style.transition = `transform ${settings.speed}ms ${settings.easing}`;
-        targetRef.current.style.transform = `perspective(${settings.perspective}px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+      if (element) {
+        element.style.transition = `transform ${settings.speed}ms ${settings.easing}`;
+        element.style.transform = `perspective(${settings.perspective}px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
       }
     };
-  }, [targetRef, settings, canHover]);
+  }, [element, canHover, settings]);
+
+  return ref;
 }
