@@ -146,12 +146,6 @@
     ],
     "projects": [
       {
-        "name": "YouTube",
-        "description": "25k subscribers with 35+ hours of video tutorials teaching Unity game development.",
-        "link": "https://www.youtube.com/zigurous",
-        "tech": ["Unity", "C#"]
-      },
-      {
         "name": "Unity Packages",
         "description": "A collection of a dozen+ open source libraries for developers to use in their Unity projects.",
         "link": "https://docs.zigurous.com/",
@@ -159,14 +153,20 @@
       },
       {
         "name": "UnityScape",
-        "description": "Data structures and behaviors for simulating RuneScape combat encounters in Unity.",
+        "description": "An advanced library for simulating Old School RuneScape combat encounters in Unity.",
         "link": "https://www.youtube.com/watch?v=-oXrdhL2PLo",
         "tech": ["Unity", "C#"]
       },
       {
-        "name": "OSRS Region Analyzer",
-        "description": "A web app for analyzing region data in the game Old School RuneScape.",
-        "link": "https://osrs.zigurous.com/region-analyzer",
+        "name": "YouTube",
+        "description": "25k subscribers with 35+ hours of video tutorials teaching Unity game development.",
+        "link": "https://www.youtube.com/zigurous",
+        "tech": ["Unity", "C#"]
+      },
+      {
+        "name": "OSRS Web Tools",
+        "description": "A collection of tools for Old School RuneScape encapsulated in one web app.",
+        "link": "https://osrs.zigurous.com",
         "tech": ["React", "TypeScript", "CSS"]
       },
       {
