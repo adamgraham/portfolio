@@ -164,7 +164,7 @@
         "tech": ["Unity", "C#"]
       },
       {
-        "name": "OSRS Web Tools",
+        "name": "OSRS Analyzer",
         "description": "A collection of tools for Old School RuneScape encapsulated in one web app.",
         "link": "https://osrs.zigurous.com",
         "tech": ["React", "TypeScript", "CSS"]

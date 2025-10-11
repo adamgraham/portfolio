@@ -1,38 +1,46 @@
 [
   {
-    "id": "osrs-region-analyzer",
+    "id": "osrs-analyzer",
     "category": "websites",
-    "title": "OSRS Region Analyzer",
-    "description": "A detailed web app for analyzing region data in the game Old School RuneScape, including bosses, skilling activities, item resources, best-in-slot gear, questlines, and more.",
+    "title": "OSRS Analyzer",
+    "description": "A collection of tools for Old School RuneScape encapsulated in one web app. Analyze region data, bosses, skilling activities, gear progression, item resources, questlines, and much more.",
     "date": "June 2025",
     "role": "Web Designer, Developer",
     "tech": ["React", "Gatsby", "TypeScript", "HTML/CSS"],
-    "image": "../images/paintings/osrs-region-analyzer-painting.jpg",
+    "image": "../images/paintings/osrs-analyzer-painting.jpg",
     "customLink": {
-      "href": "https://osrs.zigurous.com/region-analyzer",
+      "href": "https://osrs.zigurous.com/",
       "name": "Visit Website",
       "icon": "open_in_new"
     },
     "dockLinks": [
       {
-        "href": "https://osrs.zigurous.com/region-analyzer",
+        "href": "https://osrs.zigurous.com/",
         "name": "Visit Website",
         "icon": "open_in_new"
       },
       {
-        "href": "https://github.com/zigurous/osrs-region-analyzer",
+        "href": "https://github.com/zigurous/osrs.zigurous.com",
         "name": "Source Code",
         "icon": "github"
       }
     ],
     "sections": [
       {
-        "mainImage": "../images/screenshots/osrs-region-analyzer-screenshot-01.png",
+        "mainImage": "../images/screenshots/osrs-analyzer-screenshot-01.png",
         "mainImageLink": "https://osrs.zigurous.com/region-analyzer"
       },
       {
-        "mainImage": "../images/screenshots/osrs-region-analyzer-screenshot-02.png",
-        "mainImageLink": "https://osrs.zigurous.com/region-analyzer"
+        "mainImage": "../images/screenshots/osrs-analyzer-screenshot-02.png",
+        "mainImageLink": "https://osrs.zigurous.com/region-analyzer?region=kourend"
+      },
+      {
+        "mainImage": "../images/screenshots/osrs-analyzer-screenshot-03.png",
+        "mainImageLink": "https://osrs.zigurous.com/gear-progression"
+      },
+      {
+        "mainImage": "../images/screenshots/osrs-analyzer-screenshot-04.png",
+        "mainImageLink": "https://osrs.zigurous.com/grid-master"
       }
     ]
   },
