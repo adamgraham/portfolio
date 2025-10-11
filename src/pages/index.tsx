@@ -1,4 +1,5 @@
 import { Link, Stack, Text } from '@zigurous/forge-react';
+import classNames from 'classnames';
 import { Link as GatsbyLink, type HeadFC } from 'gatsby';
 import React from 'react';
 import Grid3D from '../components/Grid3D';
@@ -23,7 +24,10 @@ export default function Home({ location }: HomeProps) {
       <Vignette />
       <div className="cover card-3d" ref={cardRef}>
         <div
-          className="introduction container-md flex flex-col align-center text-center p-0"
+          className={classNames(
+            'introduction container-md flex flex-col align-center text-center p-0',
+            { invisible: scale === undefined },
+          )}
           ref={contentRef}
           style={{ transform: `scale(${scale || 1})` }}
         >
