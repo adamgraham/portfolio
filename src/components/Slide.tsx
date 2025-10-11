@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { Link as GatsbyLink } from 'gatsby';
 import React from 'react';
 import ShadowButton from './ShadowButton';
-import type { SlideData } from '../types';
+import type { SlideData } from '../types/slide';
 
 export interface SlideProps {
   slide: SlideData;

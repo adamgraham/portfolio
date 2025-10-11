@@ -1,7 +1,7 @@
 import '../styles/project.css';
 import { Badge, clamp, EmbeddedYouTube, ImageGallery, Link, ProgressiveImage, Stack, Text } from '@zigurous/forge-react'; // prettier-ignore
 import React from 'react';
-import type { ProjectData } from '../types';
+import type { ProjectData } from '../types/project';
 
 export interface ProjectProps {
   project: ProjectData;

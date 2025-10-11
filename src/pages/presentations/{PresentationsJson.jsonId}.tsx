@@ -1,8 +1,10 @@
 import { graphql, type PageProps, type HeadProps } from 'gatsby';
 import React from 'react';
-import { Metadata, Page, Project } from '../../components';
+import Metadata from '../../components/Metadata';
+import Page from '../../components/Page';
+import Project from '../../components/Project';
 import { baseUri } from '../../links';
-import type { ProjectQueryData } from '../../types';
+import type { ProjectQueryData } from '../../types/project';
 
 export default function Presentation({
   data,

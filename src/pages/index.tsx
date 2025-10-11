@@ -1,8 +1,13 @@
 import { Link, Stack, Text } from '@zigurous/forge-react';
 import { Link as GatsbyLink, type HeadFC } from 'gatsby';
 import React, { useRef } from 'react';
-import { Grid3D, Metadata, Page, ShadowButton, Vignette } from '../components';
-import { useElementScale, use3dHoverEffect } from '../hooks';
+import Grid3D from '../components/Grid3D';
+import Metadata from '../components/Metadata';
+import Page from '../components/Page';
+import ShadowButton from '../components/ShadowButton';
+import Vignette from '../components/Vignette';
+import { useElementScale } from '../hooks/useElementScale';
+import { use3dHoverEffect } from '../hooks/use3dHoverEffect';
 import { baseUri } from '../links';
 
 interface HomeProps {

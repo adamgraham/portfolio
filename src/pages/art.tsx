@@ -1,8 +1,10 @@
 import { graphql, type PageProps, type HeadFC } from 'gatsby';
 import React from 'react';
-import { Gallery, Metadata, Page } from '../components';
+import Gallery from '../components/Gallery';
+import Metadata from '../components/Metadata';
+import Page from '../components/Page';
 import { baseUri } from '../links';
-import type { SlidesQueryData } from '../types';
+import type { SlidesQueryData } from '../types/slide';
 
 export default function Art({ data, location }: PageProps<SlidesQueryData>) {
   return (

@@ -2,7 +2,7 @@ import '../styles/menu-gallery.css';
 import { Overlay, Text, useBreakpoint } from '@zigurous/forge-react';
 import { Link as GatsbyLink, graphql, StaticQuery } from 'gatsby';
 import React from 'react';
-import type { ProjectJson } from '../types';
+import type { ProjectJson } from '../types/project';
 
 export interface MenuData {
   games: ProjectJson;

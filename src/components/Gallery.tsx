@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { navigate } from 'gatsby';
 import React, { useCallback, useEffect } from 'react';
 import Slide from './Slide';
-import type { SlideData } from '../types';
+import type { SlideData } from '../types/slide';
 import { getSessionIndex, setSessionIndex } from '../utils/session';
 
 export interface GalleryProps {

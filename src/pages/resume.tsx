@@ -1,9 +1,10 @@
 import { Badge, Col, Icon, Link, Row, Stack, Text } from '@zigurous/forge-react'; // prettier-ignore
 import { graphql, type PageProps, type HeadFC } from 'gatsby';
 import React, { useState } from 'react';
-import { Metadata, Page } from '../components';
+import Metadata from '../components/Metadata';
+import Page from '../components/Page';
 import { baseUri } from '../links';
-import type { ResumeEducation, ResumeExperience, ResumeProject, ResumeQueryData, ResumeSkills } from '../types'; // prettier-ignore
+import type { ResumeEducation, ResumeExperience, ResumeProject, ResumeQueryData, ResumeSkills } from '../types/resume'; // prettier-ignore
 import '../styles/resume.css';
 
 export default function Resume({ data, location }: PageProps<ResumeQueryData>) {
