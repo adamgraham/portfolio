@@ -62,7 +62,7 @@
         "notes": [
           {
             "title": "Discover Mobile – Application Architect",
-            "description": "Native iOS banking app with over 1 million daily active users. Maintained code architecture for 20+ engineers, developed over a dozen features, managed CI/CD pipeline and app store releases."
+            "description": "Native iOS banking app with over 1 million daily active users. Maintained code architecture for 20+ engineers, developed over a dozen features, managed the CI/CD pipeline and app store releases."
           },
           {
             "title": "NT Wealth Management – Tech Lead",
@@ -106,11 +106,10 @@
           "HTML/CSS",
           "C#",
           "C++",
-          "C",
-          "Java",
-          "Python",
           "Swift",
-          "Objective-C"
+          "Objective-C",
+          "Java",
+          "Python"
         ]
       },
       {
