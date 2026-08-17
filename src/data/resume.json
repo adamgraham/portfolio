@@ -2,7 +2,7 @@
   {
     "name": "Adam Graham",
     "title": "Software Engineer",
-    "summary": "I'm a software engineer inspired by the blending of art, design, and engineering to create best in class user experiences. I specialize in front-end development across web, mobile, and 3D technologies.",
+    "summary": "I'm a software engineer inspired by the blending of art, design, and engineering to create memorable user experiences. I specialize in front-end development across web, mobile, and 3D technologies.",
     "contact": [
       {
         "id": "location",
@@ -147,7 +147,7 @@
       {
         "name": "Unity Packages",
         "description": "A collection of a dozen+ open source libraries for developers to use in their Unity projects.",
-        "link": "https://docs.zigurous.com/",
+        "link": "https://github.com/zigurous",
         "tech": ["Unity", "C#"]
       },
       {
@@ -182,7 +182,7 @@
       },
       {
         "name": "Color Pro",
-        "description": "A utility library and editor toolkit for working with colors in Unity projects.",
+        "description": "An advanced utility library and editor toolkit for working with colors in Unity projects.",
         "link": "https://assetstore.unity.com/packages/tools/utilities/color-pro-204039",
         "tech": ["Unity", "C#"]
       },

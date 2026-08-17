@@ -16,13 +16,13 @@ interface HomeProps {
 }
 
 export default function Home({ location }: HomeProps) {
-  const cardRef = use3dHoverEffect();
+  // const cardRef = use3dHoverEffect();
   const [scale, contentRef] = useElementScale();
   return (
     <Page id="cover" hideDock hideHeader location={location}>
       <Grid3D />
       <Vignette />
-      <div className="cover card-3d" ref={cardRef}>
+      <div className="cover card-3d">
         <div
           className={classNames(
             'introduction container-md flex flex-col align-center text-center p-0',
@@ -45,7 +45,7 @@ export default function Home({ location }: HomeProps) {
             weight="500"
           >
             I'm a software engineer and game developer inspired by the blending
-            of art, design, and engineering to create best in class user
+            of art, design, and engineering to create memorable user
             experiences.
           </Text>
           <Stack align="center" justify="center" spacing="lg">
